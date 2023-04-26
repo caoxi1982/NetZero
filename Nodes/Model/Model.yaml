@@ -1,70 +1,113 @@
 Name: Model
 Type: FolderType
 Children:
-- Name: MeterSimulator
-  Type: BaseObjectType
-  Children:
-  - Name: Variable1
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
 - Name: PowerMeterInstance
   Type: PowerMeter
   Children:
-  - Name: ConfigOptix
-    Type: NetLogic
-    Children:
-    - Class: Method
-      Name: Method1
-    - Name: BehaviourStartPriority
-      Type: BehaviourStartPriorityVariableType
-      DataType: Byte
-      Value: 180
-    - Class: Reference
-      Target: g=2a24b9732c1677606ede2121f167efb7
-      Direction: Forward
   - Name: Enable
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
-  - Name: Variable2
+  - Name: DeviceName
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
-  - Name: Variable3
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: Power
     Type: BaseDataVariableType
-    DataType: Int32
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Voltage
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: ["KW","KWH","V","A"]
+  - Name: ThreePhases
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RateToCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RateToCarbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_Low
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_LowLow
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
     ValueRank: OneDimension
     ArrayDimensions: [5]
-    Value: [0,0,0,0,0]
-  - Name: Variable4
+    Value: [false,false,false,false,false]
+  - Name: MeterType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductOutputRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductOutputTotal
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
-  - Name: Variable5
+  - Name: ProductID
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
-  - Name: Variable6
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
-  - Name: Variable7
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
-  - Name: Variable8
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
-- Name: CounterMeter
-  Type: BaseObjectType
+    DataType: String
+    Value: "0"
 - File: MeterTypes/MeterTypes.yaml
+- File: Meters/Meters.yaml
+- File: Simulators/Simulators.yaml
 - Name: V_bits
   Type: BaseObjectType
   Children:
   - Name: bit0
-    Id: g=ebb453a30b5854eeb0a319527b44d04f
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
@@ -87,7 +130,6 @@ Children:
           DataType: NodePath
           Value: "../../../Source"
   - Name: bit1
-    Id: g=4ec96a783b3540594108b1f39bf7f8d0
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
@@ -110,7 +152,6 @@ Children:
           DataType: NodePath
           Value: "../../../Source"
   - Name: bit2
-    Id: g=9011f9ca7ac716e93fc5c7f00f46e761
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
@@ -143,7 +184,6 @@ Children:
         ReferenceType: HasComponent
         Value: 2
   - Name: bit3
-    Id: g=031ec4fef4bc242afae8b7ba0951ea55
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
@@ -166,7 +206,6 @@ Children:
           DataType: NodePath
           Value: "../../../Source"
   - Name: Source
-    Id: g=dc83e70358bdc17aa57d88e3f57ee9e3
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 0
@@ -434,3 +473,4 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../Source"
+- File: Configures/Configures.yaml

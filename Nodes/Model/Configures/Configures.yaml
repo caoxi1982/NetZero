@@ -1,0 +1,165 @@
+Name: Configures
+Type: FolderType
+Children:
+- Name: ShiftsDefinition
+  Type: BaseObjectType
+  Children:
+  - Name: Shift_1_Start
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2000-01-01T00:00:00.0000000"
+  - Name: PeriodicActionLogic
+    Type: NetLogic
+    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+    Children:
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Period
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:00:30.0000000"
+    - Name: Action
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=2;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":58}
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+  - Name: Shift_1_End
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2000-01-01T08:00:00.0000000"
+  - Name: Shift_2_Start
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2000-01-01T08:00:00.0000000"
+  - Name: Shift_2_End
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2000-01-01T16:00:00.0000000"
+  - Name: Shift_3_Start
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2000-01-01T16:00:00.0000000"
+  - Name: Shift_3_End
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2000-01-01T23:59:59.0000000"
+  - Name: Shift_1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Shift_2
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Shift_3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Shift_1Transitioned
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Shift_1"
+  - Name: Shift_1Transitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Shift_1"
+  - Name: Shift_2Transitioned
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Shift_2"
+  - Name: Shift_2Transitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Shift_2"
+  - Name: Shift_3Transitioned
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Shift_3"
+  - Name: Shift_3Transitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Shift_3"
+- Name: MultiRate
+  Type: BaseObjectType

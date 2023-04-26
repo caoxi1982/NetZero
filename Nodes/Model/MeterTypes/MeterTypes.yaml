@@ -5,47 +5,351 @@ Children:
   Id: g=131c0a1a6112621c549a9316e355c0de
   Supertype: BaseObjectType
   Children:
-  - Name: ConfigOptix
-    Type: NetLogic
-    Children:
-    - Class: Method
-      Name: Method1
-      Id: g=2a24b9732c1677606ede2121f167efb7
-    - Name: BehaviourStartPriority
-      Type: BehaviourStartPriorityVariableType
-      DataType: Byte
-      Value: 180
   - Name: Enable
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
-  - Name: Variable2
+  - Name: DeviceName
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
-  - Name: Variable3
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Power
     Type: BaseDataVariableType
-    DataType: Int32
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Voltage
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: ["KW","KWH","V","A"]
+  - Name: ThreePhases
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RateToCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RateToCarbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_Low
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_LowLow
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
     ValueRank: OneDimension
     ArrayDimensions: [5]
-    Value: [0,0,0,0,0]
-  - Name: Variable4
+    Value: [false,false,false,false,false]
+  - Name: MeterType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductOutputRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductOutputTotal
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0
-  - Name: Variable5
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: GeneralMeter
+  Id: g=9be715eaaa4b1d26fb2c470a63679da6
+  Supertype: BaseObjectType
+  Children:
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: DeviceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: ProductOutputRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MeterSpeed
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MeterTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: ["0","0","0","0"]
+  - Name: RateToCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RateToCarbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_Low
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_LowLow
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Value: [false,false,false,false,false]
+  - Name: MeterType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductOutputTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: CounterMeter
+  Id: g=84c007a918d12cfcdc7c1d8a03026a6d
+  Supertype: BaseObjectType
+  Children:
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: DeviceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductOutputRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: CounterRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: CounterTotal
+    Type: BaseDataVariableType
+    DataType: UInt64
+    Value: 0
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: ["0","0","0","0"]
+  - Name: RateToCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: RateToCarbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_Low
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_LowLow
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Value: [false,false,false,false,false]
+  - Name: MeterType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductOutputTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: CounterRateWindows
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:0.0000000"
+  - Name: RatePerCounter
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+- Name: PowerMeterSimulator
+  Id: g=58e895f5e68db40403f4210304f044b7
+  Supertype: BaseObjectType
+  Children:
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: PowerSetting
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
-  - Name: Variable6
+    Value: 12
+  - Name: VoltageSetting
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
-  - Name: Variable7
+    Value: 230
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Voltage
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunPowerMeter
+    Type: NetLogic
+- Name: GeneralMeterSimulator
+  Id: g=036cfb163f87835dcae679c64a91adc6
+  Supertype: BaseObjectType
+  Children:
+  - Name: MeterSpeed
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SpeedSetting
     Type: BaseDataVariableType
     DataType: Int32
+    Value: 9
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MeterTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunGeneralMeter
+    Type: NetLogic
+- Name: CounterMeterSimulator
+  Id: g=d84707cde289ac0fa8249bfd4a0279ee
+  Supertype: BaseObjectType
+  Children:
+  - Name: Counter
+    Type: BaseDataVariableType
+    DataType: UInt64
     Value: 0
-  - Name: Variable8
+  - Name: CounterPerTenSecond
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 0
+    Value: 6
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunCounterMeter
+    Type: NetLogic

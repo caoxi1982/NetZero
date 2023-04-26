@@ -1,0 +1,209 @@
+Name: Simulators
+Type: FolderType
+Children:
+- Name: LineTotalPowerSimulator
+  Type: PowerMeterSimulator
+  Children:
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: PowerSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 12
+  - Name: VoltageSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 400
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Voltage
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunPowerMeter
+    Type: NetLogic
+- Name: TakeupPowerSimulator
+  Type: PowerMeterSimulator
+  Children:
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: PowerSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: VoltageSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 390
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Voltage
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunPowerMeter
+    Type: NetLogic
+- Name: FurnaceNatureGasSimulator
+  Type: GeneralMeterSimulator
+  Children:
+  - Name: MeterSpeed
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SpeedSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 12
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MeterTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunGeneralMeter
+    Type: NetLogic
+- Name: DryerNatureGasSimulator
+  Type: GeneralMeterSimulator
+  Children:
+  - Name: MeterSpeed
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: SpeedSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 30
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MeterTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunGeneralMeter
+    Type: NetLogic
+- Name: CityWaterSimulator
+  Type: CounterMeterSimulator
+  Children:
+  - Name: Counter
+    Type: BaseDataVariableType
+    DataType: UInt64
+    Value: 0
+  - Name: CounterPerTenSecond
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunCounterMeter
+    Type: NetLogic
+- Name: ROWaterSimulator
+  Type: CounterMeterSimulator
+  Children:
+  - Name: Counter
+    Type: BaseDataVariableType
+    DataType: UInt64
+    Value: 0
+  - Name: CounterPerTenSecond
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunCounterMeter
+    Type: NetLogic
