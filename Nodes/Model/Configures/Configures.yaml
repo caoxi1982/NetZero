@@ -1,165 +1,663 @@
 Name: Configures
 Type: FolderType
 Children:
-- Name: ShiftsDefinition
+- Name: WorkShift
   Type: BaseObjectType
   Children:
-  - Name: Shift_1_Start
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "2000-01-01T00:00:00.0000000"
-  - Name: PeriodicActionLogic
-    Type: NetLogic
-    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  - Name: Shift_1
+    Id: g=5d415fa58566c03d8b07896ff4d45706
+    Type: TimeInterval
     Children:
-    - Name: Enabled
+    - Name: Beused
+      Id: g=7bd6980813661a5820c0df3a21abfb32
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
-    - Name: Period
+    - Name: StartTime
+      Id: g=862ee3239af7976094a7a40af1ea8a57
       Type: BaseDataVariableType
-      DataType: Duration
-      Value: "0:00:00:30.0000000"
-    - Name: Action
-      Type: MethodInvocation
+      DataType: DateTime
+      Value: "1900-01-01T00:00:00.0000000"
+    - Name: EndTime
+      Id: g=d85633069545901fecae374469b51657
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T08:00:00.0000000"
+    - Name: Working
+      Id: g=4a4965112fcafda6d48f702d3c66ee4c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
       Children:
-      - Class: Reference
-        Target: ns=2;i=98
-        Direction: Forward
-      - Name: ObjectPointer
-        Type: NodePointer
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-        Children:
-        - Name: Kind
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"Id":58}
-      - Name: Method
-        Type: BaseDataVariableType
-        DataType: String
-        Value: ""
-  - Name: Shift_1_End
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "2000-01-01T08:00:00.0000000"
-  - Name: Shift_2_Start
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "2000-01-01T08:00:00.0000000"
-  - Name: Shift_2_End
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "2000-01-01T16:00:00.0000000"
-  - Name: Shift_3_Start
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "2000-01-01T16:00:00.0000000"
-  - Name: Shift_3_End
-    Type: BaseDataVariableType
-    DataType: DateTime
-    Value: "2000-01-01T23:59:59.0000000"
-  - Name: Shift_1
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "1"
   - Name: Shift_2
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
+    Id: g=70ea0ba7c4a898d823650d0039f857c7
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Id: g=66da009035c65a8e410fd4efca47d953
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Id: g=5923820859179211e313653efc6d0e1d
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T08:00:00.0000000"
+    - Name: EndTime
+      Id: g=c407fdfbe36d289125200c4182fa853a
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T16:00:00.0000000"
+    - Name: Working
+      Id: g=51471361e8b64de2e2738bc07d79efa9
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "2"
   - Name: Shift_3
+    Id: g=6adccfe301f55a51f6b2b6278f8ccb07
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Id: g=ee62d3d4eba5975de04e39dd5e62cc8c
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Id: g=89eba890f368644183babe75abb59477
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T16:00:00.0000000"
+    - Name: EndTime
+      Id: g=038ffb7111efc334d2fec1bdb6933f34
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T23:59:59.0000000"
+    - Name: Working
+      Id: g=e6c208f4df4f12262b8d7553e67570f5
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "3"
+  - Name: ShiftSwitcher
+    Type: NetLogic
+  - Name: CurrentShift
     Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
-  - Name: Shift_1Transitioned
-    Type: VariableTransitionEventDispatcher
-    Children:
-    - Name: Value
-      Type: BaseVariableType
-      DataType: Double
-      Value: 1.0
-    - Name: Transition
-      Type: BaseVariableType
-      DataType: VariableTransition
-      Value: 0
-    - Name: VariableNodePath
-      Type: BaseVariableType
-      DataType: NodePath
-      Value: "../Shift_1"
-  - Name: Shift_1Transitioned1
-    Type: VariableTransitionEventDispatcher
-    Children:
-    - Name: Value
-      Type: BaseVariableType
-      DataType: Double
-      Value: 0.0
-    - Name: Transition
-      Type: BaseVariableType
-      DataType: VariableTransition
-      Value: 0
-    - Name: VariableNodePath
-      Type: BaseVariableType
-      DataType: NodePath
-      Value: "../Shift_1"
-  - Name: Shift_2Transitioned
-    Type: VariableTransitionEventDispatcher
-    Children:
-    - Name: Value
-      Type: BaseVariableType
-      DataType: Double
-      Value: 1.0
-    - Name: Transition
-      Type: BaseVariableType
-      DataType: VariableTransition
-      Value: 0
-    - Name: VariableNodePath
-      Type: BaseVariableType
-      DataType: NodePath
-      Value: "../Shift_2"
-  - Name: Shift_2Transitioned1
-    Type: VariableTransitionEventDispatcher
-    Children:
-    - Name: Value
-      Type: BaseVariableType
-      DataType: Double
-      Value: 0.0
-    - Name: Transition
-      Type: BaseVariableType
-      DataType: VariableTransition
-      Value: 0
-    - Name: VariableNodePath
-      Type: BaseVariableType
-      DataType: NodePath
-      Value: "../Shift_2"
-  - Name: Shift_3Transitioned
-    Type: VariableTransitionEventDispatcher
-    Children:
-    - Name: Value
-      Type: BaseVariableType
-      DataType: Double
-      Value: 1.0
-    - Name: Transition
-      Type: BaseVariableType
-      DataType: VariableTransition
-      Value: 0
-    - Name: VariableNodePath
-      Type: BaseVariableType
-      DataType: NodePath
-      Value: "../Shift_3"
-  - Name: Shift_3Transitioned1
-    Type: VariableTransitionEventDispatcher
-    Children:
-    - Name: Value
-      Type: BaseVariableType
-      DataType: Double
-      Value: 0.0
-    - Name: Transition
-      Type: BaseVariableType
-      DataType: VariableTransition
-      Value: 0
-    - Name: VariableNodePath
-      Type: BaseVariableType
-      DataType: NodePath
-      Value: "../Shift_3"
+    DataType: String
+    Value: "0"
 - Name: MultiRate
   Type: BaseObjectType
+  Children:
+  - Name: Peak_1
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T10:00:00.0000000"
+    - Name: EndTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T11:00:00.0000000"
+    - Name: Working
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "40"
+  - Name: Peak_2
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T14:00:00.0000000"
+    - Name: EndTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T15:00:00.0000000"
+    - Name: Working
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "41"
+  - Name: High_1
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T08:00:00.0000000"
+    - Name: EndTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T10:00:00.0000000"
+    - Name: Working
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.8
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "30"
+  - Name: High_2
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T18:00:00.0000000"
+    - Name: EndTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T22:00:00.0000000"
+    - Name: Working
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.8
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "31"
+  - Name: Normal_1
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T11:00:00.0000000"
+    - Name: EndTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T14:00:00.0000000"
+    - Name: Working
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.6
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "20"
+  - Name: Normal_2
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T15:00:00.0000000"
+    - Name: EndTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T18:00:00.0000000"
+    - Name: Working
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.6
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "21"
+  - Name: Normal_3
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T22:00:00.0000000"
+    - Name: EndTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T23:59:59.0000000"
+    - Name: Working
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.6
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "22"
+  - Name: Valley_1
+    Type: TimeInterval
+    Children:
+    - Name: Beused
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: StartTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T00:00:00.0000000"
+    - Name: EndTime
+      Type: BaseDataVariableType
+      DataType: DateTime
+      Value: "1900-01-01T08:00:00.0000000"
+    - Name: Working
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: WorkingTransitioned
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 1.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: WorkingTransitioned1
+      Type: VariableTransitionEventDispatcher
+      Children:
+      - Name: Value
+        Type: BaseVariableType
+        DataType: Double
+        Value: 0.0
+      - Name: Transition
+        Type: BaseVariableType
+        DataType: VariableTransition
+        Value: 0
+      - Name: VariableNodePath
+        Type: BaseVariableType
+        DataType: NodePath
+        Value: "../Working"
+    - Name: RateToCost
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.4
+    - Name: ID
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "10"
+  - Name: RateSwitcher
+    Type: NetLogic
+  - Name: CurrentDuration
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"

@@ -90,15 +90,15 @@ Children:
   - Name: ThreePhases
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: RateToCost
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.0
+    Value: 0.6299999952316284
   - Name: RateToCarbon
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.0
+    Value: 0.5479999780654907
   - Name: ProductRateThreshold_Low
     Type: BaseDataVariableType
     DataType: Float
@@ -116,7 +116,7 @@ Children:
   - Name: MeterType
     Type: BaseDataVariableType
     DataType: String
-    Value: "0"
+    Value: "Power"
   - Name: ProductOutputRate
     Type: BaseDataVariableType
     DataType: Float
@@ -141,6 +141,20 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+  - Name: RecordEnergy
+    Id: g=de8fae5aadb8984247552fddf0674db4
+    Type: NetLogic
+    Children:
+    - Class: Reference
+      Target: g=1ba58deac8e235991ed2c2b1ff469651
+      Direction: Forward
+    - Class: Reference
+      Target: g=6530eed9e50e92f0f7c996f5b5f7e711
+      Direction: Forward
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "CookieLine"
 - Name: TakeupPower
   Type: PowerMeter
   Children:
@@ -230,15 +244,15 @@ Children:
   - Name: ThreePhases
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: RateToCost
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.0
+    Value: 0.6299999952316284
   - Name: RateToCarbon
     Type: BaseDataVariableType
     DataType: Float
-    Value: 0.0
+    Value: 0.5479999780654907
   - Name: ProductRateThreshold_Low
     Type: BaseDataVariableType
     DataType: Float
@@ -256,7 +270,7 @@ Children:
   - Name: MeterType
     Type: BaseDataVariableType
     DataType: String
-    Value: "0"
+    Value: "Power"
   - Name: ProductOutputRate
     Type: BaseDataVariableType
     DataType: Float
@@ -281,6 +295,19 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+  - Name: RecordEnergy
+    Type: NetLogic
+    Children:
+    - Class: Reference
+      Target: g=1ba58deac8e235991ed2c2b1ff469651
+      Direction: Forward
+    - Class: Reference
+      Target: g=6530eed9e50e92f0f7c996f5b5f7e711
+      Direction: Forward
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "CookieLine"
 - Name: FurnaceNatureGas
   Type: GeneralMeter
   Children:
@@ -345,6 +372,28 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RecordConsume
+    Type: NetLogic
 - Name: DryerNatureGas
   Type: GeneralMeter
   Children:
@@ -409,6 +458,28 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RecordConsume
+    Type: NetLogic
 - Name: CityWater
   Type: CounterMeter
   Children:
@@ -476,6 +547,28 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RecordCounter
+    Type: NetLogic
 - Name: ROWater
   Type: CounterMeter
   Children:
@@ -543,3 +636,25 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RecordCounter
+    Type: NetLogic

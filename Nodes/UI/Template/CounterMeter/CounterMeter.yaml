@@ -1,8 +1,53 @@
-Name: PowerMeter
+Name: CounterMeter
 Type: FolderType
 Children:
-- Name: PowerMeterPanel
-  Id: g=1a7c87e76ac8518506f569091c61a12f
+- Name: CounterMeterReport
+  Id: g=5865889296aee906c525e3ead18d6f13
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+- Name: CounterMeterTrends
+  Id: g=92eca066fcb1b69dfa9c8296edf1e410
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+- Name: CounterMeterSetting
+  Id: g=c3b3da5af237e12d8d4328371e3d01ef
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+- Name: CounterMeterPanel
+  Id: g=51543e479f563a06c445291643fbb0e7
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -790,7 +835,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"03ac78d097397482d3efcc14f695b26b","Namespace":7}
+            Value: {"IdType":2,"Id":"c3b3da5af237e12d8d4328371e3d01ef","Namespace":7}
             Children:
             - Name: Kind
               Type: PropertyType
@@ -806,7 +851,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"73df0a1a89ff14dafe4ce88ecfe2795d","Namespace":7}
+            Value: {"IdType":2,"Id":"92eca066fcb1b69dfa9c8296edf1e410","Namespace":7}
             Children:
             - Name: Kind
               Type: PropertyType
@@ -822,7 +867,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"5296315e6761ece9003af607529fcae1","Namespace":7}
+            Value: {"IdType":2,"Id":"5865889296aee906c525e3ead18d6f13","Namespace":7}
             Children:
             - Name: Kind
               Type: PropertyType
@@ -867,48 +912,3 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
-- Name: PowerMeterSetting
-  Id: g=03ac78d097397482d3efcc14f695b26b
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 300.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 300.0
-- Name: PowerMeterTrends
-  Id: g=73df0a1a89ff14dafe4ce88ecfe2795d
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 300.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 300.0
-- Name: PowerMeterReport
-  Id: g=5296315e6761ece9003af607529fcae1
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 300.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 300.0

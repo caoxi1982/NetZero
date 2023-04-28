@@ -1,0 +1,73 @@
+Name: CommonTypes
+Type: FolderType
+Children:
+- Name: TimeInterval
+  Id: g=ccb5a908f976bf60f62e2066074a5f0c
+  Supertype: BaseObjectType
+  Children:
+  - Name: Beused
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: StartTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: EndTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Working
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: WorkingTransitioned
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Working"
+  - Name: WorkingTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Working"
+  - Name: RateToCost
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: ID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: ClockLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"

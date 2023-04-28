@@ -108,6 +108,35 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+  - Name: RecordEnergy
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: UpdateShiftRecord
+      Id: g=1ba58deac8e235991ed2c2b1ff469651
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"shiftOrrate","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: CreateRecord
+      Id: g=6530eed9e50e92f0f7c996f5b5f7e711
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"shiftOrrate","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
 - Name: GeneralMeter
   Id: g=9be715eaaa4b1d26fb2c470a63679da6
   Supertype: BaseObjectType
@@ -179,6 +208,28 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RecordConsume
+    Type: NetLogic
 - Name: CounterMeter
   Id: g=84c007a918d12cfcdc7c1d8a03026a6d
   Supertype: BaseObjectType
@@ -247,6 +298,28 @@ Children:
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RecordCounter
+    Type: NetLogic
 - Name: PowerMeterSimulator
   Id: g=58e895f5e68db40403f4210304f044b7
   Supertype: BaseObjectType

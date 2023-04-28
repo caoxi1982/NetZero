@@ -199,10 +199,32 @@ Children:
           Type: BaseDataVariableType
           DataType: String
           Value: "0"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=5d415fa5-8566-c03d-8b07-896ff4d45706}@BrowseName"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Beused
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=7bd69808-1366-1a58-20c0-df3a21abfb32}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: DateAndTime1
           Type: DateTimePicker
           Children:
@@ -210,6 +232,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
         - Name: DateAndTime2
           Type: DateTimePicker
           Children:
@@ -217,6 +244,41 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=862ee323-9af7-9760-94a7-a40af1ea8a57}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=d8563306-9545-901f-ecae-374469b51657}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
       - Name: TimeSetting2
         Type: TimeSetting
         Children:
@@ -254,10 +316,32 @@ Children:
           Type: BaseDataVariableType
           DataType: String
           Value: "0"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=70ea0ba7-c4a8-98d8-2365-0d0039f857c7}@BrowseName"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Beused
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=66da0090-35c6-5a8e-410f-d4efca47d953}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: DateAndTime1
           Type: DateTimePicker
           Children:
@@ -265,6 +349,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
         - Name: DateAndTime2
           Type: DateTimePicker
           Children:
@@ -272,6 +361,41 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=59238208-5917-9211-e313-653efc6d0e1d}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=c407fdfb-e36d-2891-2520-0c4182fa853a}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
       - Name: TimeSetting3
         Type: TimeSetting
         Children:
@@ -309,10 +433,32 @@ Children:
           Type: BaseDataVariableType
           DataType: String
           Value: "0"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=6adccfe3-01f5-5a51-f6b2-b6278f8ccb07}@BrowseName"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: Beused
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=ee62d3d4-eba5-975d-e04e-39dd5e62cc8c}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
         - Name: DateAndTime1
           Type: DateTimePicker
           Children:
@@ -320,6 +466,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
         - Name: DateAndTime2
           Type: DateTimePicker
           Children:
@@ -327,6 +478,235 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=89eba890-f368-6441-83ba-be75abb59477}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=038ffb71-11ef-c334-d2fe-c1bdb6933f34}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: DateAndTime1
+        Type: DateTimePicker
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=862ee323-9af7-9760-94a7-a40af1ea8a57}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+      - Name: DateAndTime2
+        Type: DateTimePicker
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=d8563306-9545-901f-ecae-374469b51657}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+      - Name: LED1
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=7bd69808-1366-1a58-20c0-df3a21abfb32}"
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: LED2
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=4a496511-2fca-fda6-d48f-702d3c66ee4c}"
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 55.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: -4.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#3dff00"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"shift1"}
+      - Name: LED3
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=51471361-e8b6-4de2-e273-8bc07d79efa9}"
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 68.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 55.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#05ff00"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Shift2"}
+      - Name: LED4
+        Type: Led
+        Children:
+        - Name: Active
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=e6c208f4-df4f-1226-2b8d-7553e67570f5}"
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 70.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 65.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#2eff00"
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"shift3"}
     - Name: VerticalLayout2
       Type: ColumnLayout
       Children:
@@ -340,6 +720,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 600.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 0
       - Name: Label1
         Type: Label
         Children:
@@ -353,76 +738,873 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 28.0
-      - Name: TimeSetting1
-        Type: TimeSetting
+      - Name: ScrollView1
+        Type: ScrollView
         Children:
-        - Name: Rectangle1
-          Type: Rectangle
-        - Name: Switch1
-          Type: Switch
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 500.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 550.0
+        - Name: VerticalLayout1
+          Type: ColumnLayout
           Children:
-          - Name: Checked
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 1000.0
+          - Name: TimeSetting2
+            Type: TimeSetting
+            Children:
+            - Name: Rectangle1
+              Type: Rectangle
+            - Name: Switch1
+              Type: Switch
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Beused"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Name"
+            - Name: Label2
+              Type: Label
+            - Name: Label3
+              Type: Label
+            - Name: Name
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "0"
+            - Name: Beused
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: DateAndTime1
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Start"
+            - Name: DateAndTime2
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../End"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Start
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: End
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+          - Name: TimeSetting3
+            Type: TimeSetting
+            Children:
+            - Name: Rectangle1
+              Type: Rectangle
+            - Name: Switch1
+              Type: Switch
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Beused"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Name"
+            - Name: Label2
+              Type: Label
+            - Name: Label3
+              Type: Label
+            - Name: Name
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "0"
+            - Name: Beused
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: DateAndTime1
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Start"
+            - Name: DateAndTime2
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../End"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Start
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: End
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+          - Name: TimeSetting4
+            Type: TimeSetting
+            Children:
+            - Name: Rectangle1
+              Type: Rectangle
+            - Name: Switch1
+              Type: Switch
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Beused"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Name"
+            - Name: Label2
+              Type: Label
+            - Name: Label3
+              Type: Label
+            - Name: Name
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "0"
+            - Name: Beused
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: DateAndTime1
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Start"
+            - Name: DateAndTime2
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../End"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Start
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: End
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+          - Name: TimeSetting5
+            Type: TimeSetting
+            Children:
+            - Name: Rectangle1
+              Type: Rectangle
+            - Name: Switch1
+              Type: Switch
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Beused"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Name"
+            - Name: Label2
+              Type: Label
+            - Name: Label3
+              Type: Label
+            - Name: Name
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "0"
+            - Name: Beused
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: DateAndTime1
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Start"
+            - Name: DateAndTime2
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../End"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Start
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: End
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            ModellingRule: Optional
+            Value: 0
+          - Name: TimeSetting6
+            Type: TimeSetting
+            Children:
+            - Name: Rectangle1
+              Type: Rectangle
+            - Name: Switch1
+              Type: Switch
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Beused"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Name"
+            - Name: Label2
+              Type: Label
+            - Name: Label3
+              Type: Label
+            - Name: Name
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "0"
+            - Name: Beused
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: DateAndTime1
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Start"
+            - Name: DateAndTime2
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../End"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: TimeSetting5
+              Type: TimeSetting
+              Children:
+              - Name: Rectangle1
+                Type: Rectangle
+              - Name: Switch1
+                Type: Switch
+                Children:
+                - Name: Checked
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: false
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Beused"
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Name"
+              - Name: Label2
+                Type: Label
+              - Name: Label3
+                Type: Label
+              - Name: Name
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "0"
+              - Name: Beused
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+              - Name: DateAndTime1
+                Type: DateTimePicker
+                Children:
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: DateTime
+                  Value: "1601-01-01T00:00:00.0000000"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../Start"
+              - Name: DateAndTime2
+                Type: DateTimePicker
+                Children:
+                - Name: Value
+                  Type: BaseDataVariableType
+                  DataType: DateTime
+                  Value: "1601-01-01T00:00:00.0000000"
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../End"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: Start
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+              - Name: End
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+            - Name: Start
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: End
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+          - Name: TimeSetting7
+            Type: TimeSetting
+            Children:
+            - Name: Rectangle1
+              Type: Rectangle
+            - Name: Switch1
+              Type: Switch
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Beused"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Name"
+            - Name: Label2
+              Type: Label
+            - Name: Label3
+              Type: Label
+            - Name: Name
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "0"
+            - Name: Beused
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: DateAndTime1
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Start"
+            - Name: DateAndTime2
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../End"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Start
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: End
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+          - Name: TimeSetting8
+            Type: TimeSetting
+            Children:
+            - Name: Rectangle1
+              Type: Rectangle
+            - Name: Switch1
+              Type: Switch
+              Children:
+              - Name: Checked
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: false
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Beused"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Name"
+            - Name: Label2
+              Type: Label
+            - Name: Label3
+              Type: Label
+            - Name: Name
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "0"
+            - Name: Beused
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: DateAndTime1
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../Start"
+            - Name: DateAndTime2
+              Type: DateTimePicker
+              Children:
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: DateTime
+                Value: "1601-01-01T00:00:00.0000000"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../End"
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 0.0
+            - Name: Start
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+            - Name: End
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 0
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 0
+        - Name: ScrollAxesEnabled
+          Type: BaseDataVariableType
+          DataType: ScrollAxesEnabledEnum
+          ModellingRule: Optional
+          Value: 2
+        - Name: TimeSetting1
+          Type: TimeSetting
+          Children:
+          - Name: Rectangle1
+            Type: Rectangle
+          - Name: Switch1
+            Type: Switch
+            Children:
+            - Name: Checked
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Beused"
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Name"
+          - Name: Label2
+            Type: Label
+          - Name: Label3
+            Type: Label
+          - Name: Name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
+          - Name: Beused
             Type: BaseDataVariableType
             DataType: Boolean
-            Value: false
+            Value: true
+          - Name: DateAndTime1
+            Type: DateTimePicker
             Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../Beused"
-        - Name: Label1
-          Type: Label
-          Children:
-          - Name: Text
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Start"
+          - Name: DateAndTime2
+            Type: DateTimePicker
             Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../Name"
-        - Name: Label2
-          Type: Label
-        - Name: Label3
-          Type: Label
-        - Name: Name
-          Type: BaseDataVariableType
-          DataType: String
-          Value: "0"
-        - Name: Beused
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: DateAndTime1
-          Type: DateTimePicker
-          Children:
-          - Name: Value
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../End"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 0.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 0.0
+          - Name: Start
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
-        - Name: DateAndTime2
-          Type: DateTimePicker
-          Children:
-          - Name: Value
+          - Name: End
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
-        - Name: LeftMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 0.0
-        - Name: TopMargin
-          Type: BaseVariableType
-          DataType: Size
-          ModellingRule: Optional
-          Value: 0.0
-      - Name: HorizontalAlignment
+      - Name: VerticalAlignment
         Type: BaseVariableType
-        DataType: HorizontalAlignment
+        DataType: VerticalAlignment
         ModellingRule: Optional
-        Value: 0
+        Value: 3
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+- Name: test
+  Id: g=de71daa53de21e1d4d40aa3bddfeb5e1
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Multi-Rate Power:"}
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 28.0
+  - Name: ScrollView1
+    Type: ScrollView
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 500.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 550.0
+    - Name: VerticalLayout1
+      Type: ColumnLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 500.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1000.0
       - Name: TimeSetting2
         Type: TimeSetting
         Children:
@@ -471,6 +1653,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
         - Name: DateAndTime2
           Type: DateTimePicker
           Children:
@@ -478,6 +1665,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
@@ -488,6 +1680,14 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 0.0
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
       - Name: TimeSetting3
         Type: TimeSetting
         Children:
@@ -536,6 +1736,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
         - Name: DateAndTime2
           Type: DateTimePicker
           Children:
@@ -543,6 +1748,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
@@ -553,6 +1763,14 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 0.0
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
       - Name: TimeSetting4
         Type: TimeSetting
         Children:
@@ -601,6 +1819,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
         - Name: DateAndTime2
           Type: DateTimePicker
           Children:
@@ -608,6 +1831,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
@@ -618,6 +1846,14 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 0.0
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
       - Name: TimeSetting5
         Type: TimeSetting
         Children:
@@ -666,6 +1902,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
         - Name: DateAndTime2
           Type: DateTimePicker
           Children:
@@ -673,6 +1914,11 @@ Children:
             Type: BaseDataVariableType
             DataType: DateTime
             Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
         - Name: LeftMargin
           Type: BaseVariableType
           DataType: Size
@@ -683,13 +1929,530 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 0.0
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: TimeSetting6
+        Type: TimeSetting
+        Children:
+        - Name: Rectangle1
+          Type: Rectangle
+        - Name: Switch1
+          Type: Switch
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Beused"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Name"
+        - Name: Label2
+          Type: Label
+        - Name: Label3
+          Type: Label
+        - Name: Name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Beused
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: DateAndTime1
+          Type: DateTimePicker
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
+        - Name: DateAndTime2
+          Type: DateTimePicker
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: TimeSetting5
+          Type: TimeSetting
+          Children:
+          - Name: Rectangle1
+            Type: Rectangle
+          - Name: Switch1
+            Type: Switch
+            Children:
+            - Name: Checked
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: false
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Beused"
+          - Name: Label1
+            Type: Label
+            Children:
+            - Name: Text
+              Type: BaseDataVariableType
+              DataType: LocalizedText
+              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Name"
+          - Name: Label2
+            Type: Label
+          - Name: Label3
+            Type: Label
+          - Name: Name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
+          - Name: Beused
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: DateAndTime1
+            Type: DateTimePicker
+            Children:
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../Start"
+          - Name: DateAndTime2
+            Type: DateTimePicker
+            Children:
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: DateTime
+              Value: "1601-01-01T00:00:00.0000000"
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../End"
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 0.0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 0.0
+          - Name: Start
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: End
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "1601-01-01T00:00:00.0000000"
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+      - Name: TimeSetting7
+        Type: TimeSetting
+        Children:
+        - Name: Rectangle1
+          Type: Rectangle
+        - Name: Switch1
+          Type: Switch
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Beused"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Name"
+        - Name: Label2
+          Type: Label
+        - Name: Label3
+          Type: Label
+        - Name: Name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Beused
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: DateAndTime1
+          Type: DateTimePicker
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
+        - Name: DateAndTime2
+          Type: DateTimePicker
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+      - Name: TimeSetting8
+        Type: TimeSetting
+        Children:
+        - Name: Rectangle1
+          Type: Rectangle
+        - Name: Switch1
+          Type: Switch
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Beused"
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Name"
+        - Name: Label2
+          Type: Label
+        - Name: Label3
+          Type: Label
+        - Name: Name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "0"
+        - Name: Beused
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: DateAndTime1
+          Type: DateTimePicker
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../Start"
+        - Name: DateAndTime2
+          Type: DateTimePicker
+          Children:
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: DateTime
+            Value: "1601-01-01T00:00:00.0000000"
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../End"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 0.0
+        - Name: Start
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: End
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
-      Value: 3
+      Value: 0
     - Name: VerticalAlignment
       Type: BaseVariableType
       DataType: VerticalAlignment
       ModellingRule: Optional
-      Value: 3
+      Value: 0
+    - Name: ScrollAxesEnabled
+      Type: BaseDataVariableType
+      DataType: ScrollAxesEnabledEnum
+      ModellingRule: Optional
+      Value: 2
+    - Name: TimeSetting1
+      Type: TimeSetting
+      Children:
+      - Name: Rectangle1
+        Type: Rectangle
+      - Name: Switch1
+        Type: Switch
+        Children:
+        - Name: Checked
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Beused"
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Name"
+      - Name: Label2
+        Type: Label
+      - Name: Label3
+        Type: Label
+      - Name: Name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: Beused
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: DateAndTime1
+        Type: DateTimePicker
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../Start"
+      - Name: DateAndTime2
+        Type: DateTimePicker
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../End"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: Start
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: End
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Value: "1601-01-01T00:00:00.0000000"
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Button1"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 650.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 220.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":2,"Id":"de8fae5aadb8984247552fddf0674db4","Namespace":7}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "createShiftRecord"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0

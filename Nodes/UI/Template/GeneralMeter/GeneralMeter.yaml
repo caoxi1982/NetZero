@@ -1,8 +1,8 @@
-Name: PowerMeter
+Name: GeneralMeter
 Type: FolderType
 Children:
-- Name: PowerMeterPanel
-  Id: g=1a7c87e76ac8518506f569091c61a12f
+- Name: GeneralMeterPanel
+  Id: g=ad5e1feac745643c58c3e55e4c9b7349
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -790,7 +790,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"03ac78d097397482d3efcc14f695b26b","Namespace":7}
+            Value: {"IdType":2,"Id":"aa3ba3ca80654f273e16525846970332","Namespace":7}
             Children:
             - Name: Kind
               Type: PropertyType
@@ -806,7 +806,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"73df0a1a89ff14dafe4ce88ecfe2795d","Namespace":7}
+            Value: {"IdType":2,"Id":"91ca9d42ab851ec3b9ef646af87a0d18","Namespace":7}
             Children:
             - Name: Kind
               Type: PropertyType
@@ -822,7 +822,7 @@ Children:
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
-            Value: {"IdType":2,"Id":"5296315e6761ece9003af607529fcae1","Namespace":7}
+            Value: {"IdType":2,"Id":"d9ccffc4cb6fcb131604ac0c10576ea1","Namespace":7}
             Children:
             - Name: Kind
               Type: PropertyType
@@ -867,8 +867,8 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
-- Name: PowerMeterSetting
-  Id: g=03ac78d097397482d3efcc14f695b26b
+- Name: GeneralMeterSetting
+  Id: g=aa3ba3ca80654f273e16525846970332
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -882,8 +882,8 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
-- Name: PowerMeterTrends
-  Id: g=73df0a1a89ff14dafe4ce88ecfe2795d
+- Name: GeneralMeterTrends
+  Id: g=91ca9d42ab851ec3b9ef646af87a0d18
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -897,8 +897,8 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
-- Name: PowerMeterReport
-  Id: g=5296315e6761ece9003af607529fcae1
+- Name: GeneralMeterReport
+  Id: g=d9ccffc4cb6fcb131604ac0c10576ea1
   Supertype: Panel
   ReferenceType: HasComponent
   Children:

@@ -204,6 +204,146 @@ Children:
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
+    - Name: RecordShiftEnergy
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Group
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: MeterType
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Year
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Month
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Day
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Week
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: MeterName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Shift
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: Consume
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: ProductVolume
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: RateToCarbon
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: RateToCost
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ID
+          Type: StoreColumn
+          DataType: UInt64
+          Value: 0
+    - Name: RecordMultiRateEnergy
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Group
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: MeterType
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Year
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Month
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Day
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: Week
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: MeterName
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: RateDuration
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: Consume
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: ProductVolume
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: RateToCarbon
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: RateToCost
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ID
+          Type: StoreColumn
+          DataType: UInt64
+          Value: 0
   - Name: Type
     Type: PropertyType
     DataType: DBMSType
