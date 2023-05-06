@@ -375,3 +375,5 @@ Children:
           Value: "../../../Source"
 - File: Configures/Configures.yaml
 - File: CommonTypes/CommonTypes.yaml
+- File: MeterSimulatorTypes/MeterSimulatorTypes.yaml
+- File: Devices/Devices.yaml

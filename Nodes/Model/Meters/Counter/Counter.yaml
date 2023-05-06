@@ -1,0 +1,343 @@
+Name: Counter
+Type: FolderType
+Children:
+- Name: TakeUpCooingWater
+  Id: g=79c1157e5e89fdb569d4599bb9a205e6
+  Type: CounterMeter
+  Children:
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: DeviceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: ProductOutputRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnaceCounterSimulator/ProductOutPutRate"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: CounterRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnaceCounterSimulator/CounterPerTenSecond"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: CounterTotal
+    Type: BaseDataVariableType
+    DataType: UInt64
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnaceCounterSimulator/Counter"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: ["0","0","0","0"]
+  - Name: RateToCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 56.0
+  - Name: RateToCarbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.20999999344348907
+  - Name: ProductRateThreshold_Low
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_LowLow
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Value: [false,false,false,false,false]
+  - Name: MeterType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ROwater"
+  - Name: ProductOutputTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnaceCounterSimulator/ProductOutPutTotal"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: CounterRateWindows
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:0.0000000"
+  - Name: RatePerCounter
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Takeup"
+  - Name: RecordCounter
+    Type: NetLogic
+  - Name: Logger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"4a720436f59865849577609a02c9bc0f","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":21}
+  - Name: ShiftStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"02ea0b20a42c279a68aa884f6bd1e326","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: RateStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"e674db9a44d8782b040ccaf48f58649b","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: ProductIDChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ProductID"
+- Name: FurnaceCounter
+  Id: g=25e3293bde8f127852976982f64e4cfb
+  Type: CounterMeter
+  Children:
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: DeviceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: ProductOutputRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupCounterSimulator/ProductOutPutRate"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: CounterRate
+    Id: g=6d821a0926cb1d8710eb79e1f2d08ad0
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupCounterSimulator/CounterPerTenSecond"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: CounterTotal
+    Type: BaseDataVariableType
+    DataType: UInt64
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupCounterSimulator/Counter"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: ["0","0","0","0"]
+  - Name: RateToCost
+    Id: g=98fb7c1dead90aab624f8e705f1459c4
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.299999952316284
+  - Name: RateToCarbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.12300000339746475
+  - Name: ProductRateThreshold_Low
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_LowLow
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Value: [false,false,false,false,false]
+  - Name: MeterType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "CityWater"
+  - Name: ProductOutputTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupCounterSimulator/ProductOutPutTotal"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: CounterRateWindows
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:0.0000000"
+  - Name: RatePerCounter
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Furnace"
+  - Name: RecordCounter
+    Type: NetLogic
+  - Name: Logger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"f1b177184dc503d49ddd21ddd3019213","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":21}
+  - Name: ShiftStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"02ea0b20a42c279a68aa884f6bd1e326","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: RateStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"e674db9a44d8782b040ccaf48f58649b","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: ProductIDChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ProductID"

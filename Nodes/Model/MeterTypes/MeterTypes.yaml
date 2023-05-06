@@ -90,8 +90,8 @@ Children:
     Value: 0.0
   - Name: ProductOutputTotal
     Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
+    DataType: Double
+    Value: 0.0
   - Name: ProductID
     Type: BaseDataVariableType
     DataType: String
@@ -137,6 +137,40 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+  - Name: Logger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":21}
+  - Name: ShiftStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: RateStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: ProductIDChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ProductID"
 - Name: GeneralMeter
   Id: g=9be715eaaa4b1d26fb2c470a63679da6
   Supertype: BaseObjectType
@@ -230,6 +264,40 @@ Children:
     Value: "0"
   - Name: RecordConsume
     Type: NetLogic
+  - Name: Logger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":21}
+  - Name: ShiftStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: RateStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: ProductIDChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ProductID"
 - Name: CounterMeter
   Id: g=84c007a918d12cfcdc7c1d8a03026a6d
   Supertype: BaseObjectType
@@ -242,6 +310,17 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
   - Name: ProductOutputRate
     Type: BaseDataVariableType
     DataType: Float
@@ -320,109 +399,251 @@ Children:
     Value: "0"
   - Name: RecordCounter
     Type: NetLogic
-- Name: PowerMeterSimulator
-  Id: g=58e895f5e68db40403f4210304f044b7
+  - Name: Logger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":21}
+  - Name: ShiftStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: RateStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: ProductIDChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ProductID"
+- Name: Device
+  Id: g=f7f6eaecb9c87ca11c1f3e074321fe2a
   Supertype: BaseObjectType
   Children:
-  - Name: Power
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: OneDimension
-    ArrayDimensions: [4]
-    Value: [0.0,0.0,0.0,0.0]
-  - Name: PowerSetting
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 12
-  - Name: VoltageSetting
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 230
-  - Name: ProductOutPutRate
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Energy
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: OneDimension
-    ArrayDimensions: [4]
-    Value: [0.0,0.0,0.0,0.0]
-  - Name: Voltage
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: OneDimension
-    ArrayDimensions: [4]
-    Value: [0.0,0.0,0.0,0.0]
-  - Name: Current
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: OneDimension
-    ArrayDimensions: [4]
-    Value: [0.0,0.0,0.0,0.0]
-  - Name: ProductOutPutTotal
+  - Name: PowerMeter1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+  - Name: GeneralMeter1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"9be715eaaa4b1d26fb2c470a63679da6","Namespace":7}
+  - Name: CounterMeter1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"84c007a918d12cfcdc7c1d8a03026a6d","Namespace":7}
+  - Name: TotalCostRate
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
-  - Name: Alarm1
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
-  - Name: RunPowerMeter
-    Type: NetLogic
-- Name: GeneralMeterSimulator
-  Id: g=036cfb163f87835dcae679c64a91adc6
-  Supertype: BaseObjectType
-  Children:
-  - Name: MeterSpeed
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0}*{1}+{2}*{3}+{4}*{5}"
+      - Name: ns=2;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../PowerMeter1/Power[0]"
+      - Name: ns=2;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/RateToCost"
+      - Name: ns=2;Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/MeterSpeed"
+      - Name: ns=2;Source3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/RateToCost"
+      - Name: ns=2;Source4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/CounterRate"
+      - Name: ns=2;Source5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/RateToCost"
+  - Name: ProductOutputRate
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
-  - Name: SpeedSetting
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 9
-  - Name: ProductOutPutRate
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: MeterTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: ProductOutPutTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Alarm1
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
-  - Name: RunGeneralMeter
-    Type: NetLogic
-- Name: CounterMeterSimulator
-  Id: g=d84707cde289ac0fa8249bfd4a0279ee
-  Supertype: BaseObjectType
-  Children:
-  - Name: Counter
-    Type: BaseDataVariableType
-    DataType: UInt64
-    Value: 0
-  - Name: CounterPerTenSecond
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 6
-  - Name: ProductOutPutRate
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../PowerMeter1/ProductOutputRate"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: TotalCarbonRate
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
-  - Name: ProductOutPutTotal
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0}*{1}+{2}*{3}+{4}*{5}"
+      - Name: ns=2;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/Power[0]"
+      - Name: ns=2;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/RateToCarbon"
+      - Name: ns=2;Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/MeterSpeed"
+      - Name: ns=2;Source3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/RateToCarbon"
+      - Name: ns=2;Source4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/CounterRate"
+      - Name: ns=2;Source5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/RateToCarbon"
+  - Name: Energyefficiency
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
-  - Name: Alarm1
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
-  - Name: RunCounterMeter
-    Type: NetLogic
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0}/{1}"
+      - Name: ns=2;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../TotalCostRate"
+      - Name: ns=2;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../ProductOutputRate"

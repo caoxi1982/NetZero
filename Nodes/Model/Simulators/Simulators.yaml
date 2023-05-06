@@ -1,55 +1,6 @@
 Name: Simulators
 Type: FolderType
 Children:
-- Name: LineTotalPowerSimulator
-  Type: PowerMeterSimulator
-  Children:
-  - Name: Power
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: OneDimension
-    ArrayDimensions: [4]
-    Value: [0.0,0.0,0.0,0.0]
-  - Name: PowerSetting
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 12
-  - Name: VoltageSetting
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 400
-  - Name: ProductOutPutRate
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Energy
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: OneDimension
-    ArrayDimensions: [4]
-    Value: [0.0,0.0,0.0,0.0]
-  - Name: Voltage
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: OneDimension
-    ArrayDimensions: [4]
-    Value: [0.0,0.0,0.0,0.0]
-  - Name: Current
-    Type: BaseDataVariableType
-    DataType: Float
-    ValueRank: OneDimension
-    ArrayDimensions: [4]
-    Value: [0.0,0.0,0.0,0.0]
-  - Name: ProductOutPutTotal
-    Type: BaseDataVariableType
-    DataType: Float
-    Value: 0.0
-  - Name: Alarm1
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
-  - Name: RunPowerMeter
-    Type: NetLogic
 - Name: TakeupPowerSimulator
   Type: PowerMeterSimulator
   Children:
@@ -99,7 +50,64 @@ Children:
     Value: false
   - Name: RunPowerMeter
     Type: NetLogic
-- Name: FurnaceNatureGasSimulator
+  - Name: ProductOutPutRateSetting
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 23.0
+- Name: FurnacePowerSimulator
+  Type: PowerMeterSimulator
+  Children:
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: PowerSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 12
+  - Name: VoltageSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 400
+  - Name: ProductOutPutRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Voltage
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+  - Name: ProductOutPutTotal
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarm1
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: RunPowerMeter
+    Type: NetLogic
+  - Name: ProductOutPutRateSetting
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 34.0
+- Name: TakeupGeneralSimulator
   Type: GeneralMeterSimulator
   Children:
   - Name: MeterSpeed
@@ -128,7 +136,11 @@ Children:
     Value: false
   - Name: RunGeneralMeter
     Type: NetLogic
-- Name: DryerNatureGasSimulator
+  - Name: ProductOutPutRateSetting
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 26.0
+- Name: FurnaceGeneralSimulator
   Type: GeneralMeterSimulator
   Children:
   - Name: MeterSpeed
@@ -157,7 +169,11 @@ Children:
     Value: false
   - Name: RunGeneralMeter
     Type: NetLogic
-- Name: CityWaterSimulator
+  - Name: ProductOutPutRateSetting
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 12.0
+- Name: TakeupCounterSimulator
   Type: CounterMeterSimulator
   Children:
   - Name: Counter
@@ -182,7 +198,15 @@ Children:
     Value: false
   - Name: RunCounterMeter
     Type: NetLogic
-- Name: ROWaterSimulator
+  - Name: ProductOutPutRateSetting
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 14.0
+  - Name: CounterSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6
+- Name: FurnaceCounterSimulator
   Type: CounterMeterSimulator
   Children:
   - Name: Counter
@@ -192,7 +216,7 @@ Children:
   - Name: CounterPerTenSecond
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 6
+    Value: 12
   - Name: ProductOutPutRate
     Type: BaseDataVariableType
     DataType: Float
@@ -207,3 +231,11 @@ Children:
     Value: false
   - Name: RunCounterMeter
     Type: NetLogic
+  - Name: ProductOutPutRateSetting
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 7.0
+  - Name: CounterSetting
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 6

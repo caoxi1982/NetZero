@@ -4,6 +4,8 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.System;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

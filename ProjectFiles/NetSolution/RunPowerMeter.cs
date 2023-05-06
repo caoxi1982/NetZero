@@ -15,6 +15,8 @@ using System.Threading;
 using FTOptix.ODBCStore;
 using FTOptix.Alarm;
 using FTOptix.System;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class RunPowerMeter : BaseNetLogic
@@ -53,7 +55,11 @@ public class RunPowerMeter : BaseNetLogic
         var UACurrent = Owner.GetVariable("Current");
         var UAPower = Owner.GetVariable("Power");
         var UAEnergy = Owner.GetVariable("Energy");
-        
+
+        var UAProductSpeedSetting = Owner.GetVariable("ProductOutPutRateSetting");
+        var UAProductSpeed = Owner.GetVariable("ProductOutPutRate");
+        var UAProductVolume = Owner.GetVariable("ProductOutPutTotal");
+
         // set voltage
         float[] v_value = UAVoltage.Value;
         for (int i = 1; i < 4; i++)
@@ -81,6 +87,12 @@ public class RunPowerMeter : BaseNetLogic
         UAEnergy.Value = e_value;
         UACurrent.Value = i_value;
         UAVoltage.Value = v_value;
+
+        float productSpeed = (float)(UAProductSpeedSetting.Value + 3 * r.NextDouble());
+        double productVolume = UAProductVolume.Value;
+        productVolume += productSpeed;
+        UAProductSpeed.Value = productSpeed;
+        UAProductVolume.Value = productVolume;
 
         Log.Info(this.ToString() + $"Power is {p_value[0]},{p_value[1]},{p_value[2]},{p_value[3]}\n" +
                                     $"Energy is {e_value[0]},{e_value[1]},{e_value[2]},{e_value[3]}\n"    );

@@ -4,7 +4,10 @@
   height: 100%;
 }
 #container {
+  padding: 20;
   position: relative;
   height: 100%;
   overflow: hidden;
+  background: #faf9f9;
+  /* rgba(#faf9f9fc); */
 }

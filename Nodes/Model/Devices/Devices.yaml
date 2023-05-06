@@ -1,0 +1,390 @@
+Name: Devices
+Type: FolderType
+Children:
+- Name: Furnace
+  Type: Device
+  Children:
+  - Name: PowerMeter1
+    Id: g=8b664db715b607eb2ff9ddeb354bb880
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"dbe46fd0ccf61f38366542a7e4d58113","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+  - Name: GeneralMeter1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"0e96dc4d7f361abbc03c9eebcfc1a58d","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"9be715eaaa4b1d26fb2c470a63679da6","Namespace":7}
+  - Name: CounterMeter1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"25e3293bde8f127852976982f64e4cfb","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"84c007a918d12cfcdc7c1d8a03026a6d","Namespace":7}
+  - Name: TotalCostRate
+    Id: g=2dc11a3d98adfa4b94e852ca6a0791d1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/Power[0]"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/RateToCost"
+      - Name: Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/MeterSpeed"
+      - Name: Source3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/RateToCost"
+      - Name: Source4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/CounterRate"
+      - Name: Source5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/RateToCost"
+  - Name: ProductOutputRate
+    Id: g=8d6074c8a4ac92ebe0670a5ef0ccdf64
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../PowerMeter1/ProductOutputRate"
+  - Name: TotalCarbonRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/Power[0]"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/RateToCarbon"
+      - Name: Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/MeterSpeed"
+      - Name: Source3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/RateToCarbon"
+      - Name: Source4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/CounterRate"
+      - Name: Source5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/RateToCarbon"
+  - Name: Energyefficiency
+    Id: g=87018387cda2dd5a84ad71d1cb941d68
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../TotalCostRate"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../ProductOutputRate"
+- Name: Takeup
+  Type: Device
+  Children:
+  - Name: PowerMeter1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"04ae1d73846a716b90abe8b3f56a0e52","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+  - Name: GeneralMeter1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"6e69edce9d35e83943e4495b6e525f42","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"9be715eaaa4b1d26fb2c470a63679da6","Namespace":7}
+  - Name: CounterMeter1
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"79c1157e5e89fdb569d4599bb9a205e6","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"84c007a918d12cfcdc7c1d8a03026a6d","Namespace":7}
+  - Name: TotalCostRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/Power[0]"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/RateToCost"
+      - Name: Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/MeterSpeed"
+      - Name: Source3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/RateToCost"
+      - Name: Source4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/CounterRate"
+      - Name: Source5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/RateToCost"
+  - Name: ProductOutputRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../PowerMeter1/ProductOutputRate"
+  - Name: TotalCarbonRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/Power[0]"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../PowerMeter1/RateToCarbon"
+      - Name: Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/MeterSpeed"
+      - Name: Source3
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../GeneralMeter1/RateToCarbon"
+      - Name: Source4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/CounterRate"
+      - Name: Source5
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterMeter1/RateToCarbon"
+  - Name: Energyefficiency
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../TotalCostRate"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../ProductOutputRate"
+- Name: CurrentDevice
+  Id: g=1f245836b214444399e81d0f0098b778
+  Type: BaseDataVariableType
+  DataType: NodeId
+  Value: {"IdType":0,"Id":0,"Namespace":-1}

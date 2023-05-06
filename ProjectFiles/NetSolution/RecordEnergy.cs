@@ -18,6 +18,8 @@ using System.Collections.Generic;
 using System.Data.Common;
 using System.Globalization;
 using System.Numerics;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class RecordEnergy : BaseNetLogic

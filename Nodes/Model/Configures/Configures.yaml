@@ -24,7 +24,6 @@ Children:
       DataType: DateTime
       Value: "1900-01-01T08:00:00.0000000"
     - Name: Working
-      Id: g=4a4965112fcafda6d48f702d3c66ee4c
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -86,7 +85,6 @@ Children:
       DataType: DateTime
       Value: "1900-01-01T16:00:00.0000000"
     - Name: Working
-      Id: g=51471361e8b64de2e2738bc07d79efa9
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -148,7 +146,6 @@ Children:
       DataType: DateTime
       Value: "1900-01-01T23:59:59.0000000"
     - Name: Working
-      Id: g=e6c208f4df4f12262b8d7553e67570f5
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -657,7 +654,7 @@ Children:
       Value: "10"
   - Name: RateSwitcher
     Type: NetLogic
-  - Name: CurrentDuration
+  - Name: CurrentShift
     Type: BaseDataVariableType
     DataType: String
     Value: "0"

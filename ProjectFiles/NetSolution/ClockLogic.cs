@@ -5,6 +5,8 @@ using FTOptix.HMIProject;
 using UAManagedCore;
 using FTOptix.UI;
 using FTOptix.NetLogic;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class ClockLogic : BaseNetLogic

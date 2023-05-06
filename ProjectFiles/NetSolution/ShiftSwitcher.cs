@@ -16,6 +16,8 @@ using FTOptix.Alarm;
 using FTOptix.Core;
 #endregion
 using NetZero;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 public class ShiftSwitcher : BaseNetLogic
 {
     private string shift1id, shift2id, shift3id;
@@ -42,7 +44,7 @@ public class ShiftSwitcher : BaseNetLogic
         var shift3 = new TimeDuration(TimeOnly.FromDateTime(Owner.GetVariable("Shift_3/StartTime").Value),
                                         TimeOnly.FromDateTime(Owner.GetVariable("Shift_3/EndTime").Value));
         // get current time
-        var _now = (DateTime)Project.Current.GetVariable("CommonTypes/ClockLogic/Time").Value;
+        var _now = (DateTime)Project.Current.GetVariable("Model/CommonTypes/ClockLogic/Time").Value;
         var CurrentTime = TimeOnly.FromDateTime(_now);
         if (shift1.IsInTimeRange(CurrentTime))
         {

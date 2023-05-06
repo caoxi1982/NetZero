@@ -8,7 +8,7 @@ Children:
   - Name: Tables
     Type: BaseObjectType
     Children:
-    - Name: LineTotal
+    - Name: FurnacePower
       Type: ODBCStoreTable
       Children:
       - Class: Reference
@@ -38,18 +38,14 @@ Children:
           Type: StoreColumn
           DataType: Float
           Value: 0.0
-        - Name: Energy
-          Type: StoreColumn
-          DataType: Float
-          Value: 0.0
         - Name: ProductOutputRate
           Type: StoreColumn
           DataType: Float
           Value: 0.0
-        - Name: ProductOutputTotal
+        - Name: CarbonRate
           Type: StoreColumn
-          DataType: Int32
-          Value: 0
+          DataType: Float
+          Value: 0.0
         - Name: Uab
           Type: StoreColumn
           DataType: Float
@@ -74,137 +70,12 @@ Children:
           Type: StoreColumn
           DataType: Float
           Value: 0.0
-    - Name: Takeup
-      Type: ODBCStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=15;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
+        - Name: Energy
           Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-    - Name: FurnaceGas
-      Type: ODBCStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=15;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-    - Name: ROWater
-      Type: ODBCStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=15;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-    - Name: CityWater
-      Type: ODBCStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=15;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
-    - Name: DryerGas
-      Type: ODBCStoreTable
-      Children:
-      - Class: Reference
-        Target: ns=15;i=12
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=15
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=21
-        Direction: Forward
-      - Class: Reference
-        Target: ns=15;i=20
-        Direction: Forward
-      - Name: Columns
-        Type: BaseObjectType
-        Children:
-        - Name: Timestamp
-          Type: StoreColumn
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: LocalTimestamp
-          Type: StoreColumn
-          DataType: DateTime
-          Value: "1601-01-01T00:00:00.0000000"
+          DataType: Float
+          Value: 0.0
     - Name: RecordShiftEnergy
+      Id: g=02ea0b20a42c279a68aa884f6bd1e326
       Type: ODBCStoreTable
       Children:
       - Class: Reference
@@ -275,6 +146,7 @@ Children:
           DataType: UInt64
           Value: 0
     - Name: RecordMultiRateEnergy
+      Id: g=e674db9a44d8782b040ccaf48f58649b
       Type: ODBCStoreTable
       Children:
       - Class: Reference
@@ -344,6 +216,390 @@ Children:
           Type: StoreColumn
           DataType: UInt64
           Value: 0
+    - Name: TakeupLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: TotalCostRate
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: ProductOutputRate
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: TotalCarbonRate
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: Energyefficiency
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+    - Name: FurnaceLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: TotalCostRate
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: ProductOutputRate
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: TotalCarbonRate
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+        - Name: Energyefficiency
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+    - Name: FurnacePowerLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Power
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Energy
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Uab
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Ubc
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Uca
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Iab
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Ibc
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Ica
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ProductOutputRate
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ProductOutputTotal
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+    - Name: TakeupPowerLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Power
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Energy
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Uab
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Ubc
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Uca
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Iab
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Ibc
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Ica
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ProductOutputRate
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ProductOutputTotal
+          Type: StoreColumn
+          DataType: Double
+          Value: 0.0
+    - Name: TakeupGeneralLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ProductOutputRate
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: MeterSpeed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: MeterTotal
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ProductOutputTotal
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+    - Name: FurnaceGeneralLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ProductOutputRate
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: MeterSpeed
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: MeterTotal
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: ProductOutputTotal
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+    - Name: TakeupCounterLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ProductOutputRate
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CounterRate
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CounterTotal
+          Type: StoreColumn
+          DataType: UInt64
+          Value: 0
+        - Name: ProductOutputTotal
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+    - Name: FurnaceCounterLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=15;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=15;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ProductOutputRate
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CounterRate
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: CounterTotal
+          Type: StoreColumn
+          DataType: UInt64
+          Value: 0
+        - Name: ProductOutputTotal
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
   - Name: Type
     Type: PropertyType
     DataType: DBMSType

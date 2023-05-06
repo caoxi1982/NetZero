@@ -106,7 +106,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../TagNode@Pointer"
+                Value: "../../../TagNode"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -150,7 +150,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{PowerMeter}/DeviceName"
+                Value: "{CounterMeter}/DeviceName"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType
@@ -171,7 +171,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{PowerMeter}/Power@BrowseName"
+                Value: "{CounterMeter}/Power@BrowseName"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType
@@ -198,7 +198,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{PowerMeter}/Unit[1]"
+            Value: "{CounterMeter}/Unit[1]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -233,7 +233,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../TagNode@Pointer"
+                Value: "../../../TagNode"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -903,7 +903,7 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
-  - Name: PowerMeter
+  - Name: CounterMeter
     Type: Alias
     DataType: NodeId
     Value: {"IdType":0,"Id":0,"Namespace":-1}
@@ -911,4 +911,197 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
+      Value: {"IdType":2,"Id":"84c007a918d12cfcdc7c1d8a03026a6d","Namespace":7}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{NodeId:ns=7;g=781cec74-eac2-e2cc-eebb-4785d1aabe68}@Pointer"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+- Name: CounterMeterSimplePanel
+  Id: g=dfed76fe1046d86bacc421ee40320dd8
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: PowerMeterNodeID
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
       Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+  - Name: DisplayParam1
+    Type: DisplayParam1
+    Children:
+    - Name: background
+      Type: Rectangle
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../TagNode"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=3103ede4-4cbc-f681-1eb4-50fd7f88c976}"
+    - Name: lbTitle
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Title"
+    - Name: Title
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: lbUnit
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Unit"
+    - Name: Unit
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: TagNode
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: MyGauge1
+    Type: MyGauge
+    Children:
+    - Name: CircularGauge1
+      Type: CircularGauge
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 80.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=1e8d1d98-a04a-c5aa-6336-071cacf4fd15}"
+      - Name: MinValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: MaxValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 100.0
+      - Name: WarningZones
+        Type: BaseObjectType
+    - Name: lbTitle
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Title"
+    - Name: lbValue
+      Type: Label
+    - Name: lbUnit
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Unit"
+    - Name: Title
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: Unit
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0

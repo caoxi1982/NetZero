@@ -16,6 +16,8 @@ using FTOptix.Alarm;
 using FTOptix.Core;
 #endregion
 using NetZero;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 public class RateSwitcher : BaseNetLogic
 {
     private PeriodicTask myPeriodicTask;
@@ -58,7 +60,7 @@ public class RateSwitcher : BaseNetLogic
         var valley1 = new TimeDuration(TimeOnly.FromDateTime(Owner.GetVariable("Valley_1/StartTime").Value),
                                             TimeOnly.FromDateTime(Owner.GetVariable("Valley_1/EndTime").Value));
         // get current time
-        var _now = (DateTime)Project.Current.GetVariable("CommonTypes/ClockLogic/Time").Value;
+        var _now = (DateTime)Project.Current.GetVariable("Model/CommonTypes/ClockLogic/Time").Value;
         var CurrentTime = TimeOnly.FromDateTime(_now);
         if (peak1.IsInTimeRange(CurrentTime))
         {

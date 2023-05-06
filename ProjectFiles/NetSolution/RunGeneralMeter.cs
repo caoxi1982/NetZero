@@ -16,6 +16,8 @@ using System.Timers;
 using FTOptix.ODBCStore;
 using FTOptix.Alarm;
 using FTOptix.System;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class RunGeneralMeter : BaseNetLogic
@@ -37,16 +39,28 @@ public class RunGeneralMeter : BaseNetLogic
     {
         Random r = new Random();
 
+        //Here is general MeterSpeed base on SpeedSetting and add some wave
         var UAspeed = Owner.GetVariable("SpeedSetting");
         var UAmeterspeed = Owner.GetVariable("MeterSpeed");
         var UAtotal = Owner.GetVariable("MeterTotal");
+        var UAProductSpeedSetting = Owner.GetVariable("ProductOutPutRateSetting");
+        var UAProductSpeed = Owner.GetVariable("ProductOutPutRate");
+        var UAProductVolume = Owner.GetVariable("ProductOutPutTotal");
         string metername = Owner.BrowseName;
 
-        float speed = (float)(UAspeed.Value + r.NextDouble());// from 0.0 to 1.0
+        float speed = (float)(UAspeed.Value + 2*r.NextDouble());// from 0.0 to 1.0
         float total = UAtotal.Value;
         total += speed;
+        UAmeterspeed.Value = speed;
         UAtotal.Value = total;
-        Log.Info(this.ToString() + " and total is " + total);
+
+        float productSpeed = (float)(UAProductSpeedSetting.Value + 2 * r.NextDouble());
+        double productVolume = UAProductVolume.Value;
+        productVolume += productSpeed;
+        UAProductSpeed.Value = productSpeed;
+        UAProductVolume.Value = productVolume;
+
+        Log.Info($"{metername} and total is {total} ,and product volume is {productVolume}");
         Thread.Sleep(1);
     }
     public override string ToString()

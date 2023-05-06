@@ -14,6 +14,8 @@ using FTOptix.Retentivity;
 using FTOptix.CoreBase;
 using FTOptix.Alarm;
 using FTOptix.Core;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class RecordConsume : BaseNetLogic

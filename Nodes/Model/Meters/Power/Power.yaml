@@ -1,0 +1,423 @@
+Name: Power
+Type: FolderType
+Children:
+- Name: TakeupPower
+  Id: g=04ae1d73846a716b90abe8b3f56a0e52
+  Type: PowerMeter
+  Children:
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: DeviceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: Power
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupPowerSimulator/Power"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupPowerSimulator/Energy"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Voltage
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupPowerSimulator/Voltage"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupPowerSimulator/Current"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: ["KW","KWH","V","A"]
+  - Name: ThreePhases
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: RateToCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.6660000085830688
+  - Name: RateToCarbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.5479999780654907
+  - Name: ProductRateThreshold_Low
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_LowLow
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Value: [false,false,false,false,false]
+  - Name: MeterType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Power"
+  - Name: ProductOutputRate
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupPowerSimulator/ProductOutPutRate"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: ProductOutputTotal
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/TakeupPowerSimulator/ProductOutPutTotal"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RecordEnergy
+    Type: NetLogic
+    Children:
+    - Class: Reference
+      Target: g=1ba58deac8e235991ed2c2b1ff469651
+      Direction: Forward
+    - Class: Reference
+      Target: g=6530eed9e50e92f0f7c996f5b5f7e711
+      Direction: Forward
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Takeup"
+  - Name: Logger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"68baac14b1458054e6a146bc847def90","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":21}
+  - Name: ShiftStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"02ea0b20a42c279a68aa884f6bd1e326","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: RateStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"e674db9a44d8782b040ccaf48f58649b","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: ProductIDChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ProductID"
+- Name: FurnacePower
+  Id: g=dbe46fd0ccf61f38366542a7e4d58113
+  Type: PowerMeter
+  Children:
+  - Name: Enable
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: DeviceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: Power
+    Id: g=2c4533684f3db41075190a68d9f01085
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnacePowerSimulator/Power"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnacePowerSimulator/Energy"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Voltage
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnacePowerSimulator/Voltage"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Current
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: [0.0,0.0,0.0,0.0]
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnacePowerSimulator/Current"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Unit
+    Type: BaseDataVariableType
+    DataType: String
+    ValueRank: OneDimension
+    ArrayDimensions: [4]
+    Value: ["KW","KWH","V","A"]
+  - Name: ThreePhases
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: RateToCost
+    Id: g=5fd6f8050851ae5679d06092af109d05
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.8880000114440918
+  - Name: RateToCarbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.5479999780654907
+  - Name: ProductRateThreshold_Low
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ProductRateThreshold_LowLow
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Alarms
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ValueRank: OneDimension
+    ArrayDimensions: [5]
+    Value: [false,false,false,false,false]
+  - Name: MeterType
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Power"
+  - Name: ProductOutputRate
+    Id: g=93103daddaf991f8a950aa592ffda54d
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnacePowerSimulator/ProductOutPutRate"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: ProductOutputTotal
+    Id: g=8152571faba15b636f64026531afc300
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../../Simulators/FurnacePowerSimulator/ProductOutPutTotal"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: ProductID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ShiftConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: MultiRateConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: ProductConsumptionTableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RecordEnergy
+    Type: NetLogic
+    Children:
+    - Class: Reference
+      Target: g=1ba58deac8e235991ed2c2b1ff469651
+      Direction: Forward
+    - Class: Reference
+      Target: g=6530eed9e50e92f0f7c996f5b5f7e711
+      Direction: Forward
+  - Name: Group
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Furnace"
+  - Name: Logger
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"5d741c1054cbae2327ad46ba3033f5d1","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":21}
+  - Name: ShiftStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"02ea0b20a42c279a68aa884f6bd1e326","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: RateStatistics
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"e674db9a44d8782b040ccaf48f58649b","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":3,"Namespace":15}
+  - Name: ProductIDChanged
+    Type: VariableChangedEventDispatcher
+    Children:
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../ProductID"

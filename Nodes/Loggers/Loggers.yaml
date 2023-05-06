@@ -1,7 +1,291 @@
 Name: Loggers
 Type: FolderType
 Children:
-- Name: LineTotal
+- Name: FurnaceLogger
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":15}
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: TotalCostRate
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Devices/Furnace/TotalCostRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputRate
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Devices/Furnace/ProductOutputRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: TotalCarbonRate
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Devices/Furnace/TotalCarbonRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Energyefficiency
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Devices/Furnace/Energyefficiency"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=21;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+- Name: TakeupLogger
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":15}
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: TotalCostRate
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Devices/Takeup/TotalCostRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputRate
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Devices/Takeup/ProductOutputRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: TotalCarbonRate
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Devices/Takeup/TotalCarbonRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Energyefficiency
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Devices/Takeup/Energyefficiency"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=21;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+  - Name: SamplingPeriod
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+- Name: TakeupPowerLogger
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -42,7 +326,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/Power[0]"
+        Value: "../../../../Model/Meters/Power/TakeupPower/Power[0]"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -70,63 +354,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/Energy[0]"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: ProductOutputRate
-      Type: VariableToLog
-      DataType: Float
-      Value: 0.0
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-        Value: 0
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/ProductOutputRate"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          Value: 2
-    - Name: ProductOutputTotal
-      Type: VariableToLog
-      DataType: Float
-      Value: 0.0
-      Children:
-      - Name: LastValue
-        Type: PropertyType
-        DataType: BaseDataType
-        AccessLevel: Read
-      - Name: Timestamp
-        Type: PropertyType
-        DataType: UtcTime
-        AccessLevel: Read
-        Value: "1601-01-01T00:00:00.0000000"
-      - Name: LastOperationCode
-        Type: PropertyType
-        DataType: StatusCode
-        AccessLevel: Read
-        Value: 0
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/ProductOutputTotal"
+        Value: "../../../../Model/Meters/Power/TakeupPower/Energy[0]"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -154,7 +382,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/Voltage[1]"
+        Value: "../../../../Model/Meters/Power/TakeupPower/Voltage[1]"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -182,7 +410,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/Voltage[2]"
+        Value: "../../../../Model/Meters/Power/TakeupPower/Voltage[2]"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -210,7 +438,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/Voltage[3]"
+        Value: "../../../../Model/Meters/Power/TakeupPower/Voltage[3]"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -238,7 +466,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/Current[1]"
+        Value: "../../../../Model/Meters/Power/TakeupPower/Current[1]"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -266,7 +494,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/Current[2]"
+        Value: "../../../../Model/Meters/Power/TakeupPower/Current[2]"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -294,7 +522,63 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../../../Model/Meters/LineTotalPower/Current[3]"
+        Value: "../../../../Model/Meters/Power/TakeupPower/Current[3]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputRate
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/TakeupPower/ProductOutputRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputTotal
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/TakeupPower/ProductOutputTotal"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -307,25 +591,7 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
-  - Name: SamplingPeriod
-    Type: PropertyType
-    DataType: Duration
-    Value: "0:00:01:0.0000000"
-  - Name: TableName
-    Type: PropertyType
-    DataType: String
-    Value: "LineTotal"
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/Meters/LineTotalPower@BrowseName"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
-- Name: Takeup
+- Name: FurnacePowerLogger
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -343,6 +609,287 @@ Children:
       Value: {"Id":1,"Namespace":15}
   - Name: VariablesToLog
     Type: BaseObjectType
+    Children:
+    - Name: Power
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/Power[0]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Energy
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/Energy[0]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Uab
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/Voltage[1]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Ubc
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/Voltage[2]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Uca
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/Voltage[3]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Iab
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/Current[1]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Ibc
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/Current[2]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Ica
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/Current[3]"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputRate
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/ProductOutputRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputTotal
+      Type: VariableToLog
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Power/FurnacePower/ProductOutputTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -350,21 +897,7 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
-  - Name: TableName
-    Type: PropertyType
-    DataType: String
-    Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/Meters/TakeupPower@BrowseName"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
-- Name: FurnaceGas
+- Name: TakeupGeneralLogger
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -382,6 +915,119 @@ Children:
       Value: {"Id":1,"Namespace":15}
   - Name: VariablesToLog
     Type: BaseObjectType
+    Children:
+    - Name: ProductOutputRate
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/General/TakeupGeneral/ProductOutputRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: MeterSpeed
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/General/TakeupGeneral/MeterSpeed"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: MeterTotal
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/General/TakeupGeneral/MeterTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputTotal
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/General/TakeupGeneral/ProductOutputTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -389,21 +1035,7 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
-  - Name: TableName
-    Type: PropertyType
-    DataType: String
-    Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/Meters/FurnaceNatureGas@BrowseName"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
-- Name: DryerGas
+- Name: FurnaceGeneralLogger
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -421,6 +1053,119 @@ Children:
       Value: {"Id":1,"Namespace":15}
   - Name: VariablesToLog
     Type: BaseObjectType
+    Children:
+    - Name: ProductOutputRate
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/General/FurnaceGeneral/ProductOutputRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: MeterSpeed
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/General/FurnaceGeneral/MeterSpeed"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: MeterTotal
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/General/FurnaceGeneral/MeterTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputTotal
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/General/FurnaceGeneral/ProductOutputTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -428,21 +1173,7 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
-  - Name: TableName
-    Type: PropertyType
-    DataType: String
-    Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/Meters/DryerNatureGas@BrowseName"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
-- Name: CityWater
+- Name: TakeupCounterLogger
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -460,6 +1191,119 @@ Children:
       Value: {"Id":1,"Namespace":15}
   - Name: VariablesToLog
     Type: BaseObjectType
+    Children:
+    - Name: ProductOutputRate
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Counter/TakeUpCooingWater/ProductOutputRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: CounterRate
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Counter/TakeUpCooingWater/CounterRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: CounterTotal
+      Type: VariableToLog
+      DataType: UInt64
+      Value: 0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Counter/TakeUpCooingWater/CounterTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputTotal
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Counter/TakeUpCooingWater/ProductOutputTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -467,21 +1311,7 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
-  - Name: TableName
-    Type: PropertyType
-    DataType: String
-    Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/Meters/CityWater@BrowseName"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
-- Name: ROWater
+- Name: FurnaceCounterLogger
   Type: DataLogger
   Children:
   - Name: SamplingMode
@@ -499,6 +1329,119 @@ Children:
       Value: {"Id":1,"Namespace":15}
   - Name: VariablesToLog
     Type: BaseObjectType
+    Children:
+    - Name: ProductOutputRate
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Counter/FurnaceCounter/ProductOutputRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: CounterRate
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Counter/FurnaceCounter/CounterRate"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: CounterTotal
+      Type: VariableToLog
+      DataType: UInt64
+      Value: 0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Counter/FurnaceCounter/CounterTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ProductOutputTotal
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Meters/Counter/FurnaceCounter/ProductOutputTotal"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -506,17 +1449,3 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
-  - Name: TableName
-    Type: PropertyType
-    DataType: String
-    Value: ""
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/Meters/ROWater@BrowseName"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2

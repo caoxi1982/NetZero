@@ -61,7 +61,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../TagNode@Pointer"
+                Value: "../../../TagNode"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -105,7 +105,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{PowerMeter}/DeviceName"
+                Value: "{GeneralMeter}/DeviceName"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType
@@ -126,7 +126,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{PowerMeter}/Power@BrowseName"
+                Value: "{GeneralMeter}/Power@BrowseName"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType
@@ -153,7 +153,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{PowerMeter}/Unit[1]"
+            Value: "{GeneralMeter}/Unit[1]"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -188,7 +188,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "../../../TagNode@Pointer"
+                Value: "../../../TagNode"
             - Name: TextColor
               Type: BaseDataVariableType
               DataType: Color
@@ -253,324 +253,6 @@ Children:
           ModellingRule: Optional
           Value: 50.0
         - Name: BarWithValue1
-          Type: BarWithValue1
-          Children:
-          - Name: SimpleBarGraph1
-            Type: ScaleLayout
-            WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
-            Children:
-            - Name: LevelColor
-              Type: BaseDataVariableType
-              DataType: Color
-              Value: "#007be4"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: Double
-              Value: 0.0
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../Value"
-            - Name: MinValue
-              Type: BaseDataVariableType
-              DataType: Double
-              Value: 0.0
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../MinValue"
-            - Name: MaxValue
-              Type: BaseDataVariableType
-              DataType: Double
-              Value: 100.0
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../MaxValue"
-            - Name: invis
-              Type: Rectangle
-              Children:
-              - Name: BorderColor
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#00000000"
-              - Name: FillColor
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#f0f0f0"
-            - Name: SimpleBarGraph_level
-              Type: LinearGauge
-              Children:
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 70.0
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../Value"
-              - Name: MinValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 0.0
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../MinValue"
-              - Name: MaxValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 100.0
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../MaxValue"
-              - Name: WarningZones
-                Type: BaseObjectType
-              - Name: FillColor
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#00baff"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../LevelColor"
-          - Name: lbUnit
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../Unit"
-          - Name: lbTitle
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../Title"
-          - Name: lbValue
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"123"}
-              Children:
-              - Name: StringFormatter1
-                Type: StringFormatter
-                Children:
-                - Name: Source0
-                  Type: BaseDataVariableType
-                  DataType: BaseDataType
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../Value"
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "0"
-          - Name: Unit
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "0"
-          - Name: Value
-            Type: BaseDataVariableType
-            DataType: Double
-            Value: 0.0
-          - Name: MinValue
-            Type: BaseDataVariableType
-            DataType: Double
-            Value: 0.0
-          - Name: MaxValue
-            Type: BaseDataVariableType
-            DataType: Double
-            Value: 0.0
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 3
-        - Name: BarWithValue2
-          Type: BarWithValue1
-          Children:
-          - Name: SimpleBarGraph1
-            Type: ScaleLayout
-            WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
-            Children:
-            - Name: LevelColor
-              Type: BaseDataVariableType
-              DataType: Color
-              Value: "#007be4"
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: Double
-              Value: 0.0
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../Value"
-            - Name: MinValue
-              Type: BaseDataVariableType
-              DataType: Double
-              Value: 0.0
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../MinValue"
-            - Name: MaxValue
-              Type: BaseDataVariableType
-              DataType: Double
-              Value: 100.0
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../MaxValue"
-            - Name: invis
-              Type: Rectangle
-              Children:
-              - Name: BorderColor
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#00000000"
-              - Name: FillColor
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#f0f0f0"
-            - Name: SimpleBarGraph_level
-              Type: LinearGauge
-              Children:
-              - Name: Value
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 70.0
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../Value"
-              - Name: MinValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 0.0
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../MinValue"
-              - Name: MaxValue
-                Type: BaseDataVariableType
-                DataType: Float
-                Value: 100.0
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../MaxValue"
-              - Name: WarningZones
-                Type: BaseObjectType
-              - Name: FillColor
-                Type: BaseDataVariableType
-                DataType: Color
-                Value: "#00baff"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../LevelColor"
-          - Name: lbUnit
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../Unit"
-          - Name: lbTitle
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "../../Title"
-          - Name: lbValue
-            Type: Label
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Value: {"LocaleId":"en-US","Text":"123"}
-              Children:
-              - Name: StringFormatter1
-                Type: StringFormatter
-                Children:
-                - Name: Source0
-                  Type: BaseDataVariableType
-                  DataType: BaseDataType
-                  ReferenceType: HasSource
-                  Children:
-                  - Name: DynamicLink
-                    Type: DynamicLink
-                    DataType: NodePath
-                    Value: "../../../../Value"
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "0"
-          - Name: Unit
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "0"
-          - Name: Value
-            Type: BaseDataVariableType
-            DataType: Double
-            Value: 0.0
-          - Name: MinValue
-            Type: BaseDataVariableType
-            DataType: Double
-            Value: 0.0
-          - Name: MaxValue
-            Type: BaseDataVariableType
-            DataType: Double
-            Value: 0.0
-          - Name: VerticalAlignment
-            Type: BaseVariableType
-            DataType: VerticalAlignment
-            ModellingRule: Optional
-            Value: 3
-        - Name: BarWithValue3
           Type: BarWithValue1
           Children:
           - Name: SimpleBarGraph1
@@ -858,7 +540,7 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
-  - Name: PowerMeter
+  - Name: GeneralMeter
     Type: Alias
     DataType: NodeId
     Value: {"IdType":0,"Id":0,"Namespace":-1}
@@ -866,7 +548,17 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+      Value: {"IdType":2,"Id":"9be715eaaa4b1d26fb2c470a63679da6","Namespace":7}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{NodeId:ns=7;g=57ceea92-eeb1-b7e6-7c12-d303b4e9105e}@Pointer"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
 - Name: GeneralMeterSetting
   Id: g=aa3ba3ca80654f273e16525846970332
   Supertype: Panel
@@ -882,6 +574,24 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Label1"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 53.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 61.0
 - Name: GeneralMeterTrends
   Id: g=91ca9d42ab851ec3b9ef646af87a0d18
   Supertype: Panel
@@ -897,6 +607,24 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Label1"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 38.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 97.0
 - Name: GeneralMeterReport
   Id: g=d9ccffc4cb6fcb131604ac0c10576ea1
   Supertype: Panel
@@ -912,3 +640,194 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 300.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Label1"}
+- Name: GeneralMeterSimplePanel
+  Id: g=fe624786b99d29dd094b10a038f988f0
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: PowerMeterNodeID
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+  - Name: DisplayParam1
+    Type: DisplayParam1
+    Children:
+    - Name: background
+      Type: Rectangle
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../TagNode"
+        - Name: TextColor
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#000000"
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=3103ede4-4cbc-f681-1eb4-50fd7f88c976}"
+    - Name: lbTitle
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Title"
+    - Name: Title
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: lbUnit
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Unit"
+    - Name: Unit
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: TagNode
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: MyGauge1
+    Type: MyGauge
+    Children:
+    - Name: CircularGauge1
+      Type: CircularGauge
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 80.0
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=1e8d1d98-a04a-c5aa-6336-071cacf4fd15}"
+      - Name: MinValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: MaxValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 100.0
+      - Name: WarningZones
+        Type: BaseObjectType
+    - Name: lbTitle
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Title"
+    - Name: lbValue
+      Type: Label
+    - Name: lbUnit
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../Unit"
+    - Name: Title
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: Unit
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "0"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0

@@ -10,6 +10,8 @@ using FTOptix.Store;
 using FTOptix.ODBCStore;
 using FTOptix.WebUI;
 using FTOptix.System;
+using FTOptix.Modbus;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic
