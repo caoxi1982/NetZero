@@ -647,3 +647,59 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../ProductOutputRate"
+  - Name: PowerMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+    - Name: NodeClass
+      Type: PropertyType
+      DataType: NodePointerNodeClass
+      ModellingRule: Optional
+      Value: 1
+  - Name: GeneralMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+    - Name: NodeClass
+      Type: PropertyType
+      DataType: NodePointerNodeClass
+      ModellingRule: Optional
+      Value: 1
+  - Name: CounterMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+    - Name: NodeClass
+      Type: PropertyType
+      DataType: NodePointerNodeClass
+      ModellingRule: Optional
+      Value: 1
+  - Name: DeviceTrend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+    - Name: NodeClass
+      Type: PropertyType
+      DataType: NodePointerNodeClass
+      ModellingRule: Optional
+      Value: 1

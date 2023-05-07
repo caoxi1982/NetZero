@@ -366,6 +366,14 @@ Children:
           Type: StoreColumn
           DataType: Double
           Value: 0.0
+        - Name: EnergyEfficency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Carbon
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
     - Name: TakeupPowerLogger
       Type: ODBCStoreTable
       Children:
@@ -432,6 +440,14 @@ Children:
           Type: StoreColumn
           DataType: Double
           Value: 0.0
+        - Name: EnergyEfficency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Carbon
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
     - Name: TakeupGeneralLogger
       Type: ODBCStoreTable
       Children:
@@ -471,6 +487,14 @@ Children:
           DataType: Float
           Value: 0.0
         - Name: ProductOutputTotal
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: EnergyEfficency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Carbon
           Type: StoreColumn
           DataType: Float
           Value: 0.0
@@ -516,6 +540,14 @@ Children:
           Type: StoreColumn
           DataType: Float
           Value: 0.0
+        - Name: EnergyEfficency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Carbon
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
     - Name: TakeupCounterLogger
       Type: ODBCStoreTable
       Children:
@@ -558,6 +590,14 @@ Children:
           Type: StoreColumn
           DataType: Float
           Value: 0.0
+        - Name: EnergyEfficency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Carbon
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
     - Name: FurnaceCounterLogger
       Type: ODBCStoreTable
       Children:
@@ -597,6 +637,14 @@ Children:
           DataType: UInt64
           Value: 0
         - Name: ProductOutputTotal
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: EnergyEfficency
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Carbon
           Type: StoreColumn
           DataType: Float
           Value: 0.0

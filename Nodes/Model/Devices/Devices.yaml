@@ -2,6 +2,7 @@ Name: Devices
 Type: FolderType
 Children:
 - Name: Furnace
+  Id: g=8b5075454fd68f7c83b43312b2ef19cf
   Type: Device
   Children:
   - Name: PowerMeter1
@@ -194,7 +195,44 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../ProductOutputRate"
+  - Name: PowerMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"ab42cc5b78c93dd5d518da3663dcf719","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+  - Name: GeneralMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"301e9cfe3cace6966b929db483d93076","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+  - Name: CounterMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"beec186e7394334880dbeffb51151a98","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+  - Name: DeviceTrend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"b907bc0bfbabdce48a2708b0de195082","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
 - Name: Takeup
+  Id: g=61d78820495866d5fe12df4557570d49
   Type: Device
   Children:
   - Name: PowerMeter1
@@ -383,6 +421,42 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../ProductOutputRate"
+  - Name: PowerMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"44576429aed0e79c5bfae9f56cdd05f8","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+  - Name: GeneralMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"b2e3a298341455bc462f3b4ef0f2a8a2","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+  - Name: CounterMeter1Trend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"eb79772641e805f6f593d593766e11c8","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
+  - Name: DeviceTrend
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"6034be03950689a05d4ece9c01ad7f0a","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":78,"Namespace":3}
 - Name: CurrentDevice
   Id: g=1f245836b214444399e81d0f0098b778
   Type: BaseDataVariableType

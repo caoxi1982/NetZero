@@ -58,8 +58,6 @@ Children:
         - Name: DisplayParam1
           Type: DisplayParam1
           Children:
-          - Name: background
-            Type: Rectangle
           - Name: Rectangle1
             Type: Rectangle
             Children:
@@ -71,10 +69,18 @@ Children:
                 DataType: LocalizedText
                 Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../TagNode"
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../TagNode"
               - Name: TextColor
                 Type: BaseDataVariableType
                 DataType: Color
@@ -155,8 +161,6 @@ Children:
         - Name: DisplayParam2
           Type: DisplayParam1
           Children:
-          - Name: background
-            Type: Rectangle
           - Name: Rectangle1
             Type: Rectangle
             Children:
@@ -168,10 +172,18 @@ Children:
                 DataType: LocalizedText
                 Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../TagNode"
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../TagNode"
               - Name: TextColor
                 Type: BaseDataVariableType
                 DataType: Color
@@ -266,8 +278,6 @@ Children:
         - Name: DisplayParam1
           Type: DisplayParam1
           Children:
-          - Name: background
-            Type: Rectangle
           - Name: Rectangle1
             Type: Rectangle
             Children:
@@ -279,10 +289,18 @@ Children:
                 DataType: LocalizedText
                 Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../TagNode"
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../TagNode"
               - Name: TextColor
                 Type: BaseDataVariableType
                 DataType: Color
@@ -363,8 +381,6 @@ Children:
         - Name: DisplayParam2
           Type: DisplayParam1
           Children:
-          - Name: background
-            Type: Rectangle
           - Name: Rectangle1
             Type: Rectangle
             Children:
@@ -376,10 +392,18 @@ Children:
                 DataType: LocalizedText
                 Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
                 Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../TagNode"
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../TagNode"
               - Name: TextColor
                 Type: BaseDataVariableType
                 DataType: Color
@@ -2719,6 +2743,16 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "LineTotal"
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Orientation
+      Type: BaseDataVariableType
+      DataType: OrientationEnum
+      ModellingRule: Optional
+      Value: 0
   - Name: PieChart2
     Type: PieChart
     Children:
@@ -2939,11 +2973,102 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#fff1f1"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#fff1f1"
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: HitTestVisible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: false
+    - Name: Blink
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: false
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
   - Name: DisplayParam1
     Type: DisplayParam1
     Children:
-    - Name: background
-      Type: Rectangle
     - Name: Rectangle1
       Type: Rectangle
       Children:
@@ -2955,10 +3080,18 @@ Children:
           DataType: LocalizedText
           Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
           Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../TagNode"
+          - Name: StringFormatter1
+            Type: StringFormatter
+            Children:
+            - Name: Source0
+              Type: BaseDataVariableType
+              DataType: BaseDataType
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../TagNode"
         - Name: TextColor
           Type: BaseDataVariableType
           DataType: Color
@@ -3061,7 +3194,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=1e8d1d98-a04a-c5aa-6336-071cacf4fd15}"
+          Value: "../../Value"
       - Name: MinValue
         Type: BaseDataVariableType
         DataType: Float
@@ -3092,16 +3225,10 @@ Children:
         DataType: LocalizedText
         Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         Children:
-        - Name: ExpressionEvaluator1
-          Type: ExpressionEvaluator
+        - Name: StringFormatter1
+          Type: StringFormatter
           Children:
-          - Name: Expression
-            Type: BaseDataVariableType
-            DataType: String
-            ReferenceType: HasParameter
-            ModellingRule: Optional
-            Value: "{0}*{1}"
-          - Name: ns=2;Source0
+          - Name: Source0
             Type: BaseDataVariableType
             DataType: BaseDataType
             ReferenceType: HasSource
@@ -3109,16 +3236,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../../../PowerMeterNodeID/Power[0]"
-          - Name: ns=2;Source1
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../../PowerMeterNodeID/RateToCarbon"
+              Value: "../../../../Value"
     - Name: lbUnit
       Type: Label
       Children:
@@ -3159,7 +3277,82 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 200.0
-- Name: PowerMeterTrendsPanel
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "{0}*{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../PowerMeterNodeID/Power[0]"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../PowerMeterNodeID/RateToCarbon"
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":""}
+    - Name: ImagePosition
+      Type: BaseDataVariableType
+      DataType: Position
+      ModellingRule: Optional
+      Value: 4
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 250.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#fafafa"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+- Name: FurnacePowerTrendsPanel
   Id: g=ab42cc5b78c93dd5d518da3663dcf719
   Supertype: Panel
   ReferenceType: HasComponent
@@ -3184,33 +3377,88 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 10.0
-  - Name: PowerMeterNodeID
-    Type: NodePointer
-    DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"Id":3,"Namespace":21}
   - Name: Trend1
     Type: Trend
     Children:
     - Name: Pens
       Type: BaseObjectType
       Children:
-      - Name: TrendPen1
+      - Name: EnergyEfficency
         Type: TrendPen
         DataType: BaseDataType
         Children:
         - Name: Thickness
           Type: BaseDataVariableType
           DataType: Size
-          Value: -1.0
+          Value: 3.0
         - Name: Enabled
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#f8e115"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=d9065375-8c1f-d8b5-1a1d-ec285461c709}"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Carbon
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 3.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#06cff5"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=6ff67404-7bae-e94f-c6b2-96c8aeec9930}"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Power
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 3.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=cd62c67a-b24d-7f07-cc99-cda0530a15e6}"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
     - Class: Reference
       Target: ns=3;i=1129
       Direction: Forward
@@ -3224,11 +3472,11 @@ Children:
       - Name: Window
         Type: BaseDataVariableType
         DataType: Duration
-        Value: "0:00:00:5.0000000"
+        Value: "0:00:30:0.0000000"
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: true
+        Value: false
       - Name: Time
         Type: BaseDataVariableType
         DataType: DateTime
@@ -3247,7 +3495,7 @@ Children:
       - Name: AutoScale
         Type: BaseDataVariableType
         DataType: Boolean
-        Value: false
+        Value: true
       - Name: Interactive
         Type: BaseDataVariableType
         DataType: Boolean
@@ -3281,3 +3529,186 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      ModellingRule: Optional
+      Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: TakeupPowerTrendsPanel
+  Id: g=44576429aed0e79c5bfae9f56cdd05f8
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 900.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 520.0
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 20.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 20.0
+  - Name: Trend1
+    Type: Trend
+    Children:
+    - Name: Pens
+      Type: BaseObjectType
+      Children:
+      - Name: EnergyEfficency
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 3.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#f8e115"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=95ab174d-ec3b-c644-14fc-8d1aedd64efe}"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+      - Name: Carbon
+        Type: TrendPen
+        DataType: BaseDataType
+        Children:
+        - Name: Thickness
+          Type: BaseDataVariableType
+          DataType: Size
+          Value: 3.0
+        - Name: Enabled
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: true
+        - Name: Color
+          Type: BaseDataVariableType
+          DataType: Color
+          ModellingRule: Optional
+          Value: "#06cff5"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=f9d5f605-3204-dddb-4366-ebb385b5808e}"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
+    - Class: Reference
+      Target: ns=3;i=1129
+      Direction: Forward
+    - Name: XAxis
+      Type: DateTimeAxis
+      Children:
+      - Name: Follow
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Window
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:30:0.0000000"
+      - Name: Interactive
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Time
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Value: "1601-01-01T00:00:00.0000000"
+    - Name: YAxis
+      Type: ValueAxis
+      Children:
+      - Name: MinValue
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -100.0
+      - Name: MaxValue
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 100.0
+      - Name: AutoScale
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+      - Name: Interactive
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+    - Name: LegendVisible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 740.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: ReferenceTimeZone
+      Type: BaseDataVariableType
+      DataType: ReferenceTimeZone
+      ModellingRule: Optional
+      Value: 1
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      ModellingRule: Optional
+      Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}

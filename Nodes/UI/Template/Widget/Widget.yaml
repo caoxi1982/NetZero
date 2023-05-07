@@ -2863,99 +2863,6 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 120.0
-  - Name: background
-    Type: Rectangle
-    Children:
-    - Name: BorderColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: FillColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
-    - Name: CornerRadius
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: HitTestVisible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: false
-    - Name: Blink
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: false
-    - Name: Visible
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Enabled
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: true
-    - Name: Opacity
-      Type: BaseVariableType
-      DataType: Float
-      ModellingRule: Optional
-      Value: 100.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: BottomMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 280.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 120.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 0
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 0
-    - Name: Rotation
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
   - Name: Rectangle1
     Type: Rectangle
     Children:
@@ -2997,10 +2904,24 @@ Children:
         DataType: LocalizedText
         Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../TagNode"
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"","Text":"{0:n2}"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../TagNode"
       - Name: FontSize
         Type: BaseDataVariableType
         DataType: Size
@@ -4378,84 +4299,162 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#eeeeee"
-      Children:
-      - Name: KeyValueConverter1
-        Type: ValueMapConverter
-        Children:
-        - Name: Source
-          Type: BaseDataVariableType
-          DataType: BaseDataType
-          ReferenceType: HasSource
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../../Status"
-        - Name: Pairs
-          Type: BaseObjectType
-          ModellingRule: None
-          Children:
-          - Name: Pair
-            Type: ValueMapPair
-            ModellingRule: None
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: Int16
-              ModellingRule: None
-              Value: 6
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: Color
-              ModellingRule: None
-              Value: "#fbf99cee"
-          - Name: Pair1
-            Type: ValueMapPair
-            ModellingRule: None
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: Int16
-              ModellingRule: None
-              Value: 10
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: Color
-              ModellingRule: None
-              Value: "#dbfe97c9"
-          - Name: Pair2
-            Type: ValueMapPair
-            ModellingRule: None
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: Int16
-              ModellingRule: None
-              Value: 9
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: Color
-              ModellingRule: None
-              Value: "#fae15ec3"
-          - Name: Pair3
-            Type: ValueMapPair
-            ModellingRule: None
-            Children:
-            - Name: Key
-              Type: BaseDataVariableType
-              DataType: Int16
-              ModellingRule: None
-              Value: -1
-            - Name: Value
-              Type: BaseDataVariableType
-              DataType: Color
-              ModellingRule: None
-              Value: "#ff9694c4"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
       ModellingRule: Optional
       Value: "#00000000"
+    - Name: Rectangle1
+      Type: Rectangle
+      Children:
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: Optional
+        Value: "#000000"
+      - Name: FillColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+        Children:
+        - Name: KeyValueConverter1
+          Type: ValueMapConverter
+          Children:
+          - Name: Source
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../Status"
+          - Name: Pairs
+            Type: BaseObjectType
+            ModellingRule: None
+            Children:
+            - Name: Pair
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: Int16
+                ModellingRule: None
+                Value: 6
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: None
+                Value: "#e8b66bce"
+            - Name: Pair1
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: Int16
+                ModellingRule: None
+                Value: 10
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: None
+                Value: "#90fe7e9e"
+            - Name: Pair2
+              Type: ValueMapPair
+              ModellingRule: None
+              Children:
+              - Name: Key
+                Type: BaseDataVariableType
+                DataType: Int16
+                ModellingRule: None
+                Value: -1
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: None
+                Value: "#fe6969fa"
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1.0
+      - Name: CornerRadius
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: HitTestVisible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
+      - Name: Blink
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+      - Name: Enabled
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: true
+      - Name: Opacity
+        Type: BaseVariableType
+        DataType: Float
+        ModellingRule: Optional
+        Value: 100.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 260.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: RightMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: Rotation
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
   - Name: Title
     Type: BaseDataVariableType
     DataType: String
@@ -4531,39 +4530,6 @@ Children:
       DataType: FillModeEnum
       ModellingRule: Optional
       Value: 1
-    - Name: Button1
-      Type: Button
-      Children:
-      - Name: Text
-        Type: BaseDataVariableType
-        DataType: LocalizedText
-        ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Button1"}
-      - Name: LeftMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 0.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 0.0
-      - Name: Height
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 120.0
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 450.0
-      - Name: Opacity
-        Type: BaseVariableType
-        DataType: Float
-        ModellingRule: Optional
-        Value: 0.0
   - Name: SN
     Type: BaseDataVariableType
     DataType: String
@@ -5188,6 +5154,145 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 240.0
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Button1"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 450.0
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 0.0
+  - Name: Label4
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: KeyValueConverter1
+        Type: ValueMapConverter
+        Children:
+        - Name: Source
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Status"
+        - Name: Pairs
+          Type: BaseObjectType
+          ModellingRule: None
+          Children:
+          - Name: Pair
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: Int16
+              ModellingRule: None
+              Value: 6
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: None
+              Value: "Stopped"
+          - Name: Pair1
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: Int16
+              ModellingRule: None
+              Value: 10
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: None
+              Value: "Running"
+          - Name: Pair2
+            Type: ValueMapPair
+            ModellingRule: None
+            Children:
+            - Name: Key
+              Type: BaseDataVariableType
+              DataType: Int16
+              ModellingRule: None
+              Value: -1
+            - Name: Value
+              Type: BaseDataVariableType
+              DataType: String
+              ModellingRule: None
+              Value: "Fault"
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 140.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
 - Name: DisplayRowWithIconBegin
   Id: g=98e63b7517843ec75c72d4c430c75dcb
   Supertype: Panel
@@ -6243,7 +6348,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{NodeId:ns=7;g=1e8d1d98-a04a-c5aa-6336-071cacf4fd15}"
+        Value: "../../Value"
         Children:
         - Name: Mode
           Type: BaseVariableType
@@ -6453,8 +6558,26 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Value"}
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../Value"
     - Name: RightMargin
       Type: BaseVariableType
       DataType: Size
@@ -6515,3 +6638,7 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
+  - Name: Value
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0

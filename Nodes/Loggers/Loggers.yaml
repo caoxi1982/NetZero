@@ -82,6 +82,7 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
+        Id: g=9e556936c8f3b8e2af4af94af685712a
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -110,6 +111,7 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
+        Id: g=2519361706f76385d92af22dd4899293
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -224,6 +226,7 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
+        Id: g=1176fb1e975d0df8bf6dd9749029ae32
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -252,6 +255,7 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
+        Id: g=5ad5e4dfe6d7643aece3e6b0fb609ac6
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -584,6 +588,98 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
+    - Name: EnergyEfficency
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=95ab174dec3bc64414fc8d1aedd64efe
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}/{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Power/TakeupPower/Power[0]"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Power/TakeupPower/ProductOutputRate"
+    - Name: Carbon
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=f9d5f6053204dddb4366ebb385b5808e
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}*{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Power/TakeupPower/RateToCarbon"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Power/TakeupPower/Power[0]"
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -616,6 +712,7 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
+        Id: g=cd62c67ab24d7f07cc99cda0530a15e6
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -890,6 +987,98 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
+    - Name: EnergyEfficency
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=d90653758c1fd8b51a1dec285461c709
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}/{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Power/FurnacePower/Power[0]"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Power/FurnacePower/ProductOutputRate"
+    - Name: Carbon
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=6ff674047baee94fc6b296c8aeec9930
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}*{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Power/FurnacePower/RateToCarbon"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Power/FurnacePower/Power[0]"
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -1028,6 +1217,98 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
+    - Name: EnergyEfficency
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=5d57e4987880c7a4b4650570a652c786
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}/{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/General/TakeupGeneral/MeterSpeed"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/General/TakeupGeneral/ProductOutputRate"
+    - Name: Carbon
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=990015bcea29d48dee67a98313b1c38d
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}*{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/General/TakeupGeneral/RateToCarbon"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/General/TakeupGeneral/MeterSpeed"
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -1166,6 +1447,98 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
+    - Name: EnergyEfficency
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=88fe069249eac06badc59b7ea8184684
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}/{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/General/FurnaceGeneral/MeterSpeed"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/General/FurnaceGeneral/ProductOutputRate"
+    - Name: Carbon
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=f7dd6a8632e050572c6edfcce02e3b5c
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}*{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/General/FurnaceGeneral/RateToCarbon"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/General/FurnaceGeneral/MeterSpeed"
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -1304,6 +1677,98 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
+    - Name: EnergyEfficency
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=082e45032d624bdb66eedf97133150d7
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}/{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Counter/TakeUpCooingWater/CounterRate"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Counter/TakeUpCooingWater/ProductOutputRate"
+    - Name: Carbon
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=62d2d1b46f2650e74a85788e7b6a0b16
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}*{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Counter/TakeUpCooingWater/RateToCarbon"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Counter/TakeUpCooingWater/CounterRate"
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
@@ -1442,6 +1907,98 @@ Children:
           Type: BaseVariableType
           DataType: DynamicLinkMode
           Value: 2
+    - Name: EnergyEfficency
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=e009b17a51c642638ab0f0b6dc65463d
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}/{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Counter/FurnaceCounter/CounterRate"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Counter/FurnaceCounter/ProductOutputRate"
+    - Name: Carbon
+      Type: VariableToLog
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: LastValue
+        Id: g=030724b781d2af9dd0dd455380adc00d
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: ExpressionEvaluator1
+        Type: ExpressionEvaluator
+        Children:
+        - Name: Expression
+          Type: BaseDataVariableType
+          DataType: String
+          ReferenceType: HasParameter
+          Value: "{0}*{1}"
+        - Name: ns=2;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Counter/FurnaceCounter/RateToCarbon"
+        - Name: ns=2;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../../../../Model/Meters/Counter/FurnaceCounter/CounterRate"
   - Class: Reference
     Target: ns=21;i=21
     Direction: Forward
