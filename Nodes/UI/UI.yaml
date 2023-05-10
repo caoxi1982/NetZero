@@ -38,8 +38,26 @@ Children:
     Type: AccordionStyle
   - Name: PieChartStyle
     Type: PieChartStyle
+    Children:
+    - Name: HoleSizePercent
+      Type: BaseDataVariableType
+      DataType: Percentage
+      Value: 55.0
   - Name: HistogramChartStyle
     Type: HistogramChartStyle
+    Children:
+    - Name: Spacing
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 10.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 12.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      Value: ""
   - Name: BorderColor
     Type: BaseDataVariableType
     DataType: Color

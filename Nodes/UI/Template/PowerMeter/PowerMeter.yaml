@@ -1738,6 +1738,25 @@ Children:
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
+        - Name: ns=3;YAxis
+          Type: ValueAxis
+          Children:
+          - Name: MinValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: -100.0
+          - Name: MaxValue
+            Type: BaseDataVariableType
+            DataType: Size
+            Value: 100.0
+          - Name: AutoScale
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
+          - Name: Interactive
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
       - Name: Carbon
         Type: TrendPen
         DataType: BaseDataType

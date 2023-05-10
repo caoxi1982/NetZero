@@ -28,7 +28,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 50.0
+      Value: 40.0
     - Name: Label1
       Type: Label
       Children:
@@ -47,9 +47,32 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 15.0
-    - Name: ComboBox1
-      Type: ComboBox
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: TextVerticalAlignment
+        Type: BaseVariableType
+        DataType: TextVerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+    - Name: ComboBoxForDB1
+      Type: ComboBoxForDB
       Children:
+      - Class: Reference
+        Target: ns=3;i=480
+        Direction: Forward
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
@@ -67,6 +90,10 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../ComboObject@NodeId"
       - Name: SelectedValue
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -88,14 +115,6 @@ Children:
         Type: BaseDataVariableType
         DataType: BaseDataType
         AccessLevel: Read
-      - Class: Reference
-        Target: ns=3;i=480
-        Direction: Forward
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 100.0
       - Name: Item
         Type: Alias
         DataType: NodeId
@@ -105,16 +124,86 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: ComboLogic
+        Type: NetLogic
+        Children:
+        - Class: Reference
+          Target: g=5d6e7f36a3f094f3a4c249e50a767b70
+          Direction: Forward
+      - Name: ComboObject
+        Type: BaseObjectType
+      - Name: MyDatabase
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":1,"Namespace":15}
+      - Name: MyQuery
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"SELECT {0:sql_identifier} FROM RecordShiftEnergy GROUP BY {0:sql_identifier}"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../ColumnName"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Mode
+            Type: PropertyType
+            DataType: DynamicLinkMode
+            ReferenceType: HasComponent
+            ModellingRule: Optional
+            Value: 2
+      - Name: DisplayValuePath
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
+      - Name: ColumnName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Group"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 70.0
-      - Name: TopMargin
+        Value: 24.0
+      - Name: BottomMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 10.0
+        Value: 0.0
+      - Name: AllowDeselection
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
     - Name: Label2
       Type: Label
       Children:
@@ -122,20 +211,48 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Select Week"}
+        Value: {"LocaleId":"en-US","Text":"Select Day"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 205.0
+        Value: 150.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 15.0
-    - Name: ComboBox2
-      Type: ComboBox
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: TextVerticalAlignment
+        Type: BaseVariableType
+        DataType: TextVerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: ComboBoxForDB2
+      Type: ComboBoxForDB
       Children:
+      - Class: Reference
+        Target: ns=3;i=480
+        Direction: Forward
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
@@ -153,6 +270,10 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../ComboObject@NodeId"
       - Name: SelectedValue
         Type: BaseDataVariableType
         DataType: BaseDataType
@@ -174,14 +295,6 @@ Children:
         Type: BaseDataVariableType
         DataType: BaseDataType
         AccessLevel: Read
-      - Class: Reference
-        Target: ns=3;i=480
-        Direction: Forward
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 100.0
       - Name: Item
         Type: Alias
         DataType: NodeId
@@ -191,58 +304,268 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: ComboLogic
+        Type: NetLogic
+        Children:
+        - Class: Reference
+          Target: g=5d6e7f36a3f094f3a4c249e50a767b70
+          Direction: Forward
+      - Name: ComboObject
+        Type: BaseObjectType
+      - Name: MyDatabase
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":1,"Namespace":15}
+      - Name: MyQuery
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"SELECT {0:sql_identifier} FROM RecordShiftEnergy GROUP BY {0:sql_identifier}"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../ColumnName"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: Mode
+            Type: PropertyType
+            DataType: DynamicLinkMode
+            ReferenceType: HasComponent
+            ModellingRule: Optional
+            Value: 2
+      - Name: DisplayValuePath
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
+      - Name: ColumnName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Day"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ModellingRule: Optional
+        Value: false
+    - Name: DateAndTime1
+      Type: DateTimePicker
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Value: "2023-05-01T00:00:00.0000000"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 250.0
+        Value: -92.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
-  - Name: EnergyByMeter
-    Type: PieChart
-    Children:
-    - Name: Model
-      Type: NodePointer
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: InputFormat
+        Type: BaseDataVariableType
+        DataType: DateTimePickerInputFormatEnum
+        ModellingRule: Optional
+        Value: 2
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 16.0
+    - Name: Button1
+      Type: Button
       Children:
-      - Name: ItemKind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-    - Name: Label
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Button1"}
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":16,"Namespace":3}
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../LogicDeviceDaily@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "DrawCarbonByMeterChart"
+          - Name: MethodContainer2
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../LogicDeviceDaily@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "DrawCarbonByShiftChart"
+          - Name: MethodContainer3
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../LogicDeviceDaily@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "DrawEnergyByRateChart"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 4.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-    - Name: Value
-      Type: BaseDataVariableType
-      DataType: Double
-      Value: 0.0
-    - Class: Reference
-      Target: ns=3;i=1104
-      Direction: Forward
-    - Name: Item
-      Type: Alias
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Carbon by Shift"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 660.0
+      Value: 180.0
     - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
@@ -251,83 +574,66 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 200.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 170.0
-    - Name: PieModel
-      Type: BaseObjectType
-    - Name: PieLogicByMeter
-      Type: NetLogic
-  - Name: PowerByRateDuration
-    Type: PieChart
+      Value: 20.0
+  - Name: Label2
+    Type: Label
     Children:
-    - Name: Model
-      Type: NodePointer
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: ItemKind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
-    - Name: Label
+    - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-    - Name: Value
-      Type: BaseDataVariableType
-      DataType: Double
-      Value: 0.0
-    - Class: Reference
-      Target: ns=3;i=1104
-      Direction: Forward
-    - Name: Item
-      Type: Alias
-      DataType: NodeId
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Carbon by Meter"}
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 1020.0
+      Value: 610.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 110.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 210.0
+      Value: 50.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 170.0
-    - Name: PieModel
-      Type: BaseObjectType
-    - Name: PieLogicByRateDuration
-      Type: NetLogic
-  - Name: EnergyByDay
-    Type: HistogramChart
-    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+      Value: 120.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: Label3
+    Type: Label
     Children:
-    - Class: Reference
-      Target: ns=3;i=1105
-      Direction: Forward
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"PowerEnergy by RateDuration"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1010.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: CarbonByMeterChart
+    Type: HistogramChart
+    Children:
     - Name: Model
       Type: NodePointer
       DataType: NodeId
@@ -344,7 +650,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../HistogramModel@NodeId"
+        Value: "../../EnergyByMeter@NodeId"
     - Name: Label
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -363,6 +669,9 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Item}@Value"
+    - Class: Reference
+      Target: ns=3;i=1105
+      Direction: Forward
     - Name: Item
       Type: Alias
       DataType: NodeId
@@ -376,37 +685,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 80.0
+      Value: 500.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 150.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 430.0
-    - Name: HistogramModel
-      Type: BaseObjectType
-    - Name: HistogramLogic1
-      Type: NetLogic
-      Children:
-      - Class: Method
-        Name: DrawChart
-    - Name: MyDataBase
-      Type: NodePointer
-      DataType: NodeId
-      Value: {"IdType":2,"Id":"d6b54281d8521fdedef81f3631c2fb44","Namespace":7}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: {"Id":1,"Namespace":15}
-    - Name: MyQuery
+      Value: 115.0
+    - Name: Query
       Type: BaseDataVariableType
       DataType: String
-      Value: "SELECT * FROM DataLogger1 ORDER BY Timestamp DESC LIMIT 1"
+      ModellingRule: Optional
+      Value: ""
     - Name: ValueVisible
       Type: BaseDataVariableType
       DataType: Boolean
@@ -417,16 +706,626 @@ Children:
       DataType: Boolean
       ModellingRule: Optional
       Value: true
+  - Name: CarbonByShiftChart
+    Type: PieChart
+    Children:
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EnergyByShift@NodeId"
+    - Name: Label
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Item}@BrowseName"
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Item}@Value"
+    - Class: Reference
+      Target: ns=3;i=1104
+      Direction: Forward
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 120.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 140.0
-    - Name: Orientation
-      Type: BaseDataVariableType
-      DataType: OrientationEnum
+      Value: 175.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
       ModellingRule: Optional
-      Value: 0
+      Value: 170.0
+  - Name: EnergyByRateChart
+    Type: PieChart
+    Children:
+    - Name: Model
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: ItemKind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../EnergyByRate@NodeId"
+    - Name: Label
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Item}@BrowseName"
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Double
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{Item}@Value"
+    - Class: Reference
+      Target: ns=3;i=1104
+      Direction: Forward
+    - Name: Item
+      Type: Alias
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1010.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 115.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 200.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 160.0
+  - Name: EnergyByShift
+    Type: BaseObjectType
+  - Name: EnergyByMeter
+    Type: BaseObjectType
+    Children:
+    - Name: x
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 3
+    - Name: y
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 3
+    - Name: z
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 5
+  - Name: EnergyByRate
+    Type: BaseObjectType
+  - Name: LogicDeviceDaily
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: DrawCarbonByMeterChart
+    - Class: Method
+      Name: DrawCarbonByShiftChart
+    - Class: Method
+      Name: DrawEnergyByRateChart
+  - Name: SelectDeviceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../HorizontalLayout1/ComboBoxForDB1/SelectedItem@BrowseName"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: SelectDay
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../HorizontalLayout1/DateAndTime1/Value"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: MyDatabase
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":15}
+  - Name: Label6
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Unit:KwH"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1180.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: Label4
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Unit:Kg"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 760.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+  - Name: Label5
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Unit:Kg"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 310.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 70.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+- Name: DeviceWeeky
+  Id: g=be77363d9e256412db4aed21536a39db
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1270.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 350.0
+  - Name: HorizontalLayout1
+    Type: RowLayout
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Select Device"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 25.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: TextVerticalAlignment
+        Type: BaseVariableType
+        DataType: TextVerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+    - Name: ComboBoxForDB1
+      Type: ComboBoxForDB
+      Children:
+      - Class: Reference
+        Target: ns=3;i=480
+        Direction: Forward
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../ComboObject@NodeId"
+      - Name: SelectedValue
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+      - Name: SelectedItem
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: UISelectedItem
+        Type: BaseDataVariableType
+        DataType: NodeId
+        AccessLevel: Read
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: UISelectedValue
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: ComboLogic
+        Type: NetLogic
+        Children:
+        - Class: Reference
+          Target: g=5d6e7f36a3f094f3a4c249e50a767b70
+          Direction: Forward
+      - Name: ComboObject
+        Type: BaseObjectType
+      - Name: MyDatabase
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":1,"Namespace":15}
+      - Name: MyQuery
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "SELECT  FROM RecordShiftEnergy GROUP BY GROUP"
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"SELECT {0:sql_identifier} FROM RecordShiftEnergy GROUP BY {0:sql_identifier}"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../ColumnName"
+      - Name: DisplayValuePath
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
+      - Name: ColumnName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Group"
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"Select Week"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 150.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: TextHorizontalAlignment
+        Type: BaseVariableType
+        DataType: TextHorizontalAlignment
+        ModellingRule: Optional
+        Value: 2
+      - Name: TextVerticalAlignment
+        Type: BaseVariableType
+        DataType: TextVerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: ComboBoxForDB2
+      Type: ComboBoxForDB
+      Children:
+      - Class: Reference
+        Target: ns=3;i=480
+        Direction: Forward
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Model
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: ItemKind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../ComboObject@NodeId"
+      - Name: SelectedValue
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+      - Name: SelectedItem
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: UISelectedItem
+        Type: BaseDataVariableType
+        DataType: NodeId
+        AccessLevel: Read
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: UISelectedValue
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Item
+        Type: Alias
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: ComboLogic
+        Type: NetLogic
+        Children:
+        - Class: Reference
+          Target: g=5d6e7f36a3f094f3a4c249e50a767b70
+          Direction: Forward
+      - Name: ComboObject
+        Type: BaseObjectType
+      - Name: MyDatabase
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":1,"Namespace":15}
+      - Name: MyQuery
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+        Children:
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Format
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: {"LocaleId":"en-US","Text":"SELECT {0:sql_identifier} FROM RecordShiftEnergy GROUP BY {0:sql_identifier}"}
+          - Name: ns=2;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: ""
+      - Name: DisplayValuePath
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Item}@BrowseName"
+      - Name: ColumnName
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Week"
   - Name: Label1
     Type: Label
     Children:
@@ -511,3 +1410,13 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 20.0
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0

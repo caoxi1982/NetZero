@@ -11657,7 +11657,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 470.0
+        Value: 466.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -11798,6 +11798,22 @@ Children:
             Type: PropertyType
             DataType: NodeId
             Value: {"Id":71,"Namespace":3}
+      - Name: Panel2
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"be77363d9e256412db4aed21536a39db","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":71,"Namespace":3}
     - Name: CurrentPanel
       Type: NodePointer
       DataType: NodeId
@@ -11834,7 +11850,7 @@ Children:
     - Name: Panels
       Type: BaseObjectType
       Children:
-      - Name: Panel1
+      - Name: Panel2
         Type: NavigationPanelItem
         Children:
         - Name: Title

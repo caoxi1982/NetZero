@@ -16,3 +16,7 @@ Children:
   Type: BaseDataVariableType
   DataType: Int32
   Value: 0
+- Name: NAME
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Group"

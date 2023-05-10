@@ -7131,3 +7131,121 @@ Children:
       DataType: HorizontalAlignment
       ModellingRule: Optional
       Value: 1
+- Name: ComboBoxForDB
+  Id: g=8ca3183e790bd99c245f0827aa12a21b
+  Supertype: ComboBox
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=480
+    Direction: Forward
+  - Name: Text
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+  - Name: Model
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: ItemKind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../ComboObject@NodeId"
+  - Name: SelectedValue
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+  - Name: SelectedItem
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: UISelectedItem
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: UISelectedValue
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    AccessLevel: Read
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 100.0
+  - Name: Item
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 20.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 10.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 30.0
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 1
+  - Name: ComboLogic
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: GetData
+      Id: g=5d6e7f36a3f094f3a4c249e50a767b70
+  - Name: ComboObject
+    Type: BaseObjectType
+  - Name: MyDatabase
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":15}
+  - Name: MyQuery
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: DisplayValuePath
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{Item}@BrowseName"
+  - Name: ColumnName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"

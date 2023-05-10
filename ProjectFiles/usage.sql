@@ -39,3 +39,13 @@ VALUES
 ( 2,"Takeup","Power",2023,5,2,18,"TakeupPower","31",12,59,0.548,0.8),
 ( 2,"Takeup","Power",2023,5,2,18,"TakeupPower","40",15.3,52,0.548,1),
 ( 2,"Takeup","Power",2023,5,2,18,"TakeupPower","41",12.1,53,0.548,1)
+
+
+SELECT  `Shift`,SUM(`Consume`*``)
+FROM `RecordShiftEnergy`
+Where `Group` = "Furnace" and `Year` = 2023 and `Month` = 5 and `Day` = 5
+Group by `Shift`
+SELECT Shift,SUM(Consume) FROM RecordShiftEnergy WHERE Group={0:sql_literal} AND Year=2023 AND Month=5 AND Day=5 GROUP BY Shift
+{0:sql_identifier}: Shift
+1:Consume
+{0:sql_literal}
