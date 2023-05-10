@@ -133,19 +133,24 @@ Children:
         ValueRank: OneDimension
         ArrayDimensions: [0]
         Value: [{"TypeId":{"Id":296},"Body":{"Name":"shiftOrrate","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: addTestData
+      Id: g=e091256febba16a3035916faffa393f8
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"month","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"day","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: GetRate
+      Id: g=10b36170f92a0e33d1835ebb9540e96f
   - Name: Group
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
-  - Name: Logger
-    Type: NodePointer
-    DataType: NodeId
-    Value: {"IdType":0,"Id":0,"Namespace":-1}
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"Id":3,"Namespace":21}
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId
@@ -264,6 +269,40 @@ Children:
     Value: "0"
   - Name: RecordConsume
     Type: NetLogic
+    Children:
+    - Class: Method
+      Name: addTestData
+      Id: g=10eec640cfa11966fe00ef28736c5ec0
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"month","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"day","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: CreateRecord
+      Id: g=030587aa0c676ed3fd549ddf2f4a311b
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"shiftOrrate","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: UpdateShiftRecord
+      Id: g=8625820d8fd1525070f1a87bbf88290e
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"shiftOrrate","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
   - Name: Logger
     Type: NodePointer
     DataType: NodeId
@@ -399,6 +438,40 @@ Children:
     Value: "0"
   - Name: RecordCounter
     Type: NetLogic
+    Children:
+    - Class: Method
+      Name: addTestData
+      Id: g=439ba2935d02e90af3b877e17f2dcdb3
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"month","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"day","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: CreateRecord
+      Id: g=e9975697c235d55f272395ac1e80f8f9
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"shiftOrrate","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+    - Class: Method
+      Name: UpdateShiftRecord
+      Id: g=4ac2336015973776932109ff0ea4b091
+      Children:
+      - Name: ns=0;InputArguments
+        Type: BaseVariableType
+        DataType: Argument
+        ReferenceType: HasProperty
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: [{"TypeId":{"Id":296},"Body":{"Name":"shiftOrrate","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
   - Name: Logger
     Type: NodePointer
     DataType: NodeId
@@ -703,3 +776,33 @@ Children:
       DataType: NodePointerNodeClass
       ModellingRule: Optional
       Value: 1
+- Name: WorkShop
+  Id: g=25f53ca38296f5915e5664963fe72eba
+  Supertype: BaseObjectType
+  Children:
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Carbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthyEnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthyEnergyCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: MonthyService
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: EnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [12]
+    Value: [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]

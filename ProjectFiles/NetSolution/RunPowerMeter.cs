@@ -32,11 +32,13 @@ public class RunPowerMeter : BaseNetLogic
     private PeriodicTask timer1;
     private DateTime current_time;
     private string metername;
+    private double radian;
     public override void Start()
     {
         timer1 = new PeriodicTask(GeneratorValue, 3000, LogicObject);
         timer1.Start();
         current_time = System.DateTime.Now;
+        radian = 1;
         metername = Owner.BrowseName;
     }
 
@@ -47,6 +49,12 @@ public class RunPowerMeter : BaseNetLogic
     private void GeneratorValue()
     {
         Random r = new Random();
+        if (radian > 180 )
+        {
+            radian = 1;
+        }
+        radian += 0.5;
+        double sinvalue =  Math.Sin((radian*2*Math.PI)/360);
 
         int UAPowersetting = Owner.GetVariable("PowerSetting").Value;
         int UAVoltagesetting = Owner.GetVariable("VoltageSetting").Value;
@@ -69,11 +77,11 @@ public class RunPowerMeter : BaseNetLogic
         // set power and current Current[0] =  0 , Power[0] = total
         float[] p_value = UAPower.Value;
         float[] i_value = UACurrent.Value;
-        p_value[0] = UAPowersetting + (float)r.NextDouble();
+        p_value[0] = (float)UAPowersetting * (float)sinvalue + (float)r.NextDouble();
         i_value[0] = 0;
         for (int i = 1; i < 4; i++)
         {
-            p_value[i] = UAPowersetting / 3 + (float)r.NextDouble();
+            p_value[i] = p_value[0] / 3 + (float)r.NextDouble();
             i_value[i] = (p_value[0] - (float)r.NextDouble()) * 2;
         }
         // set energy ,as Power unit is KW, Energy unit is KWH

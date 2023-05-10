@@ -24,6 +24,7 @@ Children:
       DataType: DateTime
       Value: "1900-01-01T08:00:00.0000000"
     - Name: Working
+      Id: g=bb4f4ef3e04d6156a8b9031ec257091a
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -85,6 +86,7 @@ Children:
       DataType: DateTime
       Value: "1900-01-01T16:00:00.0000000"
     - Name: Working
+      Id: g=81f243d612b15879b851759ef7182c96
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -146,6 +148,7 @@ Children:
       DataType: DateTime
       Value: "1900-01-01T23:59:59.0000000"
     - Name: Working
+      Id: g=34fb18864661ae82abf6ee896930da1e
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -197,21 +200,26 @@ Children:
   Type: BaseObjectType
   Children:
   - Name: Peak_1
+    Id: g=321f738337e4e6bc7cadfa0e0e467a37
     Type: TimeInterval
     Children:
     - Name: Beused
+      Id: g=335721f784a12e8a5db7a27bd4b0eaa4
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
     - Name: StartTime
+      Id: g=89d5fc8e7504fa95747584bc667dc699
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T10:00:00.0000000"
     - Name: EndTime
+      Id: g=c96fd8e5b82746c17c5458294792bfb0
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T11:00:00.0000000"
     - Name: Working
+      Id: g=8b75417679e8b9079b2f76288887ed52
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -246,6 +254,7 @@ Children:
         DataType: NodePath
         Value: "../Working"
     - Name: RateToCost
+      Id: g=fb83c11976f5929681b1c716994ce8cc
       Type: BaseDataVariableType
       DataType: Double
       Value: 1.0
@@ -254,6 +263,7 @@ Children:
       DataType: String
       Value: "40"
   - Name: Peak_2
+    Id: g=7385d831b17d5325aca789e9955bb059
     Type: TimeInterval
     Children:
     - Name: Beused
@@ -261,14 +271,17 @@ Children:
       DataType: Boolean
       Value: true
     - Name: StartTime
+      Id: g=3c511e303025746f01f1a31a0f863525
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T14:00:00.0000000"
     - Name: EndTime
+      Id: g=fd6380a74be96298efda798c3ae7b7c6
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T15:00:00.0000000"
     - Name: Working
+      Id: g=0e86766cf63c7c8723037027b1498afa
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -303,6 +316,7 @@ Children:
         DataType: NodePath
         Value: "../Working"
     - Name: RateToCost
+      Id: g=aa115ca1f0c73911e9b8bb2c5400244a
       Type: BaseDataVariableType
       DataType: Double
       Value: 1.0
@@ -311,21 +325,26 @@ Children:
       DataType: String
       Value: "41"
   - Name: High_1
+    Id: g=3dc1917b390fdd940d8e6ed0b5a37bb6
     Type: TimeInterval
     Children:
     - Name: Beused
+      Id: g=7ffd3556625eb9268c5aecabd199a672
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
     - Name: StartTime
+      Id: g=21ce1a5370cb1e1b1b7423ccddf0ea43
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T08:00:00.0000000"
     - Name: EndTime
+      Id: g=e121f0b6f26d827565dc91522ab4a387
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T10:00:00.0000000"
     - Name: Working
+      Id: g=c98ec7c28892d0f8d9a1f0499812fab4
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -360,6 +379,7 @@ Children:
         DataType: NodePath
         Value: "../Working"
     - Name: RateToCost
+      Id: g=30c6a729aa19f354fff172f535cd0028
       Type: BaseDataVariableType
       DataType: Double
       Value: 0.8
@@ -368,21 +388,26 @@ Children:
       DataType: String
       Value: "30"
   - Name: High_2
+    Id: g=4cc0784f7817f97efa3a4db9f81151e2
     Type: TimeInterval
     Children:
     - Name: Beused
+      Id: g=c61068f0e29a840355de05c5a919dd51
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
     - Name: StartTime
+      Id: g=968d01a9cf832bbbcb1834e98a5cd5cf
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T18:00:00.0000000"
     - Name: EndTime
+      Id: g=a1d1d1e269bbc9a3d57475be4a871c0a
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T22:00:00.0000000"
     - Name: Working
+      Id: g=56ad06d7ee8486a647c6e55de84cef48
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -417,6 +442,7 @@ Children:
         DataType: NodePath
         Value: "../Working"
     - Name: RateToCost
+      Id: g=9dcfe37ed63170563aad0e9cac69b3a0
       Type: BaseDataVariableType
       DataType: Double
       Value: 0.8
@@ -425,21 +451,26 @@ Children:
       DataType: String
       Value: "31"
   - Name: Normal_1
+    Id: g=525ff7ec78b5b19d4d40b6127db66afa
     Type: TimeInterval
     Children:
     - Name: Beused
+      Id: g=ad1bf82bbf262664faa552d0add8fdc5
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
     - Name: StartTime
+      Id: g=d46929b2f76ebe0c73c475aedbc7f1c9
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T11:00:00.0000000"
     - Name: EndTime
+      Id: g=7e6f090ecdb8be9b19439c46fde977ff
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T14:00:00.0000000"
     - Name: Working
+      Id: g=e30f6df3db976861c094bad8c1bd602f
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -474,6 +505,7 @@ Children:
         DataType: NodePath
         Value: "../Working"
     - Name: RateToCost
+      Id: g=f079be4c46475331b354d6a24d33cce8
       Type: BaseDataVariableType
       DataType: Double
       Value: 0.6
@@ -482,21 +514,26 @@ Children:
       DataType: String
       Value: "20"
   - Name: Normal_2
+    Id: g=18dc86fe4b92491498908dc1a427e4dc
     Type: TimeInterval
     Children:
     - Name: Beused
+      Id: g=1143825983f158f1adc0a10aeb183f07
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
     - Name: StartTime
+      Id: g=0bda6c8564da407a03f0c7fedc253db1
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T15:00:00.0000000"
     - Name: EndTime
+      Id: g=56a694c8bfacec9c938245a2fbad7d8d
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T18:00:00.0000000"
     - Name: Working
+      Id: g=2c1cb3618d43e0fdbff54c2cf2abbe27
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -531,6 +568,7 @@ Children:
         DataType: NodePath
         Value: "../Working"
     - Name: RateToCost
+      Id: g=cb117301721dabf58aa07137741191cc
       Type: BaseDataVariableType
       DataType: Double
       Value: 0.6
@@ -539,21 +577,26 @@ Children:
       DataType: String
       Value: "21"
   - Name: Normal_3
+    Id: g=dc166b4637478a8694f917bdd0fdbc2a
     Type: TimeInterval
     Children:
     - Name: Beused
+      Id: g=8cf5b0f0d80834b1c77b7d746e6a4b39
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
     - Name: StartTime
+      Id: g=8a59a9ff204e06b4057f9ef29e31270f
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T22:00:00.0000000"
     - Name: EndTime
+      Id: g=dc01b33dc15e8c30dbb507b94b170447
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T23:59:59.0000000"
     - Name: Working
+      Id: g=f64309ad01900a04c14e495834e26605
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -588,6 +631,7 @@ Children:
         DataType: NodePath
         Value: "../Working"
     - Name: RateToCost
+      Id: g=9fc19c8a9fc47b6605aafe7acdf9a4e1
       Type: BaseDataVariableType
       DataType: Double
       Value: 0.6
@@ -596,21 +640,26 @@ Children:
       DataType: String
       Value: "22"
   - Name: Valley_1
+    Id: g=ffffd93f8f80d890e65de50810916175
     Type: TimeInterval
     Children:
     - Name: Beused
+      Id: g=75ae56044fc238395761c02c30a7dde7
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
     - Name: StartTime
+      Id: g=081ba37a9d723980e8b08075f71b036b
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T00:00:00.0000000"
     - Name: EndTime
+      Id: g=e0b17d73675198fb02503397518ace2f
       Type: BaseDataVariableType
       DataType: DateTime
       Value: "1900-01-01T08:00:00.0000000"
     - Name: Working
+      Id: g=b5f3963482238942f884c17475fa73e4
       Type: BaseDataVariableType
       DataType: Boolean
       Value: false
@@ -645,6 +694,7 @@ Children:
         DataType: NodePath
         Value: "../Working"
     - Name: RateToCost
+      Id: g=1afc9eecb636b0a3636e766e91b72202
       Type: BaseDataVariableType
       DataType: Double
       Value: 0.4

@@ -14,20 +14,18 @@ using FTOptix.Store;
 using FTOptix.SQLiteStore;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
-using FTOptix.Modbus;
 #endregion
 
-public class HistogramLogic : BaseNetLogic
+public class HistogramLogic1 : BaseNetLogic
 {
     public override void Start()
     {
-        Log.Info("His start");
-        DrawChart();
+        // Insert code to be executed when the user-defined logic is started
     }
 
     public override void Stop()
     {
-        Log.Info("His stop");
+        // Insert code to be executed when the user-defined logic is stopped
     }
 
     [ExportMethod]
@@ -43,7 +41,7 @@ public class HistogramLogic : BaseNetLogic
         // Execute query and check result
         try {
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
-            if (ResultSet.GetLength(0) < 1) {
+            if (ResultSet.GetLength(0) > 1) {
                 Log.Error("Histogram", "Input query returned more than one line");
                 return;
             }
@@ -52,10 +50,13 @@ public class HistogramLogic : BaseNetLogic
                 children.Delete();
             }
             // For each column create an Object children
-            for (int i = 0; i < ResultSet.GetLength(0); i++) {
-                var myObj = InformationModel.MakeVariable(Convert.ToString(ResultSet[i,0]), OpcUa.DataTypes.String);
-                myObj.Value = Convert.ToDouble(ResultSet[i, 1]);
-                myModelObject.Add(myObj);
+            for (int i = 0; i < Header.Length; i++) {
+                String columnName = Header[i];
+                if (columnName != "Timestamp" && columnName != "LocalTimestamp" && columnName != "Id") {
+                    var myObj = InformationModel.MakeVariable(columnName, OpcUa.DataTypes.Double);
+                    myObj.Value = Convert.ToDouble(ResultSet[0, i]);
+                    myModelObject.Add(myObj);
+                }
             }
             myChart.Refresh();
         } catch (Exception ex) {

@@ -1,0 +1,18 @@
+Name: Test
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=c7c8466d7487f8feae3bc566fc620cb2
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 0
+- Name: month
+  Id: g=1ca1571dc79f774b41e62e6cadf9124b
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: day
+  Id: g=931861678b7b81ef7f7bad4323a04d24
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

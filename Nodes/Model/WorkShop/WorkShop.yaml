@@ -1,0 +1,188 @@
+Name: WorkShop
+Type: FolderType
+Children:
+- Name: MainOffice
+  Id: g=6465ce95e59feb5acb570a9f931f5fa4
+  Type: WorkShop
+  Children:
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 123.9000015258789
+  - Name: Carbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 23.399999618530273
+  - Name: MonthyEnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.5
+  - Name: MonthyEnergyCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 24670.0
+  - Name: MonthyService
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 6
+  - Name: EnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [12]
+    Value: [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]
+- Name: DryDrawing
+  Id: g=6d58eaa95ef63d7584f87e615f29e017
+  Type: WorkShop
+  Children:
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 435.20001220703125
+  - Name: Carbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 31.200000762939453
+  - Name: MonthyEnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 4.5
+  - Name: MonthyEnergyCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.299999952316284
+  - Name: MonthyService
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 9
+  - Name: EnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [12]
+    Value: [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]
+- Name: Heating
+  Id: g=e8294c74f293f4aebdaed49b3d9e531a
+  Type: WorkShop
+  Children:
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 21.399999618530273
+  - Name: Carbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.4000000953674316
+  - Name: MonthyEnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 45.099998474121094
+  - Name: MonthyEnergyCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 22.299999237060547
+  - Name: MonthyService
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 1
+  - Name: EnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [12]
+    Value: [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]
+- Name: WetDrawing
+  Id: g=b0aa5e4d6f7cce5f6069287514b93568
+  Type: WorkShop
+  Children:
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 65.30000305175781
+  - Name: Carbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 23.399999618530273
+  - Name: MonthyEnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 236.0
+  - Name: MonthyEnergyCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 41.5
+  - Name: MonthyService
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 4
+  - Name: EnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [12]
+    Value: [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]
+- Name: Cord
+  Id: g=d082ae43fa344ffb062e5d510d238054
+  Type: WorkShop
+  Children:
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 21.299999237060547
+  - Name: Carbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 4.199999809265137
+  - Name: MonthyEnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 23.399999618530273
+  - Name: MonthyEnergyCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.299999952316284
+  - Name: MonthyService
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 6
+  - Name: EnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [12]
+    Value: [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]
+- Name: Lubrication
+  Id: g=e3ad3fd1e42250b2b737317c3f57ac00
+  Type: WorkShop
+  Children:
+  - Name: Energy
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 225.10000610351563
+  - Name: Carbon
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.11999999731779099
+  - Name: MonthyEnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 43.70000076293945
+  - Name: MonthyEnergyCost
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.299999952316284
+  - Name: MonthyService
+    Type: BaseDataVariableType
+    DataType: Int16
+    Value: 0
+  - Name: EnergyConsumption
+    Type: BaseDataVariableType
+    DataType: Float
+    ValueRank: OneDimension
+    ArrayDimensions: [12]
+    Value: [1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0]
+- Name: CurrentWorkShop
+  Id: g=f853829de78cfb73912851387b1d6944
+  Type: BaseDataVariableType
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"6465ce95e59feb5acb570a9f931f5fa4","Namespace":7}

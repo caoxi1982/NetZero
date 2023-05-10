@@ -93,6 +93,10 @@ Children:
       - Name: Columns
         Type: BaseObjectType
         Children:
+        - Name: State
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
         - Name: Group
           Type: StoreColumn
           DataType: String
@@ -164,6 +168,10 @@ Children:
       - Name: Columns
         Type: BaseObjectType
         Children:
+        - Name: State
+          Type: StoreColumn
+          DataType: UInt16
+          Value: 0
         - Name: Group
           Type: StoreColumn
           DataType: String

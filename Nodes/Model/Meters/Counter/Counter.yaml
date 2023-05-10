@@ -135,7 +135,18 @@ Children:
     DataType: String
     Value: "Takeup"
   - Name: RecordCounter
+    Id: g=1012afea6445562275f67d915ecf696e
     Type: NetLogic
+    Children:
+    - Class: Reference
+      Target: g=439ba2935d02e90af3b877e17f2dcdb3
+      Direction: Forward
+    - Class: Reference
+      Target: g=e9975697c235d55f272395ac1e80f8f9
+      Direction: Forward
+    - Class: Reference
+      Target: g=4ac2336015973776932109ff0ea4b091
+      Direction: Forward
   - Name: Logger
     Type: NodePointer
     DataType: NodeId
@@ -306,7 +317,18 @@ Children:
     DataType: String
     Value: "Furnace"
   - Name: RecordCounter
+    Id: g=a837d1bb47e8959888863d9f3e74fcdf
     Type: NetLogic
+    Children:
+    - Class: Reference
+      Target: g=439ba2935d02e90af3b877e17f2dcdb3
+      Direction: Forward
+    - Class: Reference
+      Target: g=e9975697c235d55f272395ac1e80f8f9
+      Direction: Forward
+    - Class: Reference
+      Target: g=4ac2336015973776932109ff0ea4b091
+      Direction: Forward
   - Name: Logger
     Type: NodePointer
     DataType: NodeId

@@ -163,6 +163,7 @@ Children:
     DataType: String
     Value: "0"
   - Name: RecordEnergy
+    Id: g=ac031291671b736b912c6b1e4111de5e
     Type: NetLogic
     Children:
     - Class: Reference
@@ -171,19 +172,16 @@ Children:
     - Class: Reference
       Target: g=6530eed9e50e92f0f7c996f5b5f7e711
       Direction: Forward
+    - Class: Reference
+      Target: g=e091256febba16a3035916faffa393f8
+      Direction: Forward
+    - Class: Reference
+      Target: g=10b36170f92a0e33d1835ebb9540e96f
+      Direction: Forward
   - Name: Group
     Type: BaseDataVariableType
     DataType: String
     Value: "Takeup"
-  - Name: Logger
-    Type: NodePointer
-    DataType: NodeId
-    Value: {"IdType":2,"Id":"68baac14b1458054e6a146bc847def90","Namespace":7}
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"Id":3,"Namespace":21}
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId
@@ -375,6 +373,7 @@ Children:
     DataType: String
     Value: "0"
   - Name: RecordEnergy
+    Id: g=00aa6fb1481d4751b619b2431fe0e7d8
     Type: NetLogic
     Children:
     - Class: Reference
@@ -383,19 +382,16 @@ Children:
     - Class: Reference
       Target: g=6530eed9e50e92f0f7c996f5b5f7e711
       Direction: Forward
+    - Class: Reference
+      Target: g=e091256febba16a3035916faffa393f8
+      Direction: Forward
+    - Class: Reference
+      Target: g=10b36170f92a0e33d1835ebb9540e96f
+      Direction: Forward
   - Name: Group
     Type: BaseDataVariableType
     DataType: String
     Value: "Furnace"
-  - Name: Logger
-    Type: NodePointer
-    DataType: NodeId
-    Value: {"IdType":2,"Id":"5d741c1054cbae2327ad46ba3033f5d1","Namespace":7}
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: {"Id":3,"Namespace":21}
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId

@@ -24,10 +24,12 @@ public class RunGeneralMeter : BaseNetLogic
 {
     private PeriodicTask timer1;
     private string metername;
+    private double radian;
     public override void Start()
     {
-        timer1 = new PeriodicTask(GeneratorValue, 5000, LogicObject);
+        timer1 = new PeriodicTask(GeneratorValue, 3500, LogicObject);
         timer1.Start();
+        radian = 1;
         metername = Owner.BrowseName;
     }
 
@@ -38,6 +40,12 @@ public class RunGeneralMeter : BaseNetLogic
     private void GeneratorValue()
     {
         Random r = new Random();
+        if (radian > 180)
+        {
+            radian = 1;
+        }
+        radian += 0.3;
+        double sinvalue = Math.Sin((radian*2*Math.PI)/360);
 
         //Here is general MeterSpeed base on SpeedSetting and add some wave
         var UAspeed = Owner.GetVariable("SpeedSetting");
@@ -48,7 +56,7 @@ public class RunGeneralMeter : BaseNetLogic
         var UAProductVolume = Owner.GetVariable("ProductOutPutTotal");
         string metername = Owner.BrowseName;
 
-        float speed = (float)(UAspeed.Value + 2*r.NextDouble());// from 0.0 to 1.0
+        float speed = (float)(UAspeed.Value * sinvalue + 2*r.NextDouble());// from 0.0 to 1.0
         float total = UAtotal.Value;
         total += speed;
         UAmeterspeed.Value = speed;

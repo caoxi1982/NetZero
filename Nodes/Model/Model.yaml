@@ -377,3 +377,5 @@ Children:
 - File: CommonTypes/CommonTypes.yaml
 - File: MeterSimulatorTypes/MeterSimulatorTypes.yaml
 - File: Devices/Devices.yaml
+- File: WorkShop/WorkShop.yaml
+- File: Test/Test.yaml

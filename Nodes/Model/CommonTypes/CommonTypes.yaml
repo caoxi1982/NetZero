@@ -72,3 +72,65 @@ Children:
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "1601-01-01T00:00:00.0000000"
+  - Name: TestMode
+    Id: g=12b676b5b3f9befc9c4fb13f98840115
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: WeekOfYear
+    Id: g=6d13fcdd8f1be3a07aa887b0803af3c1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: YearRecords
+  Id: g=93dacb560d84430e35a82df03d3c8a6a
+  Type: BaseObjectType
+  Children:
+  - Name: Jan
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.0
+  - Name: Feb
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.0
+  - Name: Mar
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 3.0
+  - Name: Apr
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 4.0
+  - Name: May
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 5.0
+  - Name: Jun
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 6.0
+  - Name: Jul
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 7.0
+  - Name: Aug
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 8.0
+  - Name: Sep
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 9.0
+  - Name: Oct
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 10.0
+  - Name: Nov
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 11.0
+  - Name: Dec
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 12.0
