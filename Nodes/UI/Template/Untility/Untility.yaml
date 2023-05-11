@@ -797,7 +797,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: -80.0
       - Name: PopupWindow
         Type: BaseDataVariableType
         DataType: NodeId
@@ -806,7 +806,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 400.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -817,6 +817,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 0.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
     - Name: ContentAlignment
       Type: BaseVariableType
       DataType: ContentHorizontalAlignment
@@ -831,7 +836,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 100.0
   - Name: btnUser
     Type: Button
     Children:
@@ -864,7 +869,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 32.0
+      Value: 40.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -2672,7 +2677,7 @@ Children:
       - Name: Img
         Type: BaseDataVariableType
         DataType: ResourceUri
-        Value: "ns=7;%PROJECTDIR%/Resources/images/svg/Alarm-Sound.svg"
+        Value: "ns=7;%PROJECTDIR%/Resources/images/svg/Alert.svg"
       - Name: Image1
         Type: Image
         Children:
@@ -2757,7 +2762,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Value: {"IdType":2,"Id":"d188ffd680676a3af9cec1b95c871707","Namespace":7}
       - Name: Button1
         Type: Button
         Children:
@@ -3846,7 +3851,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
+        Value: 10.0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
@@ -3857,13 +3862,13 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
-    - Name: Trend1
+    - Name: Trend2
       Type: Trend
       Children:
       - Name: Pens
         Type: BaseObjectType
         Children:
-        - Name: Power
+        - Name: EnergyEfficency
           Type: TrendPen
           DataType: BaseDataType
           Children:
@@ -3879,41 +3884,63 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             ModellingRule: Optional
-            Value: "#f42828"
+            Value: "#ffb800"
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../Model@Value"
+            Value: "{NodeId:ns=7;g=d9065375-8c1f-d8b5-1a1d-ec285461c709}"
             Children:
             - Name: Mode
               Type: BaseVariableType
               DataType: DynamicLinkMode
               ModellingRule: Optional
               Value: 2
-        - Name: TrendPen1
+          - Name: ns=3;YAxis
+            Type: ValueAxis
+            Children:
+            - Name: MinValue
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: -100.0
+            - Name: MaxValue
+              Type: BaseDataVariableType
+              DataType: Size
+              Value: 100.0
+            - Name: AutoScale
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+            - Name: Interactive
+              Type: BaseDataVariableType
+              DataType: Boolean
+              Value: true
+        - Name: Carbon
           Type: TrendPen
           DataType: BaseDataType
           Children:
           - Name: Thickness
             Type: BaseDataVariableType
             DataType: Size
-            Value: -1.0
+            Value: 3.0
           - Name: Enabled
             Type: BaseDataVariableType
             DataType: Boolean
             Value: true
-        - Name: TrendPen2
-          Type: TrendPen
-          DataType: BaseDataType
-          Children:
-          - Name: Thickness
+          - Name: Color
             Type: BaseDataVariableType
-            DataType: Size
-            Value: -1.0
-          - Name: Enabled
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#366ad0"
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=f9d5f605-3204-dddb-4366-ebb385b5808e}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
       - Class: Reference
         Target: ns=3;i=1129
         Direction: Forward
@@ -3927,11 +3954,11 @@ Children:
         - Name: Window
           Type: BaseDataVariableType
           DataType: Duration
-          Value: "100:00:30:0.0000000"
+          Value: "0:00:30:0.0000000"
         - Name: Interactive
           Type: BaseDataVariableType
           DataType: Boolean
-          Value: true
+          Value: false
         - Name: Time
           Type: BaseDataVariableType
           DataType: DateTime
@@ -3942,11 +3969,11 @@ Children:
         - Name: MinValue
           Type: BaseDataVariableType
           DataType: Size
-          Value: -100.0
+          Value: -10.0
         - Name: MaxValue
           Type: BaseDataVariableType
           DataType: Size
-          Value: 100.0
+          Value: 50.0
         - Name: AutoScale
           Type: BaseDataVariableType
           DataType: Boolean
@@ -3954,7 +3981,7 @@ Children:
         - Name: Interactive
           Type: BaseDataVariableType
           DataType: Boolean
-          Value: false
+          Value: true
       - Name: LegendVisible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -3963,7 +3990,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 440.0
+        Value: 380.0
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -3978,21 +4005,17 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 40.0
+        Value: 80.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 15.0
-      - Name: BottomMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 40.0
+        Value: 25.0
       - Name: Model
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"93dacb560d84430e35a82df03d3c8a6a","Namespace":7}
+        ModellingRule: Optional
+        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -4002,11 +4025,11 @@ Children:
           Type: PropertyType
           DataType: NodeId
           Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: Query
-        Type: BaseDataVariableType
-        DataType: String
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
         ModellingRule: Optional
-        Value: "SELECT * FROM Model"
+        Value: 40.0
     - Name: title3
       Type: Label
       Children:
@@ -4050,6 +4073,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
+      - Name: BottomMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 15.0
     - Name: SanKeySummary
       Type: WebBrowser
       Children:

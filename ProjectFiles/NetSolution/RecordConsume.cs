@@ -16,6 +16,9 @@ using FTOptix.Alarm;
 using FTOptix.Core;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.AuditSigning;
+using FTOptix.Recipe;
+using FTOptix.EventLogger;
 #endregion
 
 public class RecordConsume : BaseNetLogic

@@ -21,6 +21,9 @@ using System.Numerics;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
 using System.ComponentModel;
+using FTOptix.AuditSigning;
+using FTOptix.Recipe;
+using FTOptix.EventLogger;
 #endregion
 
 public class RecordEnergy : BaseNetLogic

@@ -18,7 +18,7 @@ using FTOptix.Recipe;
 using FTOptix.EventLogger;
 #endregion
 
-public class LogicDeviceDaily : BaseNetLogic
+public class LogicDeviceWeeky : BaseNetLogic
 {
     public override void Start()
     {
@@ -33,33 +33,31 @@ public class LogicDeviceDaily : BaseNetLogic
     public void RefreshAll()
     {
         DrawEnergyByRateChart();
-        DrawCarbonByShiftChart();
+        DrawCarbonByDayChart();
         DrawCarbonByMeterChart();
     }
     [ExportMethod]
-    public void DrawCarbonByShiftChart()
+    public void DrawCarbonByDayChart()
     {
         // Get the different pieces we need to build the graph
-        IUANode myModelObject = Owner.Get("CarbonByShift");
+        IUANode myModelObject = Owner.Get("CarbonByDay");
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
-        DateTime select_date = Owner.GetVariable("SelectDay").Value;
-        int year = select_date.Year;
-        int month = select_date.Month;
-        int day = select_date.Day;
+        int week = Owner.GetVariable("SelectWeek").Value;
+        int year = Owner.GetVariable("SelectYear").Value;
         Store myDbStore = InformationModel.Get<Store>(Owner.GetVariable("MyDatabase").Value);
-        string sqlQuery = $"SELECT Shift,SUM(RateToCarbon) AS Value FROM RecordShiftEnergy " +
-            $"WHERE Group=\'{group}\' AND Year={year} AND Month={month} AND Day={day} GROUP BY Shift";
+        string sqlQuery = $"SELECT Day,SUM(RateToCarbon) AS Value FROM RecordShiftEnergy " +
+            $"WHERE Group=\'{group}\' AND Year={year} AND Week={week} GROUP BY Day";
         // Prepare SQL Query
         // Execute query and check result
         try
         {
-            PieChart myChart = (PieChart)Owner.GetObject("CarbonByShiftChart");
+            HistogramChart myChart = (HistogramChart)Owner.GetObject("CarbonByDayChart");
             Object[,] ResultSet;
             String[] Header;
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
-                Log.Error("LogicDeviceDaily", "Line 59:Input query returned less than one line");
+                Log.Error("LogicDeviceWeeky", "Line 57:Input query returned less than one line");
                 return;
             }
             // Delete all children from Object
@@ -70,17 +68,17 @@ public class LogicDeviceDaily : BaseNetLogic
             // For each column create an Object children
             for (int i = 0; i < ResultSet.GetLength(0); i++)
             {
-                String columnName = "Shift_"+ Convert.ToString(ResultSet[i,0]);
-                    var myObj = InformationModel.MakeVariable(columnName, OpcUa.DataTypes.String);
-                    myObj.Value = Convert.ToDouble(ResultSet[i, 1]);
-                    myModelObject.Add(myObj);
+                String columnName = "Day_" + Convert.ToString(ResultSet[i, 0]);
+                var myObj = InformationModel.MakeVariable(columnName, OpcUa.DataTypes.String);
+                myObj.Value = Convert.ToDouble(ResultSet[i, 1]);
+                myModelObject.Add(myObj);
 
             }
             myChart.Refresh();
         }
         catch (Exception ex)
         {
-            Log.Error("LogicDeviceDaily", ex.Message);
+            Log.Error("LogicDeviceWeeky", ex.Message);
             return;
         }
     }
@@ -90,13 +88,11 @@ public class LogicDeviceDaily : BaseNetLogic
         // Get the different pieces we need to build the graph
         IUANode myModelObject = Owner.Get("CarbonByMeter");
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
-        DateTime select_date = Owner.GetVariable("SelectDay").Value;
-        int year = select_date.Year;
-        int month = select_date.Month;
-        int day = select_date.Day;
+        int week = Owner.GetVariable("SelectWeek").Value;
+        int year = Owner.GetVariable("SelectYear").Value;
         Store myDbStore = InformationModel.Get<Store>(Owner.GetVariable("MyDatabase").Value);
         string sqlQuery = $"SELECT MeterName,SUM(RateToCarbon) AS Value FROM RecordShiftEnergy " +
-            $"WHERE Group=\'{group}\' AND Year={year} AND Month={month} AND Day={day} GROUP BY MeterName";
+            $"WHERE Group=\'{group}\' AND Year={year} AND Week={week} GROUP BY MeterName";
         // Prepare SQL Query
         // Execute query and check result
         try
@@ -107,7 +103,7 @@ public class LogicDeviceDaily : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
-                Log.Error("LogicDeviceDaily", "Line 107:Input query returned less than one line");
+                Log.Error("LogicDeviceWeeky", "Line 103:Input query returned less than one line");
                 return;
             }
             // Delete all children from Object
@@ -128,7 +124,7 @@ public class LogicDeviceDaily : BaseNetLogic
         }
         catch (Exception ex)
         {
-            Log.Error("LogicDeviceDaily", ex.Message);
+            Log.Error("LogicDeviceWeeky", ex.Message);
             return;
         }
     }
@@ -138,13 +134,11 @@ public class LogicDeviceDaily : BaseNetLogic
         // Get the different pieces we need to build the graph
         IUANode myModelObject = Owner.Get("EnergyByRate");
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
-        DateTime select_date = Owner.GetVariable("SelectDay").Value;
-        int year = select_date.Year;
-        int month = select_date.Month;
-        int day = select_date.Day;
+        int week = Owner.GetVariable("SelectWeek").Value;
+        int year = Owner.GetVariable("SelectYear").Value;
         Store myDbStore = InformationModel.Get<Store>(Owner.GetVariable("MyDatabase").Value);
         string sqlQuery = $"SELECT RateDuration,SUM(RateToCarbon) AS Value FROM recordmultirateenergy " +
-            $"WHERE Group=\'{group}\' AND Year={year} AND Month={month} AND Day={day} GROUP BY RateDuration ORDER BY RateDuration";
+            $"WHERE Group=\'{group}\' AND Year={year} AND Week={week} GROUP BY RateDuration ORDER BY RateDuration";
 
         // Prepare SQL Query
         // Execute query and check result
@@ -156,7 +150,7 @@ public class LogicDeviceDaily : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
-                Log.Error("LogicDeviceDaily", "Line 156:Input query returned less than one line");
+                Log.Error("LogicDeviceWeeky", "Line 150:Input query returned less than one line");
                 return;
             }
             // Delete all children from Object
@@ -172,8 +166,9 @@ public class LogicDeviceDaily : BaseNetLogic
             var myObj4 = InformationModel.MakeVariable("Peak", OpcUa.DataTypes.String);
             for (int i = 0; i < ResultSet.GetLength(0); i++)
             {
-                
-                switch (ResultSet[i, 0]){
+
+                switch (ResultSet[i, 0])
+                {
                     case "10":
                         valley += Convert.ToDouble(ResultSet[i, 1]);
                         break;
@@ -201,7 +196,7 @@ public class LogicDeviceDaily : BaseNetLogic
         }
         catch (Exception ex)
         {
-            Log.Error("LogicDeviceDaily", ex.Message);
+            Log.Error("LogicDeviceWeeky", ex.Message);
             return;
         }
     }

@@ -30,6 +30,31 @@ Children:
     Type: ChartStyle
   - Name: DataListStyle
     Type: DataListStyle
+    Children:
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#fafafa"
+    - Name: HorizontalLineColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#070000"
+    - Name: VerticalLineColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#070000"
+    - Name: BorderWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 1.0
+    - Name: HeaderBackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#8ed4f7"
+    - Name: HeaderFontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      Value: 700
   - Name: ToolTipStyle
     Type: ToolTipStyle
   - Name: ScrollBarStyle
@@ -843,7 +868,7 @@ Children:
           - Name: Img
             Type: BaseDataVariableType
             DataType: ResourceUri
-            Value: "ns=7;%PROJECTDIR%/Resources/images/svg/Alarm-Sound.svg"
+            Value: "ns=7;%PROJECTDIR%/Resources/images/svg/Alert.svg"
           - Name: Image1
             Type: Image
             Children:
@@ -928,7 +953,7 @@ Children:
           - Name: TargetPanel
             Type: BaseDataVariableType
             DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Value: {"IdType":2,"Id":"d188ffd680676a3af9cec1b95c871707","Namespace":7}
           - Name: Button1
             Type: Button
             Children:

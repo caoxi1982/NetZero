@@ -18,6 +18,9 @@ using FTOptix.Core;
 using NetZero;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.AuditSigning;
+using FTOptix.Recipe;
+using FTOptix.EventLogger;
 public class RateSwitcher : BaseNetLogic
 {
     private PeriodicTask myPeriodicTask;

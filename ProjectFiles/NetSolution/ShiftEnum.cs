@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FTOptix.AuditSigning;
+using FTOptix.Recipe;
+using FTOptix.EventLogger;
 
 namespace NetZero
 {

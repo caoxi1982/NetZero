@@ -17,6 +17,9 @@ using FTOptix.Alarm;
 using FTOptix.System;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.AuditSigning;
+using FTOptix.Recipe;
+using FTOptix.EventLogger;
 #endregion
 
 public class RunPowerMeter : BaseNetLogic

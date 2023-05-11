@@ -6,6 +6,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using FTOptix.Modbus;
 using FTOptix.CommunicationDriver;
+using FTOptix.AuditSigning;
+using FTOptix.Recipe;
+using FTOptix.EventLogger;
 
 namespace NetZero
 {

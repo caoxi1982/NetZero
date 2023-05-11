@@ -49,3 +49,9 @@ SELECT Shift,SUM(Consume) FROM RecordShiftEnergy WHERE Group={0:sql_literal} AND
 {0:sql_identifier}: Shift
 1:Consume
 {0:sql_literal}
+
+SELECT "MeterName",SUM("Consume") FROM "RecordShiftEnergy" WHERE "MeterName"={0:sql_literal} AND "Year"={1:sql_literal} AND "Month"={2:sql_literal} AND "Day"={3:sql_literal} ORDER BY "MeterName" GROUP BY "MeterName"
+{0:sql_literal}: TakeupPower
+{1:sql_literal}: 2023
+{2:sql_literal}: 5
+{3:sql_literal}: 5

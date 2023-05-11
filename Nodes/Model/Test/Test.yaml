@@ -4,8 +4,8 @@ Children:
 - Name: Variable1
   Id: g=c7c8466d7487f8feae3bc566fc620cb2
   Type: BaseDataVariableType
-  DataType: UInt16
-  Value: 0
+  DataType: Boolean
+  Value: false
 - Name: month
   Id: g=1ca1571dc79f774b41e62e6cadf9124b
   Type: BaseDataVariableType
@@ -20,3 +20,18 @@ Children:
   Type: BaseDataVariableType
   DataType: String
   Value: "Group"
+- Name: Variable2
+  Id: g=760f9987241f8c866329846ff0f71952
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Variable3
+  Id: g=095d1adb804a2afa284abbabaffdb417
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Variable4
+  Id: g=1895636d9e37bc3602795f6f1d1815f5
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false

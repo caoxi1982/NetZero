@@ -1784,28 +1784,6 @@ Children:
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
-      - Name: Power
-        Type: TrendPen
-        DataType: BaseDataType
-        Children:
-        - Name: Thickness
-          Type: BaseDataVariableType
-          DataType: Size
-          Value: 3.0
-        - Name: Enabled
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: true
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{NodeId:ns=7;g=cd62c67a-b24d-7f07-cc99-cda0530a15e6}"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
     - Class: Reference
       Target: ns=3;i=1129
       Direction: Forward
