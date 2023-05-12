@@ -4104,7 +4104,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"From"}
+        Value: {"NamespaceIndex":7,"TextId":"From"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4195,7 +4195,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"To"}
+        Value: {"NamespaceIndex":7,"TextId":"To"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4286,7 +4286,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Cost:"}
+        Value: {"NamespaceIndex":7,"TextId":"Cost:"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -4576,7 +4576,7 @@ Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "..@BrowseName"
+      Value: "..@Description"
       Children:
       - Name: Mode
         Type: BaseVariableType
@@ -5140,7 +5140,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"SN:"}
+      Value: {"NamespaceIndex":7,"TextId":"SN:"}
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -5188,7 +5188,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"UpTime:"}
+      Value: {"NamespaceIndex":7,"TextId":"UpTime:"}
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -5236,7 +5236,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"LifCycle:"}
+      Value: {"NamespaceIndex":7,"TextId":"LifCycle:"}
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -6132,7 +6132,7 @@ Children:
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "{Workshop}@BrowseName"
+      Value: "{Workshop}@Description"
       Children:
       - Name: Mode
         Type: BaseVariableType

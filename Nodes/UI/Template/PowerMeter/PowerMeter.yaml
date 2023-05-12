@@ -1067,7 +1067,7 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Setting"}
+            Value: {"NamespaceIndex":7,"TextId":"Setting"}
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
@@ -1083,7 +1083,7 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Trends"}
+            Value: {"NamespaceIndex":7,"TextId":"Trends"}
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
@@ -1099,7 +1099,7 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Reports"}
+            Value: {"NamespaceIndex":7,"TextId":"Reports"}
           - Name: Panel
             Type: NodePointer
             DataType: NodeId
@@ -1315,7 +1315,7 @@ Children:
     - Name: Title
       Type: BaseDataVariableType
       DataType: String
-      Value: "EnergyEfficency"
+      Value: "能源效率"
     - Name: lbUnit
       Type: Label
       Children:
@@ -1467,7 +1467,7 @@ Children:
     - Name: Title
       Type: BaseDataVariableType
       DataType: String
-      Value: "Carbon"
+      Value: "碳排放"
     - Name: Unit
       Type: BaseDataVariableType
       DataType: String
@@ -2220,7 +2220,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"PowerMeter Setting"}
+        Value: {"NamespaceIndex":7,"TextId":"PowerMeter Setting"}
       - Name: FontWeight
         Type: BaseDataVariableType
         DataType: FontWeightEnum
@@ -2687,7 +2687,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Close"}
+      Value: {"NamespaceIndex":7,"TextId":"Close"}
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment

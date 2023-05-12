@@ -779,6 +779,7 @@ Children:
 - Name: WorkShop
   Id: g=25f53ca38296f5915e5664963fe72eba
   Supertype: BaseObjectType
+  Description: {"LocaleId":"en-US","Text":""}
   Children:
   - Name: Energy
     Type: BaseDataVariableType

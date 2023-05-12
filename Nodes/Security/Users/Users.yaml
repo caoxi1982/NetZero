@@ -1,3 +1,29 @@
 Name: Users
 Id: g=d6c2b5be98c3e07bfadb3db639ac049a
 Type: FolderType
+Children:
+- Name: Admin
+  Id: g=275dd0eaf95d18098170cefe8982754e
+  Type: UserType
+  Children:
+  - Class: Reference
+    Type: HasGroup
+    Target: g=d44c6e7b1df81361c22c3f86f9ecfff0
+  - Name: Language
+    Id: g=a59803bf327c979fb5621b0fca7ddb18
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "zh-CN"
+  - Name: MeasurementSystem
+    Id: g=640485ab9c8a2d0769605c5bda32c71e
+    Type: BaseVariableType
+    DataType: MeasurementSystem
+    ReferenceType: HasProperty
+    Value: 1
+  - Name: LocaleId
+    Id: g=a9dc9bb6281a16762f28570fadda4fd8
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "zh-CN"

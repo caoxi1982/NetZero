@@ -203,7 +203,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Energy"}
+              Value: {"NamespaceIndex":7,"TextId":"Energy"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -256,7 +256,7 @@ Children:
               Type: BaseDataVariableType
               DataType: LocalizedText
               ModellingRule: Optional
-              Value: {"LocaleId":"en-US","Text":"Carbon"}
+              Value: {"NamespaceIndex":7,"TextId":"Carbon"}
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -504,7 +504,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Workshop}@BrowseName"
+              Value: "{Workshop}@Description"
           - Name: Title2
             Type: BaseDataVariableType
             DataType: String
@@ -761,7 +761,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Workshop}@BrowseName"
+              Value: "{Workshop}@Description"
           - Name: Title2
             Type: BaseDataVariableType
             DataType: String
@@ -1018,7 +1018,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Workshop}@BrowseName"
+              Value: "{Workshop}@Description"
           - Name: Title2
             Type: BaseDataVariableType
             DataType: String
@@ -1275,7 +1275,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Workshop}@BrowseName"
+              Value: "{Workshop}@Description"
           - Name: Title2
             Type: BaseDataVariableType
             DataType: String
@@ -1532,7 +1532,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Workshop}@BrowseName"
+              Value: "{Workshop}@Description"
           - Name: Title2
             Type: BaseDataVariableType
             DataType: String
@@ -1789,7 +1789,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Workshop}@BrowseName"
+              Value: "{Workshop}@Description"
           - Name: Title2
             Type: BaseDataVariableType
             DataType: String
@@ -1871,14 +1871,14 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../Workshop@BrowseName"
+              Value: "../../../Workshop@Description"
         - Name: DisplayParamWithIcon1
           Type: DisplayParamWithIcon
           Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: String
-            Value: "Monthy Energy Consumption"
+            Value: "MonthyEnergyConsumption"
           - Name: Unit
             Type: BaseDataVariableType
             DataType: String
@@ -2298,7 +2298,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Shift Setting:"}
+          Value: {"NamespaceIndex":7,"TextId":"Shift Setting:"}
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -2800,7 +2800,7 @@ Children:
           Type: BaseDataVariableType
           DataType: LocalizedText
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"Multi_Rate Setting:"}
+          Value: {"NamespaceIndex":7,"TextId":"Multi_Rate Setting:"}
         - Name: FontSize
           Type: BaseDataVariableType
           DataType: Size
@@ -4140,7 +4140,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 500.0
+      Value: 600.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -4686,6 +4686,89 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: -1.0
+    - Name: LED1
+      Type: Led
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=03bf1a72-8fdd-d0fd-c31a-07d36868f28c}"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 37.0
+    - Name: LED2
+      Type: Led
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=5105d55e-e17c-2c4f-1e1f-19ac53c5da50}"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 37.0
+    - Name: LED3
+      Type: Led
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{NodeId:ns=7;g=539aa1ee-a520-1c82-51ba-c3f71d016d54}"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 37.0
+    - Name: LED4
+      Type: Led
+      Children:
+      - Name: Active
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 37.0
   - Name: VerticalLayout2
     Type: ColumnLayout
     Children:
@@ -5239,7 +5322,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"settime"}
+        Value: {"NamespaceIndex":7,"TextId":"settime"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -8241,7 +8324,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: LocalizedText
-                Value: {"LocaleId":"en-US","Text":"Setting"}
+                Value: {"NamespaceIndex":7,"TextId":"Setting"}
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
@@ -8257,7 +8340,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: LocalizedText
-                Value: {"LocaleId":"en-US","Text":"Trends"}
+                Value: {"NamespaceIndex":7,"TextId":"Trends"}
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
@@ -8273,7 +8356,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: LocalizedText
-                Value: {"LocaleId":"en-US","Text":"Reports"}
+                Value: {"NamespaceIndex":7,"TextId":"Reports"}
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
@@ -8443,6 +8526,7 @@ Children:
           Value: 0.0
         - Name: Furnace
           Type: DisplayDevicewithIcon
+          Description: {"NamespaceIndex":7,"TextId":"Furnace"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -8479,7 +8563,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "..@BrowseName"
+              Value: "..@Description"
           - Name: Status
             Type: BaseDataVariableType
             DataType: Int16
@@ -8764,6 +8848,7 @@ Children:
                     Value: "../../../../Status"
         - Name: TakeUp
           Type: DisplayDevicewithIcon
+          Description: {"NamespaceIndex":7,"TextId":"Takeup"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -8800,7 +8885,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "..@BrowseName"
+              Value: "..@Description"
           - Name: Status
             Type: BaseDataVariableType
             DataType: Int16
@@ -9070,6 +9155,7 @@ Children:
                     Value: "../../../../Status"
         - Name: Dryer
           Type: DisplayDevicewithIcon
+          Description: {"NamespaceIndex":7,"TextId":"Dryer"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -9106,7 +9192,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "..@BrowseName"
+              Value: "..@Description"
           - Name: Status
             Type: BaseDataVariableType
             DataType: Int16
@@ -9305,6 +9391,7 @@ Children:
                     Value: "../../../../Status"
         - Name: Closer
           Type: DisplayDevicewithIcon
+          Description: {"NamespaceIndex":7,"TextId":"Closer"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -9341,7 +9428,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "..@BrowseName"
+              Value: "..@Description"
           - Name: Status
             Type: BaseDataVariableType
             DataType: Int16
@@ -9530,6 +9617,7 @@ Children:
                     Value: "../../../../Status"
         - Name: LubricateStation
           Type: DisplayDevicewithIcon
+          Description: {"NamespaceIndex":7,"TextId":"Lubrication"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -9566,7 +9654,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "..@BrowseName"
+              Value: "..@Description"
           - Name: Status
             Type: BaseDataVariableType
             DataType: Int16
@@ -9765,6 +9853,7 @@ Children:
             Value: 5.0
         - Name: CoolingWaterStation
           Type: DisplayDevicewithIcon
+          Description: {"NamespaceIndex":7,"TextId":"CoolingWaterStation"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -9801,7 +9890,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "..@BrowseName"
+              Value: "..@Description"
           - Name: Status
             Type: BaseDataVariableType
             DataType: Int16
@@ -9990,6 +10079,7 @@ Children:
                     Value: "../../../../Status"
         - Name: CoolingWaterStation1
           Type: DisplayDevicewithIcon
+          Description: {"NamespaceIndex":7,"TextId":"CoolingWaterStation2"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -10026,7 +10116,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "..@BrowseName"
+              Value: "..@Description"
           - Name: Status
             Type: BaseDataVariableType
             DataType: Int16
@@ -10045,7 +10135,7 @@ Children:
           - Name: SN
             Type: BaseDataVariableType
             DataType: String
-            Value: "Co-0001"
+            Value: "Co-0002"
           - Name: UpTimeLogic
             Type: NetLogic
           - Name: UpTime
@@ -10264,7 +10354,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "{Device}@BrowseName"
+              Value: "{Device}@Description"
           - Name: FontSize
             Type: BaseDataVariableType
             DataType: Size
@@ -10366,7 +10456,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "EnergyEfficency"
+                Value: "能源效率"
               - Name: lbUnit
                 Type: Label
                 Children:
@@ -10497,7 +10587,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "Carbon"
+                Value: "碳排放"
               - Name: Unit
                 Type: BaseDataVariableType
                 DataType: String
@@ -10713,7 +10803,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "EnergyEfficency"
+                Value: "能源效率"
               - Name: lbUnit
                 Type: Label
                 Children:
@@ -10844,7 +10934,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "Carbon"
+                Value: "碳排放"
               - Name: Unit
                 Type: BaseDataVariableType
                 DataType: String
@@ -11060,7 +11150,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "EnergyEfficency"
+                Value: "能源效率"
               - Name: lbUnit
                 Type: Label
                 Children:
@@ -11191,7 +11281,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "Carbon"
+                Value: "碳排放"
               - Name: Unit
                 Type: BaseDataVariableType
                 DataType: String
@@ -11351,7 +11441,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: LocalizedText
-                Value: {"LocaleId":"en-US","Text":"DeviceTotal"}
+                Value: {"NamespaceIndex":7,"TextId":"DeviceTotal"}
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
@@ -11371,7 +11461,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: LocalizedText
-                Value: {"LocaleId":"en-US","Text":"Power"}
+                Value: {"NamespaceIndex":7,"TextId":"Power"}
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
@@ -11391,7 +11481,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: LocalizedText
-                Value: {"LocaleId":"en-US","Text":"Flow"}
+                Value: {"NamespaceIndex":7,"TextId":"Flow"}
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
@@ -11411,7 +11501,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: LocalizedText
-                Value: {"LocaleId":"en-US","Text":"Counter"}
+                Value: {"NamespaceIndex":7,"TextId":"Counter"}
               - Name: Panel
                 Type: NodePointer
                 DataType: NodeId
@@ -11674,7 +11764,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Device Reports"}
+        Value: {"NamespaceIndex":7,"TextId":"Device Reports"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -11795,7 +11885,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Meters Report"}
+        Value: {"NamespaceIndex":7,"TextId":"Meters Report"}
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -11936,7 +12026,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Value: {"NamespaceIndex":7,"TextId":"DeviceDaily"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -11952,7 +12042,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Value: {"NamespaceIndex":7,"TextId":"DeviceWeeky"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -12004,7 +12094,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Value: {"NamespaceIndex":7,"TextId":"MeterDaily"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -12020,7 +12110,7 @@ Children:
         - Name: Title
           Type: BaseDataVariableType
           DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          Value: {"NamespaceIndex":7,"TextId":"MeterWeeky"}
         - Name: Panel
           Type: NodePointer
           DataType: NodeId
@@ -12105,7 +12195,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Alarms"}
+        Value: {"NamespaceIndex":7,"TextId":"Alarms"}
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -13098,7 +13188,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Alarm History"}
+        Value: {"NamespaceIndex":7,"TextId":"Alarm History"}
       - Name: Width
         Type: BaseVariableType
         DataType: Size

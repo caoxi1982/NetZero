@@ -91,6 +91,10 @@ Children:
     Type: BaseDataVariableType
     DataType: Color
     Value: "#ffffff"
+  - Name: FontFamily
+    Type: BaseDataVariableType
+    DataType: Font
+    Value: "Microsoft YaHei"
 - Name: NativePresentationEngine
   Type: NativePresentationEngine
   ReferenceType: HasOrderedComponent
@@ -120,7 +124,7 @@ Children:
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
-    Value: {"Id":46,"Namespace":1}
+    Value: {"IdType":2,"Id":"275dd0eaf95d18098170cefe8982754e","Namespace":7}
     Children:
     - Name: Kind
       Type: PropertyType

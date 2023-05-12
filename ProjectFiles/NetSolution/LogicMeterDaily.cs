@@ -22,7 +22,7 @@ public class LogicMeterDaily : BaseNetLogic
 {
     public override void Start()
     {
-        // Insert code to be executed when the user-defined logic is started
+        DrawCarbonByShiftChart();
     }
 
     public override void Stop()
@@ -36,6 +36,7 @@ public class LogicMeterDaily : BaseNetLogic
         IUANode myModelObject = Owner.Get("CarbonByShift");
         var meter = (String)Owner.GetVariable("SelectMeterName").Value;
         DateTime select_date = Owner.GetVariable("SelectDay").Value;
+        var nodata = Owner.GetVariable("NoData1");
         int year = select_date.Year;
         int month = select_date.Month;
         int day = select_date.Day;
@@ -52,9 +53,11 @@ public class LogicMeterDaily : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
+                nodata.Value = true;
                 Log.Error("LogicDeviceDaily", "Line 59:Input query returned less than one line");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             foreach (var children in myModelObject.Children)
             {

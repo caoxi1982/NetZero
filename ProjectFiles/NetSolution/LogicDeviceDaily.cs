@@ -16,13 +16,14 @@ using FTOptix.Core;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using System.Xml.Linq;
 #endregion
 
 public class LogicDeviceDaily : BaseNetLogic
 {
     public override void Start()
     {
-        // Insert code to be executed when the user-defined logic is started
+        RefreshAll();
     }
 
     public override void Stop()
@@ -42,6 +43,7 @@ public class LogicDeviceDaily : BaseNetLogic
         // Get the different pieces we need to build the graph
         IUANode myModelObject = Owner.Get("CarbonByShift");
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
+        var nodata = Owner.GetVariable("NoData1");
         DateTime select_date = Owner.GetVariable("SelectDay").Value;
         int year = select_date.Year;
         int month = select_date.Month;
@@ -59,9 +61,11 @@ public class LogicDeviceDaily : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
+                nodata.Value = true;
                 Log.Error("LogicDeviceDaily", "Line 59:Input query returned less than one line");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             foreach (var children in myModelObject.Children)
             {
@@ -90,6 +94,7 @@ public class LogicDeviceDaily : BaseNetLogic
         // Get the different pieces we need to build the graph
         IUANode myModelObject = Owner.Get("CarbonByMeter");
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
+        var nodata = Owner.GetVariable("NoData2");
         DateTime select_date = Owner.GetVariable("SelectDay").Value;
         int year = select_date.Year;
         int month = select_date.Month;
@@ -107,9 +112,11 @@ public class LogicDeviceDaily : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
+                nodata.Value = true;
                 Log.Error("LogicDeviceDaily", "Line 107:Input query returned less than one line");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             foreach (var children in myModelObject.Children)
             {
@@ -138,6 +145,7 @@ public class LogicDeviceDaily : BaseNetLogic
         // Get the different pieces we need to build the graph
         IUANode myModelObject = Owner.Get("EnergyByRate");
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
+        var nodata = Owner.GetVariable("NoData3");
         DateTime select_date = Owner.GetVariable("SelectDay").Value;
         int year = select_date.Year;
         int month = select_date.Month;
@@ -156,9 +164,11 @@ public class LogicDeviceDaily : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
+                nodata.Value = true;
                 Log.Error("LogicDeviceDaily", "Line 156:Input query returned less than one line");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             foreach (var children in myModelObject.Children)
             {

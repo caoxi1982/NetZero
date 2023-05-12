@@ -16,13 +16,14 @@ using FTOptix.Core;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using System.Xml.Linq;
 #endregion
 
 public class LogicDeviceWeeky : BaseNetLogic
 {
     public override void Start()
     {
-        // Insert code to be executed when the user-defined logic is started
+        RefreshAll();
     }
 
     public override void Stop()
@@ -44,6 +45,7 @@ public class LogicDeviceWeeky : BaseNetLogic
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
         int week = Owner.GetVariable("SelectWeek").Value;
         int year = Owner.GetVariable("SelectYear").Value;
+        var nodata = Owner.GetVariable("NoData1");
         Store myDbStore = InformationModel.Get<Store>(Owner.GetVariable("MyDatabase").Value);
         string sqlQuery = $"SELECT Day,SUM(RateToCarbon) AS Value FROM RecordShiftEnergy " +
             $"WHERE Group=\'{group}\' AND Year={year} AND Week={week} GROUP BY Day";
@@ -57,9 +59,11 @@ public class LogicDeviceWeeky : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
+                nodata.Value = true;
                 Log.Error("LogicDeviceWeeky", "Line 57:Input query returned less than one line");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             foreach (var children in myModelObject.Children)
             {
@@ -90,6 +94,7 @@ public class LogicDeviceWeeky : BaseNetLogic
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
         int week = Owner.GetVariable("SelectWeek").Value;
         int year = Owner.GetVariable("SelectYear").Value;
+        var nodata = Owner.GetVariable("NoData2");
         Store myDbStore = InformationModel.Get<Store>(Owner.GetVariable("MyDatabase").Value);
         string sqlQuery = $"SELECT MeterName,SUM(RateToCarbon) AS Value FROM RecordShiftEnergy " +
             $"WHERE Group=\'{group}\' AND Year={year} AND Week={week} GROUP BY MeterName";
@@ -103,9 +108,11 @@ public class LogicDeviceWeeky : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
+                nodata.Value = true;
                 Log.Error("LogicDeviceWeeky", "Line 103:Input query returned less than one line");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             foreach (var children in myModelObject.Children)
             {
@@ -136,6 +143,7 @@ public class LogicDeviceWeeky : BaseNetLogic
         var group = (String)Owner.GetVariable("SelectDeviceName").Value;
         int week = Owner.GetVariable("SelectWeek").Value;
         int year = Owner.GetVariable("SelectYear").Value;
+        var nodata = Owner.GetVariable("NoData3");
         Store myDbStore = InformationModel.Get<Store>(Owner.GetVariable("MyDatabase").Value);
         string sqlQuery = $"SELECT RateDuration,SUM(RateToCarbon) AS Value FROM recordmultirateenergy " +
             $"WHERE Group=\'{group}\' AND Year={year} AND Week={week} GROUP BY RateDuration ORDER BY RateDuration";
@@ -150,9 +158,11 @@ public class LogicDeviceWeeky : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
+                nodata.Value = true;
                 Log.Error("LogicDeviceWeeky", "Line 150:Input query returned less than one line");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             foreach (var children in myModelObject.Children)
             {

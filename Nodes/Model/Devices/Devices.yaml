@@ -4,6 +4,7 @@ Children:
 - Name: Furnace
   Id: g=8b5075454fd68f7c83b43312b2ef19cf
   Type: Device
+  Description: {"NamespaceIndex":7,"TextId":"Furnace"}
   Children:
   - Name: PowerMeter1
     Id: g=8b664db715b607eb2ff9ddeb354bb880
@@ -234,6 +235,7 @@ Children:
 - Name: Takeup
   Id: g=61d78820495866d5fe12df4557570d49
   Type: Device
+  Description: {"NamespaceIndex":7,"TextId":"Takeup"}
   Children:
   - Name: PowerMeter1
     Type: NodePointer

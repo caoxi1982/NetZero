@@ -4,6 +4,7 @@ Children:
 - Name: MainOffice
   Id: g=6465ce95e59feb5acb570a9f931f5fa4
   Type: WorkShop
+  Description: {"NamespaceIndex":7,"TextId":"MainOffice"}
   Children:
   - Name: Energy
     Type: BaseDataVariableType
@@ -34,6 +35,7 @@ Children:
 - Name: DryDrawing
   Id: g=6d58eaa95ef63d7584f87e615f29e017
   Type: WorkShop
+  Description: {"NamespaceIndex":7,"TextId":"DryDrawing"}
   Children:
   - Name: Energy
     Type: BaseDataVariableType
@@ -64,6 +66,7 @@ Children:
 - Name: Heating
   Id: g=e8294c74f293f4aebdaed49b3d9e531a
   Type: WorkShop
+  Description: {"NamespaceIndex":7,"TextId":"Heating"}
   Children:
   - Name: Energy
     Type: BaseDataVariableType
@@ -94,6 +97,7 @@ Children:
 - Name: WetDrawing
   Id: g=b0aa5e4d6f7cce5f6069287514b93568
   Type: WorkShop
+  Description: {"NamespaceIndex":7,"TextId":"WetDrawing"}
   Children:
   - Name: Energy
     Type: BaseDataVariableType
@@ -124,6 +128,7 @@ Children:
 - Name: Cord
   Id: g=d082ae43fa344ffb062e5d510d238054
   Type: WorkShop
+  Description: {"NamespaceIndex":7,"TextId":"Cord"}
   Children:
   - Name: Energy
     Type: BaseDataVariableType
@@ -154,6 +159,7 @@ Children:
 - Name: Lubrication
   Id: g=e3ad3fd1e42250b2b737317c3f57ac00
   Type: WorkShop
+  Description: {"NamespaceIndex":7,"TextId":"Lubrication"}
   Children:
   - Name: Energy
     Type: BaseDataVariableType

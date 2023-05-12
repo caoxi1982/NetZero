@@ -173,7 +173,7 @@ Children:
     - Name: Title
       Type: BaseDataVariableType
       DataType: String
-      Value: "EnergyEfficency"
+      Value: "能源效率"
     - Name: lbUnit
       Type: Label
       Children:
@@ -325,7 +325,7 @@ Children:
     - Name: Title
       Type: BaseDataVariableType
       DataType: String
-      Value: "Carbon"
+      Value: "碳排放"
     - Name: Unit
       Type: BaseDataVariableType
       DataType: String
@@ -1039,7 +1039,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"CounterMeter Setting"}
+        Value: {"NamespaceIndex":7,"TextId":"CounterMeter Setting"}
       - Name: FontWeight
         Type: BaseDataVariableType
         DataType: FontWeightEnum
@@ -1506,7 +1506,7 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Close"}
+      Value: {"NamespaceIndex":7,"TextId":"Close"}
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment

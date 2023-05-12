@@ -22,7 +22,7 @@ public class LogicMeterWeeky : BaseNetLogic
 {
     public override void Start()
     {
-        // Insert code to be executed when the user-defined logic is started
+        RefreshAll();
     }
 
     public override void Stop()
@@ -43,6 +43,7 @@ public class LogicMeterWeeky : BaseNetLogic
         var meter = (String)Owner.GetVariable("SelectMeterName").Value;
         int week = Owner.GetVariable("SelectWeek").Value;
         int year = Owner.GetVariable("SelectYear").Value;
+        var nodata = Owner.GetVariable("NoData1");
         Store myDbStore = InformationModel.Get<Store>(Owner.GetVariable("MyDatabase").Value);
         string sqlQuery = $"SELECT Day,SUM(RateToCarbon) AS Value FROM RecordShiftEnergy " +
             $"WHERE MeterName=\'{meter}\' AND Year={year} AND Week={week} GROUP BY Day";
@@ -56,9 +57,11 @@ public class LogicMeterWeeky : BaseNetLogic
             myDbStore.Query(sqlQuery, out Header, out ResultSet);
             if (ResultSet.GetLength(0) < 1)
             {
+                nodata.Value = true;
                 Log.Error("LogicMeterWeeky", "Line 57:Input query returned less than one line");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             foreach (var children in myModelObject.Children)
             {
@@ -90,6 +93,7 @@ public class LogicMeterWeeky : BaseNetLogic
         var meter = (String)Owner.GetVariable("SelectMeterName").Value;
         int week = Owner.GetVariable("SelectWeek").Value;
         int year = Owner.GetVariable("SelectYear").Value;
+        var nodata = Owner.GetVariable("NoData2");
         Store myDbStore = InformationModel.Get<Store>(Owner.GetVariable("MyDatabase").Value);
         string sqlQuery = $"SELECT RateDuration,SUM(RateToCarbon) AS Value FROM recordmultirateenergy " +
             $"WHERE MeterName=\'{meter}\' AND Year={year} AND Week={week} GROUP BY RateDuration ORDER BY RateDuration";
@@ -113,15 +117,13 @@ public class LogicMeterWeeky : BaseNetLogic
             }
             if (ResultSet.GetLength(0) < 1)
             {
-                myObj1.Value = 0;
-                myObj2.Value = 0;
-                myObj3.Value = 0;
-                myObj4.Value = 0;
+                nodata.Value = true;  
                 myModelObject.Add(myObj1); myModelObject.Add(myObj2); myModelObject.Add(myObj3); myModelObject.Add(myObj4);
                 myChart.Refresh();
                 Log.Info("LogicMeterWeeky", "Line 150:this meter may not support Multi-Rate");
                 return;
             }
+            nodata.Value = false;
             // Delete all children from Object
             // For each column create an Object children
             for (int i = 0; i < ResultSet.GetLength(0); i++)

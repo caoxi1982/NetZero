@@ -29,7 +29,7 @@ Children:
   DataType: String
   ValueRank: OneDimension
   ArrayDimensions: [0]
-  Value: ["en-US"]
+  Value: ["en-US","zh-CN"]
 - Name: LocaleFallbackList
   Type: BaseDataVariableType
   DataType: String

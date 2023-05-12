@@ -3479,7 +3479,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "../../../Workshop@BrowseName"
+          Value: "../../../Workshop@Description"
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -3511,7 +3511,7 @@ Children:
       - Name: Title
         Type: BaseDataVariableType
         DataType: String
-        Value: "Monthy Energy Consumption"
+        Value: "MonthyEnergyConsumption"
       - Name: Unit
         Type: BaseDataVariableType
         DataType: String
@@ -3826,7 +3826,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Energy Flow"}
+        Value: {"NamespaceIndex":7,"TextId":"Energy Flow"}
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -4037,7 +4037,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: Optional
-        Value: {"LocaleId":"en-US","Text":"Energy Flow"}
+        Value: {"NamespaceIndex":7,"TextId":"Energy Flow"}
       - Name: Height
         Type: BaseVariableType
         DataType: Size
