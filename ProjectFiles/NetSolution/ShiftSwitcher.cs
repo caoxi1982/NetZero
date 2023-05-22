@@ -21,6 +21,9 @@ using FTOptix.CommunicationDriver;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using FTOptix.Report;
+using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 public class ShiftSwitcher : BaseNetLogic
 {
     private string shift1id, shift2id, shift3id;

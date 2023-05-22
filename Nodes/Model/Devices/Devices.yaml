@@ -235,7 +235,7 @@ Children:
 - Name: Takeup
   Id: g=61d78820495866d5fe12df4557570d49
   Type: Device
-  Description: {"NamespaceIndex":7,"TextId":"Takeup"}
+  Description: {"NamespaceIndex":7,"TextId":"Packing"}
   Children:
   - Name: PowerMeter1
     Type: NodePointer
@@ -459,8 +459,3 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"Id":78,"Namespace":3}
-- Name: CurrentDevice
-  Id: g=1f245836b214444399e81d0f0098b778
-  Type: BaseDataVariableType
-  DataType: NodeId
-  Value: {"IdType":0,"Id":0,"Namespace":-1}

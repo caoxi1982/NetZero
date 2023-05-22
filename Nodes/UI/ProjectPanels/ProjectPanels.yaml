@@ -15,7 +15,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 850.0
+    Value: 860.0
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
@@ -319,6 +319,11 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../Title1"
+            - Name: FontFamily
+              Type: BaseDataVariableType
+              DataType: Font
+              ModellingRule: Optional
+              Value: "Microsoft YaHei"
           - Name: Image1
             Type: Image
             Children:
@@ -530,7 +535,7 @@ Children:
           - Name: Unit1
             Type: BaseDataVariableType
             DataType: String
-            Value: "Million"
+            Value: "Kw"
           - Name: Unit2
             Type: BaseDataVariableType
             DataType: String
@@ -559,6 +564,10 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: {"IdType":2,"Id":"25f53ca38296f5915e5664963fe72eba","Namespace":7}
+          - Name: name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
         - Name: DryDrawingWorkshop
           Type: DisplayRowWithIconBegin
           Children:
@@ -582,7 +591,7 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/B8.PNG"
+              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/Picture2.png"
           - Name: HorizontalLayout1
             Type: RowLayout
             Children:
@@ -787,7 +796,7 @@ Children:
           - Name: Unit1
             Type: BaseDataVariableType
             DataType: String
-            Value: "Million"
+            Value: "Kw"
           - Name: Unit2
             Type: BaseDataVariableType
             DataType: String
@@ -816,6 +825,10 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: {"IdType":2,"Id":"25f53ca38296f5915e5664963fe72eba","Namespace":7}
+          - Name: name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
         - Name: HeatingWorkshop
           Type: DisplayRowWithIconBegin
           Children:
@@ -839,7 +852,7 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/b10.PNG"
+              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/Picture1.png"
           - Name: HorizontalLayout1
             Type: RowLayout
             Children:
@@ -1044,7 +1057,7 @@ Children:
           - Name: Unit1
             Type: BaseDataVariableType
             DataType: String
-            Value: "Million"
+            Value: "Kw"
           - Name: Unit2
             Type: BaseDataVariableType
             DataType: String
@@ -1073,6 +1086,10 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: {"IdType":2,"Id":"25f53ca38296f5915e5664963fe72eba","Namespace":7}
+          - Name: name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
         - Name: WetDrawingWorshop
           Type: DisplayRowWithIconBegin
           Children:
@@ -1096,7 +1113,7 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/b11.PNG"
+              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/Picture3.jpg"
           - Name: HorizontalLayout1
             Type: RowLayout
             Children:
@@ -1301,7 +1318,7 @@ Children:
           - Name: Unit1
             Type: BaseDataVariableType
             DataType: String
-            Value: "Million"
+            Value: "Kw"
           - Name: Unit2
             Type: BaseDataVariableType
             DataType: String
@@ -1330,6 +1347,10 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: {"IdType":2,"Id":"25f53ca38296f5915e5664963fe72eba","Namespace":7}
+          - Name: name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
         - Name: FinalWorkshop
           Type: DisplayRowWithIconBegin
           Children:
@@ -1353,7 +1374,7 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/b7.PNG"
+              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/Picture4.png"
           - Name: HorizontalLayout1
             Type: RowLayout
             Children:
@@ -1558,7 +1579,7 @@ Children:
           - Name: Unit1
             Type: BaseDataVariableType
             DataType: String
-            Value: "Million"
+            Value: "Kw"
           - Name: Unit2
             Type: BaseDataVariableType
             DataType: String
@@ -1587,6 +1608,10 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: {"IdType":2,"Id":"25f53ca38296f5915e5664963fe72eba","Namespace":7}
+          - Name: name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
         - Name: Lubrication
           Type: DisplayRowWithIconBegin
           Children:
@@ -1610,7 +1635,7 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/b9.PNG"
+              Value: "ns=7;%PROJECTDIR%/Resources/mainpanel/Picture5.png"
           - Name: HorizontalLayout1
             Type: RowLayout
             Children:
@@ -1815,7 +1840,7 @@ Children:
           - Name: Unit1
             Type: BaseDataVariableType
             DataType: String
-            Value: "Million"
+            Value: "Kw"
           - Name: Unit2
             Type: BaseDataVariableType
             DataType: String
@@ -1844,6 +1869,10 @@ Children:
               Type: PropertyType
               DataType: NodeId
               Value: {"IdType":2,"Id":"25f53ca38296f5915e5664963fe72eba","Namespace":7}
+          - Name: name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "0"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -1871,18 +1900,18 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "../../../Workshop@Description"
+              Value: "{NodeId:ns=7;g=f853829d-e78c-fb73-9128-51387b1d6944}@Description"
         - Name: DisplayParamWithIcon1
           Type: DisplayParamWithIcon
           Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: String
-            Value: "MonthyEnergyConsumption"
+            Value: "Monthy Energy Consume"
           - Name: Unit
             Type: BaseDataVariableType
             DataType: String
-            Value: "Kwh/T"
+            Value: "MwH"
           - Name: TagNode
             Type: BaseDataVariableType
             DataType: Float
@@ -1958,7 +1987,7 @@ Children:
           - Name: Unit
             Type: BaseDataVariableType
             DataType: String
-            Value: " $"
+            Value: "Million RMB"
           - Name: TagNode
             Type: BaseDataVariableType
             DataType: Float
@@ -2030,7 +2059,7 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: String
-            Value: "Average Service Calls Per Month"
+            Value: "Monthty Service Times"
           - Name: Unit
             Type: BaseDataVariableType
             DataType: String
@@ -2264,7 +2293,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 850.0
+    Value: 860.0
   - Name: HorizontalLayout1
     Type: RowLayout
     Children:
@@ -2466,12 +2495,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 5.0
+          Value: 2.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 5.0
+          Value: 0.0
       - Name: TimeSetting2
         Type: TimeSetting
         Children:
@@ -2619,12 +2648,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 5.0
+          Value: 2.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 5.0
+          Value: 0.0
       - Name: TimeSetting3
         Type: TimeSetting
         Children:
@@ -2772,12 +2801,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 5.0
+          Value: 2.0
         - Name: BottomMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 5.0
+          Value: 0.0
       - Name: VerticalAlignment
         Type: BaseVariableType
         DataType: VerticalAlignment
@@ -2860,7 +2889,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 2.0
+          Value: 5.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3019,7 +3048,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 2.0
+          Value: 5.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3178,7 +3207,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 2.0
+          Value: 5.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3337,7 +3366,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 2.0
+          Value: 5.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3496,7 +3525,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 2.0
+          Value: 5.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3655,7 +3684,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 2.0
+          Value: 5.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3814,7 +3843,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 2.0
+          Value: 5.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -3973,7 +4002,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 2.0
+          Value: 5.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
@@ -4093,6 +4122,319 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../Cost"
+      - Name: Label3
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"NamespaceIndex":7,"TextId":"SMTP Setting:"}
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 30.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+      - Name: TextParam1
+        Type: TextParam
+        Description: {"NamespaceIndex":7,"TextId":"SenderEmailAddress"}
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../..@Description"
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 0.0
+          - Name: LeftMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 0.0
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SenderEmailAddress"
+        - Name: TagNode
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: TextBox1
+          Type: TextBox
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=7;g=6392f9df-c98f-0062-eb37-0f8dc11f9b13}"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: BorderColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#b3b3b3"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 5.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 3.0
+      - Name: TextParam2
+        Type: TextParam
+        Description: {"NamespaceIndex":7,"TextId":"SenderEmailPassword"}
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../..@Description"
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SenderEmailPassword"
+        - Name: TagNode
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: TextBox1
+          Type: TextBox
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=7;g=2b8cd7da-6d59-6111-0997-da25491672bf}"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ContentType
+            Type: BaseVariableType
+            DataType: InputTypeEnum
+            ModellingRule: Optional
+            Value: 1
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 5.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+      - Name: TextParam3
+        Type: TextParam
+        Description: {"NamespaceIndex":7,"TextId":"SMTPHostName"}
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../..@Description"
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SMTPHostName"
+        - Name: TagNode
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: TextBox1
+          Type: TextBox
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=7;g=4c6c7e42-add9-efa3-3b33-3a0b2b7ef812}"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 5.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+      - Name: TextParam4
+        Type: TextParam
+        Description: {"NamespaceIndex":7,"TextId":"SMTPPort"}
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../..@Description"
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SMTPPort"
+        - Name: TagNode
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: TextBox1
+          Type: TextBox
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{NodeId:ns=7;g=0f2ab6dc-ea0a-62f6-2649-2b25f1504298}"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 5.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 2.0
+      - Name: SwitchParam1
+        Type: SwitchParam1
+        Description: {"NamespaceIndex":7,"TextId":"SSL Enable"}
+        Children:
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../..@Description"
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "SSL Enable"
+        - Name: TagNode
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=f676e2b5-268b-be04-6cab-0e73eca85c95}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Switch1
+          Type: Switch
+          Children:
+          - Name: Checked
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../TagNode"
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 5.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 3.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -4127,7 +4469,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 600.0
+    Value: 860.0
   - Name: VerticalLayout1
     Type: ColumnLayout
     Children:
@@ -5282,6 +5624,42 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{NodeId:ns=7;g=6d13fcdd-8f1b-e3a0-7aa8-87b0803af3c1}"
+    - Name: Button3
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":7,"TextId":"GeneratePDF"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -3.0
+    - Name: Button2
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"NamespaceIndex":7,"TextId":"sendEmail"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: -3.0
   - Name: VerticalLayout3
     Type: ColumnLayout
     Children:
@@ -8578,7 +8956,7 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/d1.PNG"
+              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/furnace.svg"
             - Name: FillMode
               Type: BaseDataVariableType
               DataType: FillModeEnum
@@ -8587,7 +8965,7 @@ Children:
           - Name: SN
             Type: BaseDataVariableType
             DataType: String
-            Value: "Fu-0002"
+            Value: "Fur-0002"
           - Name: UpTimeLogic
             Type: NetLogic
           - Name: UpTime
@@ -8848,7 +9226,7 @@ Children:
                     Value: "../../../../Status"
         - Name: TakeUp
           Type: DisplayDevicewithIcon
-          Description: {"NamespaceIndex":7,"TextId":"Takeup"}
+          Description: {"NamespaceIndex":7,"TextId":"Packing"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -8900,11 +9278,11 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/m11.png"
+              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/packer.svg"
           - Name: SN
             Type: BaseDataVariableType
             DataType: String
-            Value: "Tu-0023"
+            Value: "Pac-0023"
           - Name: UpTimeLogic
             Type: NetLogic
           - Name: UpTime
@@ -9155,7 +9533,7 @@ Children:
                     Value: "../../../../Status"
         - Name: Dryer
           Type: DisplayDevicewithIcon
-          Description: {"NamespaceIndex":7,"TextId":"Dryer"}
+          Description: {"NamespaceIndex":7,"TextId":"Dryer 1#"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -9207,11 +9585,11 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/ac3.png"
+              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/cool.svg"
           - Name: SN
             Type: BaseDataVariableType
             DataType: String
-            Value: "Dr-0001"
+            Value: "Dry-0001"
           - Name: UpTimeLogic
             Type: NetLogic
           - Name: UpTime
@@ -9391,7 +9769,7 @@ Children:
                     Value: "../../../../Status"
         - Name: Closer
           Type: DisplayDevicewithIcon
-          Description: {"NamespaceIndex":7,"TextId":"Closer"}
+          Description: {"NamespaceIndex":7,"TextId":"Dryer 2#"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -9443,11 +9821,11 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/ac1.png"
+              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/cool.svg"
           - Name: SN
             Type: BaseDataVariableType
             DataType: String
-            Value: "Cs-0001"
+            Value: "Dry-0002"
           - Name: UpTimeLogic
             Type: NetLogic
           - Name: UpTime
@@ -9617,7 +9995,7 @@ Children:
                     Value: "../../../../Status"
         - Name: LubricateStation
           Type: DisplayDevicewithIcon
-          Description: {"NamespaceIndex":7,"TextId":"Lubrication"}
+          Description: {"NamespaceIndex":7,"TextId":"Shaping"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -9669,11 +10047,11 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/ac4.png"
+              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/deposit.svg"
           - Name: SN
             Type: BaseDataVariableType
             DataType: String
-            Value: "Ls-0001"
+            Value: "Dep-0001"
           - Name: UpTimeLogic
             Type: NetLogic
           - Name: UpTime
@@ -9853,7 +10231,7 @@ Children:
             Value: 5.0
         - Name: CoolingWaterStation
           Type: DisplayDevicewithIcon
-          Description: {"NamespaceIndex":7,"TextId":"CoolingWaterStation"}
+          Description: {"NamespaceIndex":7,"TextId":"Chiller 1#"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -9905,11 +10283,11 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/a1.png"
+              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/mixer.svg"
           - Name: SN
             Type: BaseDataVariableType
             DataType: String
-            Value: "Co-0001"
+            Value: "Mix-0001"
           - Name: UpTimeLogic
             Type: NetLogic
           - Name: UpTime
@@ -10079,7 +10457,7 @@ Children:
                     Value: "../../../../Status"
         - Name: CoolingWaterStation1
           Type: DisplayDevicewithIcon
-          Description: {"NamespaceIndex":7,"TextId":"CoolingWaterStation2"}
+          Description: {"NamespaceIndex":7,"TextId":"Chiller 2#"}
           Children:
           - Name: Rectangle1
             Type: Rectangle
@@ -10131,11 +10509,11 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: ResourceUri
-              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/rp1.png"
+              Value: "ns=7;%PROJECTDIR%/Resources/devicepanel/mixer.svg"
           - Name: SN
             Type: BaseDataVariableType
             DataType: String
-            Value: "Co-0002"
+            Value: "Mix-0002"
           - Name: UpTimeLogic
             Type: NetLogic
           - Name: UpTime
@@ -10456,7 +10834,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "能源效率"
+                Value: "Energy Efficency"
               - Name: lbUnit
                 Type: Label
                 Children:
@@ -10587,7 +10965,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "碳排放"
+                Value: "CO2 Emitted"
               - Name: Unit
                 Type: BaseDataVariableType
                 DataType: String
@@ -10803,7 +11181,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "能源效率"
+                Value: "Energy Efficency"
               - Name: lbUnit
                 Type: Label
                 Children:
@@ -10934,7 +11312,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "碳排放"
+                Value: "CO2 Emitted"
               - Name: Unit
                 Type: BaseDataVariableType
                 DataType: String
@@ -11150,7 +11528,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "能源效率"
+                Value: "Energy Efficency"
               - Name: lbUnit
                 Type: Label
                 Children:
@@ -11281,7 +11659,7 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: String
-                Value: "碳排放"
+                Value: "CO2 Emitted"
               - Name: Unit
                 Type: BaseDataVariableType
                 DataType: String
@@ -11644,7 +12022,7 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
-- Name: ReportPanel
+- Name: ns=7;ReportPanel
   Id: g=597e8b7588ebec9ef25e4f675d12daed
   Supertype: Panel
   ReferenceType: HasComponent
@@ -11658,7 +12036,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 850.0
+    Value: 860.0
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
@@ -11774,7 +12152,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 8.0
+        Value: 5.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -11895,7 +12273,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 466.0
+        Value: 454.0
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -11963,7 +12341,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 480.0
+        Value: 470.0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
@@ -11983,7 +12361,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 360.0
+        Value: 380.0
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -12139,7 +12517,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 330.0
+      Value: 360.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -12149,7 +12527,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 500.0
+      Value: 480.0
 - Name: AlarmPanel
   Id: g=d188ffd680676a3af9cec1b95c871707
   Supertype: Panel
@@ -14178,3 +14556,691 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 10.0
+- Name: NotificationPanel
+  Id: g=23e47963df85b7ffc149d897a6c8386b
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1350.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 860.0
+  - Name: Label9
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"MailToAddress"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 65.0
+  - Name: to
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"xi.cao@rockwellautomation.com"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 314.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: body
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"hello"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 310.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 140.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: Label7
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Subject"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 95.0
+  - Name: Label8
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Body"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 140.0
+  - Name: subject
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":7,"TextId":"Report"}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 314.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 95.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"Send"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 490.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 253.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":2,"Id":"ef0a8aad3374f956ad701c8d46629707","Namespace":7}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "SendEmail"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: mailToAddress
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../to/Text"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: mailSubject
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../subject/Text"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: mailBody
+              Type: BaseDataVariableType
+              DataType: String
+              Value: ""
+              Children:
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../body/Text"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+  - Name: Button2
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"NamespaceIndex":7,"TextId":"GenerateReport"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 367.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 253.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":16,"Namespace":3}
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":2,"Id":"483c39e755212dfdd03dd5825664d353","Namespace":7}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: {"Id":58}
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "GeneratePdf"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: OutputPath
+              Type: BaseDataVariableType
+              DataType: ResourceUri
+              Description: {"NamespaceIndex":27,"TextId":"GeneratePdfOutputPathDescription"}
+              Value: "ns=7;%PROJECTDIR%/report.pdf"
+            - Name: LocaleId
+              Type: BaseDataVariableType
+              DataType: String
+              Description: {"NamespaceIndex":27,"TextId":"GeneratePdfLocaleIdDescription"}
+              Value: ""
+          - Name: OutputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: OperationId
+              Type: BaseDataVariableType
+              DataType: Guid
+              Description: {"NamespaceIndex":27,"TextId":"GeneratePdfOperationIdDescription"}
+              Value: "00000000000000000000000000000000"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+- Name: LoginDialogBox
+  Id: g=4be07186b66969909b27e0f1a253edb6
+  Supertype: Dialog
+  ReferenceType: HasComponent
+  Children:
+  - Class: Reference
+    Target: ns=3;i=519
+    Direction: Forward
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#000000"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#fafafa"
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 2.0
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: HitTestVisible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: false
+    - Name: Blink
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: false
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: true
+    - Name: Opacity
+      Type: BaseVariableType
+      DataType: Float
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 410.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Rotation
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Button1
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":""}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 400.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 0.0
+      - Name: ImagePath
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        ModellingRule: Optional
+        Value: "ns=7;%PROJECTDIR%/Resources/images/close-square-fill.svg"
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: ImagePosition
+        Type: BaseDataVariableType
+        DataType: Position
+        ModellingRule: Optional
+        Value: 4
+      - Name: Appearance
+        Type: BaseVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "transparent"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: ImageWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: ImageHeight
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 40.0
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":16,"Namespace":3}
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=2;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: {"Id":58}
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../..@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=2;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Close"
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+  - Name: LoginForm1
+    Type: LoginForm
+    Children:
+    - Name: Panel
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":71,"Namespace":3}
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{Session}/LoggedIn"
+    - Name: CurrentPanel
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":6,"Namespace":3}
+    - Class: Reference
+      Target: ns=3;i=478
+      Direction: Forward
+    - Name: Users
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"d6c2b5be98c3e07bfadb3db639ac049a","Namespace":7}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"Id":61}
+    - Name: PanelAliasNode
+      Type: BaseDataVariableType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../Users@NodeId"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 1

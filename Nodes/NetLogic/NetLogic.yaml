@@ -1,2 +1,431 @@
 Name: NetLogic
 Type: FolderType
+Children:
+- Name: EmailSenderLogic
+  Id: g=ef0a8aad3374f956ad701c8d46629707
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: SendEmail
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"mailToAddress","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailSubject","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"mailBody","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+  - Name: SenderEmailAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/NetLogic/Email/SenderAddress"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SenderEmailPassword
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/NetLogic/Email/SenderPassword"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SMTPHostname
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/NetLogic/Email/STMPHost"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: SMTPPort
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/NetLogic/Email/STMPPort"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: EnableSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/NetLogic/Email/SSLEnable"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Attachment
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=7;%PROJECTDIR%/report.pdf"
+  - Name: MaxRetriesOnFailure
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DelayBeforeRetry
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:10.0000000"
+  - Name: EmailSendingStatus
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: MQTTLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Class: Method
+    Name: StartListeningToVariables
+  - Name: MqttServer
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: IPAddress
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Port
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 0
+    - Name: UseSSL
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: Certificate
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: ""
+      - Name: CertificatePassword
+        Type: BaseDataVariableType
+        DataType: Password
+        Value: ""
+    - Name: AutoStart
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: UserAuthentication
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: AuthorizedUsers
+        Type: BaseDataVariableType
+        DataType: String
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: []
+    - Name: IsRunning
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: IsDebuggingMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: MaxNumberOfConnections
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: NumberOfConnections
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Name: MqttClient
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: IPAddress
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "192.168.248.2"
+    - Name: Port
+      Type: BaseDataVariableType
+      DataType: UInt16
+      Value: 1883
+    - Name: UseSSL
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: CaCertificate
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: ""
+      - Name: ClientCertificate
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: ""
+      - Name: ClientCertificatePassword
+        Type: BaseDataVariableType
+        DataType: Password
+        Value: ""
+      - Name: AllowUntrustedCertificates
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+    - Name: UserAuthentication
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: AuthorizedUsers
+        Type: BaseDataVariableType
+        DataType: String
+        ValueRank: OneDimension
+        ArrayDimensions: [0]
+        Value: []
+    - Name: IsRunning
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: IsDebuggingMode
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: ClientId
+      Type: BaseDataVariableType
+      DataType: String
+      Value: ""
+    - Name: Connected
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: SentPackages
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: ReceivedPackages
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Method
+    Name: StartMQTTServer
+  - Name: Subscriber
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: LiveTags
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: LiveTagsFolder
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"6c12d73610c309829d74345d0f7316ca","Namespace":7}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NodeClass
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+          Value: 0
+      - Name: LiveTagsTopic
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "NetZeroIn"
+      - Name: LastPackageTimestamp
+        Type: BaseDataVariableType
+        DataType: DateTime
+        Value: "1601-01-01T00:00:00.0000000"
+    - Name: StoreTables
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: Store
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":1,"Namespace":17}
+      - Name: StoreTablesTopic
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+    - Name: CustomPayload
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: CustomPayloadMessage
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: CustomPayloadTopic
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+  - Name: Publisher
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+    Children:
+    - Name: LiveTags
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: LiveTagsPeriod
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:10.0000000"
+      - Name: LiveTagsFolder
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":2,"Id":"6c12d73610c309829d74345d0f7316ca","Namespace":7}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: NodeClass
+          Type: PropertyType
+          DataType: NodePointerNodeClass
+          Value: 0
+      - Name: LiveTagsTopic
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "NetZeroOut"
+      - Name: QoS
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Retain
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+    - Name: StoreTables
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: Store
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"Id":1,"Namespace":17}
+      - Name: TableNames
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+        Children:
+        - Name: Table1
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+        - Name: Table2
+          Type: BaseDataVariableType
+          DataType: String
+          Value: ""
+      - Name: PreserveData
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: MaximumItemsPerPacket
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: MaximumPublishTime
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:0.0000000"
+      - Name: MinimumPublishTime
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:0.0000000"
+      - Name: StoreTablesTopic
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: QoS
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Retain
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: TablesPrefix
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: AllRows
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+    - Name: CustomPayload
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: CustomPayloadMessage
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "0"
+      - Name: CustomPayloadTopic
+        Type: BaseDataVariableType
+        DataType: String
+        Value: ""
+      - Name: CustomPayloadPeriod
+        Type: BaseDataVariableType
+        DataType: Duration
+        Value: "0:00:00:0.0000000"
+      - Name: QoS
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Name: Retain
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+  - Class: Method
+    Name: FetchData
+  - Class: Method
+    Name: StartCustomPayload

@@ -9,6 +9,8 @@ using FTOptix.CommunicationDriver;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using FTOptix.Report;
+using FTOptix.WebUI;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

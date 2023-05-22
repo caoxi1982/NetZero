@@ -714,6 +714,10 @@ Children:
           Type: StoreColumn
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
+        - Name: 'Message_zh-CN'
+          Type: StoreColumn
+          DataType: String
+          Value: ""
   - Name: Type
     Type: PropertyType
     DataType: DBMSType

@@ -21,6 +21,9 @@ using FTOptix.CommunicationDriver;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using FTOptix.Report;
+using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 #endregion
 
 public class RunGeneralMeter : BaseNetLogic
@@ -65,7 +68,7 @@ public class RunGeneralMeter : BaseNetLogic
         UAmeterspeed.Value = speed;
         UAtotal.Value = total;
 
-        float productSpeed = (float)(UAProductSpeedSetting.Value + 2 * r.NextDouble());
+        float productSpeed = (float)(UAProductSpeedSetting.Value * (1 + 0.2 * r.NextDouble()));
         double productVolume = UAProductVolume.Value;
         productVolume += productSpeed;
         UAProductSpeed.Value = productSpeed;

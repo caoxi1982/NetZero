@@ -16,6 +16,9 @@ using FTOptix.Core;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using FTOptix.Report;
+using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 #endregion
 
 public class LogicMeterDaily : BaseNetLogic
@@ -68,7 +71,7 @@ public class LogicMeterDaily : BaseNetLogic
             {
                 String columnName = "Shift_" + Convert.ToString(ResultSet[i, 0]);
                 var myObj = InformationModel.MakeVariable(columnName, OpcUa.DataTypes.String);
-                myObj.Value = Convert.ToDouble(ResultSet[i, 1]);
+                myObj.Value = Convert.ToDouble(ResultSet[i, 1]) * 1;
                 myModelObject.Add(myObj);
 
             }

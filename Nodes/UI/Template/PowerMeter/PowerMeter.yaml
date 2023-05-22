@@ -1315,7 +1315,7 @@ Children:
     - Name: Title
       Type: BaseDataVariableType
       DataType: String
-      Value: "能源效率"
+      Value: "Energy Efficency"
     - Name: lbUnit
       Type: Label
       Children:
@@ -1467,7 +1467,7 @@ Children:
     - Name: Title
       Type: BaseDataVariableType
       DataType: String
-      Value: "碳排放"
+      Value: "CO2 Emitted"
     - Name: Unit
       Type: BaseDataVariableType
       DataType: String
@@ -2248,19 +2248,8 @@ Children:
         Value: 10.0
     - Name: SwitchParam1
       Type: SwitchParam1
+      Description: {"NamespaceIndex":7,"TextId":"Enable"}
       Children:
-      - Name: Switch1
-        Type: Switch
-        Children:
-        - Name: Checked
-          Type: BaseDataVariableType
-          DataType: Boolean
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../TagNode"
       - Name: Label1
         Type: Label
         Children:
@@ -2272,7 +2261,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../Title"
+            Value: "../..@Description"
       - Name: Title
         Type: BaseDataVariableType
         DataType: String
@@ -2318,8 +2307,21 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 3.0
+      - Name: Switch1
+        Type: Switch
+        Children:
+        - Name: Checked
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../TagNode"
     - Name: SpinParam1
       Type: SpinParam1
+      Description: {"NamespaceIndex":7,"TextId":"RateToCost"}
       Children:
       - Name: lbTitle
         Type: Label
@@ -2332,7 +2334,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../Title"
+            Value: "../..@Description"
       - Name: SpinBox1
         Type: SpinBox
         Children:
@@ -2408,6 +2410,7 @@ Children:
         Value: 3.0
     - Name: SpinParam2
       Type: SpinParam1
+      Description: {"NamespaceIndex":7,"TextId":"RateToCarbon"}
       Children:
       - Name: lbTitle
         Type: Label
@@ -2420,7 +2423,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../Title"
+            Value: "../..@Description"
       - Name: SpinBox1
         Type: SpinBox
         Children:
@@ -2496,6 +2499,7 @@ Children:
         Value: 3.0
     - Name: SpinParam3
       Type: SpinParam1
+      Description: {"NamespaceIndex":7,"TextId":"Efficiency Low Setting"}
       Children:
       - Name: lbTitle
         Type: Label
@@ -2508,7 +2512,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../Title"
+            Value: "../..@Description"
       - Name: SpinBox1
         Type: SpinBox
         Children:
@@ -2584,6 +2588,7 @@ Children:
         Value: 3.0
     - Name: SpinParam4
       Type: SpinParam1
+      Description: {"NamespaceIndex":7,"TextId":"Efficiency Low Low Setting"}
       Children:
       - Name: lbTitle
         Type: Label
@@ -2596,7 +2601,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "../../Title"
+            Value: "../..@Description"
       - Name: SpinBox1
         Type: SpinBox
         Children:

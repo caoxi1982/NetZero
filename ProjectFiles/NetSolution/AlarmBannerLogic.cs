@@ -15,6 +15,9 @@ using FTOptix.CommunicationDriver;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using FTOptix.Report;
+using FTOptix.UI;
+using FTOptix.OPCUAServer;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

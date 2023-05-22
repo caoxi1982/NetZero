@@ -17,6 +17,9 @@ using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
 using System.Xml.Linq;
+using FTOptix.Report;
+using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 #endregion
 
 public class LogicDeviceWeeky : BaseNetLogic

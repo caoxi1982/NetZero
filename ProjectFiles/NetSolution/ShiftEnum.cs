@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using FTOptix.Report;
+using FTOptix.UI;
+using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 
 namespace NetZero
 {

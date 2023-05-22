@@ -1,2 +1,68 @@
 Name: 'OPC-UA'
 Type: FolderType
+Children:
+- Name: OPCUAServer1
+  Type: OPCUAServer
+  Children:
+  - Name: EndpointURL
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "opc.tcp://192.168.248.2:59100"
+  - Name: NodesToPublish
+    Type: BaseObjectType
+    Children:
+    - Name: Configuration1
+      Type: NodesToPublishConfigurationEntry
+      Children:
+      - Name: Nodes
+        Type: BaseObjectType
+        Children:
+        - Name: Node1
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"6c12d73610c309829d74345d0f7316ca","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 2
+      - Name: Users
+        Type: BaseObjectType
+        Children:
+        - Name: User1
+          Type: NodePointer
+          DataType: NodeId
+          Value: {"IdType":2,"Id":"275dd0eaf95d18098170cefe8982754e","Namespace":7}
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"Id":14,"Namespace":1}
+          - Name: NodeClass
+            Type: PropertyType
+            DataType: NodePointerNodeClass
+            Value: 0
+      - Name: PublishDynamicConfiguration
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+  - Name: MinimumMessageSecurityMode
+    Type: PropertyType
+    DataType: MessageSecurityModeEnum
+    Value: 0
+  - Name: MinimumSecurityPolicy
+    Type: PropertyType
+    DataType: SecurityPolicyEnum
+    Value: 0
+  - Name: SamplingInterval
+    Type: PropertyType
+    DataType: Duration
+    Value: "0:00:00:5.0000000"
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 2

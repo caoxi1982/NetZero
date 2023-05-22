@@ -309,7 +309,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 400.0
+      Value: 370.0
     - Name: ReferenceTimeZone
       Type: BaseDataVariableType
       DataType: ReferenceTimeZone

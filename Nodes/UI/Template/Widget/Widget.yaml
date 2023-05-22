@@ -16,44 +16,6 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 30.0
-  - Name: Switch1
-    Type: Switch
-    Children:
-    - Name: Checked
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "../../TagNode"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 80.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 440.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
   - Name: Label1
     Type: Label
     Children:
@@ -65,7 +27,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../Title"
+        Value: "../..@Description"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -114,6 +76,156 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
+  - Name: Switch1
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../TagNode"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 80.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 440.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+- Name: TextParam
+  Id: g=c0df7019d8ac0d1a9f31e32438ffbf49
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 600.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 30.0
+  - Name: Label1
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../..@Description"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 420.0
+    - Name: FontFamily
+      Type: BaseDataVariableType
+      DataType: Font
+      ModellingRule: Optional
+      Value: "Source Han Sans CN Normal"
+  - Name: Title
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: TagNode
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: TextBox1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 100.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#b3b3b3"
 - Name: SpinParam1
   Id: g=09b2cf5c17e2334a96d188838682dc27
   Supertype: Panel
@@ -140,7 +252,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "../../Title"
+        Value: "../..@Description"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -170,7 +282,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 210.0
+      Value: 330.0
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -208,7 +320,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 280.0
+      Value: 170.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -233,7 +345,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 230.0
+      Value: 340.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
@@ -3860,7 +3972,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 40.0
+    Value: 30.0
   - Name: Rectangle1
     Type: Rectangle
     Children:
@@ -4187,7 +4299,12 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 15.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
     - Name: Label3
       Type: Label
       Children:
@@ -4268,7 +4385,7 @@ Children:
         Type: BaseDataVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 20.0
+        Value: 15.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -4279,6 +4396,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 0.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
     - Name: Label4
       Type: Label
       Children:
@@ -4360,6 +4482,11 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 2
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
 - Name: DisplayDevicewithIcon
   Id: g=76f0edba6486aeb043bcedc14a0bc356
   Supertype: Panel
@@ -4602,22 +4729,22 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 144.0
+      Value: 130.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 91.0
+      Value: 80.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 12.0
+      Value: 20.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 15.0
+      Value: 20.0
     - Name: ImageLeftMargin
       Type: BaseDataVariableType
       DataType: Size
@@ -5021,7 +5148,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: "Montserrat"
+      Value: "Microsoft YaHei"
     - Name: RightMargin
       Type: BaseVariableType
       DataType: Size
@@ -5289,7 +5416,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
+      Value: 3.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
@@ -5565,7 +5692,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Font
       ModellingRule: Optional
-      Value: "Source Han Sans CN Normal"
+      Value: "Microsoft YaHei"
   - Name: Image1
     Type: Image
     Children:
@@ -5577,22 +5704,22 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 250.0
+      Value: 230.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 120.0
+      Value: 100.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
+      Value: 10.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 0.0
+      Value: 10.0
     - Name: ImageLeftMargin
       Type: BaseDataVariableType
       DataType: Size
@@ -5680,7 +5807,7 @@ Children:
               DataType: LocalizedText
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: {"LocaleId":"","Text":"{0:f2}"}
+              Value: {"LocaleId":"","Text":"{0:n2}"}
             - Name: ns=2;Source0
               Type: BaseDataVariableType
               DataType: BaseDataType
@@ -5846,7 +5973,7 @@ Children:
               DataType: LocalizedText
               ReferenceType: HasParameter
               ModellingRule: Optional
-              Value: {"LocaleId":"","Text":"{0:f3}"}
+              Value: {"LocaleId":"","Text":"{0:n2}"}
             - Name: ns=2;Source0
               Type: BaseDataVariableType
               DataType: BaseDataType
@@ -6176,7 +6303,7 @@ Children:
   - Name: Unit1
     Type: BaseDataVariableType
     DataType: String
-    Value: "Million"
+    Value: "Kw"
   - Name: Unit2
     Type: BaseDataVariableType
     DataType: String
@@ -6190,6 +6317,15 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: {"IdType":2,"Id":"25f53ca38296f5915e5664963fe72eba","Namespace":7}
+  - Name: name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Visible
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
 - Name: ComboBoxWithLabel
   Id: g=85070a04062b6243351ce654ba32d220
   Supertype: Panel
@@ -6638,7 +6774,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 16.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment

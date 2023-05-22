@@ -20,6 +20,9 @@ using FTOptix.CommunicationDriver;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using FTOptix.Report;
+using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 #endregion
 
 public class RunPowerMeter : BaseNetLogic
@@ -99,7 +102,7 @@ public class RunPowerMeter : BaseNetLogic
         UACurrent.Value = i_value;
         UAVoltage.Value = v_value;
 
-        float productSpeed = (float)(UAProductSpeedSetting.Value + 3 * r.NextDouble());
+        float productSpeed = (float)(UAProductSpeedSetting.Value * (1 + 0.4 * r.NextDouble()));
         double productVolume = UAProductVolume.Value;
         productVolume += productSpeed;
         UAProductSpeed.Value = productSpeed;

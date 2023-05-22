@@ -379,3 +379,4 @@ Children:
 - File: Devices/Devices.yaml
 - File: WorkShop/WorkShop.yaml
 - File: Test/Test.yaml
+- File: NetLogic/NetLogic.yaml

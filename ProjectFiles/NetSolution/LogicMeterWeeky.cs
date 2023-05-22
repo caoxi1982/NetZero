@@ -16,6 +16,9 @@ using FTOptix.Core;
 using FTOptix.AuditSigning;
 using FTOptix.Recipe;
 using FTOptix.EventLogger;
+using FTOptix.Report;
+using FTOptix.OPCUAServer;
+using FTOptix.WebUI;
 #endregion
 
 public class LogicMeterWeeky : BaseNetLogic
@@ -72,7 +75,7 @@ public class LogicMeterWeeky : BaseNetLogic
             {
                 String columnName = "Day_" + Convert.ToString(ResultSet[i, 0]);
                 var myObj = InformationModel.MakeVariable(columnName, OpcUa.DataTypes.String);
-                myObj.Value = Convert.ToDouble(ResultSet[i, 1]);
+                myObj.Value = Convert.ToDouble(ResultSet[i, 1]) * 1000;
                 myModelObject.Add(myObj);
 
             }
@@ -149,10 +152,10 @@ public class LogicMeterWeeky : BaseNetLogic
                         break;
                 }
             }
-            myObj1.Value = valley;
-            myObj2.Value = normal;
-            myObj3.Value = high;
-            myObj4.Value = peak;
+            myObj1.Value = valley * 1000;
+            myObj2.Value = normal * 1000;
+            myObj3.Value = high * 1000;
+            myObj4.Value = peak * 1000;
             myModelObject.Add(myObj1); myModelObject.Add(myObj2); myModelObject.Add(myObj3); myModelObject.Add(myObj4);
             myChart.Refresh();
         }

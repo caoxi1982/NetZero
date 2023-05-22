@@ -13,7 +13,7 @@ Children:
   - Name: PowerSetting
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 6
+    Value: 76
   - Name: VoltageSetting
     Type: BaseDataVariableType
     DataType: Int32
@@ -66,7 +66,7 @@ Children:
   - Name: PowerSetting
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 12
+    Value: 32
   - Name: VoltageSetting
     Type: BaseDataVariableType
     DataType: Int32
@@ -106,7 +106,7 @@ Children:
   - Name: ProductOutPutRateSetting
     Type: BaseDataVariableType
     DataType: Float
-    Value: 34.0
+    Value: 12.0
 - Name: TakeupGeneralSimulator
   Type: GeneralMeterSimulator
   Children:
@@ -117,7 +117,7 @@ Children:
   - Name: SpeedSetting
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 12
+    Value: 32
   - Name: ProductOutPutRate
     Type: BaseDataVariableType
     DataType: Float
@@ -139,7 +139,7 @@ Children:
   - Name: ProductOutPutRateSetting
     Type: BaseDataVariableType
     DataType: Float
-    Value: 26.0
+    Value: 12.0
 - Name: FurnaceGeneralSimulator
   Type: GeneralMeterSimulator
   Children:
@@ -150,7 +150,7 @@ Children:
   - Name: SpeedSetting
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 30
+    Value: 54
   - Name: ProductOutPutRate
     Type: BaseDataVariableType
     DataType: Float
@@ -183,7 +183,7 @@ Children:
   - Name: CounterPerTenSecond
     Type: BaseDataVariableType
     DataType: Int32
-    Value: 6
+    Value: 26
   - Name: ProductOutPutRate
     Type: BaseDataVariableType
     DataType: Float
