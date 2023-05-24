@@ -35,3 +35,8 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
+- Name: week
+  Id: g=b22b81d6f05a9e257e22b070a35c5fe3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

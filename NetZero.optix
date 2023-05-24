@@ -105,14 +105,6 @@ Project:
    Uri: 'urn:FTOptix:Report:Net'
    Module: FTOptix.Report.Net
    Version: 1.0
-  29:
-   Uri: 'urn:FTOptix:OPCUAServer'
-   Module: FTOptix.OPCUAServer
-   Version: 1.0
-  30:
-   Uri: 'urn:FTOptix:OPCUAServer:Net'
-   Module: FTOptix.OPCUAServer.Net
-   Version: 1.0
   31:
    Uri: 'urn:FTOptix:WebUI'
    Module: FTOptix.WebUI

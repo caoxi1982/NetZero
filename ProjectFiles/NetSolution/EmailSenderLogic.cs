@@ -9,6 +9,8 @@ using FTOptix.Report;
 using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class EmailSenderLogic : BaseNetLogic

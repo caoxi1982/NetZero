@@ -22,6 +22,7 @@ using FTOptix.EventLogger;
 using FTOptix.Report;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
+using FTOptix.RAEtherNetIP;
 #endregion
 
 public class RecordConsume : BaseNetLogic
@@ -178,7 +179,7 @@ public class RecordConsume : BaseNetLogic
         Log.Info("Delete", "Deleted last record");
     }
     [ExportMethod]
-    public void addTestData(int month, int day)
+    public void addTestData(int month, int week, int day)
     {
         Random r = new Random();
         // Prepare SQL Query
@@ -191,7 +192,7 @@ public class RecordConsume : BaseNetLogic
             shiftvalues[0, 3] = 2023;
             shiftvalues[0, 4] = month;
             shiftvalues[0, 5] = day;
-            shiftvalues[0, 6] = 18;
+            shiftvalues[0, 6] = week;
             shiftvalues[0, 7] = Owner.BrowseName;
             shiftvalues[0, 8] = i;
             shiftvalues[0, 9] = r.NextDouble() * 20;

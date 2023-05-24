@@ -165,32 +165,15 @@ Children:
     DataType: Double
     Value: 0.0
     Children:
-    - Name: ExpressionEvaluator1
-      Type: ExpressionEvaluator
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Meters/Power/FurnacePower/Efficency"
       Children:
-      - Name: Expression
-        Type: BaseDataVariableType
-        DataType: String
-        ReferenceType: HasParameter
-        Value: "{0}/{1}"
-      - Name: ns=2;Source0
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/Power/FurnacePower/Power[0]"
-      - Name: ns=2;Source1
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/Power/FurnacePower/ProductOutputRate"
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: LastEvent
     Type: BaseDataVariableType
     DataType: BaseDataType
@@ -253,32 +236,15 @@ Children:
     DataType: Double
     Value: 0.0
     Children:
-    - Name: ExpressionEvaluator1
-      Type: ExpressionEvaluator
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Meters/Power/TakeupPower/Efficency"
       Children:
-      - Name: Expression
-        Type: BaseDataVariableType
-        DataType: String
-        ReferenceType: HasParameter
-        Value: "{0}/{1}"
-      - Name: ns=2;Source0
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/Power/TakeupPower/Power[0]"
-      - Name: ns=2;Source1
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/Power/TakeupPower/ProductOutputRate"
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: LastEvent
     Type: BaseDataVariableType
     DataType: BaseDataType
@@ -337,32 +303,15 @@ Children:
     DataType: Double
     Value: 0.0
     Children:
-    - Name: ExpressionEvaluator1
-      Type: ExpressionEvaluator
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Meters/General/TakeupGeneral/Efficency"
       Children:
-      - Name: Expression
-        Type: BaseDataVariableType
-        DataType: String
-        ReferenceType: HasParameter
-        Value: "{0}/{1}"
-      - Name: ns=2;Source0
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/General/TakeupGeneral/MeterSpeed"
-      - Name: ns=2;Source1
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/General/TakeupGeneral/ProductOutputRate"
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: LastEvent
     Type: BaseDataVariableType
     DataType: BaseDataType
@@ -421,32 +370,15 @@ Children:
     DataType: Double
     Value: 0.0
     Children:
-    - Name: ExpressionEvaluator1
-      Type: ExpressionEvaluator
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Meters/General/FurnaceGeneral/Efficency"
       Children:
-      - Name: Expression
-        Type: BaseDataVariableType
-        DataType: String
-        ReferenceType: HasParameter
-        Value: "{0}/{1}"
-      - Name: ns=2;Source0
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/General/FurnaceGeneral/MeterSpeed"
-      - Name: ns=2;Source1
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/General/FurnaceGeneral/ProductOutputRate"
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: LastEvent
     Type: BaseDataVariableType
     DataType: BaseDataType
@@ -505,32 +437,15 @@ Children:
     DataType: Double
     Value: 0.0
     Children:
-    - Name: ExpressionEvaluator1
-      Type: ExpressionEvaluator
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Meters/Counter/TakeUpCooingWater/Efficency"
       Children:
-      - Name: Expression
-        Type: BaseDataVariableType
-        DataType: String
-        ReferenceType: HasParameter
-        Value: "{0}/{1}"
-      - Name: ns=2;Source0
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/Counter/TakeUpCooingWater/CounterRate"
-      - Name: ns=2;Source1
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/Counter/TakeUpCooingWater/ProductOutputRate"
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: LastEvent
     Type: BaseDataVariableType
     DataType: BaseDataType
@@ -589,32 +504,15 @@ Children:
     DataType: Double
     Value: 0.0
     Children:
-    - Name: ExpressionEvaluator1
-      Type: ExpressionEvaluator
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Meters/Counter/FurnaceCounter/Efficency"
       Children:
-      - Name: Expression
-        Type: BaseDataVariableType
-        DataType: String
-        ReferenceType: HasParameter
-        Value: "{0}/{1}"
-      - Name: ns=2;Source0
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/Counter/FurnaceCounter/CounterRate"
-      - Name: ns=2;Source1
-        Type: BaseDataVariableType
-        DataType: BaseDataType
-        ReferenceType: HasSource
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../../../../Model/Meters/Counter/FurnaceCounter/ProductOutputRate"
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
   - Name: LastEvent
     Type: BaseDataVariableType
     DataType: BaseDataType

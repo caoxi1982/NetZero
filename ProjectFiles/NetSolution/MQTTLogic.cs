@@ -39,6 +39,7 @@ using FTOptix.Recipe;
 using FTOptix.OPCUAServer;
 using FTOptix.CommunicationDriver;
 using FTOptix.WebUI;
+using FTOptix.RAEtherNetIP;
 using Encoding = System.Text.Encoding;
 using OpcUa = UAManagedCore.OpcUa;
 

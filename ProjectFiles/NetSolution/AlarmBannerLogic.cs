@@ -18,6 +18,7 @@ using FTOptix.EventLogger;
 using FTOptix.Report;
 using FTOptix.UI;
 using FTOptix.OPCUAServer;
+using FTOptix.RAEtherNetIP;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

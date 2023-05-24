@@ -7,7 +7,6 @@ Children:
   Description: {"NamespaceIndex":7,"TextId":"Furnace"}
   Children:
   - Name: PowerMeter1
-    Id: g=8b664db715b607eb2ff9ddeb354bb880
     Type: NodePointer
     DataType: NodeId
     Value: {"IdType":2,"Id":"dbe46fd0ccf61f38366542a7e4d58113","Namespace":7}

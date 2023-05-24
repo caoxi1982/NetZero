@@ -19,6 +19,8 @@ using FTOptix.EventLogger;
 using FTOptix.Report;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class DateTimeLogic : BaseNetLogic

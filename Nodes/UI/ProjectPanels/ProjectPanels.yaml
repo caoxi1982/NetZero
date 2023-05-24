@@ -4514,7 +4514,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=8b664db7-15b6-07eb-2ff9-ddeb354bb880}/Power[0]"
+          Value: "{NodeId:ns=7;g=74a76330-c5dd-7aff-8892-e3bcda9144bf}"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4546,7 +4546,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=8b664db7-15b6-07eb-2ff9-ddeb354bb880}/RateToCost"
+          Value: "{NodeId:ns=7;g=9cba2931-9aab-9934-c995-5e23249b57d3}"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4583,7 +4583,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=6b187a5f-afcd-4aea-e284-d1e9ff632cc6}"
+          Value: "{NodeId:ns=7;g=d3ce9d4d-3291-dbac-e1f0-ea4e105f8eed}"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4615,7 +4615,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=88a896ae-fbe8-304d-e368-90391613824c}"
+          Value: "{NodeId:ns=7;g=b40c8d35-9fe7-871f-db92-42370606c2c1}"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -4652,7 +4652,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=6d821a09-26cb-1d87-10eb-79e1f2d08ad0}"
+          Value: "{NodeId:ns=7;g=ab1c03ed-de2f-7ab2-d79e-276f7f4cb612}"
       - Name: Width
         Type: BaseVariableType
         DataType: Size
@@ -6402,6 +6402,21 @@ Children:
                       DataType: DynamicLinkMode
                       ModellingRule: Optional
                       Value: 2
+                - Name: week
+                  Type: BaseDataVariableType
+                  DataType: Int32
+                  Value: 0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=7;g=b22b81d6-f05a-9e25-7e22-b070a35c5fe3}"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
                 - Name: day
                   Type: BaseDataVariableType
                   DataType: Int32
@@ -6519,6 +6534,21 @@ Children:
                       DataType: DynamicLinkMode
                       ModellingRule: Optional
                       Value: 2
+                - Name: week
+                  Type: BaseDataVariableType
+                  DataType: Int32
+                  Value: 0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=7;g=b22b81d6-f05a-9e25-7e22-b070a35c5fe3}"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
                 - Name: day
                   Type: BaseDataVariableType
                   DataType: Int32
@@ -6573,12 +6603,12 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
+          Value: -2.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: -2.0
+          Value: 0.0
       - Name: Button2
         Type: Button
         Children:
@@ -6625,6 +6655,21 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "{NodeId:ns=7;g=1ca1571d-c79f-774b-41e6-2e6cadf9124b}"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: week
+                  Type: BaseDataVariableType
+                  DataType: Int32
+                  Value: 0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=7;g=b22b81d6-f05a-9e25-7e22-b070a35c5fe3}"
                     Children:
                     - Name: Mode
                       Type: BaseVariableType
@@ -6746,6 +6791,21 @@ Children:
                       DataType: DynamicLinkMode
                       ModellingRule: Optional
                       Value: 2
+                - Name: week
+                  Type: BaseDataVariableType
+                  DataType: Int32
+                  Value: 0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=7;g=b22b81d6-f05a-9e25-7e22-b070a35c5fe3}"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
                 - Name: day
                   Type: BaseDataVariableType
                   DataType: Int32
@@ -6847,6 +6907,21 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "{NodeId:ns=7;g=1ca1571d-c79f-774b-41e6-2e6cadf9124b}"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
+                - Name: week
+                  Type: BaseDataVariableType
+                  DataType: Int32
+                  Value: 0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=7;g=b22b81d6-f05a-9e25-7e22-b070a35c5fe3}"
                     Children:
                     - Name: Mode
                       Type: BaseVariableType
@@ -6965,6 +7040,21 @@ Children:
                       DataType: DynamicLinkMode
                       ModellingRule: Optional
                       Value: 2
+                - Name: week
+                  Type: BaseDataVariableType
+                  DataType: Int32
+                  Value: 0
+                  Children:
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "{NodeId:ns=7;g=b22b81d6-f05a-9e25-7e22-b070a35c5fe3}"
+                    Children:
+                    - Name: Mode
+                      Type: BaseVariableType
+                      DataType: DynamicLinkMode
+                      ModellingRule: Optional
+                      Value: 2
                 - Name: day
                   Type: BaseDataVariableType
                   DataType: Int32
@@ -7019,68 +7109,178 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 0.0
+          Value: -1.0
         - Name: TopMargin
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: -2.0
-    - Name: SpinBox2
-      Type: SpinBox
+          Value: 0.0
+    - Name: Panel2
+      Type: Panel
       Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: Double
-        Value: 0.0
-        Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{NodeId:ns=7;g=1ca1571d-c79f-774b-41e6-2e6cadf9124b}"
-          Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
       - Name: Width
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 80.0
-      - Name: LeftMargin
+        Value: 250.0
+      - Name: Height
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
-      - Name: TopMargin
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: -2.0
-    - Name: SpinBox3
-      Type: SpinBox
-      Children:
-      - Name: Value
-        Type: BaseDataVariableType
-        DataType: Double
-        Value: 0.0
+        Value: 100.0
+      - Name: SpinBox1
+        Type: SpinBox
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{NodeId:ns=7;g=93186167-8b7b-81ef-7f7b-ad4323a04d24}"
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Double
+          Value: 0.0
           Children:
-          - Name: Mode
-            Type: BaseVariableType
-            DataType: DynamicLinkMode
-            ModellingRule: Optional
-            Value: 2
-      - Name: Width
-        Type: BaseVariableType
-        DataType: Size
-        ModellingRule: Optional
-        Value: 80.0
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=b22b81d6-f05a-9e25-7e22-b070a35c5fe3}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 70.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 63.0
+      - Name: SpinBox3
+        Type: SpinBox
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Double
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=93186167-8b7b-81ef-7f7b-ad4323a04d24}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 70.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 33.0
+      - Name: SpinBox2
+        Type: SpinBox
+        Children:
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Double
+          Value: 0.0
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "{NodeId:ns=7;g=1ca1571d-c79f-774b-41e6-2e6cadf9124b}"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 70.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 3.0
+      - Name: Label1
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"month"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 13.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+      - Name: Label2
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"day"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 13.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 33.0
+      - Name: Label3
+        Type: Label
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"week"}
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 13.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 63.0
     - Name: HorizontalLayout3
       Type: RowLayout
       Children:

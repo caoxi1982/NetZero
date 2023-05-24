@@ -19,6 +19,7 @@ Children:
       DataType: NodePath
       Value: "..@BrowseName"
   - Name: ProductOutputRate
+    Id: g=9cba29319aab9934c9955e23249b57d3
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -33,6 +34,7 @@ Children:
         DataType: DynamicLinkMode
         Value: 2
   - Name: CounterRate
+    Id: g=74a76330c5dd7aff8892e3bcda9144bf
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -75,10 +77,12 @@ Children:
     DataType: Float
     Value: 0.20999999344348907
   - Name: ProductRateThreshold_Low
+    Id: g=d3ce9d4d3291dbace1f0ea4e105f8eed
     Type: BaseDataVariableType
     DataType: Float
     Value: 1.0
   - Name: ProductRateThreshold_LowLow
+    Id: g=b40c8d359fe7871fdb9242370606c2c1
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.5
@@ -181,6 +185,33 @@ Children:
       Type: BaseVariableType
       DataType: NodePath
       Value: "../ProductID"
+  - Name: Efficency
+    Id: g=ab1c03edde2f7ab2d79e276f7f4cb612
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterRate"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../ProductOutputRate"
 - Name: FurnaceCounter
   Id: g=25e3293bde8f127852976982f64e4cfb
   Type: CounterMeter
@@ -363,3 +394,29 @@ Children:
       Type: BaseVariableType
       DataType: NodePath
       Value: "../ProductID"
+  - Name: Efficency
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+    Children:
+    - Name: ExpressionEvaluator1
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../CounterRate"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../ProductOutputRate"

@@ -13,6 +13,7 @@ using FTOptix.Report;
 using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
+using FTOptix.RAEtherNetIP;
 
 namespace NetZero
 {

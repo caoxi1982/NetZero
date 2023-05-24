@@ -13,6 +13,7 @@ using FTOptix.EventLogger;
 using FTOptix.Report;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
+using FTOptix.RAEtherNetIP;
 #endregion
 
 public class ClockLogic : BaseNetLogic

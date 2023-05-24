@@ -13,6 +13,8 @@ using FTOptix.Store;
 using FTOptix.SQLiteStore;
 using FTOptix.Report;
 using FTOptix.WebUI;
+using FTOptix.RAEtherNetIP;
+using FTOptix.CommunicationDriver;
 #endregion
 
 public class FilteredAlarmHistoryGridLogic : BaseNetLogic
