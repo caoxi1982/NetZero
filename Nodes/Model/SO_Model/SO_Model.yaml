@@ -1,0 +1,1277 @@
+Name: SO_Model
+Id: g=d8af2bb42529384db84858b7467a87cc
+Type: FolderType
+Children:
+- Name: TireDemo
+  Type: SmartObjectNode
+  Children:
+  - Name: Symbol name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "EnergySmartObjectImporter/Building_Inspection:SO_TireDemo"
+  - Name: Info Attributes
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Curing Press
+    Type: SmartObjectNode
+    Children:
+    - Name: Symbol name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_CuringPress"
+    - Name: Info Attributes
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Hydraulic Pump
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_HydraulicPump"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Electric
+        Type: SmartObjectNode
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_Electric"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: Batch
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..Batch"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: DeltaTime
+          Type: SmartObjectTag
+          DataType: Int32
+          Value: 0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..DeltaTime"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Energy
+          Type: SmartObjectTag
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..Energy"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Mode
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..Mode"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Operator
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..Operator"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Order
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..Order"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Product
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..Product"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Shift
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..Shift"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: State
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM04_HydPump:SO_ElectricRecord..State"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+    - Name: Loader
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_Loader"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Electric
+        Type: SmartObjectNode
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_Electric"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: Batch
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..Batch"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: DeltaTime
+          Type: SmartObjectTag
+          DataType: Int32
+          Value: 0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..DeltaTime"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Energy
+          Type: SmartObjectTag
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..Energy"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Mode
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..Mode"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Operator
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..Operator"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Order
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..Order"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Product
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..Product"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Shift
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..Shift"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: State
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM01_Loader:SO_ElectricRecord..State"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+    - Name: Steam
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamConsumption"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Batch
+        Type: SmartObjectTag
+        DataType: String
+        Value: ""
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..Batch"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+      - Name: DeltaTime
+        Type: SmartObjectTag
+        DataType: Int32
+        Value: 0
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..DeltaTime"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+      - Name: Energy
+        Type: SmartObjectTag
+        DataType: Float
+        Value: 0.0
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..Energy"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+      - Name: Mode
+        Type: SmartObjectTag
+        DataType: String
+        Value: ""
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..Mode"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+      - Name: Operator
+        Type: SmartObjectTag
+        DataType: String
+        Value: ""
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..Operator"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+      - Name: Order
+        Type: SmartObjectTag
+        DataType: String
+        Value: ""
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..Order"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+      - Name: Product
+        Type: SmartObjectTag
+        DataType: String
+        Value: ""
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..Product"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+      - Name: Shift
+        Type: SmartObjectTag
+        DataType: String
+        Value: ""
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..Shift"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+      - Name: State
+        Type: SmartObjectTag
+        DataType: String
+        Value: ""
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02_CuringPress:SO_SteamRecord..State"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+    - Name: Unloader
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_Unloader"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Electric
+        Type: SmartObjectNode
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_Electric"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: Batch
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..Batch"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: DeltaTime
+          Type: SmartObjectTag
+          DataType: Int32
+          Value: 0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..DeltaTime"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Energy
+          Type: SmartObjectTag
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..Energy"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Mode
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..Mode"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Operator
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..Operator"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Order
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..Order"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Product
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..Product"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Shift
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..Shift"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: State
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN02EM02_Unloader:SO_ElectricRecord..State"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+  - Name: TireBuildingMachine
+    Type: SmartObjectNode
+    Children:
+    - Name: Symbol name
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EnergySmartObjectImporter/UN01_TBM:SO_TBM"
+    - Name: Info Attributes
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: 1stPly Service Conveyor
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_1stPlyServicerConv"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Electric
+        Type: SmartObjectNode
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_Electric"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: Batch
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..Batch"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: DeltaTime
+          Type: SmartObjectTag
+          DataType: Int32
+          Value: 0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..DeltaTime"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Energy
+          Type: SmartObjectTag
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..Energy"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Mode
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..Mode"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Operator
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..Operator"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Order
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..Order"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Product
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..Product"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Shift
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..Shift"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: State
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM04_1stPlyServicer:SO_ElectricRecord..State"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+    - Name: 2ndPly Service Conveyor
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_2ndPlyServicerConv"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Electric
+        Type: SmartObjectNode
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_Electric"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: Batch
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..Batch"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: DeltaTime
+          Type: SmartObjectTag
+          DataType: Int32
+          Value: 0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..DeltaTime"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Energy
+          Type: SmartObjectTag
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..Energy"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Mode
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..Mode"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Operator
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..Operator"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Order
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..Order"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Product
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..Product"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Shift
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..Shift"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: State
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM05_2ndPlyServicer:SO_ElectricRecord..State"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+    - Name: BeltDrum
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_BeltDrum"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Electric
+        Type: SmartObjectNode
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_Electric"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: Batch
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..Batch"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: DeltaTime
+          Type: SmartObjectTag
+          DataType: Int32
+          Value: 0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..DeltaTime"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Energy
+          Type: SmartObjectTag
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..Energy"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Mode
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..Mode"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Operator
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..Operator"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Order
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..Order"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Product
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..Product"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Shift
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..Shift"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: State
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM01_BeltDrum:SO_ElectricRecord..State"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+    - Name: Carcass and Shaping Drum
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_CarcassShapingDrum"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Electric
+        Type: SmartObjectNode
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_Electric"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: Batch
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..Batch"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: DeltaTime
+          Type: SmartObjectTag
+          DataType: Int32
+          Value: 0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..DeltaTime"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Energy
+          Type: SmartObjectTag
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..Energy"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Mode
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..Mode"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Operator
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..Operator"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Order
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..Order"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Product
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..Product"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Shift
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..Shift"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: State
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM02_CarcassShapingDrum:SO_ElectricRecord..State"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+    - Name: Transfer Ring
+      Type: SmartObjectNode
+      Children:
+      - Name: Symbol name
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_TransferRing"
+      - Name: Info Attributes
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: false
+      - Name: Electric
+        Type: SmartObjectNode
+        Children:
+        - Name: Symbol name
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_Electric"
+        - Name: Info Attributes
+          Type: BaseDataVariableType
+          DataType: Boolean
+          Value: false
+        - Name: Batch
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..Batch"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: DeltaTime
+          Type: SmartObjectTag
+          DataType: Int32
+          Value: 0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..DeltaTime"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Energy
+          Type: SmartObjectTag
+          DataType: Float
+          Value: 0.0
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..Energy"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Mode
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..Mode"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Operator
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..Operator"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Order
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..Order"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Product
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..Product"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: Shift
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..Shift"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false
+        - Name: State
+          Type: SmartObjectTag
+          DataType: String
+          Value: ""
+          Children:
+          - Name: Symbol name
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "EnergySmartObjectImporter/UN01EM03_TransferRing:SO_ElectricRecord..State"
+          - Name: Info Attributes
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: false

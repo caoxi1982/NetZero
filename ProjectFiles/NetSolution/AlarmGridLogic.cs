@@ -12,6 +12,8 @@ using FTOptix.EventLogger;
 using FTOptix.Report;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
+using FTOptix.SQLiteStore;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class AlarmGridLogic : BaseNetLogic

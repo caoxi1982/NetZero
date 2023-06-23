@@ -21,6 +21,8 @@ using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.SQLiteStore;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class LogicMeterWeeky : BaseNetLogic

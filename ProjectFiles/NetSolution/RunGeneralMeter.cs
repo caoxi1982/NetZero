@@ -25,6 +25,8 @@ using FTOptix.Report;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
+using FTOptix.SQLiteStore;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class RunGeneralMeter : BaseNetLogic

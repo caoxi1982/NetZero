@@ -1,5 +1,5 @@
 Name: Alarms
-Type: FolderType
+Type: AlarmsCategoryFolder
 Children:
 - Name: DigitalAlarm1
   Type: OffNormalAlarmController

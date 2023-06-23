@@ -1,0 +1,23 @@
+Name: EdgeApp
+Type: FolderType
+Children:
+- Name: EA_Runtime
+  Type: NetLogic
+- Name: EA_DesignTime
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: RootNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"d8af2bb42529384db84858b7467a87cc","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Class: Method
+    Name: TransferModel

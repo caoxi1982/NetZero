@@ -19,6 +19,8 @@ using FTOptix.Report;
 using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.RAEtherNetIP;
+using FTOptix.SQLiteStore;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class AlarmBannerLogic : BaseNetLogic

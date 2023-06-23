@@ -23,6 +23,8 @@ using FTOptix.Report;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
+using FTOptix.SQLiteStore;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class UpTimeLogic : BaseNetLogic
@@ -32,7 +34,7 @@ public class UpTimeLogic : BaseNetLogic
     public override void Start()
     {
         status = (Int16)Owner.GetVariable("Status").Value;
-        myPeriodicTask = new PeriodicTask(RandomUpTime, 60000, LogicObject);
+        myPeriodicTask = new PeriodicTask(RandomUpTime, 5000, LogicObject);
         myPeriodicTask.Start();
     }
 

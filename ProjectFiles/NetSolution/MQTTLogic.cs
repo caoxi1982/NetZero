@@ -17,7 +17,6 @@ using System.Net.Security;
 using FTOptix.Alarm;
 using System.Reflection;
 using FTOptix.SerialPort;
-using FTOptix.EthernetIP;
 using FTOptix.S7TiaProfinet;
 using FTOptix.Modbus;
 using FTOptix.UI;
@@ -40,6 +39,7 @@ using FTOptix.OPCUAServer;
 using FTOptix.CommunicationDriver;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
+using FTOptix.OPCUAClient;
 using Encoding = System.Text.Encoding;
 using OpcUa = UAManagedCore.OpcUa;
 

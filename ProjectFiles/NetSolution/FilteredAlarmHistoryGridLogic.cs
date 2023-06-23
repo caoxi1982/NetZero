@@ -15,6 +15,7 @@ using FTOptix.Report;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
 using FTOptix.CommunicationDriver;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class FilteredAlarmHistoryGridLogic : BaseNetLogic

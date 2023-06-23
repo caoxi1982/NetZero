@@ -1,0 +1,68 @@
+<!--
+  THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=line-smooth
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+  <script type="text/javascript" src="echarts.min.js"></script>
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, 'dark', {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+	
+	  title: {
+		id: "" ,
+		show: true ,
+		text: 'Consumption Values',
+		subtext: "$xxxx$",
+		left: "center",
+		link: '' ,
+		target: 'blank' ,
+	  },
+	  
+	  tooltip : {
+        trigger: 'axis'
+	},
+	
+	  xAxis: {
+		type: 'category',
+		data: [$DATAS$],
+		name: "Time",
+		nameLocation: "middle",
+		nameGap: 50
+	  },
+	  yAxis: {
+		type: 'value',
+		name: "Values ( kWh / 15 Min)",
+		nameLocation: "middle",
+		nameGap: 50
+		
+	  },
+	  series: [
+		{
+		  data: [$VALUES$],
+		  type: 'bar',
+		  smooth: true
+		}
+	  ]
+	};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>

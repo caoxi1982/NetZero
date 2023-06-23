@@ -1,6 +1,6 @@
 Name: Users
 Id: g=d6c2b5be98c3e07bfadb3db639ac049a
-Type: FolderType
+Type: UsersCategoryFolder
 Children:
 - Name: Admin
   Id: g=275dd0eaf95d18098170cefe8982754e

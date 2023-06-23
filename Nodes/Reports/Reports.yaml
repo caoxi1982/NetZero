@@ -1,5 +1,5 @@
 Name: Reports
-Type: FolderType
+Type: ReportsCategoryFolder
 Children:
 - Name: Reports
   Id: g=483c39e755212dfdd03dd5825664d353

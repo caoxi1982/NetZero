@@ -1,5 +1,5 @@
 Name: Model
-Type: FolderType
+Type: ModelCategoryFolder
 Children:
 - File: MeterTypes/MeterTypes.yaml
 - File: Meters/Meters.yaml
@@ -380,3 +380,7 @@ Children:
 - File: WorkShop/WorkShop.yaml
 - File: Test/Test.yaml
 - File: NetLogic/NetLogic.yaml
+- File: SO_Model/SO_Model.yaml
+- File: EnergySettings/EnergySettings.yaml
+- File: EnergyVariables/EnergyVariables.yaml
+- File: TransferRates/TransferRates.yaml

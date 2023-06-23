@@ -1,2 +1,4 @@
 Name: CommDrivers
-Type: FolderType
+Type: CommDriversCategoryFolder
+Children:
+- File: RAEtherNet_IPDriver1/RAEtherNet_IPDriver1.yaml

@@ -1,0 +1,47 @@
+Name: Types
+Type: FolderType
+Children:
+- Name: SmartObjectImporter
+  Id: g=b6d663a0cea4a9eaf6b8d1a7f841a1a2
+  Supertype: BaseObjectType
+  Children:
+  - Name: ControllerFilePath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "0"
+  - Name: IPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "127.0.0.1"
+  - Name: Models
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SO_Offline
+    Type: NetLogic
+    Children:
+    - Name: BehaviourStartPriority
+      Type: BehaviourStartPriorityVariableType
+      DataType: Byte
+      Value: 180
+    - Class: Method
+      Name: ReadModels
+      Id: g=1cf11fae55b7e57932f894c2dbb8b55c
+    - Class: Method
+      Name: ImportSmartObjects
+      Id: g=50ea4809b598e4bc61dd1cfa1f44be47
+- Name: SO_Runtime
+  Type: NetLogic
+- Name: SmartObjectNode
+  Id: g=8a6b5f682b92471bd3e720aa6f1b5fc0
+  Supertype: BaseObjectType
+- Name: SmartObjectTag
+  Id: g=6b77e4634d852a88f6161ec5c662fb4b
+  Supertype: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: SmartObjectWritableTag
+  Id: g=92e6d76bbab1e36e4a2df8cc36ccd275
+  Supertype: BaseDataVariableType
+  DataType: Int32
+  Value: 0

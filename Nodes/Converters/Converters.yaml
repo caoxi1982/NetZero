@@ -1,2 +1,33 @@
 Name: Converters
-Type: FolderType
+Type: ConvertersCategoryFolder
+Children:
+- Name: MenuButton
+  Id: g=7e82928ddde5588c21c630dd3d175986
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Type: BaseObjectType
+    Children:
+    - Name: Pair
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 0
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#8f8f8f"
+    - Name: Pair1
+      Type: ValueMapPair
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        Value: 1
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#2c343c"

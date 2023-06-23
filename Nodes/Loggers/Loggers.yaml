@@ -1,5 +1,5 @@
 Name: Loggers
-Type: FolderType
+Type: LoggersCategoryFolder
 Children:
 - Name: FurnaceLogger
   Type: DataLogger

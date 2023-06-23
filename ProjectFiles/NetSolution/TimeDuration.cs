@@ -14,6 +14,8 @@ using FTOptix.UI;
 using FTOptix.OPCUAServer;
 using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
+using FTOptix.SQLiteStore;
+using FTOptix.OPCUAClient;
 
 namespace NetZero
 {

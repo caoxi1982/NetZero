@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -15,10 +15,152 @@
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="M2Mqtt" Version="4.3.0"/>
-    <PackageReference Include="MQTTnet" Version="3.1.2"/>
-    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.1.2"/>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+    <PackageReference Include="M2Mqtt" Version="4.3.0" />
+    <PackageReference Include="InfluxDB.Client" Version="4.11.0" />
+    <PackageReference Include="RestSharp" Version="108.0.3" />
   </ItemGroup>
-  <Import Project="NetZero.references"/>
+  <ItemGroup>
+    <Reference Include="MQTTnet">
+      <!--Version="3.1.2"-->
+      <HintPath>..\dlls\MQTTnet.dll</HintPath>
+    </Reference>
+    <Reference Include="MQTTnet.Extensions.ManagedClient">
+      <!--Version="3.1.2"-->
+      <HintPath>..\dlls\MQTTnet.Extensions.ManagedClient.dll</HintPath>
+    </Reference>
+    <Reference Include="AsyncIO">
+      <HintPath>..\dlls\AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Cca.Cgp.Common.Model">
+      <HintPath>..\dlls\Cca.Cgp.Common.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Cca.Cgp.Core.Base">
+      <HintPath>..\dlls\Cca.Cgp.Core.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Cca.Cgp.Core.ZmqConductor">
+      <HintPath>..\dlls\Cca.Cgp.Core.ZmqConductor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cca.Extensions.Common">
+      <HintPath>..\dlls\Cca.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="micheline_opx">
+      <HintPath>..\dlls\micheline_opx.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>..\dlls\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>..\dlls\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\dlls\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder">
+      <HintPath>..\dlls\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.FileExtensions">
+      <HintPath>..\dlls\Microsoft.Extensions.Configuration.FileExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Json">
+      <HintPath>..\dlls\Microsoft.Extensions.Configuration.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\dlls\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyModel">
+      <HintPath>..\dlls\Microsoft.Extensions.DependencyModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Abstractions">
+      <HintPath>..\dlls\Microsoft.Extensions.FileProviders.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileProviders.Physical">
+      <HintPath>..\dlls\Microsoft.Extensions.FileProviders.Physical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.FileSystemGlobbing">
+      <HintPath>..\dlls\Microsoft.Extensions.FileSystemGlobbing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\dlls\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\dlls\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+	  <Reference Include="Microsoft.Extensions.ObjectPool">
+		  <HintPath>..\dlls\Microsoft.Extensions.ObjectPool.dll</HintPath>
+	  </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>..\dlls\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options.ConfigurationExtensions">
+      <HintPath>..\dlls\Microsoft.Extensions.Options.ConfigurationExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>..\dlls\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.SystemEvents">
+      <HintPath>..\dlls\Microsoft.Win32.SystemEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="NaCl">
+      <HintPath>..\dlls\NaCl.dll</HintPath>
+    </Reference>
+    <Reference Include="NetMQ">
+      <HintPath>..\dlls\NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\dlls\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog">
+      <HintPath>..\dlls\Serilog.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Enrichers.AssemblyName">
+      <HintPath>..\dlls\Serilog.Enrichers.AssemblyName.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Enrichers.ExceptionData">
+      <HintPath>..\dlls\Serilog.Enrichers.ExceptionData.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Enrichers.Process">
+      <HintPath>..\dlls\Serilog.Enrichers.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Extensions.Logging">
+      <HintPath>..\dlls\Serilog.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Settings.Configuration">
+      <HintPath>..\dlls\Serilog.Settings.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.Console">
+      <HintPath>..\dlls\Serilog.Sinks.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File">
+      <HintPath>..\dlls\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\dlls\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Private.ServiceModel">
+      <HintPath>..\dlls\System.Private.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Pkcs">
+      <HintPath>..\dlls\System.Security.Cryptography.Pkcs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Xml">
+      <HintPath>..\dlls\System.Security.Cryptography.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions">
+      <HintPath>..\dlls\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>..\dlls\System.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>..\dlls\System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.AccessControl">
+      <HintPath>..\dlls\System.Threading.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Extensions">
+      <HintPath>..\dlls\System.Windows.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="NetZero.references" />
 </Project>

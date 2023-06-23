@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module version="1">
+    <Name>AccordionFlyoutBlueUserDefinedModule</Name>
+    <Company></Company>
+    <Version>0.0.0</Version>
+    <MinUpgradableVersion>0.0.0</MinUpgradableVersion>
+    <Binding name="Net" />
+
+    <Namespaces/>
+
+    <Dependencies>
+        <Core version="0.0.0" />
+        <Binding version="0.0.0" />
+        <Module name="FTOptix.HMIProject.Net" version="0.0.0" />
+    </Dependencies>
+
+    <Nodes/>
+
+    <TypeMappings>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="c29eb1f6767869b5d1ab01f0477db080" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="a3beadfb9f5c2c8d08ed277f4a1a26d9" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="4bd2d7aabaf721d69015e58e26b3b91f" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="bdf7f60cd202601bcf0a640186b30914" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="3da43c6121cf0c69d720472172f66e30" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="fc562ee9981d767f1372f6e4268708e6" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="403b3d74d0e265485494794e4b6ade8c" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="e7f61a9624b8768542d3492a1e268908" />
+            </TargetType>
+        </TypeMapping>
+        <TypeMapping>
+            <TargetType>
+                <NodeId namespaceUri="AccordionFlyoutBlue" guid="a7dafae5fda53c4ea137ab5b1cfe6902" />
+            </TargetType>
+        </TypeMapping>
+    </TypeMappings>
+
+    <Behaviors>
+        <Behavior guid="0dd99874223cfec78cc2242a684680f4">
+            <Targets>
+                <Target startPriorityAlias="NetLogic">
+				     <NodeId namespaceUri="AccordionFlyoutBlue" guid="bdf7f60cd202601bcf0a640186b30914" />
+                </Target>
+            </Targets>
+        </Behavior>
+    </Behaviors>
+</Module>

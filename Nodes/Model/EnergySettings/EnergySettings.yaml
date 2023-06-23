@@ -1,0 +1,38 @@
+Name: EnergySettings
+Type: FolderType
+Children:
+- Name: EnergyAppSettings
+  Type: BaseObjectType
+  Children:
+  - Name: Influx Address
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "http://192.168.248.2:8086/"
+  - Name: Token
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "U0pdAvYrUbJMPvnD8YZjkm9d8KCVHpeBEe1_LiVlQImsr98ERFRrYKge1hsZVeht_VfEAixTkgsAi6B85lax-Q=="
+  - Name: bucket
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "ISC1"
+  - Name: OrgID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "1370716eb065f1e8"
+- Name: InfluxAddress
+  Type: BaseDataVariableType
+  DataType: ResourceUri
+  Value: "http://192.168.248.2:8086/"
+- Name: Token
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "U0pdAvYrUbJMPvnD8YZjkm9d8KCVHpeBEe1_LiVlQImsr98ERFRrYKge1hsZVeht_VfEAixTkgsAi6B85lax-Q=="
+- Name: bucket
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "ISC1"
+- Name: OrgID
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "1370716eb065f1e8"

@@ -1,5 +1,5 @@
 Name: NetLogic
-Type: FolderType
+Type: NetLogicCategoryFolder
 Children:
 - Name: EmailSenderLogic
   Id: g=ef0a8aad3374f956ad701c8d46629707
@@ -429,3 +429,5 @@ Children:
     Name: FetchData
   - Class: Method
     Name: StartCustomPayload
+- File: EdgeApp/EdgeApp.yaml
+- File: SmartObjects/SmartObjects.yaml

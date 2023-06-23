@@ -1,0 +1,53 @@
+Name: SmartObjects
+Type: FolderType
+Children:
+- Name: EnergySmartObjectImporter
+  Type: SmartObjectImporter
+  Children:
+  - Name: ControllerFilePath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/myGitHub/NetZero/ProjectFiles/TyreIndustryDemo.ACD"
+  - Name: IPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "192.168.1.31"
+  - Name: Models
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SO_Offline
+    Type: NetLogic
+    Children:
+    - Name: BehaviourStartPriority
+      Type: BehaviourStartPriorityVariableType
+      DataType: Byte
+      Value: 180
+    - Class: Reference
+      Target: g=50ea4809b598e4bc61dd1cfa1f44be47
+      Direction: Forward
+    - Class: Reference
+      Target: g=1cf11fae55b7e57932f894c2dbb8b55c
+      Direction: Forward
+  - Name: Taget for TireDemo
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"d8af2bb42529384db84858b7467a87cc","Namespace":7}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: UtilityFolder
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "C:\\TireDemo\\TireDemo\\Temp\\EdgeApp\\so"
+- Name: NIC
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "192.168.1.112"
+- Name: Port
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 55000
+- File: Types/Types.yaml
