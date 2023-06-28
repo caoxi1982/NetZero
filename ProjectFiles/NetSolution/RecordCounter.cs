@@ -107,7 +107,7 @@ public class RecordCounter : BaseNetLogic
     [ExportMethod]
     public void UpdateShiftRecord(String shiftOrrate)
     {
-        (long, double, double) pervious = SelectID(shiftOrrate);
+        (long, double, double,double,double) pervious = SelectID(shiftOrrate);
         if (pervious.Item1 <= 0)
         {
             Log.Error("Update", "No pervious record");
@@ -117,11 +117,13 @@ public class RecordCounter : BaseNetLogic
         {
             double energy = (double)Owner.GetVariable("CounterTotal").Value - pervious.Item2;
             double volume = (double)Owner.GetVariable("ProductOutputTotal").Value - pervious.Item3;
+            double carbon = energy * pervious.Item4;
+            double cost = energy * pervious.Item5;
             if (energy < 0 || volume < 0)
                 throw new Exception("Something wrong ,the data is always > 0");
             else
             {
-                string updateshiftrecord = $"UPDATE RecordShiftEnergy SET State = 2,Consume = {energy},ProductVolume = {volume} WHERE ID = {pervious.Item1}";
+                string updateshiftrecord = $"UPDATE RecordShiftEnergy SET State = 2,Consume = {energy},ProductVolume = {volume},RateToCarbon={carbon},RateToCost={cost} WHERE ID = {pervious.Item1}";
 
                 // Execute insert
                 try
@@ -143,12 +145,12 @@ public class RecordCounter : BaseNetLogic
         }
     }
     // output parameter is Tuple (ID,Consume, ProductVolume)
-    private (long, double, double) SelectID(String shiftOrrate)
+    private (long, double, double,double,double) SelectID(String shiftOrrate)
     {
         var group = (string)Owner.GetVariable("Group").Value;
         var metertype = (string)Owner.GetVariable("MeterType").Value;
         var metername = Owner.BrowseName;
-        string shiftquery = $"SELECT ID,Consume,ProductVolume FROM recordshiftenergy where State=1 and Group=\'{group}\' and MeterType =\'{metertype}\' " +
+        string shiftquery = $"SELECT ID,Consume,ProductVolume,RateToCarbon,RateToCost FROM recordshiftenergy where State=1 and Group=\'{group}\' and MeterType =\'{metertype}\' " +
             $"and MeterName=\'{metername}\' and Shift=\'{shiftOrrate}\' order by ID desc limit 1";
         Object[,] ResultSet;
         String[] Header;
@@ -160,16 +162,16 @@ public class RecordCounter : BaseNetLogic
                 if (ResultSet.GetLength(0) == 1)
                 {
                     Log.Info($"Current ID:{ResultSet[0, 0]}");
-                    return ((long)ResultSet[0, 0], (double)ResultSet[0, 1], (double)ResultSet[0, 2]);
+                    return ((long)ResultSet[0, 0], (double)ResultSet[0, 1], (double)ResultSet[0, 2], (double)ResultSet[0, 3], (double)ResultSet[0, 4]);
                 }
             }
             Log.Error("Select Shift ID Error", "Can not find the shift record");
-            return (0, -1, -1);
+            return (0, -1, -1,-1,-1);
         }
         catch (Exception ex)
         {
             Log.Error("Select Shift ID Error", ex.Message);
-            return (0, -1, -1);
+            return (0, -1, -1,-1,-1);
         }
     }
     // Delete is not used,But can be used in the future to keep only one yeas data
@@ -199,8 +201,8 @@ public class RecordCounter : BaseNetLogic
             shiftvalues[0, 8] = i;
             shiftvalues[0, 9] = r.NextDouble() * 20;
             shiftvalues[0, 10] = r.NextDouble() * 10;
-            shiftvalues[0, 11] = (float)Owner.GetVariable("RateToCarbon").Value;
-            shiftvalues[0, 12] = (float)Owner.GetVariable("RateToCost").Value;
+            shiftvalues[0, 11] = (double)Owner.GetVariable("RateToCarbon").Value * (double)shiftvalues[0, 9];
+            shiftvalues[0, 12] = (double)Owner.GetVariable("RateToCost").Value * (double)shiftvalues[0, 9];
             // Execute insert
             try
             {

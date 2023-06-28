@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -15,9 +15,9 @@
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="M2Mqtt" Version="4.3.0" />
-    <PackageReference Include="InfluxDB.Client" Version="4.11.0" />
-    <PackageReference Include="RestSharp" Version="108.0.3" />
+    <PackageReference Include="M2Mqtt" Version="4.3.0"/>
+    <PackageReference Include="InfluxDB.Client" Version="4.11.0"/>
+    <PackageReference Include="RestSharp" Version="108.0.3"/>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MQTTnet">
@@ -85,9 +85,9 @@
     <Reference Include="Microsoft.Extensions.Logging.Abstractions">
       <HintPath>..\dlls\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
-	  <Reference Include="Microsoft.Extensions.ObjectPool">
-		  <HintPath>..\dlls\Microsoft.Extensions.ObjectPool.dll</HintPath>
-	  </Reference>
+    <Reference Include="Microsoft.Extensions.ObjectPool">
+      <HintPath>..\dlls\Microsoft.Extensions.ObjectPool.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Extensions.Options">
       <HintPath>..\dlls\Microsoft.Extensions.Options.dll</HintPath>
     </Reference>
@@ -162,5 +162,5 @@
       <HintPath>..\dlls\System.Windows.Extensions.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <Import Project="NetZero.references" />
+  <Import Project="NetZero.references"/>
 </Project>

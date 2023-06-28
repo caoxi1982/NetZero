@@ -184,7 +184,7 @@ public class RecordEnergy : BaseNetLogic
         var metername = Owner.BrowseName;
         string shiftquery = $"SELECT ID,Consume,ProductVolume,RateToCarbon,RateToCost FROM recordshiftenergy where State=1 and Group=\'{group}\' and MeterType =\'{metertype}\' " +
             $"and MeterName=\'{metername}\' and Shift=\'{shiftOrrate}\' order by ID desc limit 1";
-        string ratequery = $"SELECT ID,Consume,ProductVolume,RateToCarbon,RateToCostFROM recordmultirateenergy where State=1 and Group=\'{group}\' and MeterType =\'{metertype}\' " +
+        string ratequery = $"SELECT ID,Consume,ProductVolume,RateToCarbon,RateToCost FROM recordmultirateenergy where State=1 and Group=\'{group}\' and MeterType =\'{metertype}\' " +
             $"and MeterName=\'{metername}\' and RateDuration=\'{shiftOrrate}\' order by ID desc limit 1";
 
         Object[,] ResultSet;
@@ -235,8 +235,8 @@ public class RecordEnergy : BaseNetLogic
             shiftvalues[0, 8] = Convert.ToString(i);
             shiftvalues[0, 9] = r.NextDouble() * 20;
             shiftvalues[0, 10] = r.NextDouble() * 10;
-            shiftvalues[0, 11] = (float)Owner.GetVariable("RateToCarbon").Value;
-            shiftvalues[0, 12] = (float)Owner.GetVariable("RateToCost").Value;
+            shiftvalues[0, 11] = (double)Owner.GetVariable("RateToCarbon").Value * (double)shiftvalues[0, 9];
+            shiftvalues[0, 12] = (double)Owner.GetVariable("RateToCost").Value * (double)shiftvalues[0, 9];
             // Execute insert
             try
             {
@@ -255,7 +255,7 @@ public class RecordEnergy : BaseNetLogic
                     case "31":
                     case "40":
                     case "41":
-                        shiftvalues[0, 12] = rateCost[i];
+                        shiftvalues[0, 12] = rateCost[i] * (double)shiftvalues[0, 9];
                         myDbStore.Insert("RecordMultiRateEnergy", multiRatecolumns, shiftvalues);
                         break;
                     default:
