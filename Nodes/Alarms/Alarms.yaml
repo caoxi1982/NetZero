@@ -7,7 +7,7 @@ Children:
   - Name: NormalStateValue
     Type: BaseDataVariableType
     DataType: Double
-    Value: 0.0
+    Value: 1.0
   - Name: InputValue
     Type: BaseDataVariableType
     DataType: Double

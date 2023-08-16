@@ -1,0 +1,5789 @@
+Name: ns=38;DataTypes
+Type: FolderType
+Children:
+- Class: DataType
+  Name: raM_UDT_Dvc_xxDH_InfModule
+  Id: g=e1b0be4b4a3429820e44fb85bfecebec
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xxDH_InfModule",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e1b0be4b4a3429820e44fb85bfecebec",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Address",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Link",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Path",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xxDH_InfModule"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_EnergyBaseObject
+  Id: g=30c371a33ffb01e66ebeaf67fa41b0de
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_EnergyBaseObject",
+    "DataType": {
+     "IdType": 2,
+     "Id": "30c371a33ffb01e66ebeaf67fa41b0de",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Accuracy",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "AccuracyBasis",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "Capabilities",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "ConsumedEnergyOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "DataStatus",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "EnergyTransferRate",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "FullScaleReading",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "GeneratedEnergyOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "ResourceType",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "TotalEnergyOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_EnergyBaseObject"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Dvc_xxDH_EventQueue
+  Id: g=18ca30d0c0385963004dfdb08633fa29
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xxDH_EventQueue",
+    "DataType": {
+     "IdType": 2,
+     "Id": "18ca30d0c0385963004dfdb08633fa29",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "PTR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Queue",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4519e895af882e3975843909ec5040ba",
+       "Namespace": 7
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [8]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xxDH_EventQueue"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_PML_States
+  Id: g=781f255e3b5fd235a7c7dce162d6cc20
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_PML_States",
+    "DataType": {
+     "IdType": 2,
+     "Id": "781f255e3b5fd235a7c7dce162d6cc20",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Aborted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Aborting",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Clearing",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Completed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Completing",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Executing",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Held",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Holding",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Idle",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Resetting",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Starting",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Stopped",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Stopping",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Suspended",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Suspending",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "UnHolding",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "UnSuspending",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_PML_States"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Opr_K5500_Energy
+  Id: g=87823fee83d334d2df0d11743310bd7f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Opr_K5500_Energy",
+    "DataType": {
+     "IdType": 2,
+     "Id": "87823fee83d334d2df0d11743310bd7f",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raC_Opr_K5500_Energy",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_Inertia",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_PowerNominal_kW",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_PowerNominal_RPM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_SampleInterval",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_AcquiringData",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_DataAcquisitionDuration",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_ER",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Idle",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_OdometerResetServiced",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WaitingForCtrlResource",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WaitingForDevice",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Opr_K5500_Energy"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrMotion_Set
+  Id: g=54cb3bafa63fa21024bafff88250aa74
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrMotion_Set",
+    "DataType": {
+     "IdType": 2,
+     "Id": "54cb3bafa63fa21024bafff88250aa74",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "bInhibit",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "InhibitCfg",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "InhibitCmd",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "InhibitSet",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrMotion_Set"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrVelocity_Sts
+  Id: g=8071b8553fa913d82fc4fdd1bb1c5f67
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrVelocity_Sts",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8071b8553fa913d82fc4fdd1bb1c5f67",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Accelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ActDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AtSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "bSts",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "CmdDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Connected",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Decelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "eCmdFail",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "eState",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "FirstFault",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4519e895af882e3975843909ec5040ba",
+       "Namespace": 7
+      }
+     },{
+      "Name": "FirstWarning",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4519e895af882e3975843909ec5040ba",
+       "Namespace": 7
+      }
+     },{
+      "Name": "ObjCtrl",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Physical",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Speed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Warning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrVelocity_Sts"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Opr_ObjectRegister_Members
+  Id: g=72d1eba24bebe7c6e57fea3dbb05a75b
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Opr_ObjectRegister_Members",
+    "DataType": {
+     "IdType": 2,
+     "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "ID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Name",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "PAC",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "PRG",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "RTN",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Opr_ObjectRegister_Members"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Dvc_xxDH_MethodRegistry
+  Id: g=c4e01f7b8e33f84b92c927173268b4f8
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xxDH_MethodRegistry",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c4e01f7b8e33f84b92c927173268b4f8",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "HandlerID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Method",
+      "DataType": {
+       "IdType": 2,
+       "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
+       "Namespace": 7
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [33]
+     },{
+      "Name": "PTR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Size",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xxDH_MethodRegistry"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Dvc_PF525
+  Id: g=9e51d5d0ba36b9dc7c7aa428156f1f1e
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Dvc_PF525",
+    "DataType": {
+     "IdType": 2,
+     "Id": "9e51d5d0ba36b9dc7c7aa428156f1f1e",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_MotorFLA",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "raC_Dvc_PF525",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_bNotReady",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Connected",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Warning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Val_FreqActual",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Val_OutputCurrent",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Dvc_PF525"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Dvc_xADH_Configuration
+  Id: g=d96026bdde4c02ebcf295a2f6622872e
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xADH_Configuration",
+    "DataType": {
+     "IdType": 2,
+     "Id": "d96026bdde4c02ebcf295a2f6622872e",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "bCfg",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "LogAxisState",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogHandlerState",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogMotionStatus",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "MethodError",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xADH_Configuration"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Opr_VirtualEnergy
+  Id: g=eaf133350b7ee511259b98878c9c378d
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Opr_VirtualEnergy",
+    "DataType": {
+     "IdType": 2,
+     "Id": "eaf133350b7ee511259b98878c9c378d",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_Generated",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raC_Opr_VirtualEnergy",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_Inertia",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_PowerNominal_kUnit",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_PowerNominal_RPM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_SampleInterval",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_AcquiringData",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_DataAcquisitionDuration",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_ER",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Idle",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_OdometerResetServiced",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WaitingForDevice",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WaitingForService",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Val_ConsumedEnergyOdo_gVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_ConsumedEnergyOdo_kVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_ConsumedEnergyOdo_mVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_ConsumedEnergyOdo_tVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_ConsumedEnergyOdo_Val",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_DataStatus",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_EnergyTransferRate",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Val_GeneratedEnergyOdo_gVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_GeneratedEnergyOdo_kVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_GeneratedEnergyOdo_mVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_GeneratedEnergyOdo_tVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_GeneratedEnergyOdo_Val",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_TotalEnergyOdo_gVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_TotalEnergyOdo_kVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_TotalEnergyOdo_mVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_TotalEnergyOdo_tVal",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Val_TotalEnergyOdo_Val",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Opr_VirtualEnergy"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_DeEnergize_CD
+  Id: g=25b021e256db02c5d55c5b63ae8bab28
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_DeEnergize_CD",
+    "DataType": {
+     "IdType": 2,
+     "Id": "25b021e256db02c5d55c5b63ae8bab28",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Opr_DeEnergize_CD",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_IP",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_MtdID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_PC",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_DeEnergize_CD"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrVelocity_Inf
+  Id: g=4fb3739d7c718b5f3e7903ce3ab6295f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrVelocity_Inf",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4fb3739d7c718b5f3e7903ce3ab6295f",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "bExtensionAlert",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "bExtensionEnabled",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "ModulePath",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrVelocity_Inf"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Opr_kVal_to_Odo
+  Id: g=c13984ba8331b66cab00e738a4581df3
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Opr_kVal_to_Odo",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c13984ba8331b66cab00e738a4581df3",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_kVal",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Out_Odo0",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Out_Odo1",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Out_Odo2",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Out_Odo3",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Out_Odo4",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Opr_kVal_to_Odo"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Dvc_Motor_VSD
+  Id: g=0d76a6bf4711ae2408cb0ecb73b50a07
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Dvc_Motor_VSD",
+    "DataType": {
+     "IdType": 2,
+     "Id": "0d76a6bf4711ae2408cb0ecb73b50a07",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cfg_ConversionConstant",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Cfg_DirectionSource",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cfg_FailtoStartStopTime",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cfg_MotorNP_Hz",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Cfg_MotorNP_RPM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Cfg_Profile",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cfg_SpeedTimeBase",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cmd_JogFwd",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_JogRev",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Physical",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Reset",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Start",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Stop",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_ExternalReady",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Dvc_Motor_VSD",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_AccelRate",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_DecelRate",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_Direction",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_InhibitExtCfg",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Set_InhibitExtCmd",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_InhibitExtSet",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_JogAccelRate",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_JogDecelRate",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_JogSpeed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_Speed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_Accelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ActDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_AtSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_bNotReady",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_bWarning",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_CmdDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Decelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Running",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Warning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Val_SpeedFdbk",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Val_SpeedFdbk_MotorRPM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Val_SpeedRef",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Dvc_Motor_VSD"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Dvc_xADH_DataHndl
+  Id: g=8b9cd4f5a3d7406f2eab1b0a965e3971
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xADH_DataHndl",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8b9cd4f5a3d7406f2eab1b0a965e3971",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "CtrlAxID",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [3],
+      "Value": [0,0,0]
+     },{
+      "Name": "CtrlEvtQ",
+      "DataType": {
+       "IdType": 2,
+       "Id": "18ca30d0c0385963004dfdb08633fa29",
+       "Namespace": 7
+      }
+     },{
+      "Name": "CtrlIO",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "InfHandler",
+      "DataType": {
+       "IdType": 2,
+       "Id": "e0d53e631b1e229e0e45032f0f9839a6",
+       "Namespace": 7
+      }
+     },{
+      "Name": "InfModule",
+      "DataType": {
+       "IdType": 2,
+       "Id": "e1b0be4b4a3429820e44fb85bfecebec",
+       "Namespace": 7
+      }
+     },{
+      "Name": "MethodRegistry",
+      "DataType": {
+       "IdType": 2,
+       "Id": "c4e01f7b8e33f84b92c927173268b4f8",
+       "Namespace": 7
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xADH_DataHndl"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Opr_PF755_Energy
+  Id: g=677ee1637dabab0a645d80ea39dfa742
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Opr_PF755_Energy",
+    "DataType": {
+     "IdType": 2,
+     "Id": "677ee1637dabab0a645d80ea39dfa742",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cmd_ResetOdometers",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_Speed_RPM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "raC_Opr_PF755_Energy",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_Inertia",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_PowerNominal_kW",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_PowerNominal_RPM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_SampleInterval",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_AcquiringData",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_DataAcquisitionDuration",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_ER",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Idle",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_OdometerResetServiced",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WaitingForCtrlResource",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WaitingForDevice",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Opr_PF755_Energy"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_EM_Energy
+  Id: g=bbe953e9ebfb452c4ae1d08a9647cb27
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_EM_Energy",
+    "DataType": {
+     "IdType": 2,
+     "Id": "bbe953e9ebfb452c4ae1d08a9647cb27",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Accuracy",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "AccuracyBasis",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Capabilities",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "ConsumedEnergyOdo",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "DataStatus",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "EnergyFlowRateTimeBase",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "EnergyTransferRate",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "EnergyType",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "EngineeringUnit",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "EngineeringUnitDesc",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "FullScaleReading",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "GeneratedEnergyOdo",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "NormalizationConstantDiv",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "NormalizationConstantMult",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "ResourceType",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "TotalEnergyOdo",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_EM_Energy"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_Clear_CD
+  Id: g=90f1755551137593e0e0cacd5b2c6cc3
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_Clear_CD",
+    "DataType": {
+     "IdType": 2,
+     "Id": "90f1755551137593e0e0cacd5b2c6cc3",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Opr_Clear_CD",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_DN",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_MtdID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_Clear_CD"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Dvc_xADH_Command
+  Id: g=59553624c2211d9210a6b5a92feeaa77
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xADH_Command",
+    "DataType": {
+     "IdType": 2,
+     "Id": "59553624c2211d9210a6b5a92feeaa77",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "bCmd",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "DeEnergize",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Energize",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Physical",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ResetFault",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xADH_Command"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Dvc_xADH_Status
+  Id: g=fd4ec09fcc5527b798ef50f1e146e762
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xADH_Status",
+    "DataType": {
+     "IdType": 2,
+     "Id": "fd4ec09fcc5527b798ef50f1e146e762",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "bSts",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Connected",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Energized",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EventLog",
+      "DataType": {
+       "IdType": 2,
+       "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
+       "Namespace": 7
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [8]
+     },{
+      "Name": "Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "FaultLog",
+      "DataType": {
+       "IdType": 2,
+       "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
+       "Namespace": 7
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [8]
+     },{
+      "Name": "FirstFault",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4519e895af882e3975843909ec5040ba",
+       "Namespace": 7
+      }
+     },{
+      "Name": "NoMotion",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "OnPath",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Physical",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Recoverable",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Referenced",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xADH_Status"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_JogAuto
+  Id: g=67688a041b18dbe6d39472f25901e323
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_JogAuto",
+    "DataType": {
+     "IdType": 2,
+     "Id": "67688a041b18dbe6d39472f25901e323",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Opr_JogAuto",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_Accel",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_Decel",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_Direction",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Set_Speed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_IP",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_MtdID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_JogAuto"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_EM_Status
+  Id: g=b7ded9eadf50d206a2701afebfe6eee5
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_EM_Status",
+    "DataType": {
+     "IdType": 2,
+     "Id": "b7ded9eadf50d206a2701afebfe6eee5",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "CurrentSpeed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "DesignSpeed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "FirstOutFaultEvent",
+      "DataType": {
+       "IdType": 2,
+       "Id": "19b8272e28f2771e3432de38dac366a8",
+       "Namespace": 7
+      }
+     },{
+      "Name": "GoodCount",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "LanesBlocked",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "LanesStarved",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "LineControlEnabled",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Mode",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "ModeName",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "ProducingMode",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "RecipeName",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "ResetDone",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Running",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "State",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "StateBool",
+      "DataType": {
+       "IdType": 2,
+       "Id": "781f255e3b5fd235a7c7dce162d6cc20",
+       "Namespace": 7
+      }
+     },{
+      "Name": "StateInt",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "StateName",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "TotalCount",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "UnitRatio",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_EM_Status"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_EM_Event
+  Id: g=19b8272e28f2771e3432de38dac366a8
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_EM_Event",
+    "DataType": {
+     "IdType": 2,
+     "Id": "19b8272e28f2771e3432de38dac366a8",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Action",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Category",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "ID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Message",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "MsgCat",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "TimeAck",
+      "DataType": {
+       "Id": 8
+      },
+      "Value": 0
+     },{
+      "Name": "TimeEvent",
+      "DataType": {
+       "Id": 8
+      },
+      "Value": 0
+     },{
+      "Name": "Trigger",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "TriggerID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_EM_Event"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrMotion_Cmd
+  Id: g=812940b77fca3a533ea17169c23796f1
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrMotion_Cmd",
+    "DataType": {
+     "IdType": 2,
+     "Id": "812940b77fca3a533ea17169c23796f1",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Activate",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "bCmd",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Deactivate",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Physical",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ResetFault",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ResetWarn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrMotion_Cmd"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PF525_Inp
+  Id: g=c067acefcc4ca9f3b9ea3c95f78818e1
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PF525_Inp",
+    "DataType": {
+     "IdType": 2,
+     "Id": "c067acefcc4ca9f3b9ea3c95f78818e1",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Accelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ActualDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AtReference",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "CommandDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "CommFreqCnt",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "CommLogicCnt",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Decelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DigIn1Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DigIn2Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DigIn3Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DigIn4Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DriveStatus",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "DriveStatus_param",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "DriveStatus_param_Accelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DriveStatus_param_Decelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DriveStatus_param_Forward",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DriveStatus_param_Running",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "DriveStatus_param_SafetyActive",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Fault1Code",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "OutputCurrent",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "OutputFreq",
+      "DataType": {
+       "Id": 4
+      },
+      "Value": 0
+     },{
+      "Name": "ParmsLocked",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PF525_Inp"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_Stop
+  Id: g=8572a78c5fc624f6649f173c0e719356
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_Stop",
+    "DataType": {
+     "IdType": 2,
+     "Id": "8572a78c5fc624f6649f173c0e719356",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cfg_DecelTime",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Cfg_StopType",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Opr_Stop",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_Position",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_IP",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_MtdID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_PC",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_Stop"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_Event
+  Id: g=4519e895af882e3975843909ec5040ba
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_Event",
+    "DataType": {
+     "IdType": 2,
+     "Id": "4519e895af882e3975843909ec5040ba",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Action",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Category",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "EventTime_D",
+      "DataType": {
+       "Id": 6
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [7],
+      "Value": [0,0,0,0,0,0,0]
+     },{
+      "Name": "EventTime_L",
+      "DataType": {
+       "Id": 8
+      },
+      "Value": 0
+     },{
+      "Name": "ID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Message",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Type",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Value",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_Event"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_ISATR880002_2015
+  Id: g=365ea69b5ae1ae706ab3a7cb0b89570c
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_ISATR880002_2015",
+    "DataType": {
+     "IdType": 2,
+     "Id": "365ea69b5ae1ae706ab3a7cb0b89570c",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cmd_Abort",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Clear",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_eMode",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cmd_Hold",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Reset",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Start",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_StateComplete",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Stop",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Suspend",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_UnHold",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_UnSuspend",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out_bMode",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Out_bState",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Out_eMode",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Out_eState",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "raM_Opr_ISATR880002_2015",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Aborted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Aborting",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_bEnabledStates",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Clearing",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Complete",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Completing",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_EN",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_EO",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ER",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Execute",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Held",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Holding",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Idle",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ModeLocked",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Resetting",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Starting",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Stopped",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Stopping",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Suspended",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Suspending",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_UnHolding",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_UnSuspending",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_ISATR880002_2015"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: Tec_SO_EnergyRecord
+  Id: g=3498ebec345094ba8b1aab59ea1f2b52
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Tec_SO_EnergyRecord",
+    "DataType": {
+     "IdType": 2,
+     "Id": "3498ebec345094ba8b1aab59ea1f2b52",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_TotalEnergy_kWh",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_EnergySampleInterval",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Set_RecordUpdateInterval",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EN",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_EO",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ER",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_RecordUpdate",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Tec_SO_EnergyRecord",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Tec_SO_EnergyRecord"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Dvc_xxDH_InfHandler
+  Id: g=e0d53e631b1e229e0e45032f0f9839a6
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xxDH_InfHandler",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e0d53e631b1e229e0e45032f0f9839a6",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "bMode",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "bState",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "eMode",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "eState",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Language",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Name",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "sMode",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "sState",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xxDH_InfHandler"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Opr_EventList_Members
+  Id: g=f1ec5fa41eeb9aaa3a0ec18a2efee6e2
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Opr_EventList_Members",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Count",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Event",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4519e895af882e3975843909ec5040ba",
+       "Namespace": 7
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Opr_EventList_Members"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrMotion_Sts
+  Id: g=09fcb3d6e67a07d151a89e4c8ff13721
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrMotion_Sts",
+    "DataType": {
+     "IdType": 2,
+     "Id": "09fcb3d6e67a07d151a89e4c8ff13721",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "bSts",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Connected",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "eCmdFail",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "eState",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "FirstFault",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4519e895af882e3975843909ec5040ba",
+       "Namespace": 7
+      }
+     },{
+      "Name": "FirstWarning",
+      "DataType": {
+       "IdType": 2,
+       "Id": "4519e895af882e3975843909ec5040ba",
+       "Namespace": 7
+      }
+     },{
+      "Name": "NoMotion",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Physical",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Warning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrMotion_Sts"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PF755_Inp
+  Id: g=111dc639068cb1a246ac766966ddede0
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PF755_Inp",
+    "DataType": {
+     "IdType": 2,
+     "Id": "111dc639068cb1a246ac766966ddede0",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "AlarmStatusA",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "AlarmStatusA_AltFdbkLoss",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_AuxFdbkLoss",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_DecInhibit",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_GndWarning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_InPhaseLoss",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_LoadLoss",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_MotorOL",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_OutPhaseLoss",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_PosFdbkLoss",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_PowerLoss",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_PriFdbkLoss",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_Reserved",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_ShearPin1",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_ShearPin2",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_TaskOverrun",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusA_UnderVoltage",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "AlarmStatusB_CurLmtReduc",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_DBResOT",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_DriveOL",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_GndWarning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_HeatsinkOT",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_HomingActv",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_IGBTOT",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_NotHomeSet",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_OWAlarmTO",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_OWLevel",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_PumpOffAlrm",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_PWMFrqReduc",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_Reserved",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_Reserved1",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_StartOnPwrUp",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "AlarmStatusB_Waking",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Feedback",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "LastFaultCode",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "LogicStatus",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "LogicStatus_Accelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_ActualDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Alarm",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_AtHome",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_AtLimit",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_AtSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_AtZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_BusFrqReg",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_CommandDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_CurrLimit",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_DBActive",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_DCBraking",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Decelerating",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_EnableOn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Jogging",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Manual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_MotorOL",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_PositionMode",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Regen",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Reserved",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Running",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_SpdRefBit0",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_SpdRefBit1",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_SpdRefBit2",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_SpdRefBit3",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_SpdRefBit4",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_SpeedMode",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_Stopping",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "LogicStatus_TorqueMode",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "MotorNPAmps",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "OutputCurrent",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "StartInhibits",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "StartInhibits_Alarm",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Database",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Enable",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Precharge",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Profiler",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Safety",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Sleep",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Startup",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "StartInhibits_Stop",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PF755_Inp"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Opr_Odo_to_kVal
+  Id: g=74b9b43dd5b8940da28cb42bc74aaa6c
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Opr_Odo_to_kVal",
+    "DataType": {
+     "IdType": 2,
+     "Id": "74b9b43dd5b8940da28cb42bc74aaa6c",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In_Odo0",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "In_Odo1",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "In_Odo2",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "In_Odo3",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "In_Odo4",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Out_kVal",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Opr_Odo_to_kVal"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Dvc_PF755
+  Id: g=116c3ea9e77c3c901344b23c79c5a1c1
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Dvc_PF755",
+    "DataType": {
+     "IdType": 2,
+     "Id": "116c3ea9e77c3c901344b23c79c5a1c1",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raC_Dvc_PF755",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_bAlarmA",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_bAlarmB",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_bNotReady",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_bStartInhibits",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Connected",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Warning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Val_FreqActual",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Val_OutputCurrent",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Dvc_PF755"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_Move333
+  Id: g=2b3d09854e3535e5f4ee92655943907b
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_Move333",
+    "DataType": {
+     "IdType": 2,
+     "Id": "2b3d09854e3535e5f4ee92655943907b",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cfg_MoveType",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cfg_Profile",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Opr_Move333",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_Position",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_Time",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_IP",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_MtdID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_PC",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_Move333"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_UDT_Dvc_xADH_Setting
+  Id: g=105411363825c6055b8f6e7673c0c170
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_UDT_Dvc_xADH_Setting",
+    "DataType": {
+     "IdType": 2,
+     "Id": "105411363825c6055b8f6e7673c0c170",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "bSet",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "InhibitCfg",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "InhibitCmd",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "InhibitSet",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "OnPathTol",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "ZeroSpeedTol",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_UDT_Dvc_xADH_Setting"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Dvc_K5500
+  Id: g=11dfc3d530b05b8c9446bd6c8584cefc
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Dvc_K5500",
+    "DataType": {
+     "IdType": 2,
+     "Id": "11dfc3d530b05b8c9446bd6c8584cefc",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raC_Dvc_K5500",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_bNotReady",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Connected",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_NoMotion",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Warning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Val_ActualPosition",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Val_ActualVelocity",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Dvc_K5500"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Dvc_EAVI5C_ISATR880002_2015
+  Id: g=e89a4a8dab5470ce87845921fa01811d
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Dvc_EAVI5C_ISATR880002_2015",
+    "DataType": {
+     "IdType": 2,
+     "Id": "e89a4a8dab5470ce87845921fa01811d",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cmd_Audible",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Reset",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cmd_Silence",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_Blocked",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_eState",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Inp_MaterialLow",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_MaterialOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_Starved",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out_AUD",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out_BLU",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out_GRN",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out_RED",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out_WHT",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out_YEL",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Dvc_EAVI5C_ISATR880002_2015",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_AudPattern",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_AUD",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_BLU",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_EN",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_EO",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ER",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_GRN",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_RED",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Silenced",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WHT",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_YEL",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Dvc_EAVI5C_ISATR880002_2015"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_EM_Prod
+  Id: g=bde5849879721068d0aef045adf74686
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_EM_Prod",
+    "DataType": {
+     "IdType": 2,
+     "Id": "bde5849879721068d0aef045adf74686",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Batch",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Operator",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Order",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Product",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Shift",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Units",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_EM_Prod"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_SyncPthPhyAx_CD
+  Id: g=3c07d0d5145a8f54a49293e93b5aef9d
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_SyncPthPhyAx_CD",
+    "DataType": {
+     "IdType": 2,
+     "Id": "3c07d0d5145a8f54a49293e93b5aef9d",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cfg_AllowHome",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cfg_MoveType",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cfg_RotaryShortestTOL",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Cfg_SyncType",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cfg_TravelLIM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Opr_SyncPthPhyAx_CD",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_Speed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_IP",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_MtdID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_PC",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_SyncPthPhyAx_CD"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrVelocity_Set
+  Id: g=79461b28ef3846d7602dc62b022881e5
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrVelocity_Set",
+    "DataType": {
+     "IdType": 2,
+     "Id": "79461b28ef3846d7602dc62b022881e5",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "bInhibit",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "InhibitCfg",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "InhibitCmd",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "InhibitSet",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Speed",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrVelocity_Set"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Dvc_AxisHandler_CD
+  Id: g=51db3f8cc35a55d3602f9d61dcfb5feb
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Dvc_AxisHandler_CD",
+    "DataType": {
+     "IdType": 2,
+     "Id": "51db3f8cc35a55d3602f9d61dcfb5feb",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inf_Language",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "raM_Dvc_AxisHandler_CIP",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Active",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Available",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Connected",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Faulted",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_NoMotion",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_OnPath",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Ready",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_Warning",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ZeroSpeed",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Val_PthPosition",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Val_PthVelocity",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Dvc_AxisHandler_CD"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_EnergyElectricalObject
+  Id: g=94b1be2461ad59637b99cf5df8479ba6
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_EnergyElectricalObject",
+    "DataType": {
+     "IdType": 2,
+     "Id": "94b1be2461ad59637b99cf5df8479ba6",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "ApparentEnergyOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "ApparentPowerL1",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "ApparentPowerL2",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "ApparentPowerL3",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "ApparentPowerTotal",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "AverageCurrent",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "CurrentL1",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "CurrentL2",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "CurrentL3",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "CurrentPercentUnbalanced",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "KiloampereHoursOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "LineFrequency",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "PhaseRotation",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "ReactiveEnergyConsumedOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "ReactiveEnergyGeneratedOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "ReactiveEnergyNetOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "ReactivePowerL1",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "ReactivePowerL2",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "ReactivePowerL3",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "ReactivePowerTotal",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "RealEnergyConsumedOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "RealEnergyGeneratedOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "RealEnergyNetOdo",
+      "DataType": {
+       "Id": 4
+      },
+      "ValueRank": "OneDimension",
+      "ArrayDimensions": [5],
+      "Value": [0,0,0,0,0]
+     },{
+      "Name": "RealPowerL1",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "RealPowerL2",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "RealPowerL3",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "RealPowerTotal",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "TruePowerFactorL1",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "TruePowerFactorL2",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "TruePowerFactorL3",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "TruePowerFactorThreePhase",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltageAverageLL",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltageAverageLN",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltageL1L2",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltageL1N",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltageL2L3",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltageL2N",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltageL3L1",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltageL3N",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "VoltagePercentUnbalanced",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_EnergyElectricalObject"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_Home_CD
+  Id: g=0c4f0b58be0757b31614e3530ef11aa8
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_Home_CD",
+    "DataType": {
+     "IdType": 2,
+     "Id": "0c4f0b58be0757b31614e3530ef11aa8",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cfg_HomePos",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Opr_Home_CD",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_IP",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_MtdID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_Home_CD"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrMotion_Inf
+  Id: g=792d284e70ddbf608da6fc730b5d2c67
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrMotion_Inf",
+    "DataType": {
+     "IdType": 2,
+     "Id": "792d284e70ddbf608da6fc730b5d2c67",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "AxisID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "bExtensionAlert",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "bExtensionEnabled",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "ModulePath",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrMotion_Inf"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_ItfAD_PwrVelocity_Cmd
+  Id: g=f8001b39d02d38812d3f67a46b1a7eb2
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_ItfAD_PwrVelocity_Cmd",
+    "DataType": {
+     "IdType": 2,
+     "Id": "f8001b39d02d38812d3f67a46b1a7eb2",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Activate",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "bCmd",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "CmdDir",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Deactivate",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Physical",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ResetFault",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "ResetWarn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Virtual",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_ItfAD_PwrVelocity_Cmd"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raM_Opr_Energize_CD
+  Id: g=b20a9db94125faa28eaf9d645267892b
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raM_Opr_Energize_CD",
+    "DataType": {
+     "IdType": 2,
+     "Id": "b20a9db94125faa28eaf9d645267892b",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "raM_Opr_Energize_CD",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_IP",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_MtdID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_PC",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raM_Opr_Energize_CD"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_Opr_PF525_Energy
+  Id: g=ea824df9f73ac5fac5a25bedcbd589b1
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_Opr_PF525_Energy",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ea824df9f73ac5fac5a25bedcbd589b1",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "Cmd_ResetOdometers",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Inp_Speed_RPM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "raC_Opr_PF525_Energy",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Set_Inertia",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_PowerNominal_kW",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_PowerNominal_RPM",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Set_SampleInterval",
+      "DataType": {
+       "Id": 10
+      },
+      "Value": 0.0
+     },{
+      "Name": "Sts_AcquiringData",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_DataAcquisitionDuration",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_ER",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_ERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_EXERR",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Idle",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_OdometerResetServiced",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WaitingForCtrlResource",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Sts_WaitingForDevice",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_Opr_PF525_Energy"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: raC_UDT_SO_Node
+  Id: g=230ca8a1929ceb85a7e079b7c167b73d
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "raC_UDT_SO_Node",
+    "DataType": {
+     "IdType": 2,
+     "Id": "230ca8a1929ceb85a7e079b7c167b73d",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "_ParentID",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "_Time",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Cfg_UpdateOnEvent",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Cfg_UpdatePeriod",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Inf_ID01",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Inf_ID02",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Inf_Name",
+      "DataType": {
+       "Id": 12
+      },
+      "Value": ""
+     },{
+      "Name": "Inp_EventTrigger",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out_RegistryIndex",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "Sts_Updated",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"raC_UDT_SO_Node"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: TIMER
+  Id: g=ada94c899b7b3da33380ea19b8bf381f
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "TIMER",
+    "DataType": {
+     "IdType": 2,
+     "Id": "ada94c899b7b3da33380ea19b8bf381f",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "ACC",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "DN",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EN",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "PRE",
+      "DataType": {
+       "Id": 6
+      },
+      "Value": 0
+     },{
+      "Name": "TT",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"TIMER"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
+  Name: FBD_BOOLEAN_OR
+  Id: g=b3f6ee4d04de09241cd3a82cc8ebffa2
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "FBD_BOOLEAN_OR",
+    "DataType": {
+     "IdType": 2,
+     "Id": "b3f6ee4d04de09241cd3a82cc8ebffa2",
+     "Namespace": 7
+    },
+    "Fields": [{
+      "Name": "EnableIn",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "EnableOut",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In1",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In2",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In3",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In4",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In5",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In6",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In7",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "In8",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     },{
+      "Name": "Out",
+      "DataType": {
+       "Id": 1
+      },
+      "Value": false
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"FBD_BOOLEAN_OR"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding

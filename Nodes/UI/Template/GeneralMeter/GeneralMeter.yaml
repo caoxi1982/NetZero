@@ -552,6 +552,16 @@ Children:
         DataType: VerticalAlignment
         ModellingRule: Optional
         Value: 3
+      - Name: CurrentTabIndex
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 0
+      - Class: Reference
+        Target: ns=3;i=1181
+        Direction: Forward
+      - Class: Reference
+        Target: ns=3;i=1183
+        Direction: Forward
   - Name: GeneralMeter
     Type: Alias
     DataType: NodeId

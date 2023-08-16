@@ -11733,6 +11733,16 @@ Children:
                 DataType: DynamicLinkMode
                 ModellingRule: Optional
                 Value: 2
+          - Name: CurrentTabIndex
+            Type: BaseDataVariableType
+            DataType: Int32
+            Value: 0
+          - Class: Reference
+            Target: ns=3;i=1181
+            Direction: Forward
+          - Class: Reference
+            Target: ns=3;i=1183
+            Direction: Forward
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment
@@ -12116,6 +12126,16 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 30.0
+        - Name: CurrentTabIndex
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 0
+        - Class: Reference
+          Target: ns=3;i=1181
+          Direction: Forward
+        - Class: Reference
+          Target: ns=3;i=1183
+          Direction: Forward
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
@@ -12348,6 +12368,16 @@ Children:
           DataType: Size
           ModellingRule: Optional
           Value: 10.0
+        - Name: CurrentTabIndex
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 0
+        - Class: Reference
+          Target: ns=3;i=1181
+          Direction: Forward
+        - Class: Reference
+          Target: ns=3;i=1183
+          Direction: Forward
       - Name: HorizontalAlignment
         Type: BaseVariableType
         DataType: HorizontalAlignment
