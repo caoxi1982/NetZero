@@ -249,7 +249,7 @@ Children:
       - Name: LiveTagsFolder
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"6c12d73610c309829d74345d0f7316ca","Namespace":7}
+        Value: "/Objects/NetZero/Model/WorkShop"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -280,7 +280,7 @@ Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":17}
+          Value: "/Types/ObjectTypes/BaseObjectType/NetLogic"
       - Name: StoreTablesTopic
         Type: BaseDataVariableType
         DataType: String
@@ -315,7 +315,7 @@ Children:
       - Name: LiveTagsFolder
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"6c12d73610c309829d74345d0f7316ca","Namespace":7}
+        Value: "/Objects/NetZero/Model/WorkShop"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -350,7 +350,7 @@ Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":17}
+          Value: "/Types/ObjectTypes/BaseObjectType/NetLogic"
       - Name: TableNames
         Type: BaseDataVariableType
         DataType: Int32

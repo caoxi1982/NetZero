@@ -13,7 +13,7 @@ Children:
   - Name: RootNode
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"d8af2bb42529384db84858b7467a87cc","Namespace":7}
+    Value: "/Objects/NetZero/Model/SO_Model"
     Children:
     - Name: Kind
       Type: PropertyType

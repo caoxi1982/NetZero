@@ -9,32 +9,31 @@ Children:
   - Name: PowerMeter1
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"dbe46fd0ccf61f38366542a7e4d58113","Namespace":7}
+    Value: "/Objects/NetZero/Model/Meters/Power/FurnacePower"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/PowerMeter"
   - Name: GeneralMeter1
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"0e96dc4d7f361abbc03c9eebcfc1a58d","Namespace":7}
+    Value: "/Objects/NetZero/Model/Meters/General/FurnaceGeneral"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"9be715eaaa4b1d26fb2c470a63679da6","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/GeneralMeter"
   - Name: CounterMeter1
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"25e3293bde8f127852976982f64e4cfb","Namespace":7}
+    Value: "/Objects/NetZero/Model/Meters/Counter/FurnaceCounter"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"84c007a918d12cfcdc7c1d8a03026a6d","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/CounterMeter"
   - Name: TotalCostRate
-    Id: g=2dc11a3d98adfa4b94e852ca6a0791d1
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -97,7 +96,6 @@ Children:
           DataType: NodePath
           Value: "../../../CounterMeter1/RateToCost"
   - Name: ProductOutputRate
-    Id: g=8d6074c8a4ac92ebe0670a5ef0ccdf64
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -169,7 +167,6 @@ Children:
           DataType: NodePath
           Value: "../../../CounterMeter1/RateToCarbon"
   - Name: Energyefficiency
-    Id: g=87018387cda2dd5a84ad71d1cb941d68
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -198,39 +195,39 @@ Children:
   - Name: PowerMeter1Trend
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"ab42cc5b78c93dd5d518da3663dcf719","Namespace":7}
+    Value: "/Objects/NetZero/UI/Template/PowerMeter/FurnacePowerTrendsPanel"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
   - Name: GeneralMeter1Trend
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"301e9cfe3cace6966b929db483d93076","Namespace":7}
+    Value: "/Objects/NetZero/UI/Template/GeneralMeter/FurnaceGeneralTrendsPanel"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
   - Name: CounterMeter1Trend
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"beec186e7394334880dbeffb51151a98","Namespace":7}
+    Value: "/Objects/NetZero/UI/Template/CounterMeter/FurnaceCounterTrendsPanel"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
   - Name: DeviceTrend
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"b907bc0bfbabdce48a2708b0de195082","Namespace":7}
+    Value: "/Objects/NetZero/UI/Template/Devices/FurnaceTrendsPanel"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
 - Name: Takeup
   Id: g=61d78820495866d5fe12df4557570d49
   Type: Device
@@ -239,30 +236,30 @@ Children:
   - Name: PowerMeter1
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"04ae1d73846a716b90abe8b3f56a0e52","Namespace":7}
+    Value: "/Objects/NetZero/Model/Meters/Power/TakeupPower"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/PowerMeter"
   - Name: GeneralMeter1
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"6e69edce9d35e83943e4495b6e525f42","Namespace":7}
+    Value: "/Objects/NetZero/Model/Meters/General/TakeupGeneral"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"9be715eaaa4b1d26fb2c470a63679da6","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/GeneralMeter"
   - Name: CounterMeter1
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"79c1157e5e89fdb569d4599bb9a205e6","Namespace":7}
+    Value: "/Objects/NetZero/Model/Meters/Counter/TakeUpCooingWater"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"84c007a918d12cfcdc7c1d8a03026a6d","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/CounterMeter"
   - Name: TotalCostRate
     Type: BaseDataVariableType
     DataType: Float
@@ -425,36 +422,36 @@ Children:
   - Name: PowerMeter1Trend
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"44576429aed0e79c5bfae9f56cdd05f8","Namespace":7}
+    Value: "/Objects/NetZero/UI/Template/PowerMeter/TakeupPowerTrendsPanel"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
   - Name: GeneralMeter1Trend
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"b2e3a298341455bc462f3b4ef0f2a8a2","Namespace":7}
+    Value: "/Objects/NetZero/UI/Template/GeneralMeter/TakeupGeneralTrendsPanel"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
   - Name: CounterMeter1Trend
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"eb79772641e805f6f593d593766e11c8","Namespace":7}
+    Value: "/Objects/NetZero/UI/Template/CounterMeter/TakeupCounterTrendsPanel"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
   - Name: DeviceTrend
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"6034be03950689a05d4ece9c01ad7f0a","Namespace":7}
+    Value: "/Objects/NetZero/UI/Template/Devices/TakeupTrendsPanel"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"

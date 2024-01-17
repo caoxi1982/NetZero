@@ -227,7 +227,7 @@ public class RecordEnergy : BaseNetLogic
             shiftvalues[0, 0] = 2;
             shiftvalues[0, 1] = (string)Owner.GetVariable("Group").Value;
             shiftvalues[0, 2] = (string)Owner.GetVariable("MeterType").Value;
-            shiftvalues[0, 3] = 2023;
+            shiftvalues[0, 3] = 2024;
             shiftvalues[0, 4] = month;
             shiftvalues[0, 5] = day;
             shiftvalues[0, 6] = week;

@@ -64,7 +64,6 @@ Children:
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: Time
-    Id: g=062e88ea1219a13c28a769556042110d
     Type: BaseDataVariableType
     DataType: DateTime
     Value: "1601-01-01T00:00:00.0000000"
@@ -73,12 +72,10 @@ Children:
     DataType: DateTime
     Value: "1601-01-01T00:00:00.0000000"
   - Name: TestMode
-    Id: g=12b676b5b3f9befc9c4fb13f98840115
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
   - Name: WeekOfYear
-    Id: g=6d13fcdd8f1be3a07aa887b0803af3c1
     Type: BaseDataVariableType
     DataType: Int32
     Value: 0

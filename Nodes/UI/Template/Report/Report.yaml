@@ -141,12 +141,12 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":15}
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
       - Name: MyQuery
         Type: BaseDataVariableType
         DataType: String
@@ -221,7 +221,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":674,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -236,7 +236,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -394,7 +394,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":690,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserValueChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -409,7 +409,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -1417,24 +1417,21 @@ Children:
   - Name: MyDatabase
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: NoData1
-    Id: g=03bf1a728fddd0fdc31a07d36868f28c
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
   - Name: NoData2
-    Id: g=5105d55ee17c2c4f1e1f19ac53c5da50
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
   - Name: NoData3
-    Id: g=539aa1eea5201c8251bac3f71d016d54
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false
@@ -1582,12 +1579,12 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":15}
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
       - Name: MyQuery
         Type: BaseDataVariableType
         DataType: String
@@ -1662,7 +1659,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":674,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -1677,7 +1674,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -1855,12 +1852,12 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":15}
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
       - Name: MyQuery
         Type: BaseDataVariableType
         DataType: String
@@ -1935,7 +1932,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":674,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -1950,7 +1947,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -2138,12 +2135,12 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":15}
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
       - Name: MyQuery
         Type: BaseDataVariableType
         DataType: String
@@ -2203,7 +2200,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":674,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -2218,7 +2215,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -2350,12 +2347,12 @@ Children:
   - Name: MyDatabase
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: SelectYear
     Type: BaseDataVariableType
     DataType: Int16
@@ -3407,12 +3404,12 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":15}
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
       - Name: MyQuery
         Type: BaseDataVariableType
         DataType: String
@@ -3487,7 +3484,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":674,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -3502,7 +3499,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -3528,7 +3525,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -3686,7 +3683,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":690,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserValueChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -3701,7 +3698,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -3727,7 +3724,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -3753,7 +3750,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -3878,12 +3875,12 @@ Children:
   - Name: MyDatabase
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: NoData1
     Type: BaseDataVariableType
     DataType: Boolean
@@ -4265,7 +4262,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+          Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -4823,12 +4820,12 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":15}
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
       - Name: MyQuery
         Type: BaseDataVariableType
         DataType: String
@@ -4903,7 +4900,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":674,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -4918,7 +4915,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -5101,12 +5098,12 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":15}
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
       - Name: MyQuery
         Type: BaseDataVariableType
         DataType: String
@@ -5181,7 +5178,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":674,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -5196,7 +5193,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -5384,12 +5381,12 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":1,"Namespace":15}
+          Value: "/Types/ObjectTypes/BaseObjectType/Store"
       - Name: MyQuery
         Type: BaseDataVariableType
         DataType: String
@@ -5449,7 +5446,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":674,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/UserSelectionChanged"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -5464,7 +5461,7 @@ Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
@@ -5582,12 +5579,12 @@ Children:
   - Name: MyDatabase
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: SelectYear
     Type: BaseDataVariableType
     DataType: Int16

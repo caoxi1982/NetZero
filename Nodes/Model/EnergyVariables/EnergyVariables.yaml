@@ -7,17 +7,14 @@ Children:
   DataType: String
   Value: "SO_Model.TireDemo.Curing_Press.Hydraulic_Pump.Electric"
 - Name: totalConsumptionVar
-  Id: g=8210eaf1f7810fbb6ab9e74f397de08c
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
 - Name: totalEmissionsVar
-  Id: g=1a24634bbde5cff1bd497516d2200d74
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
 - Name: timePeriod
-  Id: g=34afe7bbefd243681ebd8c052eef818e
   Type: BaseDataVariableType
   DataType: Int16
   Value: 6
@@ -31,7 +28,6 @@ Children:
   DataType: Float
   Value: 0.0
 - Name: EquipStatus
-  Id: g=e672b32128a679d078718653ee19c49f
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
@@ -46,7 +42,6 @@ Children:
       DataType: DynamicLinkMode
       Value: 2
 - Name: Mode
-  Id: g=434ea39dc083090f87bc5016fadaa94e
   Type: BaseDataVariableType
   DataType: String
   Value: "0"
@@ -61,7 +56,6 @@ Children:
       DataType: DynamicLinkMode
       Value: 2
 - Name: BatchID
-  Id: g=0cd3156bccabb2e7c848e881cf575a0c
   Type: BaseDataVariableType
   DataType: String
   Value: "0"

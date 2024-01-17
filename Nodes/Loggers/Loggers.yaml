@@ -11,12 +11,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -82,7 +82,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=9e556936c8f3b8e2af4af94af685712a
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -111,7 +110,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=2519361706f76385d92af22dd4899293
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -155,12 +153,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -226,7 +224,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=1176fb1e975d0df8bf6dd9749029ae32
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -255,7 +252,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=5ad5e4dfe6d7643aece3e6b0fb609ac6
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -299,12 +295,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -594,7 +590,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=95ab174dec3bc64414fc8d1aedd64efe
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -640,7 +635,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=f9d5f6053204dddb4366ebb385b5808e
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -697,12 +691,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -992,7 +986,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=d90653758c1fd8b51a1dec285461c709
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1038,7 +1031,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=6ff674047baee94fc6b296c8aeec9930
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1095,12 +1087,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -1222,7 +1214,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=5d57e4987880c7a4b4650570a652c786
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1268,7 +1259,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=990015bcea29d48dee67a98313b1c38d
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1325,12 +1315,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -1452,7 +1442,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=88fe069249eac06badc59b7ea8184684
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1498,7 +1487,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=f7dd6a8632e050572c6edfcce02e3b5c
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1555,12 +1543,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -1682,7 +1670,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=082e45032d624bdb66eedf97133150d7
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1728,7 +1715,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=62d2d1b46f2650e74a85788e7b6a0b16
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1785,12 +1771,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
   - Name: VariablesToLog
     Type: BaseObjectType
     Children:
@@ -1912,7 +1898,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=e009b17a51c642638ab0f0b6dc65463d
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -1958,7 +1943,6 @@ Children:
       Value: 0.0
       Children:
       - Name: LastValue
-        Id: g=030724b781d2af9dd0dd455380adc00d
         Type: PropertyType
         DataType: BaseDataType
         AccessLevel: Read
@@ -2017,12 +2001,12 @@ Children:
   - Name: Store
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":1,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
     - Name: NodeClass
       Type: PropertyType
       DataType: NodePointerNodeClass
@@ -2084,12 +2068,12 @@ Children:
         Type: NodePointer
         DataType: NodeId
         ReferenceType: HasProperty
-        Value: {"Id":2915}
+        Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
         Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":2041}
+          Value: "/Types/EventTypes/BaseEventType"
         - Name: NodeClass
           Type: PropertyType
           DataType: NodePointerNodeClass
@@ -2140,16 +2124,6 @@ Children:
     - Name: LocalTime
       Type: BaseDataVariableType
       DataType: TimeZoneDataType
-      Value: 
-       {
-        "TypeId": {
-         "Id": 8912
-        },
-        "Body": {
-         "offset": 0,
-         "daylightSavingInOffset": false
-        }
-       }
   - Name: EventFieldsToLog
     Type: BaseObjectType
     Children:

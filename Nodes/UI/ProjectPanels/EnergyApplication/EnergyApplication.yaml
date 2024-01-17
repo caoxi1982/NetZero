@@ -191,7 +191,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=7;g=34afe7bb-efd2-4368-1ebd-8c052eef818e}"
+                Value: "/Objects/NetZero/Model/EnergyVariables/timePeriod"
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
@@ -251,7 +251,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=7;g=34afe7bb-efd2-4368-1ebd-8c052eef818e}"
+                Value: "/Objects/NetZero/Model/EnergyVariables/timePeriod"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType
@@ -541,7 +541,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=7;g=8210eaf1-f781-0fbb-6ab9-e74f397de08c}"
+                Value: "/Objects/NetZero/Model/EnergyVariables/totalConsumptionVar"
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
@@ -669,7 +669,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=7;g=1a24634b-bde5-cff1-bd49-7516d2200d74}"
+                Value: "/Objects/NetZero/Model/EnergyVariables/totalEmissionsVar"
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
@@ -1036,7 +1036,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{NodeId:ns=7;g=00507c0a-ca8c-5999-6410-b740b70e053e}"
+                  Value: "/Objects/NetZero/Model/EnergyVariables/TransferRate"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -1151,7 +1151,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{NodeId:ns=7;g=0cd3156b-ccab-b2e7-c848-e881cf575a0c}"
+                  Value: "/Objects/NetZero/Model/EnergyVariables/BatchID"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -1266,7 +1266,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{NodeId:ns=7;g=434ea39d-c083-090f-87bc-5016fadaa94e}"
+                  Value: "/Objects/NetZero/Model/EnergyVariables/Mode"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -1381,7 +1381,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{NodeId:ns=7;g=e672b321-28a6-79d0-7871-8653ee19c49f}"
+                  Value: "/Objects/NetZero/Model/EnergyVariables/EquipStatus"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -1672,7 +1672,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=7;g=34afe7bb-efd2-4368-1ebd-8c052eef818e}"
+                Value: "/Objects/NetZero/Model/EnergyVariables/timePeriod"
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
@@ -1732,7 +1732,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=7;g=34afe7bb-efd2-4368-1ebd-8c052eef818e}"
+                Value: "/Objects/NetZero/Model/EnergyVariables/timePeriod"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType
@@ -2147,7 +2147,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{NodeId:ns=7;g=00507c0a-ca8c-5999-6410-b740b70e053e}"
+                  Value: "/Objects/NetZero/Model/EnergyVariables/TransferRate"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -2262,7 +2262,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{NodeId:ns=7;g=0cd3156b-ccab-b2e7-c848-e881cf575a0c}"
+                  Value: "/Objects/NetZero/Model/EnergyVariables/BatchID"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -2377,7 +2377,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{NodeId:ns=7;g=434ea39d-c083-090f-87bc-5016fadaa94e}"
+                  Value: "/Objects/NetZero/Model/EnergyVariables/Mode"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -2492,7 +2492,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{NodeId:ns=7;g=e672b321-28a6-79d0-7871-8653ee19c49f}"
+                  Value: "/Objects/NetZero/Model/EnergyVariables/EquipStatus"
               - Name: HorizontalAlignment
                 Type: BaseVariableType
                 DataType: HorizontalAlignment
@@ -2783,7 +2783,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=7;g=34afe7bb-efd2-4368-1ebd-8c052eef818e}"
+                Value: "/Objects/NetZero/Model/EnergyVariables/timePeriod"
             - Name: HorizontalAlignment
               Type: BaseVariableType
               DataType: HorizontalAlignment
@@ -2843,7 +2843,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{NodeId:ns=7;g=34afe7bb-efd2-4368-1ebd-8c052eef818e}"
+                Value: "/Objects/NetZero/Model/EnergyVariables/timePeriod"
                 Children:
                 - Name: Mode
                   Type: BaseVariableType

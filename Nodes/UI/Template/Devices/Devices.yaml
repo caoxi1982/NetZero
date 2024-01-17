@@ -52,13 +52,15 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=5ad5e4df-e6d7-643a-ece3-e6b0fb609ac6}"
+          Value: "/Objects/NetZero/Loggers/TakeupLogger/VariablesToLog/Energyefficiency/LastValue"
           Children:
           - Name: Mode
             Type: BaseVariableType
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
+        - Name: Thresholds
+          Type: BaseObjectType
       - Name: Carbon
         Type: TrendPen
         DataType: BaseDataType
@@ -79,13 +81,15 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=1176fb1e-975d-0df8-bf6d-d9749029ae32}"
+          Value: "/Objects/NetZero/Loggers/TakeupLogger/VariablesToLog/TotalCarbonRate/LastValue"
           Children:
           - Name: Mode
             Type: BaseVariableType
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
+        - Name: Thresholds
+          Type: BaseObjectType
     - Class: Reference
       Target: ns=3;i=1129
       Direction: Forward
@@ -108,6 +112,11 @@ Children:
         Type: BaseDataVariableType
         DataType: DateTime
         Value: "1601-01-01T00:00:00.0000000"
+      - Name: SnapPosition
+        Type: BaseDataVariableType
+        DataType: SnapPositionEnum
+        ModellingRule: Optional
+        Value: 1
     - Name: YAxis
       Type: ValueAxis
       Children:
@@ -127,6 +136,10 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+      - Name: Position
+        Type: BaseDataVariableType
+        DataType: HorizontalPositionEnum
+        Value: 0
     - Name: LegendVisible
       Type: BaseDataVariableType
       DataType: Boolean
@@ -160,7 +173,7 @@ Children:
       Type: NodePointer
       DataType: NodeId
       ModellingRule: Optional
-      Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+      Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
       Children:
       - Name: ItemKind
         Type: PropertyType
@@ -190,6 +203,14 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 80.0
+    - Class: Reference
+      Target: ns=3;i=1201
+      Direction: Forward
+    - Name: TimeRanges
+      Type: BaseObjectType
+    - Class: Reference
+      Target: ns=3;i=1209
+      Direction: Forward
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment
@@ -261,13 +282,15 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=25193617-06f7-6385-d92a-f22dd4899293}"
+          Value: "/Objects/NetZero/Loggers/FurnaceLogger/VariablesToLog/Energyefficiency/LastValue"
           Children:
           - Name: Mode
             Type: BaseVariableType
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
+        - Name: Thresholds
+          Type: BaseObjectType
       - Name: Carbon
         Type: TrendPen
         DataType: BaseDataType
@@ -288,13 +311,15 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=9e556936-c8f3-b8e2-af4a-f94af685712a}"
+          Value: "/Objects/NetZero/Loggers/FurnaceLogger/VariablesToLog/TotalCarbonRate/LastValue"
           Children:
           - Name: Mode
             Type: BaseVariableType
             DataType: DynamicLinkMode
             ModellingRule: Optional
             Value: 2
+        - Name: Thresholds
+          Type: BaseObjectType
     - Class: Reference
       Target: ns=3;i=1129
       Direction: Forward
@@ -317,6 +342,11 @@ Children:
         Type: BaseDataVariableType
         DataType: DateTime
         Value: "1601-01-01T00:00:00.0000000"
+      - Name: SnapPosition
+        Type: BaseDataVariableType
+        DataType: SnapPositionEnum
+        ModellingRule: Optional
+        Value: 1
     - Name: YAxis
       Type: ValueAxis
       Children:
@@ -336,6 +366,10 @@ Children:
         Type: BaseDataVariableType
         DataType: Boolean
         Value: true
+      - Name: Position
+        Type: BaseDataVariableType
+        DataType: HorizontalPositionEnum
+        Value: 0
     - Name: LegendVisible
       Type: BaseDataVariableType
       DataType: Boolean
@@ -369,7 +403,7 @@ Children:
       Type: NodePointer
       DataType: NodeId
       ModellingRule: Optional
-      Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+      Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
       Children:
       - Name: ItemKind
         Type: PropertyType
@@ -399,6 +433,14 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 80.0
+    - Class: Reference
+      Target: ns=3;i=1201
+      Direction: Forward
+    - Name: TimeRanges
+      Type: BaseObjectType
+    - Class: Reference
+      Target: ns=3;i=1209
+      Direction: Forward
   - Name: HorizontalAlignment
     Type: BaseVariableType
     DataType: HorizontalAlignment

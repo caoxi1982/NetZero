@@ -10,7 +10,7 @@ Children:
     - Name: Node1
       Type: NodePointer
       DataType: NodeId
-      Value: {"IdType":2,"Id":"ae8b4cd2ae2448c905d0f9706dea76b8","Namespace":7}
+      Value: "/Objects/NetZero/Security"
       Children:
       - Name: Kind
         Type: PropertyType

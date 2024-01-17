@@ -5,19 +5,19 @@ Children:
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: UInt16
     Value: 0
   - Name: EnforcePasswordHistory
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: UInt16
     Value: 0
   - Name: MinimumPasswordLength
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: Byte
     Value: 8
 - File: UI/UI.yaml
@@ -41,15 +41,14 @@ Children:
   - Name: DefaultUserFolder
     Type: NodePointer
     DataType: NodeId
-    ReferenceType: HasProperty
-    Value: {"IdType":2,"Id":"d6c2b5be98c3e07bfadb3db639ac049a","Namespace":7}
+    Value: "/Objects/NetZero/Security/Users"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":61}
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: AuthenticationMode
-    Type: PropertyType
+    Type: BaseDataVariableType
     DataType: AuthenticationMode
     Value: 0
 - Name: AlarmConfiguration
@@ -58,22 +57,19 @@ Children:
   - Name: BranchingEnabled
     Type: BaseDataVariableType
     DataType: Boolean
-    ReferenceType: HasProperty
     Value: false
 - Name: Localization
   Type: PropertyGroup
   Children:
   - Name: Locales
     Type: BaseDataVariableType
-    DataType: String
-    ReferenceType: HasProperty
+    DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US","zh-CN"]
   - Name: LocaleFallbackList
     Type: BaseDataVariableType
-    DataType: String
-    ReferenceType: HasProperty
+    DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]

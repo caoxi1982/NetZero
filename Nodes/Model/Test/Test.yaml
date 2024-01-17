@@ -2,17 +2,14 @@ Name: Test
 Type: FolderType
 Children:
 - Name: Variable1
-  Id: g=c7c8466d7487f8feae3bc566fc620cb2
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
 - Name: month
-  Id: g=1ca1571dc79f774b41e62e6cadf9124b
   Type: BaseDataVariableType
   DataType: Int32
   Value: 0
 - Name: day
-  Id: g=931861678b7b81ef7f7bad4323a04d24
   Type: BaseDataVariableType
   DataType: Int32
   Value: 0
@@ -21,22 +18,18 @@ Children:
   DataType: String
   Value: "Group"
 - Name: Variable2
-  Id: g=760f9987241f8c866329846ff0f71952
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
 - Name: Variable3
-  Id: g=095d1adb804a2afa284abbabaffdb417
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
 - Name: Variable4
-  Id: g=1895636d9e37bc3602795f6f1d1815f5
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false
 - Name: week
-  Id: g=b22b81d6f05a9e257e22b070a35c5fe3
   Type: BaseDataVariableType
   DataType: Int32
   Value: 0

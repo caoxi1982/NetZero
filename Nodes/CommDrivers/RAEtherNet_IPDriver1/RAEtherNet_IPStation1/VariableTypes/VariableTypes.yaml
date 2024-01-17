@@ -6,19 +6,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xxDH_InfModule
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "e1b0be4b4a3429820e44fb85bfecebec",
-     "Namespace": 7
-    },
-    "Body": {
-     "Address": "",
-     "Link": "",
-     "Path": ""
-    }
-   }
   Children:
   - Name: Address
     Type: RAEtherNetIPTag
@@ -52,26 +39,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_EnergyBaseObject
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "30c371a33ffb01e66ebeaf67fa41b0de",
-     "Namespace": 7
-    },
-    "Body": {
-     "Accuracy": 0,
-     "AccuracyBasis": 0,
-     "Capabilities": 0,
-     "ConsumedEnergyOdo": [0,0,0,0,0],
-     "DataStatus": 0,
-     "EnergyTransferRate": 0.0,
-     "FullScaleReading": 0.0,
-     "GeneratedEnergyOdo": [0,0,0,0,0],
-     "ResourceType": 0,
-     "TotalEnergyOdo": [0,0,0,0,0]
-    }
-   }
   Children:
   - Name: Accuracy
     Type: RAEtherNetIPTag
@@ -174,146 +141,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xxDH_EventQueue
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "18ca30d0c0385963004dfdb08633fa29",
-     "Namespace": 7
-    },
-    "Body": {
-     "PTR": 0,
-     "Queue": [{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "4519e895af882e3975843909ec5040ba",
-        "Namespace": 7
-       },
-       "Body": {
-        "Action": 0,
-        "Category": 0,
-        "EventTime_D": [0,0,0,0,0,0,0],
-        "EventTime_L": 0,
-        "ID": 0,
-        "Message": "",
-        "Type": 0,
-        "Value": 0
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "4519e895af882e3975843909ec5040ba",
-        "Namespace": 7
-       },
-       "Body": {
-        "Action": 0,
-        "Category": 0,
-        "EventTime_D": [0,0,0,0,0,0,0],
-        "EventTime_L": 0,
-        "ID": 0,
-        "Message": "",
-        "Type": 0,
-        "Value": 0
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "4519e895af882e3975843909ec5040ba",
-        "Namespace": 7
-       },
-       "Body": {
-        "Action": 0,
-        "Category": 0,
-        "EventTime_D": [0,0,0,0,0,0,0],
-        "EventTime_L": 0,
-        "ID": 0,
-        "Message": "",
-        "Type": 0,
-        "Value": 0
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "4519e895af882e3975843909ec5040ba",
-        "Namespace": 7
-       },
-       "Body": {
-        "Action": 0,
-        "Category": 0,
-        "EventTime_D": [0,0,0,0,0,0,0],
-        "EventTime_L": 0,
-        "ID": 0,
-        "Message": "",
-        "Type": 0,
-        "Value": 0
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "4519e895af882e3975843909ec5040ba",
-        "Namespace": 7
-       },
-       "Body": {
-        "Action": 0,
-        "Category": 0,
-        "EventTime_D": [0,0,0,0,0,0,0],
-        "EventTime_L": 0,
-        "ID": 0,
-        "Message": "",
-        "Type": 0,
-        "Value": 0
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "4519e895af882e3975843909ec5040ba",
-        "Namespace": 7
-       },
-       "Body": {
-        "Action": 0,
-        "Category": 0,
-        "EventTime_D": [0,0,0,0,0,0,0],
-        "EventTime_L": 0,
-        "ID": 0,
-        "Message": "",
-        "Type": 0,
-        "Value": 0
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "4519e895af882e3975843909ec5040ba",
-        "Namespace": 7
-       },
-       "Body": {
-        "Action": 0,
-        "Category": 0,
-        "EventTime_D": [0,0,0,0,0,0,0],
-        "EventTime_L": 0,
-        "ID": 0,
-        "Message": "",
-        "Type": 0,
-        "Value": 0
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "4519e895af882e3975843909ec5040ba",
-        "Namespace": 7
-       },
-       "Body": {
-        "Action": 0,
-        "Category": 0,
-        "EventTime_D": [0,0,0,0,0,0,0],
-        "EventTime_L": 0,
-        "ID": 0,
-        "Message": "",
-        "Type": 0,
-        "Value": 0
-       }
-      }]
-    }
-   }
   Children:
   - Name: PTR
     Type: RAEtherNetIPTag
@@ -329,29 +156,10 @@ Children:
     DataType: raC_UDT_Event
     ValueRank: OneDimension
     ArrayDimensions: [8]
-    Value: [{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}]
     Children:
     - Name: 0
       Type: raC_UDT_Event
       DataType: raC_UDT_Event
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "4519e895af882e3975843909ec5040ba",
-         "Namespace": 7
-        },
-        "Body": {
-         "Action": 0,
-         "Category": 0,
-         "EventTime_D": [0,0,0,0,0,0,0],
-         "EventTime_L": 0,
-         "ID": 0,
-         "Message": "",
-         "Type": 0,
-         "Value": 0
-        }
-       }
       Children:
       - Name: Action
         Type: RAEtherNetIPTag
@@ -430,24 +238,6 @@ Children:
     - Name: 1
       Type: raC_UDT_Event
       DataType: raC_UDT_Event
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "4519e895af882e3975843909ec5040ba",
-         "Namespace": 7
-        },
-        "Body": {
-         "Action": 0,
-         "Category": 0,
-         "EventTime_D": [0,0,0,0,0,0,0],
-         "EventTime_L": 0,
-         "ID": 0,
-         "Message": "",
-         "Type": 0,
-         "Value": 0
-        }
-       }
       Children:
       - Name: Action
         Type: RAEtherNetIPTag
@@ -526,24 +316,6 @@ Children:
     - Name: 2
       Type: raC_UDT_Event
       DataType: raC_UDT_Event
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "4519e895af882e3975843909ec5040ba",
-         "Namespace": 7
-        },
-        "Body": {
-         "Action": 0,
-         "Category": 0,
-         "EventTime_D": [0,0,0,0,0,0,0],
-         "EventTime_L": 0,
-         "ID": 0,
-         "Message": "",
-         "Type": 0,
-         "Value": 0
-        }
-       }
       Children:
       - Name: Action
         Type: RAEtherNetIPTag
@@ -622,24 +394,6 @@ Children:
     - Name: 3
       Type: raC_UDT_Event
       DataType: raC_UDT_Event
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "4519e895af882e3975843909ec5040ba",
-         "Namespace": 7
-        },
-        "Body": {
-         "Action": 0,
-         "Category": 0,
-         "EventTime_D": [0,0,0,0,0,0,0],
-         "EventTime_L": 0,
-         "ID": 0,
-         "Message": "",
-         "Type": 0,
-         "Value": 0
-        }
-       }
       Children:
       - Name: Action
         Type: RAEtherNetIPTag
@@ -718,24 +472,6 @@ Children:
     - Name: 4
       Type: raC_UDT_Event
       DataType: raC_UDT_Event
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "4519e895af882e3975843909ec5040ba",
-         "Namespace": 7
-        },
-        "Body": {
-         "Action": 0,
-         "Category": 0,
-         "EventTime_D": [0,0,0,0,0,0,0],
-         "EventTime_L": 0,
-         "ID": 0,
-         "Message": "",
-         "Type": 0,
-         "Value": 0
-        }
-       }
       Children:
       - Name: Action
         Type: RAEtherNetIPTag
@@ -814,24 +550,6 @@ Children:
     - Name: 5
       Type: raC_UDT_Event
       DataType: raC_UDT_Event
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "4519e895af882e3975843909ec5040ba",
-         "Namespace": 7
-        },
-        "Body": {
-         "Action": 0,
-         "Category": 0,
-         "EventTime_D": [0,0,0,0,0,0,0],
-         "EventTime_L": 0,
-         "ID": 0,
-         "Message": "",
-         "Type": 0,
-         "Value": 0
-        }
-       }
       Children:
       - Name: Action
         Type: RAEtherNetIPTag
@@ -910,24 +628,6 @@ Children:
     - Name: 6
       Type: raC_UDT_Event
       DataType: raC_UDT_Event
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "4519e895af882e3975843909ec5040ba",
-         "Namespace": 7
-        },
-        "Body": {
-         "Action": 0,
-         "Category": 0,
-         "EventTime_D": [0,0,0,0,0,0,0],
-         "EventTime_L": 0,
-         "ID": 0,
-         "Message": "",
-         "Type": 0,
-         "Value": 0
-        }
-       }
       Children:
       - Name: Action
         Type: RAEtherNetIPTag
@@ -1006,24 +706,6 @@ Children:
     - Name: 7
       Type: raC_UDT_Event
       DataType: raC_UDT_Event
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "4519e895af882e3975843909ec5040ba",
-         "Namespace": 7
-        },
-        "Body": {
-         "Action": 0,
-         "Category": 0,
-         "EventTime_D": [0,0,0,0,0,0,0],
-         "EventTime_L": 0,
-         "ID": 0,
-         "Message": "",
-         "Type": 0,
-         "Value": 0
-        }
-       }
       Children:
       - Name: Action
         Type: RAEtherNetIPTag
@@ -1104,33 +786,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_PML_States
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "781f255e3b5fd235a7c7dce162d6cc20",
-     "Namespace": 7
-    },
-    "Body": {
-     "Aborted": false,
-     "Aborting": false,
-     "Clearing": false,
-     "Completed": false,
-     "Completing": false,
-     "Executing": false,
-     "Held": false,
-     "Holding": false,
-     "Idle": false,
-     "Resetting": false,
-     "Starting": false,
-     "Stopped": false,
-     "Stopping": false,
-     "Suspended": false,
-     "Suspending": false,
-     "UnHolding": false,
-     "UnSuspending": false
-    }
-   }
   Children:
   - Name: Aborted
     Type: RAEtherNetIPTag
@@ -1290,32 +945,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Opr_K5500_Energy
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "87823fee83d334d2df0d11743310bd7f",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "raC_Opr_K5500_Energy": false,
-     "Set_Inertia": 0.0,
-     "Set_PowerNominal_kW": 0.0,
-     "Set_PowerNominal_RPM": 0.0,
-     "Set_SampleInterval": 0.0,
-     "Sts_AcquiringData": false,
-     "Sts_DataAcquisitionDuration": 0,
-     "Sts_ER": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_Idle": false,
-     "Sts_OdometerResetServiced": false,
-     "Sts_WaitingForCtrlResource": false,
-     "Sts_WaitingForDevice": false
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -1466,20 +1095,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PwrMotion_Set
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "54cb3bafa63fa21024bafff88250aa74",
-     "Namespace": 7
-    },
-    "Body": {
-     "bInhibit": 0,
-     "InhibitCfg": false,
-     "InhibitCmd": false,
-     "InhibitSet": false
-    }
-   }
   Children:
   - Name: bInhibit
     Type: RAEtherNetIPTag
@@ -1522,69 +1137,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PwrVelocity_Sts
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "8071b8553fa913d82fc4fdd1bb1c5f67",
-     "Namespace": 7
-    },
-    "Body": {
-     "Accelerating": false,
-     "ActDir": false,
-     "Active": false,
-     "AtSpeed": false,
-     "Available": false,
-     "bSts": 0,
-     "CmdDir": false,
-     "Connected": false,
-     "Decelerating": false,
-     "eCmdFail": 0,
-     "eState": 0,
-     "Faulted": false,
-     "FirstFault": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     },
-     "FirstWarning": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     },
-     "ObjCtrl": false,
-     "Physical": false,
-     "Ready": false,
-     "Speed": 0.0,
-     "Virtual": false,
-     "Warning": false,
-     "ZeroSpeed": false
-    }
-   }
   Children:
   - Name: Accelerating
     Type: RAEtherNetIPTag
@@ -1697,24 +1249,6 @@ Children:
   - Name: FirstFault
     Type: raC_UDT_Event
     DataType: raC_UDT_Event
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     }
     Children:
     - Name: Action
       Type: RAEtherNetIPTag
@@ -1793,24 +1327,6 @@ Children:
   - Name: FirstWarning
     Type: raC_UDT_Event
     DataType: raC_UDT_Event
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     }
     Children:
     - Name: Action
       Type: RAEtherNetIPTag
@@ -1954,21 +1470,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Opr_ObjectRegister_Members
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-     "Namespace": 7
-    },
-    "Body": {
-     "ID": 0,
-     "Name": "",
-     "PAC": "",
-     "PRG": "",
-     "RTN": ""
-    }
-   }
   Children:
   - Name: ID
     Type: RAEtherNetIPTag
@@ -2020,449 +1521,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xxDH_MethodRegistry
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "c4e01f7b8e33f84b92c927173268b4f8",
-     "Namespace": 7
-    },
-    "Body": {
-     "HandlerID": 0,
-     "Method": [{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-        "Namespace": 7
-       },
-       "Body": {
-        "ID": 0,
-        "Name": "",
-        "PAC": "",
-        "PRG": "",
-        "RTN": ""
-       }
-      }],
-     "PTR": 0,
-     "Size": 0
-    }
-   }
   Children:
   - Name: HandlerID
     Type: RAEtherNetIPTag
@@ -2478,26 +1536,10 @@ Children:
     DataType: raM_UDT_Opr_ObjectRegister_Members
     ValueRank: OneDimension
     ArrayDimensions: [33]
-    Value: [{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}}]
     Children:
     - Name: 0
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -2547,21 +1589,6 @@ Children:
     - Name: 1
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -2611,21 +1638,6 @@ Children:
     - Name: 2
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -2675,21 +1687,6 @@ Children:
     - Name: 3
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -2739,21 +1736,6 @@ Children:
     - Name: 4
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -2803,21 +1785,6 @@ Children:
     - Name: 5
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -2867,21 +1834,6 @@ Children:
     - Name: 6
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -2931,21 +1883,6 @@ Children:
     - Name: 7
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -2995,21 +1932,6 @@ Children:
     - Name: 8
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3059,21 +1981,6 @@ Children:
     - Name: 9
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3123,21 +2030,6 @@ Children:
     - Name: 10
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3187,21 +2079,6 @@ Children:
     - Name: 11
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3251,21 +2128,6 @@ Children:
     - Name: 12
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3315,21 +2177,6 @@ Children:
     - Name: 13
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3379,21 +2226,6 @@ Children:
     - Name: 14
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3443,21 +2275,6 @@ Children:
     - Name: 15
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3507,21 +2324,6 @@ Children:
     - Name: 16
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3571,21 +2373,6 @@ Children:
     - Name: 17
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3635,21 +2422,6 @@ Children:
     - Name: 18
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3699,21 +2471,6 @@ Children:
     - Name: 19
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3763,21 +2520,6 @@ Children:
     - Name: 20
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3827,21 +2569,6 @@ Children:
     - Name: 21
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3891,21 +2618,6 @@ Children:
     - Name: 22
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -3955,21 +2667,6 @@ Children:
     - Name: 23
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4019,21 +2716,6 @@ Children:
     - Name: 24
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4083,21 +2765,6 @@ Children:
     - Name: 25
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4147,21 +2814,6 @@ Children:
     - Name: 26
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4211,21 +2863,6 @@ Children:
     - Name: 27
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4275,21 +2912,6 @@ Children:
     - Name: 28
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4339,21 +2961,6 @@ Children:
     - Name: 29
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4403,21 +3010,6 @@ Children:
     - Name: 30
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4467,21 +3059,6 @@ Children:
     - Name: 31
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4531,21 +3108,6 @@ Children:
     - Name: 32
       Type: raM_UDT_Opr_ObjectRegister_Members
       DataType: raM_UDT_Opr_ObjectRegister_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-         "Namespace": 7
-        },
-        "Body": {
-         "ID": 0,
-         "Name": "",
-         "PAC": "",
-         "PRG": "",
-         "RTN": ""
-        }
-       }
       Children:
       - Name: ID
         Type: RAEtherNetIPTag
@@ -4615,31 +3177,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Dvc_PF525
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "9e51d5d0ba36b9dc7c7aa428156f1f1e",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inp_MotorFLA": 0.0,
-     "raC_Dvc_PF525": false,
-     "Sts_Active": false,
-     "Sts_Available": false,
-     "Sts_bNotReady": 0,
-     "Sts_Connected": false,
-     "Sts_Faulted": false,
-     "Sts_Ready": false,
-     "Sts_Virtual": false,
-     "Sts_Warning": false,
-     "Sts_ZeroSpeed": false,
-     "Val_FreqActual": 0.0,
-     "Val_OutputCurrent": 0.0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -4781,21 +3318,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xADH_Configuration
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "d96026bdde4c02ebcf295a2f6622872e",
-     "Namespace": 7
-    },
-    "Body": {
-     "bCfg": 0,
-     "LogAxisState": false,
-     "LogHandlerState": false,
-     "LogMotionStatus": false,
-     "MethodError": 0
-    }
-   }
   Children:
   - Name: bCfg
     Type: RAEtherNetIPTag
@@ -4847,51 +3369,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Opr_VirtualEnergy
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "eaf133350b7ee511259b98878c9c378d",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inp_Active": false,
-     "Inp_Generated": false,
-     "raC_Opr_VirtualEnergy": false,
-     "Set_Inertia": 0.0,
-     "Set_PowerNominal_kUnit": 0.0,
-     "Set_PowerNominal_RPM": 0.0,
-     "Set_SampleInterval": 0.0,
-     "Sts_AcquiringData": false,
-     "Sts_DataAcquisitionDuration": 0,
-     "Sts_ER": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_Idle": false,
-     "Sts_OdometerResetServiced": false,
-     "Sts_WaitingForDevice": false,
-     "Sts_WaitingForService": false,
-     "Val_ConsumedEnergyOdo_gVal": 0,
-     "Val_ConsumedEnergyOdo_kVal": 0,
-     "Val_ConsumedEnergyOdo_mVal": 0,
-     "Val_ConsumedEnergyOdo_tVal": 0,
-     "Val_ConsumedEnergyOdo_Val": 0,
-     "Val_DataStatus": 0,
-     "Val_EnergyTransferRate": 0.0,
-     "Val_GeneratedEnergyOdo_gVal": 0,
-     "Val_GeneratedEnergyOdo_kVal": 0,
-     "Val_GeneratedEnergyOdo_mVal": 0,
-     "Val_GeneratedEnergyOdo_tVal": 0,
-     "Val_GeneratedEnergyOdo_Val": 0,
-     "Val_TotalEnergyOdo_gVal": 0,
-     "Val_TotalEnergyOdo_kVal": 0,
-     "Val_TotalEnergyOdo_mVal": 0,
-     "Val_TotalEnergyOdo_tVal": 0,
-     "Val_TotalEnergyOdo_Val": 0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -5213,24 +3690,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_DeEnergize_CD
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "25b021e256db02c5d55c5b63ae8bab28",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "raM_Opr_DeEnergize_CD": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_IP": false,
-     "Sts_MtdID": 0,
-     "Sts_PC": false
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -5309,19 +3768,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PwrVelocity_Inf
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "4fb3739d7c718b5f3e7903ce3ab6295f",
-     "Namespace": 7
-    },
-    "Body": {
-     "bExtensionAlert": 0,
-     "bExtensionEnabled": 0,
-     "ModulePath": ""
-    }
-   }
   Children:
   - Name: bExtensionAlert
     Type: RAEtherNetIPTag
@@ -5355,24 +3801,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Opr_kVal_to_Odo
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "c13984ba8331b66cab00e738a4581df3",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inp_kVal": 0.0,
-     "Out_Odo0": 0,
-     "Out_Odo1": 0,
-     "Out_Odo2": 0,
-     "Out_Odo3": 0,
-     "Out_Odo4": 0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -5451,62 +3879,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Dvc_Motor_VSD
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "0d76a6bf4711ae2408cb0ecb73b50a07",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cfg_ConversionConstant": 0.0,
-     "Cfg_DirectionSource": 0,
-     "Cfg_FailtoStartStopTime": 0,
-     "Cfg_MotorNP_Hz": 0.0,
-     "Cfg_MotorNP_RPM": 0.0,
-     "Cfg_Profile": 0,
-     "Cfg_SpeedTimeBase": 0,
-     "Cmd_JogFwd": false,
-     "Cmd_JogRev": false,
-     "Cmd_Physical": false,
-     "Cmd_Reset": false,
-     "Cmd_Start": false,
-     "Cmd_Stop": false,
-     "Cmd_Virtual": false,
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inp_ExternalReady": false,
-     "raM_Dvc_Motor_VSD": false,
-     "Set_AccelRate": 0.0,
-     "Set_DecelRate": 0.0,
-     "Set_Direction": false,
-     "Set_InhibitExtCfg": 0,
-     "Set_InhibitExtCmd": false,
-     "Set_InhibitExtSet": false,
-     "Set_JogAccelRate": 0.0,
-     "Set_JogDecelRate": 0.0,
-     "Set_JogSpeed": 0.0,
-     "Set_Speed": 0.0,
-     "Sts_Accelerating": false,
-     "Sts_ActDir": false,
-     "Sts_AtSpeed": false,
-     "Sts_Available": false,
-     "Sts_bNotReady": 0,
-     "Sts_bWarning": 0,
-     "Sts_CmdDir": false,
-     "Sts_Decelerating": false,
-     "Sts_EXERR": 0,
-     "Sts_Faulted": false,
-     "Sts_Ready": false,
-     "Sts_Running": false,
-     "Sts_Virtual": false,
-     "Sts_Warning": false,
-     "Sts_ZeroSpeed": false,
-     "Val_SpeedFdbk": 0.0,
-     "Val_SpeedFdbk_MotorRPM": 0.0,
-     "Val_SpeedRef": 0.0
-    }
-   }
   Children:
   - Name: Cfg_ConversionConstant
     Type: RAEtherNetIPTag
@@ -5927,628 +4299,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xADH_DataHndl
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "8b9cd4f5a3d7406f2eab1b0a965e3971",
-     "Namespace": 7
-    },
-    "Body": {
-     "CtrlAxID": [0,0,0],
-     "CtrlEvtQ": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "18ca30d0c0385963004dfdb08633fa29",
-       "Namespace": 7
-      },
-      "Body": {
-       "PTR": 0,
-       "Queue": [{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }]
-      }
-     },
-     "CtrlIO": 0,
-     "InfHandler": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "e0d53e631b1e229e0e45032f0f9839a6",
-       "Namespace": 7
-      },
-      "Body": {
-       "bMode": 0,
-       "bState": 0,
-       "eMode": 0,
-       "eState": 0,
-       "Language": "",
-       "Name": "",
-       "sMode": "",
-       "sState": ""
-      }
-     },
-     "InfModule": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "e1b0be4b4a3429820e44fb85bfecebec",
-       "Namespace": 7
-      },
-      "Body": {
-       "Address": "",
-       "Link": "",
-       "Path": ""
-      }
-     },
-     "MethodRegistry": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "c4e01f7b8e33f84b92c927173268b4f8",
-       "Namespace": 7
-      },
-      "Body": {
-       "HandlerID": 0,
-       "Method": [{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        }],
-       "PTR": 0,
-       "Size": 0
-      }
-     }
-    }
-   }
   Children:
   - Name: CtrlAxID
     Type: RAEtherNetIPTag
@@ -6564,146 +4314,6 @@ Children:
   - Name: CtrlEvtQ
     Type: raM_UDT_Dvc_xxDH_EventQueue
     DataType: raM_UDT_Dvc_xxDH_EventQueue
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "18ca30d0c0385963004dfdb08633fa29",
-       "Namespace": 7
-      },
-      "Body": {
-       "PTR": 0,
-       "Queue": [{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }]
-      }
-     }
     Children:
     - Name: PTR
       Type: RAEtherNetIPTag
@@ -6719,29 +4329,10 @@ Children:
       DataType: raC_UDT_Event
       ValueRank: OneDimension
       ArrayDimensions: [8]
-      Value: [{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}},{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}]
       Children:
       - Name: 0
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -6820,24 +4411,6 @@ Children:
       - Name: 1
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -6916,24 +4489,6 @@ Children:
       - Name: 2
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -7012,24 +4567,6 @@ Children:
       - Name: 3
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -7108,24 +4645,6 @@ Children:
       - Name: 4
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -7204,24 +4723,6 @@ Children:
       - Name: 5
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -7300,24 +4801,6 @@ Children:
       - Name: 6
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -7396,24 +4879,6 @@ Children:
       - Name: 7
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -7501,24 +4966,6 @@ Children:
   - Name: InfHandler
     Type: raM_UDT_Dvc_xxDH_InfHandler
     DataType: raM_UDT_Dvc_xxDH_InfHandler
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "e0d53e631b1e229e0e45032f0f9839a6",
-       "Namespace": 7
-      },
-      "Body": {
-       "bMode": 0,
-       "bState": 0,
-       "eMode": 0,
-       "eState": 0,
-       "Language": "",
-       "Name": "",
-       "sMode": "",
-       "sState": ""
-      }
-     }
     Children:
     - Name: bMode
       Type: RAEtherNetIPTag
@@ -7595,19 +5042,6 @@ Children:
   - Name: InfModule
     Type: raM_UDT_Dvc_xxDH_InfModule
     DataType: raM_UDT_Dvc_xxDH_InfModule
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "e1b0be4b4a3429820e44fb85bfecebec",
-       "Namespace": 7
-      },
-      "Body": {
-       "Address": "",
-       "Link": "",
-       "Path": ""
-      }
-     }
     Children:
     - Name: Address
       Type: RAEtherNetIPTag
@@ -7639,449 +5073,6 @@ Children:
   - Name: MethodRegistry
     Type: raM_UDT_Dvc_xxDH_MethodRegistry
     DataType: raM_UDT_Dvc_xxDH_MethodRegistry
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "c4e01f7b8e33f84b92c927173268b4f8",
-       "Namespace": 7
-      },
-      "Body": {
-       "HandlerID": 0,
-       "Method": [{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        },{
-         "TypeId": {
-          "IdType": 2,
-          "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-          "Namespace": 7
-         },
-         "Body": {
-          "ID": 0,
-          "Name": "",
-          "PAC": "",
-          "PRG": "",
-          "RTN": ""
-         }
-        }],
-       "PTR": 0,
-       "Size": 0
-      }
-     }
     Children:
     - Name: HandlerID
       Type: RAEtherNetIPTag
@@ -8097,26 +5088,10 @@ Children:
       DataType: raM_UDT_Opr_ObjectRegister_Members
       ValueRank: OneDimension
       ArrayDimensions: [33]
-      Value: [{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}},{"TypeId":{"IdType":2,"Id":"72d1eba24bebe7c6e57fea3dbb05a75b","Namespace":7},"Body":{"ID":0,"Name":"","PAC":"","PRG":"","RTN":""}}]
       Children:
       - Name: 0
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8166,21 +5141,6 @@ Children:
       - Name: 1
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8230,21 +5190,6 @@ Children:
       - Name: 2
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8294,21 +5239,6 @@ Children:
       - Name: 3
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8358,21 +5288,6 @@ Children:
       - Name: 4
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8422,21 +5337,6 @@ Children:
       - Name: 5
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8486,21 +5386,6 @@ Children:
       - Name: 6
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8550,21 +5435,6 @@ Children:
       - Name: 7
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8614,21 +5484,6 @@ Children:
       - Name: 8
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8678,21 +5533,6 @@ Children:
       - Name: 9
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8742,21 +5582,6 @@ Children:
       - Name: 10
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8806,21 +5631,6 @@ Children:
       - Name: 11
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8870,21 +5680,6 @@ Children:
       - Name: 12
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8934,21 +5729,6 @@ Children:
       - Name: 13
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -8998,21 +5778,6 @@ Children:
       - Name: 14
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9062,21 +5827,6 @@ Children:
       - Name: 15
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9126,21 +5876,6 @@ Children:
       - Name: 16
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9190,21 +5925,6 @@ Children:
       - Name: 17
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9254,21 +5974,6 @@ Children:
       - Name: 18
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9318,21 +6023,6 @@ Children:
       - Name: 19
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9382,21 +6072,6 @@ Children:
       - Name: 20
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9446,21 +6121,6 @@ Children:
       - Name: 21
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9510,21 +6170,6 @@ Children:
       - Name: 22
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9574,21 +6219,6 @@ Children:
       - Name: 23
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9638,21 +6268,6 @@ Children:
       - Name: 24
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9702,21 +6317,6 @@ Children:
       - Name: 25
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9766,21 +6366,6 @@ Children:
       - Name: 26
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9830,21 +6415,6 @@ Children:
       - Name: 27
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9894,21 +6464,6 @@ Children:
       - Name: 28
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -9958,21 +6513,6 @@ Children:
       - Name: 29
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -10022,21 +6562,6 @@ Children:
       - Name: 30
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -10086,21 +6611,6 @@ Children:
       - Name: 31
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -10150,21 +6660,6 @@ Children:
       - Name: 32
         Type: raM_UDT_Opr_ObjectRegister_Members
         DataType: raM_UDT_Opr_ObjectRegister_Members
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "72d1eba24bebe7c6e57fea3dbb05a75b",
-           "Namespace": 7
-          },
-          "Body": {
-           "ID": 0,
-           "Name": "",
-           "PAC": "",
-           "PRG": "",
-           "RTN": ""
-          }
-         }
         Children:
         - Name: ID
           Type: RAEtherNetIPTag
@@ -10234,34 +6729,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Opr_PF755_Energy
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "677ee1637dabab0a645d80ea39dfa742",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cmd_ResetOdometers": false,
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inp_Speed_RPM": 0.0,
-     "raC_Opr_PF755_Energy": false,
-     "Set_Inertia": 0.0,
-     "Set_PowerNominal_kW": 0.0,
-     "Set_PowerNominal_RPM": 0.0,
-     "Set_SampleInterval": 0.0,
-     "Sts_AcquiringData": false,
-     "Sts_DataAcquisitionDuration": 0,
-     "Sts_ER": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_Idle": false,
-     "Sts_OdometerResetServiced": false,
-     "Sts_WaitingForCtrlResource": false,
-     "Sts_WaitingForDevice": false
-    }
-   }
   Children:
   - Name: Cmd_ResetOdometers
     Type: RAEtherNetIPTag
@@ -10430,32 +6897,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_EM_Energy
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "bbe953e9ebfb452c4ae1d08a9647cb27",
-     "Namespace": 7
-    },
-    "Body": {
-     "Accuracy": 0,
-     "AccuracyBasis": 0,
-     "Capabilities": 0,
-     "ConsumedEnergyOdo": [0,0,0,0,0],
-     "DataStatus": 0,
-     "EnergyFlowRateTimeBase": 0,
-     "EnergyTransferRate": 0.0,
-     "EnergyType": 0,
-     "EngineeringUnit": 0,
-     "EngineeringUnitDesc": "",
-     "FullScaleReading": 0.0,
-     "GeneratedEnergyOdo": [0,0,0,0,0],
-     "NormalizationConstantDiv": 0,
-     "NormalizationConstantMult": 0,
-     "ResourceType": 0,
-     "TotalEnergyOdo": [0,0,0,0,0]
-    }
-   }
   Children:
   - Name: Accuracy
     Type: RAEtherNetIPTag
@@ -10612,23 +7053,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_Clear_CD
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "90f1755551137593e0e0cacd5b2c6cc3",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "raM_Opr_Clear_CD": false,
-     "Sts_DN": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_MtdID": 0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -10698,22 +7122,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xADH_Command
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "59553624c2211d9210a6b5a92feeaa77",
-     "Namespace": 7
-    },
-    "Body": {
-     "bCmd": 0,
-     "DeEnergize": false,
-     "Energize": false,
-     "Physical": false,
-     "ResetFault": false,
-     "Virtual": false
-    }
-   }
   Children:
   - Name: bCmd
     Type: RAEtherNetIPTag
@@ -10774,464 +7182,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xADH_Status
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "fd4ec09fcc5527b798ef50f1e146e762",
-     "Namespace": 7
-    },
-    "Body": {
-     "Available": false,
-     "bSts": 0,
-     "Connected": false,
-     "Energized": false,
-     "EventLog": [{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      }],
-     "Faulted": false,
-     "FaultLog": [{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      },{
-       "TypeId": {
-        "IdType": 2,
-        "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-        "Namespace": 7
-       },
-       "Body": {
-        "Count": 0,
-        "Event": {
-         "TypeId": {
-          "IdType": 2,
-          "Id": "4519e895af882e3975843909ec5040ba",
-          "Namespace": 7
-         },
-         "Body": {
-          "Action": 0,
-          "Category": 0,
-          "EventTime_D": [0,0,0,0,0,0,0],
-          "EventTime_L": 0,
-          "ID": 0,
-          "Message": "",
-          "Type": 0,
-          "Value": 0
-         }
-        }
-       }
-      }],
-     "FirstFault": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     },
-     "NoMotion": false,
-     "OnPath": false,
-     "Physical": false,
-     "Ready": false,
-     "Recoverable": false,
-     "Referenced": false,
-     "Virtual": false,
-     "ZeroSpeed": false
-    }
-   }
   Children:
   - Name: Available
     Type: RAEtherNetIPTag
@@ -11274,39 +7224,10 @@ Children:
     DataType: raM_UDT_Opr_EventList_Members
     ValueRank: OneDimension
     ArrayDimensions: [8]
-    Value: [{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}}]
     Children:
     - Name: 0
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -11320,24 +7241,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -11416,34 +7319,6 @@ Children:
     - Name: 1
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -11457,24 +7332,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -11553,34 +7410,6 @@ Children:
     - Name: 2
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -11594,24 +7423,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -11690,34 +7501,6 @@ Children:
     - Name: 3
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -11731,24 +7514,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -11827,34 +7592,6 @@ Children:
     - Name: 4
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -11868,24 +7605,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -11964,34 +7683,6 @@ Children:
     - Name: 5
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -12005,24 +7696,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -12101,34 +7774,6 @@ Children:
     - Name: 6
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -12142,24 +7787,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -12238,34 +7865,6 @@ Children:
     - Name: 7
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -12279,24 +7878,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -12386,39 +7967,10 @@ Children:
     DataType: raM_UDT_Opr_EventList_Members
     ValueRank: OneDimension
     ArrayDimensions: [8]
-    Value: [{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}},{"TypeId":{"IdType":2,"Id":"f1ec5fa41eeb9aaa3a0ec18a2efee6e2","Namespace":7},"Body":{"Count":0,"Event":{"TypeId":{"IdType":2,"Id":"4519e895af882e3975843909ec5040ba","Namespace":7},"Body":{"Action":0,"Category":0,"EventTime_D":[0,0,0,0,0,0,0],"EventTime_L":0,"ID":0,"Message":"","Type":0,"Value":0}}}}]
     Children:
     - Name: 0
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -12432,24 +7984,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -12528,34 +8062,6 @@ Children:
     - Name: 1
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -12569,24 +8075,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -12665,34 +8153,6 @@ Children:
     - Name: 2
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -12706,24 +8166,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -12802,34 +8244,6 @@ Children:
     - Name: 3
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -12843,24 +8257,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -12939,34 +8335,6 @@ Children:
     - Name: 4
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -12980,24 +8348,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -13076,34 +8426,6 @@ Children:
     - Name: 5
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -13117,24 +8439,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -13213,34 +8517,6 @@ Children:
     - Name: 6
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -13254,24 +8530,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -13350,34 +8608,6 @@ Children:
     - Name: 7
       Type: raM_UDT_Opr_EventList_Members
       DataType: raM_UDT_Opr_EventList_Members
-      Value: 
-       {
-        "TypeId": {
-         "IdType": 2,
-         "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-         "Namespace": 7
-        },
-        "Body": {
-         "Count": 0,
-         "Event": {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
-        }
-       }
       Children:
       - Name: Count
         Type: RAEtherNetIPTag
@@ -13391,24 +8621,6 @@ Children:
       - Name: Event
         Type: raC_UDT_Event
         DataType: raC_UDT_Event
-        Value: 
-         {
-          "TypeId": {
-           "IdType": 2,
-           "Id": "4519e895af882e3975843909ec5040ba",
-           "Namespace": 7
-          },
-          "Body": {
-           "Action": 0,
-           "Category": 0,
-           "EventTime_D": [0,0,0,0,0,0,0],
-           "EventTime_L": 0,
-           "ID": 0,
-           "Message": "",
-           "Type": 0,
-           "Value": 0
-          }
-         }
         Children:
         - Name: Action
           Type: RAEtherNetIPTag
@@ -13487,24 +8699,6 @@ Children:
   - Name: FirstFault
     Type: raC_UDT_Event
     DataType: raC_UDT_Event
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     }
     Children:
     - Name: Action
       Type: RAEtherNetIPTag
@@ -13657,27 +8851,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_JogAuto
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "67688a041b18dbe6d39472f25901e323",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "raM_Opr_JogAuto": false,
-     "Set_Accel": 0.0,
-     "Set_Decel": 0.0,
-     "Set_Direction": 0,
-     "Set_Speed": 0.0,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_IP": false,
-     "Sts_MtdID": 0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -13783,79 +8956,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_EM_Status
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "b7ded9eadf50d206a2701afebfe6eee5",
-     "Namespace": 7
-    },
-    "Body": {
-     "Available": false,
-     "CurrentSpeed": 0.0,
-     "DesignSpeed": 0.0,
-     "FirstOutFaultEvent": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "19b8272e28f2771e3432de38dac366a8",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "ID": 0,
-       "Message": "",
-       "MsgCat": "",
-       "TimeAck": 0,
-       "TimeEvent": 0,
-       "Trigger": false,
-       "TriggerID": 0,
-       "Value": 0
-      }
-     },
-     "GoodCount": 0.0,
-     "LanesBlocked": 0,
-     "LanesStarved": 0,
-     "LineControlEnabled": false,
-     "Mode": 0,
-     "ModeName": "",
-     "ProducingMode": false,
-     "RecipeName": "",
-     "ResetDone": false,
-     "Running": false,
-     "State": 0,
-     "StateBool": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "781f255e3b5fd235a7c7dce162d6cc20",
-       "Namespace": 7
-      },
-      "Body": {
-       "Aborted": false,
-       "Aborting": false,
-       "Clearing": false,
-       "Completed": false,
-       "Completing": false,
-       "Executing": false,
-       "Held": false,
-       "Holding": false,
-       "Idle": false,
-       "Resetting": false,
-       "Starting": false,
-       "Stopped": false,
-       "Stopping": false,
-       "Suspended": false,
-       "Suspending": false,
-       "UnHolding": false,
-       "UnSuspending": false
-      }
-     },
-     "StateInt": 0,
-     "StateName": "",
-     "TotalCount": 0.0,
-     "UnitRatio": 0.0
-    }
-   }
   Children:
   - Name: Available
     Type: RAEtherNetIPTag
@@ -13887,26 +8987,6 @@ Children:
   - Name: FirstOutFaultEvent
     Type: raC_UDT_EM_Event
     DataType: raC_UDT_EM_Event
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "19b8272e28f2771e3432de38dac366a8",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "ID": 0,
-       "Message": "",
-       "MsgCat": "",
-       "TimeAck": 0,
-       "TimeEvent": 0,
-       "Trigger": false,
-       "TriggerID": 0,
-       "Value": 0
-      }
-     }
     Children:
     - Name: Action
       Type: RAEtherNetIPTag
@@ -14100,33 +9180,6 @@ Children:
   - Name: StateBool
     Type: raC_UDT_PML_States
     DataType: raC_UDT_PML_States
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "781f255e3b5fd235a7c7dce162d6cc20",
-       "Namespace": 7
-      },
-      "Body": {
-       "Aborted": false,
-       "Aborting": false,
-       "Clearing": false,
-       "Completed": false,
-       "Completing": false,
-       "Executing": false,
-       "Held": false,
-       "Holding": false,
-       "Idle": false,
-       "Resetting": false,
-       "Starting": false,
-       "Stopped": false,
-       "Stopping": false,
-       "Suspended": false,
-       "Suspending": false,
-       "UnHolding": false,
-       "UnSuspending": false
-      }
-     }
     Children:
     - Name: Aborted
       Type: RAEtherNetIPTag
@@ -14322,26 +9375,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_EM_Event
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "19b8272e28f2771e3432de38dac366a8",
-     "Namespace": 7
-    },
-    "Body": {
-     "Action": 0,
-     "Category": 0,
-     "ID": 0,
-     "Message": "",
-     "MsgCat": "",
-     "TimeAck": 0,
-     "TimeEvent": 0,
-     "Trigger": false,
-     "TriggerID": 0,
-     "Value": 0
-    }
-   }
   Children:
   - Name: Action
     Type: RAEtherNetIPTag
@@ -14438,23 +9471,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PwrMotion_Cmd
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "812940b77fca3a533ea17169c23796f1",
-     "Namespace": 7
-    },
-    "Body": {
-     "Activate": false,
-     "bCmd": 0,
-     "Deactivate": false,
-     "Physical": false,
-     "ResetFault": false,
-     "ResetWarn": false,
-     "Virtual": false
-    }
-   }
   Children:
   - Name: Activate
     Type: RAEtherNetIPTag
@@ -14524,41 +9540,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PF525_Inp
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "c067acefcc4ca9f3b9ea3c95f78818e1",
-     "Namespace": 7
-    },
-    "Body": {
-     "Accelerating": false,
-     "Active": false,
-     "ActualDir": false,
-     "AtReference": false,
-     "CommandDir": false,
-     "CommFreqCnt": false,
-     "CommLogicCnt": false,
-     "Decelerating": false,
-     "DigIn1Active": false,
-     "DigIn2Active": false,
-     "DigIn3Active": false,
-     "DigIn4Active": false,
-     "DriveStatus": 0,
-     "DriveStatus_param": 0,
-     "DriveStatus_param_Accelerating": false,
-     "DriveStatus_param_Decelerating": false,
-     "DriveStatus_param_Forward": false,
-     "DriveStatus_param_Running": false,
-     "DriveStatus_param_SafetyActive": false,
-     "Fault1Code": 0,
-     "Faulted": false,
-     "OutputCurrent": 0,
-     "OutputFreq": 0,
-     "ParmsLocked": false,
-     "Ready": false
-    }
-   }
   Children:
   - Name: Accelerating
     Type: RAEtherNetIPTag
@@ -14790,27 +9771,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_Stop
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "8572a78c5fc624f6649f173c0e719356",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cfg_DecelTime": 0.0,
-     "Cfg_StopType": 0,
-     "EnableIn": false,
-     "EnableOut": false,
-     "raM_Opr_Stop": false,
-     "Set_Position": 0.0,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_IP": false,
-     "Sts_MtdID": 0,
-     "Sts_PC": false
-    }
-   }
   Children:
   - Name: Cfg_DecelTime
     Type: RAEtherNetIPTag
@@ -14916,24 +9876,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_Event
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "4519e895af882e3975843909ec5040ba",
-     "Namespace": 7
-    },
-    "Body": {
-     "Action": 0,
-     "Category": 0,
-     "EventTime_D": [0,0,0,0,0,0,0],
-     "EventTime_L": 0,
-     "ID": 0,
-     "Message": "",
-     "Type": 0,
-     "Value": 0
-    }
-   }
   Children:
   - Name: Action
     Type: RAEtherNetIPTag
@@ -15014,58 +9956,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_ISATR880002_2015
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "365ea69b5ae1ae706ab3a7cb0b89570c",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cmd_Abort": false,
-     "Cmd_Clear": false,
-     "Cmd_eMode": 0,
-     "Cmd_Hold": false,
-     "Cmd_Reset": false,
-     "Cmd_Start": false,
-     "Cmd_StateComplete": false,
-     "Cmd_Stop": false,
-     "Cmd_Suspend": false,
-     "Cmd_UnHold": false,
-     "Cmd_UnSuspend": false,
-     "EnableIn": false,
-     "EnableOut": false,
-     "Out_bMode": 0,
-     "Out_bState": 0,
-     "Out_eMode": 0,
-     "Out_eState": 0,
-     "raM_Opr_ISATR880002_2015": false,
-     "Sts_Aborted": false,
-     "Sts_Aborting": false,
-     "Sts_bEnabledStates": 0,
-     "Sts_Clearing": false,
-     "Sts_Complete": false,
-     "Sts_Completing": false,
-     "Sts_EN": false,
-     "Sts_EO": false,
-     "Sts_ER": false,
-     "Sts_ERR": 0,
-     "Sts_Execute": false,
-     "Sts_EXERR": 0,
-     "Sts_Held": false,
-     "Sts_Holding": false,
-     "Sts_Idle": false,
-     "Sts_ModeLocked": false,
-     "Sts_Resetting": false,
-     "Sts_Starting": false,
-     "Sts_Stopped": false,
-     "Sts_Stopping": false,
-     "Sts_Suspended": false,
-     "Sts_Suspending": false,
-     "Sts_UnHolding": false,
-     "Sts_UnSuspending": false
-    }
-   }
   Children:
   - Name: Cmd_Abort
     Type: RAEtherNetIPTag
@@ -15450,28 +10340,6 @@ Children:
   Supertype: TagStructure
   DataType: Tec_SO_EnergyRecord
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "3498ebec345094ba8b1aab59ea1f2b52",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inp_TotalEnergy_kWh": 0.0,
-     "Set_EnergySampleInterval": 0,
-     "Set_RecordUpdateInterval": 0,
-     "Sts_EN": false,
-     "Sts_EO": false,
-     "Sts_ER": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_RecordUpdate": false,
-     "Tec_SO_EnergyRecord": false
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -15586,24 +10454,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xxDH_InfHandler
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "e0d53e631b1e229e0e45032f0f9839a6",
-     "Namespace": 7
-    },
-    "Body": {
-     "bMode": 0,
-     "bState": 0,
-     "eMode": 0,
-     "eState": 0,
-     "Language": "",
-     "Name": "",
-     "sMode": "",
-     "sState": ""
-    }
-   }
   Children:
   - Name: bMode
     Type: RAEtherNetIPTag
@@ -15682,34 +10532,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Opr_EventList_Members
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "f1ec5fa41eeb9aaa3a0ec18a2efee6e2",
-     "Namespace": 7
-    },
-    "Body": {
-     "Count": 0,
-     "Event": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     }
-    }
-   }
   Children:
   - Name: Count
     Type: RAEtherNetIPTag
@@ -15723,24 +10545,6 @@ Children:
   - Name: Event
     Type: raC_UDT_Event
     DataType: raC_UDT_Event
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     }
     Children:
     - Name: Action
       Type: RAEtherNetIPTag
@@ -15821,63 +10625,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PwrMotion_Sts
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "09fcb3d6e67a07d151a89e4c8ff13721",
-     "Namespace": 7
-    },
-    "Body": {
-     "Active": false,
-     "Available": false,
-     "bSts": 0,
-     "Connected": false,
-     "eCmdFail": 0,
-     "eState": 0,
-     "Faulted": false,
-     "FirstFault": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     },
-     "FirstWarning": {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     },
-     "NoMotion": false,
-     "Physical": false,
-     "Ready": false,
-     "Virtual": false,
-     "Warning": false,
-     "ZeroSpeed": false
-    }
-   }
   Children:
   - Name: Active
     Type: RAEtherNetIPTag
@@ -15945,24 +10692,6 @@ Children:
   - Name: FirstFault
     Type: raC_UDT_Event
     DataType: raC_UDT_Event
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     }
     Children:
     - Name: Action
       Type: RAEtherNetIPTag
@@ -16041,24 +10770,6 @@ Children:
   - Name: FirstWarning
     Type: raC_UDT_Event
     DataType: raC_UDT_Event
-    Value: 
-     {
-      "TypeId": {
-       "IdType": 2,
-       "Id": "4519e895af882e3975843909ec5040ba",
-       "Namespace": 7
-      },
-      "Body": {
-       "Action": 0,
-       "Category": 0,
-       "EventTime_D": [0,0,0,0,0,0,0],
-       "EventTime_L": 0,
-       "ID": 0,
-       "Message": "",
-       "Type": 0,
-       "Value": 0
-      }
-     }
     Children:
     - Name: Action
       Type: RAEtherNetIPTag
@@ -16193,98 +10904,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PF755_Inp
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "111dc639068cb1a246ac766966ddede0",
-     "Namespace": 7
-    },
-    "Body": {
-     "AlarmStatusA": 0,
-     "AlarmStatusA_AltFdbkLoss": false,
-     "AlarmStatusA_AuxFdbkLoss": false,
-     "AlarmStatusA_DecInhibit": false,
-     "AlarmStatusA_GndWarning": false,
-     "AlarmStatusA_InPhaseLoss": false,
-     "AlarmStatusA_LoadLoss": false,
-     "AlarmStatusA_MotorOL": false,
-     "AlarmStatusA_OutPhaseLoss": false,
-     "AlarmStatusA_PosFdbkLoss": false,
-     "AlarmStatusA_PowerLoss": false,
-     "AlarmStatusA_PriFdbkLoss": false,
-     "AlarmStatusA_Reserved": false,
-     "AlarmStatusA_ShearPin1": false,
-     "AlarmStatusA_ShearPin2": false,
-     "AlarmStatusA_TaskOverrun": false,
-     "AlarmStatusA_UnderVoltage": false,
-     "AlarmStatusB": 0,
-     "AlarmStatusB_CurLmtReduc": false,
-     "AlarmStatusB_DBResOT": false,
-     "AlarmStatusB_DriveOL": false,
-     "AlarmStatusB_GndWarning": false,
-     "AlarmStatusB_HeatsinkOT": false,
-     "AlarmStatusB_HomingActv": false,
-     "AlarmStatusB_IGBTOT": false,
-     "AlarmStatusB_NotHomeSet": false,
-     "AlarmStatusB_OWAlarmTO": false,
-     "AlarmStatusB_OWLevel": false,
-     "AlarmStatusB_PumpOffAlrm": false,
-     "AlarmStatusB_PWMFrqReduc": false,
-     "AlarmStatusB_Reserved": false,
-     "AlarmStatusB_Reserved1": false,
-     "AlarmStatusB_StartOnPwrUp": false,
-     "AlarmStatusB_Waking": false,
-     "Feedback": 0.0,
-     "LastFaultCode": 0,
-     "LogicStatus": 0,
-     "LogicStatus_Accelerating": false,
-     "LogicStatus_Active": false,
-     "LogicStatus_ActualDir": false,
-     "LogicStatus_Alarm": false,
-     "LogicStatus_AtHome": false,
-     "LogicStatus_AtLimit": false,
-     "LogicStatus_AtSpeed": false,
-     "LogicStatus_AtZeroSpeed": false,
-     "LogicStatus_BusFrqReg": false,
-     "LogicStatus_CommandDir": false,
-     "LogicStatus_CurrLimit": false,
-     "LogicStatus_DBActive": false,
-     "LogicStatus_DCBraking": false,
-     "LogicStatus_Decelerating": false,
-     "LogicStatus_EnableOn": false,
-     "LogicStatus_Faulted": false,
-     "LogicStatus_Jogging": false,
-     "LogicStatus_Manual": false,
-     "LogicStatus_MotorOL": false,
-     "LogicStatus_PositionMode": false,
-     "LogicStatus_Ready": false,
-     "LogicStatus_Regen": false,
-     "LogicStatus_Reserved": false,
-     "LogicStatus_Running": false,
-     "LogicStatus_SpdRefBit0": false,
-     "LogicStatus_SpdRefBit1": false,
-     "LogicStatus_SpdRefBit2": false,
-     "LogicStatus_SpdRefBit3": false,
-     "LogicStatus_SpdRefBit4": false,
-     "LogicStatus_SpeedMode": false,
-     "LogicStatus_Stopping": false,
-     "LogicStatus_TorqueMode": false,
-     "MotorNPAmps": 0.0,
-     "OutputCurrent": 0.0,
-     "StartInhibits": 0,
-     "StartInhibits_Alarm": false,
-     "StartInhibits_Database": false,
-     "StartInhibits_Enable": false,
-     "StartInhibits_Faulted": false,
-     "StartInhibits_Precharge": false,
-     "StartInhibits_Profiler": false,
-     "StartInhibits_Safety": false,
-     "StartInhibits_Sleep": false,
-     "StartInhibits_Startup": false,
-     "StartInhibits_Stop": false
-    }
-   }
   Children:
   - Name: AlarmStatusA
     Type: RAEtherNetIPTag
@@ -17029,24 +11648,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Opr_Odo_to_kVal
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "74b9b43dd5b8940da28cb42bc74aaa6c",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "In_Odo0": 0,
-     "In_Odo1": 0,
-     "In_Odo2": 0,
-     "In_Odo3": 0,
-     "In_Odo4": 0,
-     "Out_kVal": 0.0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -17125,33 +11726,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Dvc_PF755
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "116c3ea9e77c3c901344b23c79c5a1c1",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "raC_Dvc_PF755": false,
-     "Sts_Active": false,
-     "Sts_Available": false,
-     "Sts_bAlarmA": 0,
-     "Sts_bAlarmB": 0,
-     "Sts_bNotReady": 0,
-     "Sts_bStartInhibits": 0,
-     "Sts_Connected": false,
-     "Sts_Faulted": false,
-     "Sts_Ready": false,
-     "Sts_Virtual": false,
-     "Sts_Warning": false,
-     "Sts_ZeroSpeed": false,
-     "Val_FreqActual": 0.0,
-     "Val_OutputCurrent": 0.0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -17311,28 +11885,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_Move333
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "2b3d09854e3535e5f4ee92655943907b",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cfg_MoveType": 0,
-     "Cfg_Profile": 0,
-     "EnableIn": false,
-     "EnableOut": false,
-     "raM_Opr_Move333": false,
-     "Set_Position": 0.0,
-     "Set_Time": 0.0,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_IP": false,
-     "Sts_MtdID": 0,
-     "Sts_PC": false
-    }
-   }
   Children:
   - Name: Cfg_MoveType
     Type: RAEtherNetIPTag
@@ -17447,22 +11999,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_UDT_Dvc_xADH_Setting
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "105411363825c6055b8f6e7673c0c170",
-     "Namespace": 7
-    },
-    "Body": {
-     "bSet": 0,
-     "InhibitCfg": false,
-     "InhibitCmd": false,
-     "InhibitSet": false,
-     "OnPathTol": 0.0,
-     "ZeroSpeedTol": 0.0
-    }
-   }
   Children:
   - Name: bSet
     Type: RAEtherNetIPTag
@@ -17523,31 +12059,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Dvc_K5500
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "11dfc3d530b05b8c9446bd6c8584cefc",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "raC_Dvc_K5500": false,
-     "Sts_Active": false,
-     "Sts_Available": false,
-     "Sts_bNotReady": 0,
-     "Sts_Connected": false,
-     "Sts_Faulted": false,
-     "Sts_NoMotion": false,
-     "Sts_Ready": false,
-     "Sts_Virtual": false,
-     "Sts_Warning": false,
-     "Sts_ZeroSpeed": false,
-     "Val_ActualPosition": 0.0,
-     "Val_ActualVelocity": 0.0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -17689,47 +12200,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Dvc_EAVI5C_ISATR880002_2015
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "e89a4a8dab5470ce87845921fa01811d",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cmd_Audible": false,
-     "Cmd_Reset": false,
-     "Cmd_Silence": false,
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inp_Available": false,
-     "Inp_Blocked": false,
-     "Inp_eState": 0,
-     "Inp_MaterialLow": false,
-     "Inp_MaterialOut": false,
-     "Inp_Starved": false,
-     "Out_AUD": false,
-     "Out_BLU": false,
-     "Out_GRN": false,
-     "Out_RED": false,
-     "Out_WHT": false,
-     "Out_YEL": false,
-     "raM_Dvc_EAVI5C_ISATR880002_2015": false,
-     "Set_AudPattern": 0,
-     "Sts_AUD": false,
-     "Sts_BLU": false,
-     "Sts_EN": false,
-     "Sts_EO": false,
-     "Sts_ER": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_GRN": false,
-     "Sts_RED": false,
-     "Sts_Silenced": false,
-     "Sts_WHT": false,
-     "Sts_YEL": false
-    }
-   }
   Children:
   - Name: Cmd_Audible
     Type: RAEtherNetIPTag
@@ -18015,22 +12485,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_EM_Prod
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "bde5849879721068d0aef045adf74686",
-     "Namespace": 7
-    },
-    "Body": {
-     "Batch": "",
-     "Operator": "",
-     "Order": "",
-     "Product": "",
-     "Shift": "",
-     "Units": ""
-    }
-   }
   Children:
   - Name: Batch
     Type: RAEtherNetIPTag
@@ -18091,30 +12545,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_SyncPthPhyAx_CD
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "3c07d0d5145a8f54a49293e93b5aef9d",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cfg_AllowHome": false,
-     "Cfg_MoveType": 0,
-     "Cfg_RotaryShortestTOL": 0.0,
-     "Cfg_SyncType": 0,
-     "Cfg_TravelLIM": 0.0,
-     "EnableIn": false,
-     "EnableOut": false,
-     "raM_Opr_SyncPthPhyAx_CD": false,
-     "Set_Speed": 0.0,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_IP": false,
-     "Sts_MtdID": 0,
-     "Sts_PC": false
-    }
-   }
   Children:
   - Name: Cfg_AllowHome
     Type: RAEtherNetIPTag
@@ -18247,21 +12677,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PwrVelocity_Set
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "79461b28ef3846d7602dc62b022881e5",
-     "Namespace": 7
-    },
-    "Body": {
-     "bInhibit": 0,
-     "InhibitCfg": false,
-     "InhibitCmd": false,
-     "InhibitSet": false,
-     "Speed": 0.0
-    }
-   }
   Children:
   - Name: bInhibit
     Type: RAEtherNetIPTag
@@ -18313,32 +12728,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Dvc_AxisHandler_CD
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "51db3f8cc35a55d3602f9d61dcfb5feb",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inf_Language": 0,
-     "raM_Dvc_AxisHandler_CIP": false,
-     "Sts_Active": false,
-     "Sts_Available": false,
-     "Sts_Connected": false,
-     "Sts_Faulted": false,
-     "Sts_NoMotion": false,
-     "Sts_OnPath": false,
-     "Sts_Ready": false,
-     "Sts_Virtual": false,
-     "Sts_Warning": false,
-     "Sts_ZeroSpeed": false,
-     "Val_PthPosition": 0.0,
-     "Val_PthVelocity": 0.0
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -18489,56 +12878,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_EnergyElectricalObject
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "94b1be2461ad59637b99cf5df8479ba6",
-     "Namespace": 7
-    },
-    "Body": {
-     "ApparentEnergyOdo": [0,0,0,0,0],
-     "ApparentPowerL1": 0.0,
-     "ApparentPowerL2": 0.0,
-     "ApparentPowerL3": 0.0,
-     "ApparentPowerTotal": 0.0,
-     "AverageCurrent": 0.0,
-     "CurrentL1": 0.0,
-     "CurrentL2": 0.0,
-     "CurrentL3": 0.0,
-     "CurrentPercentUnbalanced": 0.0,
-     "KiloampereHoursOdo": [0,0,0,0,0],
-     "LineFrequency": 0.0,
-     "PhaseRotation": 0,
-     "ReactiveEnergyConsumedOdo": [0,0,0,0,0],
-     "ReactiveEnergyGeneratedOdo": [0,0,0,0,0],
-     "ReactiveEnergyNetOdo": [0,0,0,0,0],
-     "ReactivePowerL1": 0.0,
-     "ReactivePowerL2": 0.0,
-     "ReactivePowerL3": 0.0,
-     "ReactivePowerTotal": 0.0,
-     "RealEnergyConsumedOdo": [0,0,0,0,0],
-     "RealEnergyGeneratedOdo": [0,0,0,0,0],
-     "RealEnergyNetOdo": [0,0,0,0,0],
-     "RealPowerL1": 0.0,
-     "RealPowerL2": 0.0,
-     "RealPowerL3": 0.0,
-     "RealPowerTotal": 0.0,
-     "TruePowerFactorL1": 0.0,
-     "TruePowerFactorL2": 0.0,
-     "TruePowerFactorL3": 0.0,
-     "TruePowerFactorThreePhase": 0.0,
-     "VoltageAverageLL": 0.0,
-     "VoltageAverageLN": 0.0,
-     "VoltageL1L2": 0.0,
-     "VoltageL1N": 0.0,
-     "VoltageL2L3": 0.0,
-     "VoltageL2N": 0.0,
-     "VoltageL3L1": 0.0,
-     "VoltageL3N": 0.0,
-     "VoltagePercentUnbalanced": 0.0
-    }
-   }
   Children:
   - Name: ApparentEnergyOdo
     Type: RAEtherNetIPTag
@@ -18921,24 +13260,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_Home_CD
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "0c4f0b58be0757b31614e3530ef11aa8",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cfg_HomePos": 0.0,
-     "EnableIn": false,
-     "EnableOut": false,
-     "raM_Opr_Home_CD": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_IP": false,
-     "Sts_MtdID": 0
-    }
-   }
   Children:
   - Name: Cfg_HomePos
     Type: RAEtherNetIPTag
@@ -19017,20 +13338,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PwrMotion_Inf
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "792d284e70ddbf608da6fc730b5d2c67",
-     "Namespace": 7
-    },
-    "Body": {
-     "AxisID": 0,
-     "bExtensionAlert": 0,
-     "bExtensionEnabled": 0,
-     "ModulePath": ""
-    }
-   }
   Children:
   - Name: AxisID
     Type: RAEtherNetIPTag
@@ -19073,24 +13380,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_ItfAD_PwrVelocity_Cmd
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "f8001b39d02d38812d3f67a46b1a7eb2",
-     "Namespace": 7
-    },
-    "Body": {
-     "Activate": false,
-     "bCmd": 0,
-     "CmdDir": false,
-     "Deactivate": false,
-     "Physical": false,
-     "ResetFault": false,
-     "ResetWarn": false,
-     "Virtual": false
-    }
-   }
   Children:
   - Name: Activate
     Type: RAEtherNetIPTag
@@ -19169,24 +13458,6 @@ Children:
   Supertype: TagStructure
   DataType: raM_Opr_Energize_CD
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "b20a9db94125faa28eaf9d645267892b",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "raM_Opr_Energize_CD": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_IP": false,
-     "Sts_MtdID": 0,
-     "Sts_PC": false
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag
@@ -19265,34 +13536,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_Opr_PF525_Energy
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "ea824df9f73ac5fac5a25bedcbd589b1",
-     "Namespace": 7
-    },
-    "Body": {
-     "Cmd_ResetOdometers": false,
-     "EnableIn": false,
-     "EnableOut": false,
-     "Inp_Speed_RPM": 0.0,
-     "raC_Opr_PF525_Energy": false,
-     "Set_Inertia": 0.0,
-     "Set_PowerNominal_kW": 0.0,
-     "Set_PowerNominal_RPM": 0.0,
-     "Set_SampleInterval": 0.0,
-     "Sts_AcquiringData": false,
-     "Sts_DataAcquisitionDuration": 0,
-     "Sts_ER": false,
-     "Sts_ERR": 0,
-     "Sts_EXERR": 0,
-     "Sts_Idle": false,
-     "Sts_OdometerResetServiced": false,
-     "Sts_WaitingForCtrlResource": false,
-     "Sts_WaitingForDevice": false
-    }
-   }
   Children:
   - Name: Cmd_ResetOdometers
     Type: RAEtherNetIPTag
@@ -19461,26 +13704,6 @@ Children:
   Supertype: TagStructure
   DataType: raC_UDT_SO_Node
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "230ca8a1929ceb85a7e079b7c167b73d",
-     "Namespace": 7
-    },
-    "Body": {
-     "_ParentID": 0,
-     "_Time": 0,
-     "Cfg_UpdateOnEvent": false,
-     "Cfg_UpdatePeriod": 0,
-     "Inf_ID01": 0,
-     "Inf_ID02": 0,
-     "Inf_Name": "",
-     "Inp_EventTrigger": false,
-     "Out_RegistryIndex": 0,
-     "Sts_Updated": false
-    }
-   }
   Children:
   - Name: _ParentID
     Type: RAEtherNetIPTag
@@ -19577,21 +13800,6 @@ Children:
   Supertype: TagStructure
   DataType: TIMER
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "ada94c899b7b3da33380ea19b8bf381f",
-     "Namespace": 7
-    },
-    "Body": {
-     "ACC": 0,
-     "DN": false,
-     "EN": false,
-     "PRE": 0,
-     "TT": false
-    }
-   }
   Children:
   - Name: ACC
     Type: RAEtherNetIPTag
@@ -19643,27 +13851,6 @@ Children:
   Supertype: TagStructure
   DataType: FBD_BOOLEAN_OR
   ValueRank: Any
-  Value: 
-   {
-    "TypeId": {
-     "IdType": 2,
-     "Id": "b3f6ee4d04de09241cd3a82cc8ebffa2",
-     "Namespace": 7
-    },
-    "Body": {
-     "EnableIn": false,
-     "EnableOut": false,
-     "In1": false,
-     "In2": false,
-     "In3": false,
-     "In4": false,
-     "In5": false,
-     "In6": false,
-     "In7": false,
-     "In8": false,
-     "Out": false
-    }
-   }
   Children:
   - Name: EnableIn
     Type: RAEtherNetIPTag

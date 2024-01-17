@@ -159,7 +159,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: RateStatistics
     Type: NodePointer
     DataType: NodeId
@@ -168,7 +168,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: ProductIDChanged
     Type: VariableChangedEventDispatcher
     Children:
@@ -343,7 +343,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":21}
+      Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId
@@ -352,7 +352,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: RateStatistics
     Type: NodePointer
     DataType: NodeId
@@ -361,7 +361,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: ProductIDChanged
     Type: VariableChangedEventDispatcher
     Children:
@@ -544,7 +544,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":21}
+      Value: "/Types/ObjectTypes/BaseObjectType/DataLogger"
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId
@@ -553,7 +553,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: RateStatistics
     Type: NodePointer
     DataType: NodeId
@@ -562,7 +562,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: ProductIDChanged
     Type: VariableChangedEventDispatcher
     Children:
@@ -614,7 +614,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"131c0a1a6112621c549a9316e355c0de","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/PowerMeter"
   - Name: GeneralMeter1
     Type: NodePointer
     DataType: NodeId
@@ -623,7 +623,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"9be715eaaa4b1d26fb2c470a63679da6","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/GeneralMeter"
   - Name: CounterMeter1
     Type: NodePointer
     DataType: NodeId
@@ -632,7 +632,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"84c007a918d12cfcdc7c1d8a03026a6d","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/CounterMeter"
   - Name: TotalCostRate
     Type: BaseDataVariableType
     DataType: Float
@@ -824,7 +824,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
     - Name: NodeClass
       Type: PropertyType
       DataType: NodePointerNodeClass
@@ -838,7 +838,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
     - Name: NodeClass
       Type: PropertyType
       DataType: NodePointerNodeClass
@@ -852,7 +852,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
     - Name: NodeClass
       Type: PropertyType
       DataType: NodePointerNodeClass
@@ -866,7 +866,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":78,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container/Panel"
     - Name: NodeClass
       Type: PropertyType
       DataType: NodePointerNodeClass

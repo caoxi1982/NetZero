@@ -14,7 +14,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":71,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
     - Name: ConditionalConverter1
       Type: ConditionalConverter
       Children:
@@ -33,13 +33,13 @@ Children:
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"2eebfd3def044e747aa57952fc13c70d","Namespace":7}
+        Value: "/Objects/NetZero/UI/LoginForm1/LoginFormComponents/Logout"
       - Name: FalseValue
         Type: BaseDataVariableType
         DataType: NodeId
         ReferenceType: HasParameter
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"ce814fddddd607c776a3b9a6e0b90c27","Namespace":7}
+        Value: "/Objects/NetZero/UI/LoginForm1/LoginFormComponents/Login"
   - Name: CurrentPanel
     Type: NodePointer
     DataType: NodeId
@@ -49,7 +49,7 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":6,"Namespace":3}
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
   - Class: Reference
     Target: ns=3;i=478
   - Name: Width
@@ -70,10 +70,11 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":61}
+      Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: PanelAliasNode
     Type: BaseDataVariableType
     DataType: NodeId
+    ValueRank: ScalarOrOneDimension
     Value: {"IdType":0,"Id":0,"Namespace":-1}
     Children:
     - Name: DynamicLink

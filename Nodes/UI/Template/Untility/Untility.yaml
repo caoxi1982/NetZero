@@ -383,7 +383,7 @@ Children:
             - Name: ListenEventType
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":16,"Namespace":3}
+              Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
             - Name: MethodsToCall
               Type: BaseObjectType
               Children:
@@ -393,12 +393,12 @@ Children:
                 - Name: ObjectPointer
                   Type: NodePointer
                   DataType: NodeId
-                  Value: {"Id":121,"Namespace":3}
+                  Value: "/Objects/Commands/UICommands"
                   Children:
                   - Name: Kind
                     Type: PropertyType
                     DataType: NodeId
-                    Value: {"Id":58}
+                    Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: Method
                   Type: BaseDataVariableType
                   DataType: String
@@ -418,6 +418,7 @@ Children:
                   - Name: AliasNode
                     Type: BaseDataVariableType
                     DataType: NodeId
+                    ValueRank: ScalarOrOneDimension
                     Value: {"IdType":0,"Id":0,"Namespace":-1}
                   - Name: ParentItem
                     Type: BaseDataVariableType
@@ -552,7 +553,7 @@ Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":62}
+              Value: "/Types/VariableTypes/BaseVariableType"
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
@@ -591,7 +592,7 @@ Children:
           - Name: Kind
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":2915}
+            Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
         - Name: CurrentDisplayedAlarmIndex
           Type: BaseDataVariableType
           DataType: Int32
@@ -622,7 +623,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -637,7 +638,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -707,7 +708,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -722,7 +723,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -896,7 +897,7 @@ Children:
       - Name: ListenEventType
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":3}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Type: BaseObjectType
         Children:
@@ -906,12 +907,12 @@ Children:
           - Name: ns=2;ObjectPointer
             Type: NodePointer
             DataType: NodeId
-            Value: {"Id":121,"Namespace":3}
+            Value: "/Objects/Commands/UICommands"
             Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
           - Name: ns=2;Method
             Type: BaseDataVariableType
             DataType: String
@@ -923,11 +924,12 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":3,"TextId":"OpenDialogDialogDescription"}
-              Value: {"IdType":2,"Id":"4be07186b66969909b27e0f1a253edb6","Namespace":7}
+              Value: "/Objects/NetZero/UI/ProjectPanels/LoginDialogBox"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":3,"TextId":"OpenDialogAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
               Value: {"IdType":0,"Id":0,"Namespace":-1}
             - Name: ParentItem
               Type: BaseDataVariableType
@@ -1409,7 +1411,7 @@ Children:
         - Name: ListenEventType
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":16,"Namespace":3}
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
         - Name: MethodsToCall
           Type: BaseObjectType
           Children:
@@ -1419,12 +1421,12 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: {"Id":121,"Namespace":3}
+              Value: "/Objects/Commands/UICommands"
               Children:
               - Name: Kind
                 Type: PropertyType
                 DataType: NodeId
-                Value: {"Id":58}
+                Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: ns=2;Method
               Type: BaseDataVariableType
               DataType: String
@@ -1452,6 +1454,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":3,"TextId":"OpenDialogAliasNodeDescription"}
+                ValueRank: ScalarOrOneDimension
                 Value: {"IdType":0,"Id":0,"Namespace":-1}
               - Name: ParentItem
                 Type: BaseDataVariableType
@@ -1657,7 +1660,7 @@ Children:
         - Name: Kind
           Type: PropertyType
           DataType: NodeId
-          Value: {"Id":62}
+          Value: "/Types/VariableTypes/BaseVariableType"
         - Name: NodeClass
           Type: PropertyType
           DataType: NodePointerNodeClass
@@ -1726,7 +1729,7 @@ Children:
       - Name: Kind
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":2915}
+        Value: "/Types/EventTypes/BaseEventType/ConditionType/AcknowledgeableConditionType/AlarmConditionType"
     - Name: CurrentDisplayedAlarmIndex
       Type: BaseDataVariableType
       DataType: Int32
@@ -1777,7 +1780,7 @@ Children:
       - Name: ListenEventType
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":3}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Type: BaseObjectType
         Children:
@@ -1792,7 +1795,7 @@ Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: NodeClass
               Type: PropertyType
               DataType: NodePointerNodeClass
@@ -1893,7 +1896,7 @@ Children:
       - Name: ListenEventType
         Type: PropertyType
         DataType: NodeId
-        Value: {"Id":16,"Namespace":3}
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
       - Name: MethodsToCall
         Type: BaseObjectType
         Children:
@@ -1908,7 +1911,7 @@ Children:
             - Name: Kind
               Type: PropertyType
               DataType: NodeId
-              Value: {"Id":58}
+              Value: "/Types/ObjectTypes/BaseObjectType"
             - Name: NodeClass
               Type: PropertyType
               DataType: NodePointerNodeClass
@@ -2208,7 +2211,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"eed00edfabd14f4c3e52d8818b89a3a0","Namespace":7}
+        Value: "/Objects/NetZero/UI/ProjectPanels/MainPanel"
       - Name: Button1
         Type: Button
         Children:
@@ -2218,7 +2221,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -2233,7 +2236,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -2257,6 +2260,7 @@ Children:
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -2417,7 +2421,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"6268706e76811865b7e492df8df12811","Namespace":7}
+        Value: "/Objects/NetZero/UI/ProjectPanels/DevicePanel"
       - Name: Button1
         Type: Button
         Children:
@@ -2427,7 +2431,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -2442,7 +2446,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -2466,6 +2470,7 @@ Children:
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
             - Name: MethodContainer2
               Type: BaseObjectType
@@ -2473,12 +2478,12 @@ Children:
               - Name: ns=2;ObjectPointer
                 Type: NodePointer
                 DataType: NodeId
-                Value: {"Id":22,"Namespace":2}
+                Value: "/Objects/Commands/VariableCommands"
                 Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
               - Name: ns=2;Method
                 Type: BaseDataVariableType
                 DataType: String
@@ -2490,12 +2495,12 @@ Children:
                   Type: BaseDataVariableType
                   DataType: VariablePointer
                   Description: {"NamespaceIndex":2,"TextId":"SetVariableToModifyDescription"}
-                  Value: {"IdType":2,"Id":"1f245836b214444399e81d0f0098b778","Namespace":7}
+                  Value: "/Objects/NetZero/ProjectPointer/CurrentDevice@Pointer"
                 - Name: Value
                   Type: BaseDataVariableType
                   DataType: NodeId
                   Description: {"NamespaceIndex":2,"TextId":"SetValueDescription"}
-                  Value: {"IdType":2,"Id":"8b5075454fd68f7c83b43312b2ef19cf","Namespace":7}
+                  Value: "/Objects/NetZero/Model/Devices/Furnace"
                 - Name: ArrayIndex
                   Type: BaseDataVariableType
                   DataType: UInt32
@@ -2661,7 +2666,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"597e8b7588ebec9ef25e4f675d12daed","Namespace":7}
+        Value: "/Objects/NetZero/UI/ProjectPanels/ReportPanel"
       - Name: Button1
         Type: Button
         Children:
@@ -2671,7 +2676,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -2686,7 +2691,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -2710,6 +2715,7 @@ Children:
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -2870,7 +2876,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"f3b233653d794744a4ff5e3d2c7b2ac0","Namespace":7}
+        Value: "/Objects/NetZero/UI/ProjectPanels/EnergyPanel"
       - Name: Button1
         Type: Button
         Children:
@@ -2880,7 +2886,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -2895,7 +2901,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -2919,6 +2925,7 @@ Children:
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -3079,7 +3086,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"d188ffd680676a3af9cec1b95c871707","Namespace":7}
+        Value: "/Objects/NetZero/UI/ProjectPanels/AlarmPanel"
       - Name: Button1
         Type: Button
         Children:
@@ -3089,7 +3096,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -3104,7 +3111,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -3128,6 +3135,7 @@ Children:
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -3288,7 +3296,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"23e47963df85b7ffc149d897a6c8386b","Namespace":7}
+        Value: "/Objects/NetZero/UI/ProjectPanels/NotificationPanel"
       - Name: Button1
         Type: Button
         Children:
@@ -3298,7 +3306,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -3313,7 +3321,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -3337,6 +3345,7 @@ Children:
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -3497,7 +3506,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"9557d7dc990bb5b9d5e3e579945f4847","Namespace":7}
+        Value: "/Objects/NetZero/UI/ProjectPanels/ConfigPanel"
       - Name: Button1
         Type: Button
         Children:
@@ -3507,7 +3516,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -3522,7 +3531,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -3546,6 +3555,7 @@ Children:
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -3726,7 +3736,7 @@ Children:
       - Name: TargetPanel
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: {"IdType":2,"Id":"de71daa53de21e1d4d40aa3bddfeb5e1","Namespace":7}
+        Value: "/Objects/NetZero/UI/ProjectPanels/test"
       - Name: Button1
         Type: Button
         Children:
@@ -3736,7 +3746,7 @@ Children:
           - Name: ListenEventType
             Type: PropertyType
             DataType: NodeId
-            Value: {"Id":16,"Namespace":3}
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
           - Name: MethodsToCall
             Type: BaseObjectType
             Children:
@@ -3751,7 +3761,7 @@ Children:
                 - Name: Kind
                   Type: PropertyType
                   DataType: NodeId
-                  Value: {"Id":58}
+                  Value: "/Types/ObjectTypes/BaseObjectType"
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
@@ -3775,6 +3785,7 @@ Children:
                 - Name: AliasNode
                   Type: BaseDataVariableType
                   DataType: NodeId
+                  ValueRank: ScalarOrOneDimension
                   Value: {"IdType":0,"Id":0,"Namespace":-1}
           - Name: EventArguments
             Type: MouseClickEvent
@@ -3869,7 +3880,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{NodeId:ns=7;g=062e88ea-1219-a13c-28a7-69556042110d}"
+            Value: "/Objects/NetZero/Model/CommonTypes/ClockLogic/Time"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -3930,7 +3941,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{NodeId:ns=7;g=062e88ea-1219-a13c-28a7-69556042110d}"
+            Value: "/Objects/NetZero/Model/CommonTypes/ClockLogic/Time"
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -4010,7 +4021,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{NodeId:ns=7;g=f853829d-e78c-fb73-9128-51387b1d6944}@Description"
+          Value: "/Objects/NetZero/ProjectPointer/CurrentWorkShop@Description"
       - Name: Height
         Type: BaseVariableType
         DataType: Size
@@ -4429,7 +4440,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{NodeId:ns=7;g=d9065375-8c1f-d8b5-1a1d-ec285461c709}"
+            Value: "/Objects/NetZero/Loggers/FurnacePowerLogger/VariablesToLog/EnergyEfficency/LastValue"
             Children:
             - Name: Mode
               Type: BaseVariableType
@@ -4455,6 +4466,12 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               Value: true
+            - Name: Position
+              Type: BaseDataVariableType
+              DataType: HorizontalPositionEnum
+              Value: 0
+          - Name: Thresholds
+            Type: BaseObjectType
         - Name: Carbon
           Type: TrendPen
           DataType: BaseDataType
@@ -4475,13 +4492,15 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: "{NodeId:ns=7;g=f9d5f605-3204-dddb-4366-ebb385b5808e}"
+            Value: "/Objects/NetZero/Loggers/TakeupPowerLogger/VariablesToLog/Carbon/LastValue"
             Children:
             - Name: Mode
               Type: BaseVariableType
               DataType: DynamicLinkMode
               ModellingRule: Optional
               Value: 2
+          - Name: Thresholds
+            Type: BaseObjectType
       - Class: Reference
         Target: ns=3;i=1129
         Direction: Forward
@@ -4504,6 +4523,11 @@ Children:
           Type: BaseDataVariableType
           DataType: DateTime
           Value: "1601-01-01T00:00:00.0000000"
+        - Name: SnapPosition
+          Type: BaseDataVariableType
+          DataType: SnapPositionEnum
+          ModellingRule: Optional
+          Value: 1
       - Name: YAxis
         Type: ValueAxis
         Children:
@@ -4523,6 +4547,10 @@ Children:
           Type: BaseDataVariableType
           DataType: Boolean
           Value: true
+        - Name: Position
+          Type: BaseDataVariableType
+          DataType: HorizontalPositionEnum
+          Value: 0
       - Name: LegendVisible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -4556,7 +4584,7 @@ Children:
         Type: NodePointer
         DataType: NodeId
         ModellingRule: Optional
-        Value: {"IdType":2,"Id":"bcb00eb243f5d22531633b58a3039852","Namespace":7}
+        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
         Children:
         - Name: ItemKind
           Type: PropertyType
@@ -4571,6 +4599,14 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 40.0
+      - Class: Reference
+        Target: ns=3;i=1201
+        Direction: Forward
+      - Name: TimeRanges
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=3;i=1209
+        Direction: Forward
     - Name: title3
       Type: Label
       Children:
@@ -4698,11 +4734,11 @@ Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"IdType":2,"Id":"25f53ca38296f5915e5664963fe72eba","Namespace":7}
+      Value: "/Objects/NetZero/Model/MeterTypes/WorkShop"
     - Name: DynamicLink
       Type: DynamicLink
       DataType: NodePath
-      Value: "{NodeId:ns=7;g=f853829d-e78c-fb73-9128-51387b1d6944}@Pointer"
+      Value: "/Objects/NetZero/ProjectPointer/CurrentWorkShop@Pointer"
       Children:
       - Name: Mode
         Type: BaseVariableType

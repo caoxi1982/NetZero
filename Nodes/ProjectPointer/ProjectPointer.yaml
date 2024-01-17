@@ -5,7 +5,7 @@ Children:
   Id: g=f853829de78cfb73912851387b1d6944
   Type: BaseDataVariableType
   DataType: NodeId
-  Value: {"IdType":2,"Id":"6465ce95e59feb5acb570a9f931f5fa4","Namespace":7}
+  Value: "/Objects/NetZero/Model/WorkShop/MainOffice"
 - Name: CurrentDevice
   Id: g=1f245836b214444399e81d0f0098b778
   Type: BaseDataVariableType

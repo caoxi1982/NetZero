@@ -5,27 +5,22 @@ Children:
   Type: BaseObjectType
   Children:
   - Name: SenderAddress
-    Id: g=6392f9dfc98f0062eb370f8dc11f9b13
     Type: BaseDataVariableType
     DataType: String
     Value: "13861603553@163.com"
   - Name: SenderPassword
-    Id: g=2b8cd7da6d5961110997da25491672bf
     Type: BaseDataVariableType
     DataType: Password
     Value: "q1w2e3!@#"
   - Name: STMPHost
-    Id: g=4c6c7e42add9efa33b333a0b2b7ef812
     Type: BaseDataVariableType
     DataType: String
     Value: "smtp.163.com"
   - Name: STMPPort
-    Id: g=0f2ab6dcea0a62f626492b25f1504298
     Type: BaseDataVariableType
     DataType: Int32
     Value: 25
   - Name: SSLEnable
-    Id: g=f676e2b5268bbe046cab0e73eca85c95
     Type: BaseDataVariableType
     DataType: Boolean
     Value: false

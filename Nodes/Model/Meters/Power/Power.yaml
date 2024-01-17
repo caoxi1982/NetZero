@@ -185,21 +185,21 @@ Children:
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"02ea0b20a42c279a68aa884f6bd1e326","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB/Tables/RecordShiftEnergy"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: RateStatistics
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"e674db9a44d8782b040ccaf48f58649b","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB/Tables/RecordMultiRateEnergy"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: ProductIDChanged
     Type: VariableChangedEventDispatcher
     Children:
@@ -251,7 +251,6 @@ Children:
       DataType: NodePath
       Value: "..@BrowseName"
   - Name: Power
-    Id: g=2c4533684f3db41075190a68d9f01085
     Type: BaseDataVariableType
     DataType: Float
     ValueRank: OneDimension
@@ -326,7 +325,6 @@ Children:
     DataType: Boolean
     Value: true
   - Name: RateToCost
-    Id: g=5fd6f8050851ae5679d06092af109d05
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.8880000114440918
@@ -353,7 +351,6 @@ Children:
     DataType: String
     Value: "Power"
   - Name: ProductOutputRate
-    Id: g=93103daddaf991f8a950aa592ffda54d
     Type: BaseDataVariableType
     DataType: Float
     Value: 0.0
@@ -368,7 +365,6 @@ Children:
         DataType: DynamicLinkMode
         Value: 2
   - Name: ProductOutputTotal
-    Id: g=8152571faba15b636f64026531afc300
     Type: BaseDataVariableType
     DataType: Double
     Value: 0.0
@@ -421,21 +417,21 @@ Children:
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"02ea0b20a42c279a68aa884f6bd1e326","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB/Tables/RecordShiftEnergy"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: RateStatistics
     Type: NodePointer
     DataType: NodeId
-    Value: {"IdType":2,"Id":"e674db9a44d8782b040ccaf48f58649b","Namespace":7}
+    Value: "/Objects/NetZero/DataStores/ODBCPowerDB/Tables/RecordMultiRateEnergy"
     Children:
     - Name: Kind
       Type: PropertyType
       DataType: NodeId
-      Value: {"Id":3,"Namespace":15}
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
   - Name: ProductIDChanged
     Type: VariableChangedEventDispatcher
     Children:
