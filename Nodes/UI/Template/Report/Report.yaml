@@ -141,7 +141,7 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+        Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -1417,7 +1417,7 @@ Children:
   - Name: MyDatabase
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+    Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -1579,7 +1579,7 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+        Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -1852,7 +1852,7 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+        Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -2135,7 +2135,7 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+        Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -2347,7 +2347,7 @@ Children:
   - Name: MyDatabase
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+    Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -3404,7 +3404,7 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+        Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -3875,7 +3875,7 @@ Children:
   - Name: MyDatabase
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+    Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -4262,7 +4262,7 @@ Children:
         - Name: Model
           Type: NodePointer
           DataType: NodeId
-          Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+          Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
           Children:
           - Name: ItemKind
             Type: PropertyType
@@ -4820,7 +4820,7 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+        Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -5098,7 +5098,7 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+        Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -5381,7 +5381,7 @@ Children:
       - Name: MyDatabase
         Type: NodePointer
         DataType: NodeId
-        Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+        Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
         Children:
         - Name: Kind
           Type: PropertyType
@@ -5579,7 +5579,7 @@ Children:
   - Name: MyDatabase
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+    Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
     Children:
     - Name: Kind
       Type: PropertyType

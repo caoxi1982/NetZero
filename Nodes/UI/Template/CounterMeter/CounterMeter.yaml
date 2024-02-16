@@ -744,7 +744,7 @@ Children:
       Type: NodePointer
       DataType: NodeId
       ModellingRule: Optional
-      Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+      Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
       Children:
       - Name: ItemKind
         Type: PropertyType
@@ -974,7 +974,7 @@ Children:
       Type: NodePointer
       DataType: NodeId
       ModellingRule: Optional
-      Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+      Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
       Children:
       - Name: ItemKind
         Type: PropertyType

@@ -5851,7 +5851,7 @@ Children:
             - Name: ns=2;ObjectPointer
               Type: NodePointer
               DataType: NodeId
-              Value: "/Objects/NetZero/DataStores/ODBCPowerDB"
+              Value: "/Objects/NetZero/DataStores/EmbeddedDatabase1"
               Children:
               - Name: Kind
                 Type: PropertyType
@@ -5875,7 +5875,7 @@ Children:
                 Description: {"NamespaceIndex":15,"TextId":"InsertColumnNamesDescription"}
                 ValueRank: OneDimension
                 ArrayDimensions: [0]
-                Value: [""]
+                Value: []
               - Name: Values
                 Type: BaseDataVariableType
                 DataType: BaseDataType
