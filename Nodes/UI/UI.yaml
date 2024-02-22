@@ -1216,6 +1216,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#007be4"
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: false
         - Name: btnAlarms
           Type: MainMenuItem
           Children:
@@ -1956,6 +1961,11 @@ Children:
             Type: BaseDataVariableType
             DataType: Color
             Value: "#007be4"
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
+            Value: true
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size

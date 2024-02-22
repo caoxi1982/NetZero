@@ -25,6 +25,7 @@ using FTOptix.WebUI;
 using FTOptix.RAEtherNetIP;
 using FTOptix.SQLiteStore;
 using FTOptix.OPCUAClient;
+using NodaTime;
 #endregion
 
 public class RecordCounter : BaseNetLogic
@@ -36,7 +37,7 @@ public class RecordCounter : BaseNetLogic
 
     public override void Start()
     {
-        myDbStore = Project.Current.Get<Store>("DataStores/ODBCPowerDB");
+        myDbStore = Project.Current.Get<Store>("DataStores/EmbeddedDatabase1");
         time = Project.Current.GetVariable("Model/CommonTypes/ClockLogic/Time");
     }
 
@@ -70,9 +71,6 @@ public class RecordCounter : BaseNetLogic
     {
         // Prepare SQL Query
         var _now = (DateTime)time.Value;
-        var zhCN = new System.Globalization.CultureInfo("zh-CN");
-        var chinaCalendar = zhCN.DateTimeFormat.Calendar;
-
         var shiftvalues = new object[1, 13];
         shiftvalues[0, 0] = 1;
         shiftvalues[0, 1] = (string)Owner.GetVariable("Group").Value;
@@ -80,7 +78,7 @@ public class RecordCounter : BaseNetLogic
         shiftvalues[0, 3] = _now.Year;
         shiftvalues[0, 4] = _now.Month;
         shiftvalues[0, 5] = _now.Day;
-        shiftvalues[0, 6] = chinaCalendar.GetWeekOfYear(_now, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Sunday);
+        shiftvalues[0, 6] = getWeekOfYear(_now);
         shiftvalues[0, 7] = Owner.BrowseName;
         shiftvalues[0, 8] = shiftOrrate;
         shiftvalues[0, 9] = (float)Owner.GetVariable("CounterTotal").Value;
@@ -174,18 +172,19 @@ public class RecordCounter : BaseNetLogic
             return (0, -1, -1,-1,-1);
         }
     }
-    // Delete is not used,But can be used in the future to keep only one yeas data
-    private void Delete(int value)
+    private void Delete()
     {
         Object[,] ResultSet;
         String[] Header;
-        myDbStore.Query("DELETE FROM Demo WHERE Value<=65535 ORDER BY Timestamp DESC LIMIT 1", out Header, out ResultSet);
-        Log.Info("Delete", "Deleted last record");
+        string metername = Owner.BrowseName;
+        myDbStore.Query($"DELETE FROM recordshiftenergy WHERE MeterName=\'{metername}\'", out Header, out ResultSet);
+        Log.Info("Delete records recordshiftenergy table ", $"Meter:\'{metername}\' deleted");
     }
     [ExportMethod]
-    public void addTestData(int month, int week, int day)
+    public void addTestData(DateTime? date)
     {
         Random r = new Random();
+        var _date = date??(DateTime)time.Value;
         // Prepare SQL Query
         foreach (string i in test)
         {
@@ -193,10 +192,10 @@ public class RecordCounter : BaseNetLogic
             shiftvalues[0, 0] = 2;
             shiftvalues[0, 1] = (string)Owner.GetVariable("Group").Value;
             shiftvalues[0, 2] = (string)Owner.GetVariable("MeterType").Value;
-            shiftvalues[0, 3] = 2023;
-            shiftvalues[0, 4] = month;
-            shiftvalues[0, 5] = day;
-            shiftvalues[0, 6] = week;
+            shiftvalues[0, 3] = _date.Year;
+            shiftvalues[0, 4] = _date.Month;
+            shiftvalues[0, 5] = _date.Day;
+            shiftvalues[0, 6] = getWeekOfYear(_date);
             shiftvalues[0, 7] = Owner.BrowseName;
             shiftvalues[0, 8] = i;
             shiftvalues[0, 9] = r.NextDouble() * 20;
@@ -215,5 +214,22 @@ public class RecordCounter : BaseNetLogic
             }
         }
 
+    }
+    [ExportMethod]
+    public void startAPP()
+    {
+        this.Delete();
+        var _today = (DateTime)time.Value;
+        for (int i = 1; i < 15; i++)
+        {
+            addTestData(_today.AddDays(-i));
+        }
+    }
+    private int getWeekOfYear(DateTime? date)
+    {
+        var _now = date??(DateTime)time.Value;
+        var zhCN = new System.Globalization.CultureInfo("zh-CN");
+        var chinaCalendar = zhCN.DateTimeFormat.Calendar;
+        return chinaCalendar.GetWeekOfYear(_now, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Sunday);
     }
 }

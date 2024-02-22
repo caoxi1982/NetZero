@@ -431,3 +431,5 @@ Children:
     Name: StartCustomPayload
 - File: EdgeApp/EdgeApp.yaml
 - File: SmartObjects/SmartObjects.yaml
+- Name: StartUpDemo
+  Type: NetLogic

@@ -65,14 +65,6 @@ Project:
    Uri: 'urn:FTOptix:Retentivity:Net'
    Module: FTOptix.Retentivity.Net
    Version: 1.0
-  19:
-   Uri: 'urn:FTOptix:ODBCStore'
-   Module: FTOptix.ODBCStore
-   Version: 1.0
-  20:
-   Uri: 'urn:FTOptix:ODBCStore:Net'
-   Module: FTOptix.ODBCStore.Net
-   Version: 1.0
   21:
    Uri: 'urn:FTOptix:DataLogger'
    Module: FTOptix.DataLogger
@@ -147,15 +139,15 @@ Project:
    Module: FTOptix.RAEtherNetIP.Net
    Version: 2.1
  Statistics:
-  TotalNodeCount: 33815
-  Objects: 3125
+  TotalNodeCount: 33440
+  Objects: 3060
   ObjectTypes: 81
-  Variables: 30453
+  Variables: 30140
   VariableTypes: 56
   DataTypes: 54
-  Methods: 46
-  References: 269
+  Methods: 49
+  References: 256
   ReferenceTypes: 0
-  Files: 56
+  Files: 57
  Nodes:
  - File: Nodes/NetZero.yaml

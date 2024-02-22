@@ -178,6 +178,9 @@ Children:
     - Class: Reference
       Target: g=10b36170f92a0e33d1835ebb9540e96f
       Direction: Forward
+    - Class: Reference
+      Target: g=55dcdc44bf44ed83f92ae82ad817c6f8
+      Direction: Forward
   - Name: Group
     Type: BaseDataVariableType
     DataType: String
@@ -185,7 +188,7 @@ Children:
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NetZero/DataStores/ODBCPowerDB/Tables/RecordShiftEnergy"
+    Value: {"IdType":2,"Id":"02ea0b20a42c279a68aa884f6bd1e326","Namespace":7}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -194,7 +197,7 @@ Children:
   - Name: RateStatistics
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NetZero/DataStores/ODBCPowerDB/Tables/RecordMultiRateEnergy"
+    Value: {"IdType":2,"Id":"e674db9a44d8782b040ccaf48f58649b","Namespace":7}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -410,6 +413,9 @@ Children:
     - Class: Reference
       Target: g=10b36170f92a0e33d1835ebb9540e96f
       Direction: Forward
+    - Class: Reference
+      Target: g=55dcdc44bf44ed83f92ae82ad817c6f8
+      Direction: Forward
   - Name: Group
     Type: BaseDataVariableType
     DataType: String
@@ -417,7 +423,7 @@ Children:
   - Name: ShiftStatistics
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NetZero/DataStores/ODBCPowerDB/Tables/RecordShiftEnergy"
+    Value: {"IdType":2,"Id":"02ea0b20a42c279a68aa884f6bd1e326","Namespace":7}
     Children:
     - Name: Kind
       Type: PropertyType
@@ -426,7 +432,7 @@ Children:
   - Name: RateStatistics
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/NetZero/DataStores/ODBCPowerDB/Tables/RecordMultiRateEnergy"
+    Value: {"IdType":2,"Id":"e674db9a44d8782b040ccaf48f58649b","Namespace":7}
     Children:
     - Name: Kind
       Type: PropertyType

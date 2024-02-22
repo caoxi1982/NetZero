@@ -363,6 +363,17 @@ Children:
         Type: BaseDataVariableType
         DataType: DateTime
         Value: "2023-05-01T00:00:00.0000000"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/NetZero/Model/SystemVariables/Yesterday"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -482,6 +493,11 @@ Children:
         DataType: Size
         ModellingRule: Optional
         Value: 2.0
+      - Name: Style
+        Type: BaseDataVariableType
+        DataType: String
+        ModellingRule: Optional
+        Value: "Default"
   - Name: HorizontalLayout2
     Type: RowLayout
     Children:
@@ -3652,6 +3668,17 @@ Children:
         Type: BaseDataVariableType
         DataType: DateTime
         Value: "2023-05-01T00:00:00.0000000"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/NetZero/Model/SystemVariables/Yesterday"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            ModellingRule: Optional
+            Value: 2
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
